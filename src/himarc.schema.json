@@ -431,99 +431,102 @@
           "type": "array",
           "items": [
             {
-              "indicator1": {
-                "title": "Level of international interest",
-                "type": "string",
-                "enum": [
-                  " ",
-                  "0",
-                  "1"
-                ],
-                "codes": {
-                  " ": {
-                    "label": "No level specified"
-                  },
-                  "0": {
-                    "label": "Continuing resource of international interest"
-                  },
-                  "1": {
-                    "label": "Continuing resource not of international interest"
+              "type":"object",
+              "properties": {
+                "indicator1": {
+                  "title": "Level of international interest",
+                  "type": "string",
+                  "enum": [
+                    " ",
+                    "0",
+                    "1"
+                  ],
+                  "codes": {
+                    " ": {
+                      "label": "No level specified"
+                    },
+                    "0": {
+                      "label": "Continuing resource of international interest"
+                    },
+                    "1": {
+                      "label": "Continuing resource not of international interest"
+                    }
                   }
+                },
+                "indicator2": {
+                  "title": "Undefined",
+                  "type": "string",
+                  "const": "\\"
+                },
+                "subFields": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "a": {
+                          "title": "International Standard Serial Number"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "l": {
+                          "title": "ISSN-L"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "m": {
+                          "title": "Canceled ISSN-L"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "y": {
+                          "title": "Incorrect ISSN"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "z": {
+                          "title": "Canceled ISSN"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "title": "Source"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "6": {
+                          "title": "Linkage"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "8": {
+                          "title": "Field link and sequence number"
+                        }
+                      }
+                    }
+                  ]
                 }
-              },
-              "indicator2": {
-                "title": "Undefined",
-                "type": "string",
-                "const": " "
-              },
-              "subFields": {
-                "type": "array",
-                "items": [
-                  {
-                    "type": "object",
-                    "properties": {
-                      "a": {
-                        "title": "International Standard Serial Number"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "l": {
-                        "title": "ISSN-L"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "m": {
-                        "title": "Canceled ISSN-L"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "y": {
-                        "title": "Incorrect ISSN"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "z": {
-                        "title": "Canceled ISSN"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "2": {
-                        "title": "Source"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "6": {
-                        "title": "Linkage"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "8": {
-                        "title": "Field link and sequence number"
-                      }
-                    }
-                  }
-                ]
               }
             }
           ]
