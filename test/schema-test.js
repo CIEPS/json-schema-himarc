@@ -4,7 +4,7 @@
 
 const { expect } = require('chai');
 const Ajv = require('ajv');
-const schema = require('../src/himarc.json');
+const schema = require('../src/himarc.schema.json');
 const ajv = new Ajv({ allErrors: true });
 const validate = ajv.compile(schema);
 
@@ -46,6 +46,33 @@ describe('json schema himarc', function () {
             '01': 'a'
           }
         }
+      }
+    };
+    const valid = validate(data);
+    expect(valid).to.be.true;
+  });
+
+  it('should validate 022 field', function () {
+    const data = {
+      fields: {
+        '022': [{
+          indicator1: '0',
+          indicator2: '\\',
+          subFields: [
+            {
+              a: '0028-0836'
+            },
+            {
+              z: '0302-2889'
+            },
+            {
+              2: '_2'
+            },
+            {
+              l: '0028-0836'
+            }
+          ]
+        }]
       }
     };
     const valid = validate(data);
