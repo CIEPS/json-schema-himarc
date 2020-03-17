@@ -12,6 +12,7 @@
         "LDR": {
           "title": "Leader",
           "description": "Fixed field that comprises the first 24 character positions (00-23) of each bibliographic record and consists of data elements that contain numbers or coded values that define the parameters for the processing of the record.",
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
           "type": "object",
           "properties": {
             "positions": {
@@ -351,6 +352,7 @@
         "007": {
           "title": "Physical Description Fixed Field-General Information",
           "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
+          "url": "http://www.loc.gov/marc/bibliographic/bd007.html",
           "type": "object",
           "properties": {
             "positions": {
@@ -420,6 +422,110 @@
           },
           "required": [
             "positions"
+          ]
+        },
+        "022": {
+          "title": "International Standard Serial Number",
+          "description": "International Standard Serial Number (ISSN), a unique identification number assigned to a continuing resource, and/or any incorrect or canceled ISSN.",
+          "url": "https://www.loc.gov/marc/bibliographic/bd022.html",
+          "type": "array",
+          "items": [
+            {
+              "indicator1": {
+                "title": "Level of international interest",
+                "type": "string",
+                "enum": [
+                  " ",
+                  "0",
+                  "1"
+                ],
+                "codes": {
+                  " ": {
+                    "label": "No level specified"
+                  },
+                  "0": {
+                    "label": "Continuing resource of international interest"
+                  },
+                  "1": {
+                    "label": "Continuing resource not of international interest"
+                  }
+                }
+              },
+              "indicator2": {
+                "title": "Undefined",
+                "type": "string",
+                "const": " "
+              },
+              "subFields": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "a": {
+                        "title": "International Standard Serial Number"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "l": {
+                        "title": "ISSN-L"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "m": {
+                        "title": "Canceled ISSN-L"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "y": {
+                        "title": "Incorrect ISSN"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "z": {
+                        "title": "Canceled ISSN"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "2": {
+                        "title": "Source"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "6": {
+                        "title": "Linkage"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "8": {
+                        "title": "Field link and sequence number"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
           ]
         }
       }
