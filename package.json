@@ -4,7 +4,9 @@
   "description": "JSON Schema for himarc ",
   "private": true,
   "scripts": {
-    "test": "mocha"
+    "pretest": "npm run bundle",
+    "test": "mocha",
+    "bundle": "bin/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,9 @@
   },
   "homepage": "https://github.com/CIEPS/json-schema-himarc#readme",
   "devDependencies": {
+    "@apidevtools/json-schema-ref-parser": "^8.0.0",
     "ajv": "^6.12.0",
     "chai": "^4.2.0",
-    "mocha": "^7.1.0"
+    "mocha": "^7.1.1"
   }
 }
