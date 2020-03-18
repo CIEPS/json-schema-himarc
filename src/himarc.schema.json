@@ -20,6 +20,9 @@
         },
         "044": {
           "$ref": "field-044.schema.json"
+        },
+        "222": {
+          "$ref": "field-222.schema.json"
         }
       }
     }
