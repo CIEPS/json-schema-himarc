@@ -9,6 +9,68 @@
       "description": "List of fields that can contain one or more data elements",
       "type": "object",
       "properties": {
+        "222": {
+          "title": "Key Title",
+          "description": "Unique title for a continuing resource that is assigned in conjunction with an ISSN recorded in field 022 by national centers under the auspices of the ISSN Network.",
+          "url": "https://www.loc.gov/marc/bibliographic/bd222.html",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "indicator1": {
+                "title": "Undefined",
+                "type": "string",
+                "const": "\\"
+              },
+              "indicator2": {
+                "title": "Nonfiling characters",
+                "type": "string",
+                "enum": [
+                  "0",
+                  "1-9"
+                ],
+                "codes": {
+                  "0": {
+                    "title": "No nonfiling characters"
+                  },
+                  "1-9": {
+                    "title": "Number of nonfiling characters"
+                  }
+                }
+              },
+              "subFields": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "6": {
+                      "title": "Linkage",
+                      "type": "string"
+                    },
+                    "8": {
+                      "title": "Field link and sequence number",
+                      "type": "string"
+                    },
+                    "a": {
+                      "title": "Key title",
+                      "type": "string"
+                    },
+                    "b": {
+                      "title": "Qualifying information",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "indicator1",
+              "indicator2",
+              "subFields"
+            ]
+          }
+        },
         "LDR": {
           "title": "Leader",
           "description": "Fixed field that comprises the first 24 character positions (00-23) of each bibliographic record and consists of data elements that contain numbers or coded values that define the parameters for the processing of the record.",
@@ -1204,86 +1266,82 @@
           "description": "International Standard Serial Number (ISSN), a unique identification number assigned to a continuing resource, and/or any incorrect or canceled ISSN.",
           "url": "https://www.loc.gov/marc/bibliographic/bd022.html",
           "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "indicator1": {
-                  "title": "Level of international interest",
-                  "type": "string",
-                  "enum": [
-                    "\\",
-                    "0",
-                    "1"
-                  ],
-                  "codes": {
-                    "0": {
-                      "label": "Continuing resource of international interest"
-                    },
-                    "1": {
-                      "label": "Continuing resource not of international interest"
-                    },
-                    "\\": {
-                      "label": "No level specified"
-                    }
+          "items": {
+            "type": "object",
+            "properties": {
+              "indicator1": {
+                "title": "Level of international interest",
+                "type": "string",
+                "enum": [
+                  "\\",
+                  "0",
+                  "1"
+                ],
+                "codes": {
+                  "0": {
+                    "title": "Continuing resource of international interest"
+                  },
+                  "1": {
+                    "title": "Continuing resource not of international interest"
+                  },
+                  "\\": {
+                    "title": "No level specified"
                   }
-                },
-                "indicator2": {
-                  "title": "Undefined",
-                  "type": "string",
-                  "const": "\\"
-                },
-                "subFields": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "object",
-                      "properties": {
-                        "2": {
-                          "title": "Source",
-                          "type": "string"
-                        },
-                        "6": {
-                          "title": "Linkage",
-                          "type": "string"
-                        },
-                        "8": {
-                          "title": "Field link and sequence number",
-                          "type": "string"
-                        },
-                        "a": {
-                          "title": "International Standard Serial Number",
-                          "type": "string"
-                        },
-                        "l": {
-                          "title": "ISSN-L",
-                          "type": "string"
-                        },
-                        "m": {
-                          "title": "Canceled ISSN-L",
-                          "type": "string"
-                        },
-                        "y": {
-                          "title": "Incorrect ISSN",
-                          "type": "string"
-                        },
-                        "z": {
-                          "title": "Canceled ISSN",
-                          "type": "string"
-                        }
-                      },
-                      "additionalProperties": false
-                    }
-                  ]
                 }
               },
-              "required": [
-                "indicator1",
-                "indicator2",
-                "subFields"
-              ]
-            }
-          ]
+              "indicator2": {
+                "title": "Undefined",
+                "type": "string",
+                "const": "\\"
+              },
+              "subFields": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "2": {
+                      "title": "Source",
+                      "type": "string"
+                    },
+                    "6": {
+                      "title": "Linkage",
+                      "type": "string"
+                    },
+                    "8": {
+                      "title": "Field link and sequence number",
+                      "type": "string"
+                    },
+                    "a": {
+                      "title": "International Standard Serial Number",
+                      "type": "string"
+                    },
+                    "l": {
+                      "title": "ISSN-L",
+                      "type": "string"
+                    },
+                    "m": {
+                      "title": "Canceled ISSN-L",
+                      "type": "string"
+                    },
+                    "y": {
+                      "title": "Incorrect ISSN",
+                      "type": "string"
+                    },
+                    "z": {
+                      "title": "Canceled ISSN",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "indicator1",
+              "indicator2",
+              "subFields"
+            ]
+          }
         },
         "044": {
           "title": "Country of Publishing/Producing Entity Code",
