@@ -431,18 +431,18 @@
           "type": "array",
           "items": [
             {
-              "type":"object",
+              "type": "object",
               "properties": {
                 "indicator1": {
                   "title": "Level of international interest",
                   "type": "string",
                   "enum": [
-                    " ",
+                    "\\",
                     "0",
                     "1"
                   ],
                   "codes": {
-                    " ": {
+                    "\\": {
                       "label": "No level specified"
                     },
                     "0": {
@@ -465,70 +465,116 @@
                       "type": "object",
                       "properties": {
                         "a": {
-                          "title": "International Standard Serial Number"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "International Standard Serial Number",
+                          "type": "string"
+                        },
                         "l": {
-                          "title": "ISSN-L"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "ISSN-L",
+                          "type": "string"
+                        },
                         "m": {
-                          "title": "Canceled ISSN-L"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "Canceled ISSN-L",
+                          "type": "string"
+                        },
                         "y": {
-                          "title": "Incorrect ISSN"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "Incorrect ISSN",
+                          "type": "string"
+                        },
                         "z": {
-                          "title": "Canceled ISSN"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "Canceled ISSN",
+                          "type": "string"
+                        },
                         "2": {
-                          "title": "Source"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "Source",
+                          "type": "string"
+                        },
                         "6": {
-                          "title": "Linkage"
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
+                          "title": "Linkage",
+                          "type": "string"
+                        },
                         "8": {
-                          "title": "Field link and sequence number"
+                          "title": "Field link and sequence number",
+                          "type": "string"
                         }
-                      }
+                      },
+                      "additionalProperties": false
                     }
                   ]
                 }
-              }
+              },
+              "required": [
+                "indicator1",
+                "indicator2",
+                "subFields"
+              ]
             }
+          ]
+        },
+        "044": {
+          "title": "Country of Publishing/Producing Entity Code",
+          "description": "Two- or three-character code for the country of the publishing or producing entity when field 008/15-17 (Place of publication, production, or execution) is insufficient to convey full information for an item published or produced in more than one country.",
+          "url": "https://www.loc.gov/marc/bibliographic/bd044.html",
+          "type": "object",
+          "properties": {
+            "indicator1": {
+              "title": "Undefined",
+              "type": "string",
+              "const": "\\"
+            },
+            "indicator2": {
+              "title": "Undefined",
+              "type": "string",
+              "const": "\\"
+            },
+            "subFields": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "a": {
+                      "title": "MARC country code",
+                      "type": "string",
+                      "codelist": {
+                        "name": "MARC Code List for Countries",
+                        "url": "http://www.loc.gov/marc/countries/countries_code.html"
+                      }
+                    },
+                    "b": {
+                      "title": "Local subentity code",
+                      "type": "string"
+                    },
+                    "c": {
+                      "title": "ISO country code",
+                      "type": "string",
+                      "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$"
+                    },
+                    "2": {
+                      "title": "Source of local subentity code",
+                      "type": "string",
+                      "codelist": {
+                        "name": "Country Code and Term Source Codes",
+                        "url": "http://www.loc.gov/standards/sourcelist/country.html"
+                      }
+                    },
+                    "6": {
+                      "title": "Linkage",
+                      "type": "string"
+                    },
+                    "8": {
+                      "title": "Field link and sequence number",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "indicator1",
+            "indicator2",
+            "subFields"
           ]
         }
       }
