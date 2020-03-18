@@ -17,13 +17,13 @@
           ],
           "codes": {
             "\\": {
-              "label": "No level specified"
+              "title": "No level specified"
             },
             "0": {
-              "label": "Continuing resource of international interest"
+              "title": "Continuing resource of international interest"
             },
             "1": {
-              "label": "Continuing resource not of international interest"
+              "title": "Continuing resource not of international interest"
             }
           }
         },
