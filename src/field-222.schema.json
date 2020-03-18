@@ -3,64 +3,60 @@
   "description": "Unique title for a continuing resource that is assigned in conjunction with an ISSN recorded in field 022 by national centers under the auspices of the ISSN Network.",
   "url": "https://www.loc.gov/marc/bibliographic/bd222.html",
   "type": "array",
-  "items": [
-    {
-      "type": "object",
-      "properties": {
-        "indicator1": {
-          "title": "Undefined",
-          "type": "string",
-          "const": "\\"
-        },
-        "indicator2": {
-          "title": "Nonfiling characters",
-          "type": "string",
-          "enum": [
-            "0",
-            "1-9"
-          ],
-          "codes": {
-            "0": {
-              "title": "No nonfiling characters"
-            },
-            "1-9": {
-              "title": "Number of nonfiling characters"
-            }
+  "items": {
+    "type": "object",
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\"
+      },
+      "indicator2": {
+        "title": "Nonfiling characters",
+        "type": "string",
+        "enum": [
+          "0",
+          "1-9"
+        ],
+        "codes": {
+          "0": {
+            "title": "No nonfiling characters"
+          },
+          "1-9": {
+            "title": "Number of nonfiling characters"
           }
-        },
-        "subFields": {
-          "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "a": {
-                  "title": "Key title",
-                  "type": "string"
-                },
-                "b": {
-                  "title": "Qualifying information",
-                  "type": "string"
-                },
-                "6": {
-                  "title": "Linkage",
-                  "type": "string"
-                },
-                "8": {
-                  "title": "Field link and sequence number",
-                  "type": "string"
-                }
-              },
-              "additionalProperties": false
-            }
-          ]
         }
       },
-      "required": [
-        "indicator1",
-        "indicator2",
-        "subFields"
-      ]
-    }
-  ]
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "title": "Key title",
+              "type": "string"
+            },
+            "b": {
+              "title": "Qualifying information",
+              "type": "string"
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string"
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ]
+  }
 }

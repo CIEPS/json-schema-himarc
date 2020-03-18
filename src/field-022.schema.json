@@ -3,84 +3,80 @@
   "description": "International Standard Serial Number (ISSN), a unique identification number assigned to a continuing resource, and/or any incorrect or canceled ISSN.",
   "url": "https://www.loc.gov/marc/bibliographic/bd022.html",
   "type": "array",
-  "items": [
-    {
-      "type": "object",
-      "properties": {
-        "indicator1": {
-          "title": "Level of international interest",
-          "type": "string",
-          "enum": [
-            "\\",
-            "0",
-            "1"
-          ],
-          "codes": {
-            "\\": {
-              "title": "No level specified"
-            },
-            "0": {
-              "title": "Continuing resource of international interest"
-            },
-            "1": {
-              "title": "Continuing resource not of international interest"
-            }
+  "items": {
+    "type": "object",
+    "properties": {
+      "indicator1": {
+        "title": "Level of international interest",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "codes": {
+          "\\": {
+            "title": "No level specified"
+          },
+          "0": {
+            "title": "Continuing resource of international interest"
+          },
+          "1": {
+            "title": "Continuing resource not of international interest"
           }
-        },
-        "indicator2": {
-          "title": "Undefined",
-          "type": "string",
-          "const": "\\"
-        },
-        "subFields": {
-          "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "a": {
-                  "title": "International Standard Serial Number",
-                  "type": "string"
-                },
-                "l": {
-                  "title": "ISSN-L",
-                  "type": "string"
-                },
-                "m": {
-                  "title": "Canceled ISSN-L",
-                  "type": "string"
-                },
-                "y": {
-                  "title": "Incorrect ISSN",
-                  "type": "string"
-                },
-                "z": {
-                  "title": "Canceled ISSN",
-                  "type": "string"
-                },
-                "2": {
-                  "title": "Source",
-                  "type": "string"
-                },
-                "6": {
-                  "title": "Linkage",
-                  "type": "string"
-                },
-                "8": {
-                  "title": "Field link and sequence number",
-                  "type": "string"
-                }
-              },
-              "additionalProperties": false
-            }
-          ]
         }
       },
-      "required": [
-        "indicator1",
-        "indicator2",
-        "subFields"
-      ]
-    }
-  ]
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\"
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "title": "International Standard Serial Number",
+              "type": "string"
+            },
+            "l": {
+              "title": "ISSN-L",
+              "type": "string"
+            },
+            "m": {
+              "title": "Canceled ISSN-L",
+              "type": "string"
+            },
+            "y": {
+              "title": "Incorrect ISSN",
+              "type": "string"
+            },
+            "z": {
+              "title": "Canceled ISSN",
+              "type": "string"
+            },
+            "2": {
+              "title": "Source",
+              "type": "string"
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string"
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ]
+  }
 }
