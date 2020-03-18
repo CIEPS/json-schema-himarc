@@ -131,7 +131,7 @@ describe('json schema himarc', function () {
       const data = {
         fields: {
           '022': [{
-            indicator1: '5',
+            indicator1: '0',
             indicator2: '\\',
             subFields: [
               {
@@ -186,6 +186,50 @@ describe('json schema himarc', function () {
               }
             ]
           }
+        }
+      };
+      const valid = validate(data);
+      expect(valid).to.be.false;
+    });
+  });
+
+  describe('222', function () {
+    it('should validate', function () {
+      const data = {
+        fields: {
+          222: [{
+            indicator1: '\\',
+            indicator2: '0',
+            subFields: [
+              {
+                a: 'Nature'
+              },
+              {
+                b: '(London)'
+              }
+            ]
+          }]
+        }
+      };
+      const valid = validate(data);
+      expect(valid).to.be.true;
+    });
+
+    it('shouldn\'t validate', function () {
+      const data = {
+        fields: {
+          222: [{
+            indicator1: '\\',
+            indicator2: '0',
+            subFields: [
+              {
+                a: 'Nature'
+              },
+              {
+                x: '(London)'
+              }
+            ]
+          }]
         }
       };
       const valid = validate(data);
