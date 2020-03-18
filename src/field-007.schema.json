@@ -1,0 +1,850 @@
+{
+  "title": "Physical Description Fixed Field-General Information",
+  "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
+  "url": "http://www.loc.gov/marc/bibliographic/bd007.html",
+  "type": "object",
+  "properties": {
+    "positions": {
+      "type": "object",
+      "properties": {
+        "00": {
+          "type": "string",
+          "enum": [
+            "a",
+            "c",
+            "o",
+            "t"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "00": {
+                "const": "a"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/007/a"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "00": {
+                "const": "c"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/007/c"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "00": {
+                "const": "o"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/007/o"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "00": {
+                "const": "t"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/007/t"
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "positions"
+  ],
+  "definitions": {
+    "007": {
+      "a": {
+        "type": "object",
+        "properties": {
+          "00": {
+            "title": "Category of material",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "const": "a",
+            "codes": {
+              "a": {
+                "title": "Map"
+              }
+            }
+          },
+          "01": {
+            "title": "Specific material designation",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "d",
+              "g",
+              "j",
+              "k",
+              "q",
+              "r",
+              "s",
+              "u",
+              "y",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "d": {
+                "title": "Atlas"
+              },
+              "g": {
+                "title": "Diagram"
+              },
+              "j": {
+                "title": "Map"
+              },
+              "k": {
+                "title": "Profile"
+              },
+              "q": {
+                "title": "Model"
+              },
+              "r": {
+                "title": "Remote-sensing image"
+              },
+              "s": {
+                "title": "Section"
+              },
+              "u": {
+                "title": "Unspecified"
+              },
+              "y": {
+                "title": "View"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "03": {
+            "title": "Color",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "a",
+              "c",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "One color"
+              },
+              "c": {
+                "title": "Multicolored"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "04": {
+            "title": "Physical medium",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f",
+              "g",
+              "i",
+              "j",
+              "l",
+              "n",
+              "p",
+              "q",
+              "r",
+              "s",
+              "t",
+              "u",
+              "v",
+              "w",
+              "x",
+              "y",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Paper"
+              },
+              "b": {
+                "title": "Wood"
+              },
+              "c": {
+                "title": "Stone"
+              },
+              "d": {
+                "title": "Metal"
+              },
+              "e": {
+                "title": "Synthetic"
+              },
+              "f": {
+                "title": "Skin"
+              },
+              "g": {
+                "title": "Textiles"
+              },
+              "i": {
+                "title": "Plastic"
+              },
+              "j": {
+                "title": "Glass"
+              },
+              "l": {
+                "title": "Vinyl"
+              },
+              "n": {
+                "title": "Vellum"
+              },
+              "p": {
+                "title": "Plaster"
+              },
+              "q": {
+                "title": "Flexible base photographic, positive"
+              },
+              "r": {
+                "title": "Flexible base photographic, negative"
+              },
+              "s": {
+                "title": "Non-flexible base photographic, positive"
+              },
+              "t": {
+                "title": "Non-flexible base photographic, negative"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "v": {
+                "title": "Leather"
+              },
+              "w": {
+                "title": "Parchment"
+              },
+              "y": {
+                "title": "Other photographic medium"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "05": {
+            "title": "Type of reproduction",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "f",
+              "n",
+              "u",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "f": {
+                "title": "Facsimile"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "06": {
+            "title": "Production\/reproduction details",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "u",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Photocopy, blueline print"
+              },
+              "b": {
+                "title": "Photocopy"
+              },
+              "c": {
+                "title": "Pre-production"
+              },
+              "d": {
+                "title": "Film"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "07": {
+            "title": "Positive\/negative aspect",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
+            "enum": [
+              "a",
+              "b",
+              "m",
+              "n",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Positive"
+              },
+              "b": {
+                "title": "Negative"
+              },
+              "m": {
+                "title": "Mixed polarity"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          }
+        }
+      },
+      "c": {
+        "type": "object",
+        "properties": {
+          "00": {
+            "title": "Category of material",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "const": "c",
+            "codes": {
+              "c": {
+                "title": "Electronic resource"
+              }
+            }
+          },
+          "01": {
+            "title": "Specific material designation",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f",
+              "h",
+              "j",
+              "k",
+              "m",
+              "o",
+              "r",
+              "s",
+              "u",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Tape cartridge"
+              },
+              "b": {
+                "title": "Chip cartridge"
+              },
+              "c": {
+                "title": "Computer optical disc cartridge"
+              },
+              "d": {
+                "title": "Computer disc, type unspecified"
+              },
+              "e": {
+                "title": "Computer disc cartridge, type unspecified"
+              },
+              "f": {
+                "title": "Tape cassette"
+              },
+              "h": {
+                "title": "Tape reel"
+              },
+              "j": {
+                "title": "Magnetic disk"
+              },
+              "k": {
+                "title": "Computer card"
+              },
+              "m": {
+                "title": "Magneto-optical disc"
+              },
+              "o": {
+                "title": "Optical disc"
+              },
+              "r": {
+                "title": "Remote"
+              },
+              "s": {
+                "title": "Standalone device"
+              },
+              "u": {
+                "title": "Unspecified"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "03": {
+            "title": "Color",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "g",
+              "m",
+              "n",
+              "u",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "One color"
+              },
+              "b": {
+                "title": "Black-and-white"
+              },
+              "c": {
+                "title": "Multicolored"
+              },
+              "g": {
+                "title": "Gray scale"
+              },
+              "m": {
+                "title": "Mixed"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "04": {
+            "title": "Dimensions",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "e",
+              "g",
+              "i",
+              "j",
+              "n",
+              "o",
+              "u",
+              "v",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "3 1\/2 in."
+              },
+              "e": {
+                "title": "12 in."
+              },
+              "g": {
+                "title": "4 3\/4 in. or 12 cm."
+              },
+              "i": {
+                "title": "1 1\/8 x 2 3\/8 in."
+              },
+              "j": {
+                "title": "3 7\/8 x 2 1\/2 in."
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "o": {
+                "title": "5 1\/4 in."
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "v": {
+                "title": "8 in."
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "05": {
+            "title": "Sound",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              " ",
+              "a",
+              "u",
+              "|"
+            ],
+            "codes": {
+              " ": {
+                "title": "No sound (silent)"
+              },
+              "a": {
+                "title": "Sound"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "06-08": {
+            "title": "Image bit depth",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "001-999",
+              "mmm",
+              "nnn",
+              "---",
+              "|||"
+            ],
+            "codes": {
+              "001-999": {
+                "title": "Exact bit depth"
+              },
+              "mmm": {
+                "title": "Multiple"
+              },
+              "nnn": {
+                "title": "Not applicable"
+              },
+              "---": {
+                "title": "Unknown"
+              },
+              "|||": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "09": {
+            "title": "File formats",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "m",
+              "u",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "One file format"
+              },
+              "m": {
+                "title": "Multiple file formats"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "10": {
+            "title": "Quality assurance targets",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "n",
+              "p",
+              "u",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Absent"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "p": {
+                "title": "Present"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "11": {
+            "title": "Antecedent\/source",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "m",
+              "n",
+              "u",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "File reproduced from original"
+              },
+              "b": {
+                "title": "File reproduced from microform"
+              },
+              "c": {
+                "title": "File reproduced from an electronic resource"
+              },
+              "d": {
+                "title": "File reproduced from an intermediate (not microform)"
+              },
+              "m": {
+                "title": "Mixed"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "12": {
+            "title": "Level of compression",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "b",
+              "d",
+              "m",
+              "u",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Uncompressed"
+              },
+              "b": {
+                "title": "Lossless"
+              },
+              "d": {
+                "title": "Lossy"
+              },
+              "m": {
+                "title": "Mixed"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          },
+          "13": {
+            "title": "Reformatting quality",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+            "enum": [
+              "a",
+              "n",
+              "p",
+              "r",
+              "u",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Access"
+              },
+              "n": {
+                "title": "Not applicable"
+              },
+              "p": {
+                "title": "Preservation"
+              },
+              "r": {
+                "title": "Replacement"
+              },
+              "u": {
+                "title": "Unknown"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          }
+        }
+      },
+      "o": {
+        "type": "object",
+        "properties": {
+          "00": {
+            "title": "Category of material",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007o.html",
+            "const": "o",
+            "codes": {
+              "o": {
+                "title": "Kit"
+              }
+            }
+          },
+          "01": {
+            "title": "Specific material designation",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007o.html",
+            "enum": [
+              "u",
+              "|"
+            ],
+            "codes": {
+              "u": {
+                "title": "Unspecified"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          }
+        }
+      },
+      "t": {
+        "type": "object",
+        "properties": {
+          "00": {
+            "title": "Category of material",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007t.html",
+            "const": "t",
+            "codes": {
+              "t": {
+                "title": "Text"
+              }
+            }
+          },
+          "01": {
+            "title": "Specific material designation",
+            "type": "string",
+            "url": "https://www.loc.gov/marc/bibliographic/bd007t.html",
+            "enum": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "u",
+              "z",
+              "|"
+            ],
+            "codes": {
+              "a": {
+                "title": "Regular print"
+              },
+              "b": {
+                "title": "Large print"
+              },
+              "c": {
+                "title": "Braille"
+              },
+              "d": {
+                "title": "Loose-leaf"
+              },
+              "u": {
+                "title": "Unspecified"
+              },
+              "z": {
+                "title": "Other"
+              },
+              "|": {
+                "title": "No attempt to code"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

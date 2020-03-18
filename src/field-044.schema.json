@@ -1,0 +1,67 @@
+{
+  "title": "Country of Publishing/Producing Entity Code",
+  "description": "Two- or three-character code for the country of the publishing or producing entity when field 008/15-17 (Place of publication, production, or execution) is insufficient to convey full information for an item published or produced in more than one country.",
+  "url": "https://www.loc.gov/marc/bibliographic/bd044.html",
+  "type": "object",
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\"
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\"
+    },
+    "subFields": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "a": {
+              "title": "MARC country code",
+              "type": "string",
+              "codelist": {
+                "name": "MARC Code List for Countries",
+                "url": "http://www.loc.gov/marc/countries/countries_code.html"
+              }
+            },
+            "b": {
+              "title": "Local subentity code",
+              "type": "string"
+            },
+            "c": {
+              "title": "ISO country code",
+              "type": "string",
+              "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$"
+            },
+            "2": {
+              "title": "Source of local subentity code",
+              "type": "string",
+              "codelist": {
+                "name": "Country Code and Term Source Codes",
+                "url": "http://www.loc.gov/standards/sourcelist/country.html"
+              }
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string"
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ]
+}
