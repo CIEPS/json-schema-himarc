@@ -3196,6 +3196,1139 @@
             }
           }
         },
+        "q": {
+          "type": "object",
+          "properties": {
+            "00": {
+              "title": "Category of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007q.html",
+              "const": "q",
+              "codes": {
+                "q": {
+                  "title": "Notated music"
+                }
+              }
+            },
+            "01": {
+              "title": "Specific material designation",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007q.html",
+              "enum": [
+                "u",
+                "|"
+              ],
+              "codes": {
+                "u": {
+                  "title": "Unspecified"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          }
+        },
+        "r": {
+          "type": "object",
+          "properties": {
+            "00": {
+              "title": "Category of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "const": "r",
+              "codes": {
+                "r": {
+                  "title": "Remote-sensing image"
+                }
+              }
+            },
+            "01": {
+              "title": "Specific material designation",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "u",
+                "|"
+              ],
+              "codes": {
+                "u": {
+                  "title": "Unspecified"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "03": {
+              "title": "Altitude of sensor",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "n",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Surface"
+                },
+                "b": {
+                  "title": "Airborne"
+                },
+                "c": {
+                  "title": "Spaceborne"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "04": {
+              "title": "Attitude of sensor",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "n",
+                "u",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Low oblique"
+                },
+                "b": {
+                  "title": "High oblique"
+                },
+                "c": {
+                  "title": "Vertical"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "05": {
+              "title": "Cloud cover",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "n",
+                "u",
+                "|" 
+              ],
+              "codes": {
+                "0": {
+                  "title": "0-9%"
+                },
+                "1": {
+                  "title": "10-19%"
+                },
+                "2": {
+                  "title": "20-29%"
+                },
+                "3": {
+                  "title": "30-39%"
+                },
+                "4": {
+                  "title": "40-49%"
+                },
+                "5": {
+                  "title": "50-59%"
+                },
+                "6": {
+                  "title": "60-69%"
+                },
+                "7": {
+                  "title": "70-79%"
+                },
+                "8": {
+                  "title": "80-89%"
+                },
+                "9": {
+                  "title": "90-100%"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "06": {
+              "title": "Platform construction type",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "n",
+                "u",
+                "z",
+                "|" 
+              ],
+              "codes": {
+                "a": {
+                  "title": "Balloon"
+                },
+                "b": {
+                  "title": "Aircraft--low altitude"
+                },
+                "c": {
+                  "title": "Aircraft--medium altitude"
+                },
+                "d": {
+                  "title": "Aircraft--high altitude"
+                },
+                "e": {
+                  "title": "Manned spacecraft"
+                },
+                "f": {
+                  "title": "Unmanned spacecraft"
+                },
+                "g": {
+                  "title": "Land-based remote-sensing device"
+                },
+                "h": {
+                  "title": "Water surface-based remote-sensing device"
+                },
+                "i": {
+                  "title": "Submersible remote-sensing device"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "07": {
+              "title": "Platform use category",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "m",
+                "n",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Meteorological"
+                },
+                "b": {
+                  "title": "Surface observing"
+                },
+                "c": {
+                  "title": "Space observing"
+                },
+                "m": {
+                  "title": "Mixed uses"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "08": {
+              "title": "Sensor type",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "a",
+                "b",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Active"
+                },
+                "b": {
+                  "title": "Passive"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "09-10": {
+              "title": "Data type",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007r.html",
+              "enum": [
+                "aa",
+                "da",
+                "db",
+                "dc",
+                "dd",
+                "de",
+                "df",
+                "dv",
+                "dz",
+                "ga",
+                "gb",
+                "gc", 
+                "gd",
+                "ge",
+                "gf",
+                "gg",
+                "gu",
+                "gz",
+                "ja",
+                "jb",
+                "jc",
+                "jv",
+                "jz",
+                "ma",
+                "mb",
+                "mm",
+                "nn",
+                "pa",
+                "pb",
+                "pc",
+                "pd",
+                "pe",
+                "pz",
+                "ra",
+                "rb",
+                "rc",
+                "rd",
+                "sa",
+                "ta",
+                "uu",
+                "zz",
+                "||"
+              ],
+              "codes": {
+                "aa": {
+                  "title": "Visible light"
+                },
+                "da": {
+                  "title": "Near infrared"
+                },
+                "db": {
+                  "title": "Middle infrared"
+                },
+                "dc": {
+                  "title": "Far infrared"
+                },
+                "dd": {
+                  "title": "Thermal infrared"
+                },
+                "de": {
+                  "title": "Shortwave infrared (SWIR)"
+                },
+                "df": {
+                  "title": "Reflective infrared"
+                },
+                "dv": {
+                  "title": "Combinations"
+                },
+                "dz": {
+                  "title": "Other infrared data"
+                },
+                "ga": {
+                  "title": "Sidelooking airborne radar (SLAR)"
+                },
+                "gb": {
+                  "title": "Synthetic aperture radar (SAR)-Single frequency"
+                },
+                "gc": {
+                  "title": "SAR-multi-frequency (multichannel)"
+                },
+                "gd": {
+                  "title": "SAR-like polarization"
+                },
+                "ge": {
+                  "title": "SAR-cross polarization"
+                },
+                "gf": {
+                  "title": "Infometric SAR"
+                },
+                "gg": {
+                  "title": "polarmetric SAR"
+                },
+                "gu": {
+                  "title": "Passive microwave mapping"
+                },
+                "gz": {
+                  "title": "Other microwave data"
+                },
+                "ja": {
+                  "title": "Far ultraviolet"
+                },
+                "jb": {
+                  "title": "Middle ultraviolet"
+                },
+                "jc": {
+                  "title": "Near ultraviolet"
+                },
+                "jv": {
+                  "title": "Ultraviolet combinations"
+                },
+                "jz": {
+                  "title": "Other ultraviolet data"
+                },
+                "ma": {
+                  "title": "Multi-spectral, multidata"
+                },
+                "mb": {
+                  "title": "Multi-temporal"
+                },
+                "mm": {
+                  "title": "Combination of various data types"
+                },
+                "nn": {
+                  "title": "Not applicable"
+                },
+                "pa": {
+                  "title": "Sonar--water depth"
+                },
+                "pb": {
+                  "title": "Sonar--bottom topography images, sidescan"
+                },
+                "pc": {
+                  "title": "Sonar--bottom topography, near-surface"
+                },
+                "pd": {
+                  "title": "Sonar--bottom topography, near-bottom"
+                },
+                "pe": {
+                  "title": "Seismic surveys"
+                },
+                "pz": {
+                  "title": "Other acoustical data"
+                },
+                "ra": {
+                  "title": "Gravity anomalies (general)"
+                },
+                "rb": {
+                  "title": "Free-air"
+                },
+                "rc": {
+                  "title": "Bouger"
+                },
+                "rd": {
+                  "title": "Isostatic"
+                },
+                "sa": {
+                  "title": "Magnetic field"
+                },
+                "ta": {
+                  "title": "radiometric surveys"
+                },
+                "uu": {
+                  "title": "Unknown"
+                },
+                "zz": {
+                  "title": "Other"
+                },
+                "||": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          }
+        },
+        "s": {
+          "type": "object",
+          "properties": {
+            "00": {
+              "title": "Category of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "const": "s",
+              "codes": {
+                "s": {
+                  "title": "Sound recording"
+                }
+              }
+            },
+            "01": {
+              "title": "Specific material designation",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "b",
+                "d",
+                "e",
+                "g",
+                "i",
+                "q",
+                "r",
+                "s",
+                "t",
+                "u",
+                "w",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "b": {
+                  "title": "Belt"
+                },
+                "d": {
+                  "title": "Sound disc"
+                },
+                "e": {
+                  "title": "Cylinder"
+                },
+                "g": {
+                  "title": "Sound cartridge"
+                },
+                "i": {
+                  "title": "Sound-track film"
+                },
+                "q": {
+                  "title": "Roll"
+                },
+                "r": {
+                  "title": "Remote"
+                },
+                "s": {
+                  "title": "Sound cassette"
+                },
+                "t": {
+                  "title": "Sound-tape reel"
+                },
+                "u": {
+                  "title": "Unspecified"
+                },
+                "w": {
+                  "title": "Wire recording"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "03": {
+              "title": "Speed",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b", 
+                "c",
+                "d",
+                "e",
+                "f",
+                "h",
+                "i",
+                "k",
+                "l",
+                "m",
+                "n",
+                "o",
+                "p",
+                "r",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "16 rpm (discs)"
+                },
+                "b": {
+                  "title": "33 1/3 rpm (discs)"
+                },
+                "c": {
+                  "title": "45 rpm (discs)"
+                },
+                "d": {
+                  "title": "78 rpm (discs)"
+                },
+                "e": {
+                  "title": "8 rpm (discs)"
+                },
+                "f": {
+                  "title": "1.4 m. per second (discs)"
+                },
+                "h": {
+                  "title": "120 rpm (cylinders)"
+                },
+                "i": {
+                  "title": "160 rpm (cylinders)"
+                },
+                "k": {
+                  "title": "15/16 ips (tapes)"
+                },
+                "l": {
+                  "title": "1 7/8 ips (tapes)"
+                },
+                "m": {
+                  "title": "3 3/4 ips (tapes)"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "o": {
+                  "title": "7 1/2 ips (tapes)"
+                },
+                "p": {
+                  "title": "15 ips (tapes)"
+                },
+                "r": {
+                  "title": "30 ips (tape)"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "04": {
+              "title": "Configuration of playback channels",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "m",
+                "q",
+                "s",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "m": {
+                  "title": "Monaural"
+                },
+                "q": {
+                  "title": "Quadraphonic, multichannel, or surround"
+                },
+                "s": {
+                  "title": "Stereophonic"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "05": {
+              "title": "Groove width/groove pitch",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "m",
+                "n",
+                "s",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "m": {
+                  "title": "Microgroove/fine"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "s": {
+                  "title": "Coarse/standard"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "06": {
+              "title": "Dimensions",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "j",
+                "n",
+                "o",
+                "s",
+                "u",
+                "z",
+                "|" 
+              ],
+              "codes": {
+                "a": {
+                  "title": "3 in. diameter"
+                },
+                "b": {
+                  "title": "5 in. diameter"
+                },
+                "c": {
+                  "title": "7 in. diameter"
+                },
+                "d": {
+                  "title": "10 in. diameter"
+                },
+                "e": {
+                  "title": "12 in. diameter"
+                },
+                "f": {
+                  "title": "16 in. diameter"
+                },
+                "g": {
+                  "title": "4 3/4 in. or 12 cm. diameter"
+                },
+                "j": {
+                  "title": "3 7/8 x 2 1/2 in."
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "o": {
+                  "title": "5 1/4 x 3 7/8 in."
+                },
+                "s": {
+                  "title": "2 3/4 x 4 in."
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "07": {
+              "title": "Tape width",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "l",
+                "m",
+                "n",
+                "o",
+                "p",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "l": {
+                  "title": "1/8 in."
+                },
+                "m": {
+                  "title": "1/4 in."
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "o": {
+                  "title": "1/2 in."
+                },
+                "p": {
+                  "title": "1 in."
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "08": {
+              "title": "Tape Configuration",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "n",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Full (1) track"
+                },
+                "b": {
+                  "title": "Half (2) track"
+                },
+                "c": {
+                  "title": "Quarter (4) track"
+                },
+                "d": {
+                  "title": "Eight track"
+                },
+                "e": {
+                  "title": "Twelve track"
+                },
+                "f": {
+                  "title": "Sixteen track"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "09": {
+              "title": "Kind of disc, cylinder or tape",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "d",
+                "i",
+                "m",
+                "n",
+                "r",
+                "s",
+                "t",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Master tape"
+                },
+                "b": {
+                  "title": "Tape duplication master"
+                },
+                "d": {
+                  "title": "Disc master (negative)"
+                },
+                "i": {
+                  "title": "Instantaneous (recorded on the spot)"
+                },
+                "m": {
+                  "title": "Mass-produced"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "r": {
+                  "Mother (positive)"
+                },
+                "s": {
+                  "Stamper (negative)"
+                },
+                "t": {
+                  "Test pressing"
+                },
+                "u": {
+                  "Unknown"
+                },
+                "z": {
+                  "Other"
+                },
+                "|": {
+                  "No attempt to code"
+                }
+              }
+            },
+            "10": {
+              "title": "Kind of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "g",
+                "i",
+                "l",
+                "m",
+                "n",
+                "p",
+                "r",
+                "s",
+                "w",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Lacquer coating"
+                },
+                "b": {
+                  "title": "Cellulose nitrate"
+                },
+                "c": {
+                  "title": "Acetate tape with ferrous oxide"
+                },
+                "g": {
+                  "title": "Glass with lacquer"
+                },
+                "i": {
+                  "title": "Aluminum with lacquer"
+                },
+                "l": {
+                  "title": "Metal"
+                },
+                "m": {
+                  "title": "Plastic with metal"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "p": {
+                  "title": "Plastic"
+                },
+                "r": {
+                  "title": "Paper with lacquer or ferrous oxide"
+                },
+                "s": {
+                  "title": "Shellac"
+                },
+                "w": {
+                  "title": "Wax"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "11": {
+              "title": "Kind of cutting",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "h",
+                "l",
+                "n",
+                "u",
+                "|"
+              ],
+              "codes": {
+                "h": {
+                  "title": "Hill-and-dale cutting"
+                },
+                "l": {
+                  "title": "Lateral or combined cutting"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "12": {
+              "title": "Special playback characteristics",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "n",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "NAB standard"
+                },
+                "b": {
+                  "title": "CCIR standard"
+                },
+                "c": {
+                  "title": "Dolby-B encoded"
+                },
+                "d": {
+                  "title": "dbx encoded"
+                },
+                "e": {
+                  "title": "Digital recording"
+                },
+                "f": {
+                  "title": "Dolby-A encoded"
+                },
+                "g": {
+                  "title": "Dolby-C encoded"
+                },
+                "h": {
+                  "title": "CX encoded"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "13": {
+              "title": "Capture and storage technique",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+              "enum": [
+                "a",
+                "b",
+                "d",
+                "e",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Acoustical capture, direct storage"
+                },
+                "b": {
+                  "title": "Direct storage, not acoustical"
+                },
+                "d": {
+                  "title": "Digital storage"
+                },
+                "e": {
+                  "title": "Analog electrical storage"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          }
+        },
         "t": {
           "type": "object",
           "properties": {
@@ -3235,6 +4368,406 @@
                 },
                 "d": {
                   "title": "Loose-leaf"
+                },
+                "u": {
+                  "title": "Unspecified"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          }
+        },
+        "v": {
+          "type": "object",
+          "properties": {
+            "00": {
+              "title": "Category of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "const": "v",
+              "codes": {
+                "v": {
+                  "title": "Videorecording"
+                }
+              }
+            },
+            "01": {
+              "title": "Specific material designation",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "c",
+                "d",
+                "f",
+                "r",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "c": {
+                  "title": "Videocartridge",
+                },
+                "d": {
+                  "title": "Videodisc",
+                },
+                "f": {
+                  "title": "Videocassette",
+                },
+                "r": {
+                  "title": "Videoreel",
+                },
+                "u": {
+                  "title": "Unspecified",
+                },
+                "z": {
+                  "title": "Other",
+                },
+                "|": {
+                  "title": "No attempt to code",
+                }
+              }
+            },
+            "03": {
+              "title": "Color",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "m",
+                "n",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "One color"
+                },
+                "b": {
+                  "title": "Black-and-white"
+                },
+                "c": {
+                  "title": "Multicolored"
+                },
+                "m": {
+                  "title": "Mixed"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "04": {
+              "title": "Videorecording format",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "m",
+                "o",
+                "p",
+                "q",
+                "s",
+                "u",
+                "v",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "Beta (1/2 in., videocassette)"
+                },
+                "b": {
+                  "title": "VHS (1/2 in., videocassette)"
+                },
+                "c": {
+                  "title": "U-matic (3/4 in., videocasstte)"
+                },
+                "d": {
+                  "title": "EIAJ (1/2 in., reel)"
+                },
+                "e": {
+                  "title": "Type C (1 in., reel)"
+                },
+                "f": {
+                  "title": "Quadruplex (1 in. or 2 in., reel)"
+                },
+                "g": {
+                  "title": "Laserdisc"
+                },
+                "h": {
+                  "title": "CED (Capacitance Electronic Disc) videodisc"
+                },
+                "i": {
+                  "title": "Betacam (1/2 in., videocassette)"
+                },
+                "j": {
+                  "title": "Betacam SP (1/2 in., videocassette)"
+                },
+                "k": {
+                  "title": "Super-VHS (1/2 in., videocassette)"
+                },
+                "m": {
+                  "title": "M-II (1/2 in., videocassette)"
+                },
+                "o": {
+                  "title": "D-2 (3/4 in., videocassette)"
+                },
+                "p": {
+                  "title": "8 mm."
+                },
+                "q": {
+                  "title": "Hi-8 mm."
+                },
+                "s": {
+                  "title": "Blu-ray disc"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "v": {
+                  "title": "DVD"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "05": {
+              "title": "Sound on medium or separate",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "#",
+                "a",
+                "b",
+                "u",
+                "|"
+              ],
+              "codes": {
+                "#": {
+                  "title": "No sound (silent)"
+                },
+                "a": {
+                  "title": "Sound on medium"
+                },
+                "b": {
+                  "title": "Sound separate from medium"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "06": {
+              "title": "Medium for sound",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "#",
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "u",
+                "z",
+                "|" 
+              ],
+              "codes": {
+                "#": {
+                  "title": "No sound (silent)"
+                },
+                "a": {
+                  "title": "Optical sound track on motion picture film"
+                },
+                "b": {
+                  "title": "Magnetic sound track on motion picture film"
+                },
+                "c": {
+                  "title": "Magnetic audio tape in cartridge"
+                },
+                "d": {
+                  "title": "Sound disc"
+                },
+                "e": {
+                  "title": "Magnetic audio tape on reel"
+                },
+                "f": {
+                  "title": "Magnetic audio tape in cassette"
+                },
+                "g": {
+                  "title": "Optical and magnetic sound track on motion picture film"
+                },
+                "h": {
+                  "title": "Videotape"
+                },
+                "i": {
+                  "title": "Videodisc"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "07": {
+              "title": "Dimensions",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "a",
+                "m",
+                "o",
+                "p",
+                "q",
+                "r",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "a": {
+                  "title": "8 mm."
+                },
+                "m": {
+                  "title": "1/4 in."
+                },
+                "o": {
+                  "title": "1/2 in."
+                },
+                "p": {
+                  "title": "1 in."
+                },
+                "q": {
+                  "title": "2 in."
+                },
+                "r": {
+                  "title": "3/4 in."
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "08": {
+              "title": "Configuration of playback channels",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007v.html",
+              "enum": [
+                "k",
+                "m",
+                "n",
+                "q",
+                "s",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "k": {
+                  "title": "Mixed"
+                },
+                "m": {
+                  "title": "Monaural"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "q": {
+                  "title": "Quadraphonic, multichannel, or surround"
+                },
+                "s": {
+                  "title": "Stereophonic"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          }
+        },
+        "z": {
+          "type": "object",
+          "properties": {
+            "00": {
+              "title": "Category of material",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007z.html",
+              "const": "z",
+              "codes": {
+                "z": {
+                  "title": "Unspecified"
+                }
+              }
+            },
+            "01": {
+              "title": "Specific material designation",
+              "type": "string",
+              "url": "https://www.loc.gov/marc/bibliographic/bd007z.html",
+              "enum": [
+                "m",
+                "u",
+                "z",
+                "|"
+              ],
+              "codes": {
+                "m": {
+                  "title": "Multiple physical forms"
                 },
                 "u": {
                   "title": "Unspecified"
