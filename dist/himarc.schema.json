@@ -4720,22 +4720,22 @@
                           "title": "Not applicable"
                         },
                         "r": {
-                          "Mother (positive)": null
+                          "title": "Mother (positive)"
                         },
                         "s": {
-                          "Stamper (negative)": null
+                          "title": "Stamper (negative)"
                         },
                         "t": {
-                          "Test pressing": null
+                          "title": "Test pressing"
                         },
                         "u": {
-                          "Unknown": null
+                          "title": "Unknown"
                         },
                         "z": {
-                          "Other": null
+                          "title": "Other"
                         },
                         "|": {
-                          "No attempt to code": null
+                          "title": "No attempt to code"
                         }
                       }
                     }
