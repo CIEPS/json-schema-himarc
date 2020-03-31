@@ -1705,7 +1705,7 @@
                   "title": "No attempt to code"
                 }
               }
-            },
+            }
           }
         },
         "h": {
@@ -1941,7 +1941,7 @@
                 },
                 "|": {
                   "title": "No attempt to code"
-                },
+                }
               }
             },
             "10": {
@@ -2074,7 +2074,7 @@
                   "title": "No attempt to code"
                 }
               }
-            },
+            }
           }
         },
         "k": {
@@ -2430,7 +2430,7 @@
                   "title": "No attempt to code"
                 }
               }
-            },
+            }
           }
         },
         "m": {
@@ -3139,19 +3139,19 @@
               ],
               "codes": {
                 "c": {
-                  "title": "Complete",
+                  "title": "Complete"
                 },
                 "i": {
-                  "title": "Incomplete",
+                  "title": "Incomplete"
                 },
                 "n": {
-                  "title": "Not applicable",
+                  "title": "Not applicable"
                 },
                 "u": {
-                  "title": "Unknown",
+                  "title": "Unknown"
                 },
                 "|": {
-                  "title": "No attempt to code",
+                  "title": "No attempt to code"
                 }
               }
             },
@@ -4116,22 +4116,22 @@
                   "title": "Not applicable"
                 },
                 "r": {
-                  "Mother (positive)"
+                  "title": "Mother (positive)"
                 },
                 "s": {
-                  "Stamper (negative)"
+                  "title": "Stamper (negative)"
                 },
                 "t": {
-                  "Test pressing"
+                  "title": "Test pressing"
                 },
                 "u": {
-                  "Unknown"
+                  "title": "Unknown"
                 },
                 "z": {
-                  "Other"
+                  "title": "Other"
                 },
                 "|": {
-                  "No attempt to code"
+                  "title": "No attempt to code"
                 }
               }
             },
@@ -4411,25 +4411,25 @@
               ],
               "codes": {
                 "c": {
-                  "title": "Videocartridge",
+                  "title": "Videocartridge"
                 },
                 "d": {
-                  "title": "Videodisc",
+                  "title": "Videodisc"
                 },
                 "f": {
-                  "title": "Videocassette",
+                  "title": "Videocassette"
                 },
                 "r": {
-                  "title": "Videoreel",
+                  "title": "Videoreel"
                 },
                 "u": {
-                  "title": "Unspecified",
+                  "title": "Unspecified"
                 },
                 "z": {
-                  "title": "Other",
+                  "title": "Other"
                 },
                 "|": {
-                  "title": "No attempt to code",
+                  "title": "No attempt to code"
                 }
               }
             },
