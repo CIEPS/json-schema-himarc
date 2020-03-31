@@ -71,12 +71,12 @@ describe('json schema himarc', function () {
     it('should validate', function () {
       const data = {
         fields: {
-          '007': {
+          '007': [{
             positions: {
               '00': 't',
               '01': 'a'
             }
-          }
+          }]
         }
       };
       const valid = validate(data);
@@ -86,12 +86,12 @@ describe('json schema himarc', function () {
     it('shouldn\'t validate', function () {
       const data = {
         fields: {
-          '007': {
+          '007': [{
             positions: {
               '00': 'x',
               '01': 'a'
             }
-          }
+          }]
         }
       };
       const valid = validate(data);
