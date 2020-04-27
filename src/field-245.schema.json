@@ -23,10 +23,13 @@
     "indicator2": {
       "title": "Nonfiling characters",
       "type": "string",
-      "const": "0",
+      "pattern": "[0-9]",
       "code": {
         "0": {
-          "title": "9"
+          "title": "No nonfiling characters"
+        },
+        "1-9": {
+          "title": "Number of nonfiling characters "
         }
       }
     },
