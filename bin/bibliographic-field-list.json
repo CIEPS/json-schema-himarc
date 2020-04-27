@@ -4912,11 +4912,6 @@
                 },
                 {
                   "level": 3,
-                  "data": "# - Undefined (BK MP MU VM SE) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
                   "data": "0 - Superintendent of Documents Classification System",
                   "children": []
                 },
@@ -12435,12 +12430,7 @@
                 },
                 {
                   "level": 3,
-                  "data": "1 - Series traced [REDEFINED]",
-                  "children": []
-                },
-                {
-                  "level": 3,
-                  "data": "1 - Series traced differently",
+                  "data": "1 - Series traced",
                   "children": []
                 }
               ]
@@ -19992,11 +19982,6 @@
                 },
                 {
                   "level": 3,
-                  "data": "1 - Printed on card (VM) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
                   "data": "2 - Analytical entry",
                   "children": []
                 },
@@ -20367,11 +20352,6 @@
                 },
                 {
                   "level": 3,
-                  "data": "1 - Printed on card (VM) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
                   "data": "2 - Analytical entry",
                   "children": []
                 },
@@ -20578,11 +20558,6 @@
                 {
                   "level": 3,
                   "data": "1 - Secondary entry (BK CF MP MU SE MX) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
-                  "data": "1 - Printed on card (VM) [OBSOLETE]",
                   "children": []
                 },
                 {
@@ -21002,11 +20977,6 @@
                 },
                 {
                   "level": 3,
-                  "data": "1 - Printed on card (VM) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
                   "data": "2 - Analytical entry",
                   "children": []
                 },
@@ -21188,11 +21158,6 @@
                 {
                   "level": 3,
                   "data": "1 - Secondary entry (BK AM CF MP MU) [OBSOLETE]",
-                  "children": []
-                },
-                {
-                  "level": 3,
-                  "data": "1 - Printed on card (VM) [OBSOLETE]",
                   "children": []
                 },
                 {
