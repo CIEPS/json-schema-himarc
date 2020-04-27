@@ -716,13 +716,7 @@
               "title": "Image bit depth",
               "type": "string",
               "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
-              "enum": [
-                "001-999",
-                "mmm",
-                "nnn",
-                "---",
-                "|||"
-              ],
+              "pattern": "^[0-9]{3}-[0-9]{3}|mmm|nnn|---|\\|\\|\\|$",
               "codes": {
                 "001-999": {
                   "title": "Exact bit depth"
