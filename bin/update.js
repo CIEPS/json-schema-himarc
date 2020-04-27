@@ -117,7 +117,7 @@ const refs = fieldList.children
       }, {});
     }
     if ('subFields' in field) {
-      objField.subFields = {
+      objField.properties.subFields = {
         type: 'array',
         items: {
           type: 'object',
