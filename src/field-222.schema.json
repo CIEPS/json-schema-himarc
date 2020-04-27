@@ -17,26 +17,15 @@
         }
       },
       "indicator2": {
-        "title": "Specifies whether variant title and/or added entry is required (CF SE) [OBSOLETE]",
+        "title": "Nonfiling characters",
         "type": "string",
-        "enum": [
-          "0",
-          "1",
-          "2",
-          "3"
-        ],
+        "pattern": "[0-9]",
         "code": {
           "0": {
-            "title": "No key title added entry; title proper same"
+            "title": "No nonfiling characters"
           },
-          "1": {
-            "title": "Key title added entry; title proper different"
-          },
-          "2": {
-            "title": "Key title added entry; title proper same"
-          },
-          "3": {
-            "title": "No key title added entry; title proper different"
+          "1-9": {
+            "title": "Number of nonfiling characters "
           }
         }
       },
