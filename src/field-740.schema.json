@@ -1,0 +1,105 @@
+{
+  "title": "Added Entry--uncontrolled Related/analytical Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd740.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Nonfiling characters",
+        "type": "string",
+        "enum": [
+          "0",
+          "\\"
+        ],
+        "code": {
+          "0": {
+            "title": "9"
+          },
+          "\\": {
+            "title": "Nonfiling characters not specified [OBSOLETE]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Type of added entry",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Alternative entry (BK AM CF MP MU) [OBSOLETE]"
+          },
+          "1": {
+            "title": "Printed on card (VM) [OBSOLETE]"
+          },
+          "2": {
+            "title": "Analytical entry"
+          },
+          "3": {
+            "title": "Not printed on card (VM) [OBSOLETE]"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "5": {
+            "title": "Institution to which field applies",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Uncontrolled related/analytical title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "h": {
+            "title": "Medium",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "n": {
+            "title": "Number of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "p": {
+            "title": "Name of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Geographic Area Code",
+  "url": "https://www.loc.gov/marc/bibliographic/bd043.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "0": {
+          "title": "Authority record control number or standard number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "1": {
+          "title": "Real World Object URI",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "2": {
+          "title": "Source of local code",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "6": {
+          "title": "Linkage",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "8": {
+          "title": "Field link and sequence number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "a": {
+          "title": "Geographic area code",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "b": {
+          "title": "Local GAC code",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "c": {
+          "title": "ISO code",
+          "type": "string",
+          "isRepeatable": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

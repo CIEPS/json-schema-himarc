@@ -1,0 +1,122 @@
+{
+  "title": "Data Quality Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd514.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "6": {
+          "title": "Linkage",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "8": {
+          "title": "Field link and sequence number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "a": {
+          "title": "Attribute accuracy report",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "b": {
+          "title": "Attribute accuracy value",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "c": {
+          "title": "Attribute accuracy explanation",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "d": {
+          "title": "Logical consistency report",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "e": {
+          "title": "Completeness report",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "f": {
+          "title": "Horizontal position accuracy report",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "g": {
+          "title": "Horizontal position accuracy value",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "h": {
+          "title": "Horizontal position accuracy explanation",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "i": {
+          "title": "Vertical positional accuracy report",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "j": {
+          "title": "Vertical positional accuracy value",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "k": {
+          "title": "Vertical positional accuracy explanation",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "m": {
+          "title": "Cloud cover",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "u": {
+          "title": "Uniform Resource Identifier",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "z": {
+          "title": "Display note",
+          "type": "string",
+          "isRepeatable": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

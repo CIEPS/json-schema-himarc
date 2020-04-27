@@ -1,0 +1,150 @@
+{
+  "title": "Subject Added Entry--geographic Name",
+  "url": "https://www.loc.gov/marc/bibliographic/bd651.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Thesaurus",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "code": {
+          "0": {
+            "title": "Library of Congress Subject Headings"
+          },
+          "1": {
+            "title": "LC subject headings for children's literature"
+          },
+          "2": {
+            "title": "Medical Subject Headings"
+          },
+          "3": {
+            "title": "National Agricultural Library subject authority file"
+          },
+          "4": {
+            "title": "Source not specified"
+          },
+          "5": {
+            "title": "Canadian Subject Headings"
+          },
+          "6": {
+            "title": "Répertoire de vedettes"
+          },
+          "7": {
+            "title": "Source specified in subfield $2"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of heading or term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "4": {
+            "title": "Relationship",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Geographic name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Geographic name following place entry element",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "e": {
+            "title": "Relator term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Miscellaneous information",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "v": {
+            "title": "Form subdivision",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "x": {
+            "title": "General subdivision",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "y": {
+            "title": "Chronological subdivision",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "z": {
+            "title": "Geographic subdivision",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "title": "Location Of Originals/duplicates Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd535.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Additional information about custodian",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Repository (AM) [OBSOLETE]"
+          },
+          "1": {
+            "title": "Holder of originals"
+          },
+          "2": {
+            "title": "Holder of duplicates"
+          },
+          "3": {
+            "title": "Holder of oral tapes (AM) [OBSOLETE]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Custodian",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Postal address",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Country",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Telecommunications address",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Repository location code",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Target Audience Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd521.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Display constant controller",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "8"
+        ],
+        "code": {
+          "0": {
+            "title": "Reading grade level"
+          },
+          "1": {
+            "title": "Interest age level"
+          },
+          "2": {
+            "title": "Interest grade level"
+          },
+          "3": {
+            "title": "Special audience characteristics"
+          },
+          "4": {
+            "title": "Motivation interest level"
+          },
+          "8": {
+            "title": "No display constant generated"
+          },
+          "\\": {
+            "title": "Audience"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Target audience note",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Source",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

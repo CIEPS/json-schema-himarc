@@ -1,0 +1,24 @@
+{
+  "title": "Captions And Pattern--basic Bibliographic Unit",
+  "url": "https://www.loc.gov/marc/bibliographic/bd853.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string"
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string"
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ]
+  }
+}

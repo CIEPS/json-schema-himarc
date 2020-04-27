@@ -1,0 +1,160 @@
+{
+  "title": "Varying Form Of Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd246.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Note/added entry controller",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Note, no added entry"
+          },
+          "1": {
+            "title": "Note, added entry"
+          },
+          "2": {
+            "title": "No note, no title added entry"
+          },
+          "3": {
+            "title": "No note, added entry"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Type of title",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "code": {
+          "0": {
+            "title": "Portion of title"
+          },
+          "1": {
+            "title": "Parallel title"
+          },
+          "2": {
+            "title": "Distinctive title"
+          },
+          "3": {
+            "title": "Other title"
+          },
+          "4": {
+            "title": "Cover title"
+          },
+          "5": {
+            "title": "Added title page title"
+          },
+          "6": {
+            "title": "Caption title"
+          },
+          "7": {
+            "title": "Running title"
+          },
+          "8": {
+            "title": "Spine title"
+          },
+          "\\": {
+            "title": "No type specified"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "5": {
+            "title": "Institution to which field applies",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Title proper/short title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Remainder of title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Designation of section",
+            "type": "string"
+          },
+          "e": {
+            "title": "Name of part/section",
+            "type": "string"
+          },
+          "f": {
+            "title": "Date or sequential designation",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Miscellaneous information",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "h": {
+            "title": "Medium",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "i": {
+            "title": "Display text",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "n": {
+            "title": "Number of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "p": {
+            "title": "Name of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

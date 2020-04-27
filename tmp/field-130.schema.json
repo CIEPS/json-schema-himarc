@@ -1,0 +1,143 @@
+{
+  "title": "Main Entry--uniform Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd130.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Nonfiling characters",
+      "type": "string",
+      "enum": [
+        "0",
+        "\\"
+      ],
+      "code": {
+        "0": {
+          "title": "9"
+        },
+        "\\": {
+          "title": "Nonfiling characters not specified [OBSOLETE]"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "0": {
+          "title": "Authority record control number or standard number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "1": {
+          "title": "Real World Object URI",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "2": {
+          "title": "Source of heading or term",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "6": {
+          "title": "Linkage",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "8": {
+          "title": "Field link and sequence number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "a": {
+          "title": "Uniform title",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "d": {
+          "title": "Date of treaty signing",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "f": {
+          "title": "Date of a work",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "g": {
+          "title": "Miscellaneous information",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "h": {
+          "title": "Medium",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "k": {
+          "title": "Form subheading",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "l": {
+          "title": "Language of a work",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "m": {
+          "title": "Medium of performance for music",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "n": {
+          "title": "Number of part/section of a work",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "o": {
+          "title": "Arranged statement for music",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "p": {
+          "title": "Name of part/section of a work",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "r": {
+          "title": "Key for music",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "s": {
+          "title": "Version",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "t": {
+          "title": "Title of a work",
+          "type": "string",
+          "isRepeatable": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

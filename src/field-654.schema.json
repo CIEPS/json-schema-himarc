@@ -1,0 +1,129 @@
+{
+  "title": "Subject Added Entry--faceted Topical Terms",
+  "url": "https://www.loc.gov/marc/bibliographic/bd654.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Level of subject",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "2"
+        ],
+        "code": {
+          "0": {
+            "title": "No level specified"
+          },
+          "1": {
+            "title": "Primary"
+          },
+          "2": {
+            "title": "Secondary"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of heading or term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "4": {
+            "title": "Relationship",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Focus term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Non-focus term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Facet/hierarchy designation",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "e": {
+            "title": "Relator term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "v": {
+            "title": "Form subdivision",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "y": {
+            "title": "Chronological subdivision",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "z": {
+            "title": "Geographic subdivision",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

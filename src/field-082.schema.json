@@ -1,0 +1,107 @@
+{
+  "title": "Dewey Decimal Classification Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd082.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Type of edition",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "2",
+          "7"
+        ],
+        "code": {
+          "0": {
+            "title": "Full edition"
+          },
+          "1": {
+            "title": "Abridged edition"
+          },
+          "2": {
+            "title": "Abridged NST version (BK MU VM SE) [OBSOLETE]"
+          },
+          "7": {
+            "title": "Other edition specified in subfield $2"
+          },
+          "\\": {
+            "title": "No edition information recorded (BK CF MU VM SE) [OBSOLETE]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Source of classification number",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "4"
+        ],
+        "code": {
+          "0": {
+            "title": "Assigned by LC"
+          },
+          "4": {
+            "title": "Assigned by agency other than LC"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Edition number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Classification number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "DDC number--abridged NST version",
+            "type": "string"
+          },
+          "m": {
+            "title": "Standard or optional designation",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "q": {
+            "title": "Assigning agency",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

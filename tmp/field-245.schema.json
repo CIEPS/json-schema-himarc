@@ -1,0 +1,116 @@
+{
+  "title": "Title Statement",
+  "url": "https://www.loc.gov/marc/bibliographic/bd245.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Title added entry",
+      "type": "string",
+      "enum": [
+        "0",
+        "1"
+      ],
+      "code": {
+        "0": {
+          "title": "No added entry"
+        },
+        "1": {
+          "title": "Added entry"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Nonfiling characters",
+      "type": "string",
+      "const": "0",
+      "code": {
+        "0": {
+          "title": "9"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "6": {
+          "title": "Linkage",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "8": {
+          "title": "Field link and sequence number",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "a": {
+          "title": "Title",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "b": {
+          "title": "Remainder of title",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "c": {
+          "title": "Statement of responsibility, etc.",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "d": {
+          "title": "Designation of section",
+          "type": "string"
+        },
+        "e": {
+          "title": "Name of part/section",
+          "type": "string"
+        },
+        "f": {
+          "title": "Inclusive dates",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "g": {
+          "title": "Bulk dates",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "h": {
+          "title": "Medium",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "k": {
+          "title": "Form",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "n": {
+          "title": "Number of part/section of a work",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "p": {
+          "title": "Name of part/section of a work",
+          "type": "string",
+          "isRepeatable": true
+        },
+        "s": {
+          "title": "Version",
+          "type": "string",
+          "isRepeatable": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

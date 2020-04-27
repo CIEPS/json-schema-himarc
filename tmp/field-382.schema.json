@@ -1,0 +1,145 @@
+{
+  "title": "Medium Of Performance",
+  "url": "https://www.loc.gov/marc/bibliographic/bd382.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Display constant controller",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Medium of performance"
+          },
+          "1": {
+            "title": "Partial medium of performance"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Access control",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Not intended for access"
+          },
+          "1": {
+            "title": "Intended for access"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Medium of performance",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Soloist",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Doubling instrument",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "e": {
+            "title": "Number of ensembles of the same type",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "n": {
+            "title": "Number of performers of the same medium",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "p": {
+            "title": "Alternative medium of performance",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "r": {
+            "title": "Total number of individuals performing alongside ensembles",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "s": {
+            "title": "Total number of performers",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "t": {
+            "title": "Total number of ensembles",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "v": {
+            "title": "Note",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

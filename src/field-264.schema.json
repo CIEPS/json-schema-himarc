@@ -1,0 +1,103 @@
+{
+  "title": "Production, Publication, Distribution, Manufacture, And Copyright Notice",
+  "url": "https://www.loc.gov/marc/bibliographic/bd264.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Sequence of statements",
+        "type": "string",
+        "enum": [
+          "\\",
+          "2",
+          "3"
+        ],
+        "code": {
+          "2": {
+            "title": "Intervening"
+          },
+          "3": {
+            "title": "Current/latest"
+          },
+          "\\": {
+            "title": "Not applicable/No information provided/Earliest"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Function of entity",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "code": {
+          "0": {
+            "title": "Production"
+          },
+          "1": {
+            "title": "Publication"
+          },
+          "2": {
+            "title": "Distribution"
+          },
+          "3": {
+            "title": "Manufacture"
+          },
+          "4": {
+            "title": "Copyright notice date"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Place of production, publication, distribution, manufacture",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Name of producer, publisher, distributor, manufacturer",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Date of production, publication, distribution, manufacture, or copyright notice",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

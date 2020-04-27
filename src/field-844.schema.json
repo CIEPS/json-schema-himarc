@@ -1,0 +1,21 @@
+{
+  "title": "Name Of Unit",
+  "url": "https://www.loc.gov/marc/bibliographic/bd844.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string"
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string"
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ]
+}

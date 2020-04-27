@@ -1,0 +1,103 @@
+{
+  "title": "Geographic Classification",
+  "url": "https://www.loc.gov/marc/bibliographic/bd052.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Code source",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "7"
+        ],
+        "code": {
+          "0": {
+            "title": "U.S. Dept. of Defense Classification [OBSOLETE]"
+          },
+          "1": {
+            "title": "U.S. Dept. of Defense Classification"
+          },
+          "7": {
+            "title": "Source specified in subfield $2"
+          },
+          "\\": {
+            "title": "Library of Congress Classification"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Code source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Geographic classification area code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Geographic classification subarea code",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Subject",
+            "type": "string"
+          },
+          "d": {
+            "title": "Populated place name",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

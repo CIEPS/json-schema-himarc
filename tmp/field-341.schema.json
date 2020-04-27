@@ -1,0 +1,100 @@
+{
+  "title": "Accessibility Content",
+  "url": "https://www.loc.gov/marc/bibliographic/bd341.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Application",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Adaptive features to access primary content"
+          },
+          "1": {
+            "title": "Adaptive features to access secondary content"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Content access mode",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Textual assistive features",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Visual assistive features",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Auditory assistive features",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "e": {
+            "title": "Tactile assistive features",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

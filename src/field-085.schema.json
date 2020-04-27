@@ -1,0 +1,125 @@
+{
+  "title": "Synthesized Classification Number Components",
+  "url": "https://www.loc.gov/marc/bibliographic/bd085.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Number where instructions are found-single number or beginning number of span",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Base number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Classification number-ending number of span",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "Facet designator",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "r": {
+            "title": "Root number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "s": {
+            "title": "Digits added from classification number in schedule or external table",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "t": {
+            "title": "Digits added from internal subarrangement or add table",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "u": {
+            "title": "Number being analyzed",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "v": {
+            "title": "Number in internal subarrangement or add table where instructions are found",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "w": {
+            "title": "Table identification-Internal subarrangement or add table",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "y": {
+            "title": "Table sequence number for internal subarrangement or add table",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "z": {
+            "title": "Table identification",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

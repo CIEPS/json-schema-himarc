@@ -1,0 +1,85 @@
+{
+  "title": "System Details Access To Computer Files",
+  "url": "https://www.loc.gov/marc/bibliographic/bd753.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Make and model of machine",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Programming language",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Operating system",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

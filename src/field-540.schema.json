@@ -1,0 +1,110 @@
+{
+  "title": "Terms Governing Use And Reproduction Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd540.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source of term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "5": {
+            "title": "Institution to which field applies",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Terms governing use and reproduction",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Jurisdiction",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Authorization",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Authorized users",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "f": {
+            "title": "Use and reproduction rights",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Availability date",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "q": {
+            "title": "Supplying agency",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Uniform Resource Identifier",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

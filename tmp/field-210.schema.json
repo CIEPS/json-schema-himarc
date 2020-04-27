@@ -1,0 +1,82 @@
+{
+  "title": "Abbreviated Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd210.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Title added entry",
+        "type": "string",
+        "enum": [
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "No added entry"
+          },
+          "1": {
+            "title": "Added entry"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Type",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0"
+        ],
+        "code": {
+          "0": {
+            "title": "Other abbreviated title"
+          },
+          "\\": {
+            "title": "Abbreviated key title"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Abbreviated title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Qualifying information",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

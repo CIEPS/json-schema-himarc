@@ -1,0 +1,105 @@
+{
+  "title": "Publication, Distribution, Etc. (imprint)",
+  "url": "https://www.loc.gov/marc/bibliographic/bd260.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Sequence of publishing statements",
+        "type": "string",
+        "enum": [
+          "\\",
+          "2",
+          "3"
+        ],
+        "code": {
+          "2": {
+            "title": "Intervening publisher"
+          },
+          "3": {
+            "title": "Current/latest publisher"
+          },
+          "\\": {
+            "title": "Not applicable/No information provided/Earliest available publisher"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Place of publication, distribution, etc.",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Name of publisher, distributor, etc.",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Date of publication, distribution, etc.",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Plate or publisher's number for music (Pre-AACR 2)",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Place of manufacture",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "Manufacturer",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Date of manufacture",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

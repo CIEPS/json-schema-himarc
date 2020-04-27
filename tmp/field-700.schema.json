@@ -1,0 +1,228 @@
+{
+  "title": "Added Entry--personal Name",
+  "url": "https://www.loc.gov/marc/bibliographic/bd700.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Type of personal name entry element",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Forename"
+          },
+          "1": {
+            "title": "Surname"
+          },
+          "2": {
+            "title": "Multiple surname [OBSOLETE]"
+          },
+          "3": {
+            "title": "Family name"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Type of added entry",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
+          },
+          "1": {
+            "title": "Printed on card (VM) [OBSOLETE]"
+          },
+          "2": {
+            "title": "Analytical entry"
+          },
+          "3": {
+            "title": "Not printed on card (VM) [OBSOLETE]"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of heading or term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "4": {
+            "title": "Relationship",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "5": {
+            "title": "Institution to which field applies",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Personal name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Numeration",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Titles and other words associated with a name",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Dates associated with a name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Relator term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "Date of a work",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Miscellaneous information",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "h": {
+            "title": "Medium",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "i": {
+            "title": "Relationship information",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "j": {
+            "title": "Attribution qualifier",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "k": {
+            "title": "Form subheading",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "l": {
+            "title": "Language of a work",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "m": {
+            "title": "Medium of performance for music",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "n": {
+            "title": "Number of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "o": {
+            "title": "Arranged statement for music",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "p": {
+            "title": "Name of part/section of a work",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "q": {
+            "title": "Fuller form of name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "r": {
+            "title": "Key for music",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "s": {
+            "title": "Version",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "t": {
+            "title": "Title of a work",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Affiliation",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "x": {
+            "title": "International Standard Serial Number",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

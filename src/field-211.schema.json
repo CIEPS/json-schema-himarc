@@ -1,0 +1,63 @@
+{
+  "title": "Acronym Or Shortened Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd211.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Title added entry",
+        "type": "string",
+        "enum": [
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "No title added entry"
+          },
+          "1": {
+            "title": "Title added entry"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Nonfiling characters",
+        "type": "string",
+        "const": "0",
+        "code": {
+          "0": {
+            "title": "9"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          },
+          "a": {
+            "title": "Acronym or shortened title",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

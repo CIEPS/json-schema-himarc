@@ -1,0 +1,186 @@
+{
+  "title": "Other Edition Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd775.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Note controller",
+        "type": "string",
+        "enum": [
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Display note"
+          },
+          "1": {
+            "title": "Do not display note"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Display constant controller",
+        "type": "string",
+        "enum": [
+          "\\",
+          "8"
+        ],
+        "code": {
+          "8": {
+            "title": "No display constant generated"
+          },
+          "\\": {
+            "title": "Other edition available"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "4": {
+            "title": "Relationship",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "7": {
+            "title": "Control subfield",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Main entry heading",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Edition",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Qualifying information",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Place, publisher, and date of publication",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Language code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "f": {
+            "title": "Country code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Related parts",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "h": {
+            "title": "Physical description",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "i": {
+            "title": "Relationship information",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "k": {
+            "title": "Series data for related item",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "m": {
+            "title": "Material-specific details",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "n": {
+            "title": "Note",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "o": {
+            "title": "Other item identifier",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "q": {
+            "title": "Parallel title (NR)",
+            "type": "string"
+          },
+          "r": {
+            "title": "Report number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "s": {
+            "title": "Uniform title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "t": {
+            "title": "Title",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Standard Technical Report Number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "w": {
+            "title": "Record control number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "x": {
+            "title": "International Standard Serial Number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "y": {
+            "title": "CODEN designation",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "z": {
+            "title": "International Standard Book Number",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

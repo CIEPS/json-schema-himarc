@@ -1,0 +1,57 @@
+{
+  "title": "Earlier Or Later Volumes Separately Cataloged Note (se)",
+  "url": "https://www.loc.gov/marc/bibliographic/bd512.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          },
+          "a": {
+            "title": "Earlier or later volumes separately cataloged note",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

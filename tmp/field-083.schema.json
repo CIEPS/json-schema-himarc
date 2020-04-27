@@ -1,0 +1,100 @@
+{
+  "title": "Additional Dewey Decimal Classification Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd083.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Type of edition",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "7"
+        ],
+        "code": {
+          "0": {
+            "title": "Full edition"
+          },
+          "1": {
+            "title": "Abridged edition"
+          },
+          "7": {
+            "title": "Other edition specified in subfield $2"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Edition number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Classification number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Classification number--Ending number of span",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "m": {
+            "title": "Standard or optional designation",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "q": {
+            "title": "Assigning agency",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "y": {
+            "title": "Table sequence number for internal subarrangement or add table",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "z": {
+            "title": "Table identification",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

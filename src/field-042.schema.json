@@ -1,0 +1,47 @@
+{
+  "title": "Authentication Code",
+  "url": "https://www.loc.gov/marc/bibliographic/bd042.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "title": "Authentication code",
+          "type": "string",
+          "isRepeatable": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

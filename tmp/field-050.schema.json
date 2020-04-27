@@ -1,0 +1,104 @@
+{
+  "title": "Library Of Congress Call Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd050.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Existence in LC collection",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Item is in LC"
+          },
+          "1": {
+            "title": "Item is not in LC"
+          },
+          "\\": {
+            "title": "No information provided"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Source of call number",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "4"
+        ],
+        "code": {
+          "0": {
+            "title": "Assigned by LC"
+          },
+          "4": {
+            "title": "Assigned by agency other than LC"
+          },
+          "\\": {
+            "title": "No information provided [OBSOLETE]"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Classification number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Item number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Supplementary class number",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

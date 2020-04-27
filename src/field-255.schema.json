@@ -1,0 +1,90 @@
+{
+  "title": "Cartographic Mathematical Data",
+  "url": "https://www.loc.gov/marc/bibliographic/bd255.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Statement of scale",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Statement of projection",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Statement of coordinates",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Statement of zone",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Statement of equinox",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "f": {
+            "title": "Outer G-ring coordinate pairs",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Exclusion G-ring coordinate pairs",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

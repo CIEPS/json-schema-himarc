@@ -1,0 +1,71 @@
+{
+  "title": "Number Of Musical Instruments Or Voices Code",
+  "url": "https://www.loc.gov/marc/bibliographic/bd048.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Source of code",
+        "type": "string",
+        "enum": [
+          "\\",
+          "7"
+        ],
+        "code": {
+          "7": {
+            "title": "Source specified in subfield $2"
+          },
+          "\\": {
+            "title": "MARC code"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source of code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Performer or ensemble",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Soloist",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Source Of Acquisition",
+  "url": "https://www.loc.gov/marc/bibliographic/bd037.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Source of acquisition sequence",
+        "type": "string",
+        "enum": [
+          "\\",
+          "2",
+          "3"
+        ],
+        "code": {
+          "2": {
+            "title": "Intervening"
+          },
+          "3": {
+            "title": "Current/Latest"
+          },
+          "\\": {
+            "title": "Not applicable/No information provided/Earliest"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "5": {
+            "title": "Institution to which field applies",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Stock number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Source of stock number/acquisition",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Terms of availability",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "Form of issue",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Additional format characteristics",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "n": {
+            "title": "Note",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

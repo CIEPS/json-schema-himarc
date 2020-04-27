@@ -1,0 +1,95 @@
+{
+  "title": "Copyright Or Legal Deposit Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd017.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Government jurisdiction (BK MP MU VM)[OBSOLETE]",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2"
+        ],
+        "code": {
+          "0": {
+            "title": "United States [OBSOLETE]"
+          },
+          "1": {
+            "title": "Canada [OBSOLETE] [CAN/MARC only]"
+          },
+          "2": {
+            "title": "France [OBSOLETE] [CAN/MARC only]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Copyright or legal deposit number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Assigning agency",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Date",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "i": {
+            "title": "Display text",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "z": {
+            "title": "Canceled/invalid copyright or legal deposit number",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

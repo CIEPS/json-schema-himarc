@@ -1,0 +1,57 @@
+{
+  "title": "Character Sets Present",
+  "url": "https://www.loc.gov/marc/bibliographic/bd066.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "title": "Primary G0 character set",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "b": {
+          "title": "Primary G1 character set",
+          "type": "string",
+          "isRepeatable": false
+        },
+        "c": {
+          "title": "Alternate G0 or G1 character set",
+          "type": "string",
+          "isRepeatable": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

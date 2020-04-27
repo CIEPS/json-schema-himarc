@@ -1,0 +1,215 @@
+{
+  "title": "Geospatial Reference Data",
+  "url": "https://www.loc.gov/marc/bibliographic/bd342.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Geospatial reference dimension",
+        "type": "string",
+        "enum": [
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Horizontal coordinate system"
+          },
+          "1": {
+            "title": "Vertical coordinate system"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Geospatial reference method",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "code": {
+          "0": {
+            "title": "Geographic"
+          },
+          "1": {
+            "title": "Map projection"
+          },
+          "2": {
+            "title": "Grid coordinate system"
+          },
+          "3": {
+            "title": "Local planar"
+          },
+          "4": {
+            "title": "Local"
+          },
+          "5": {
+            "title": "Geodetic model"
+          },
+          "6": {
+            "title": "Altitude"
+          },
+          "7": {
+            "title": "Method specified in $2"
+          },
+          "8": {
+            "title": "Depth"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Reference method used",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Coordinate or distance units",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Latitude resolution",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Longitude resolution",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Standard parallel or oblique line latitude",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "Oblique line longitude",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Longitude of central meridian or projection center",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "h": {
+            "title": "Latitude of projection origin or projection center",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "i": {
+            "title": "False easting",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "j": {
+            "title": "False northing",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "k": {
+            "title": "Scale factor",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "l": {
+            "title": "Height of perspective point above surface",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "m": {
+            "title": "Azimuthal angle",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "n": {
+            "title": "Azimuth measure point longitude or straight vertical longitude from pole",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "o": {
+            "title": "Landsat number and path number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "p": {
+            "title": "Zone identifier",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "q": {
+            "title": "Ellipsoid name",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "r": {
+            "title": "Semi-major axis",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "s": {
+            "title": "Denominator of flattening ratio",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "t": {
+            "title": "Vertical resolution",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Vertical encoding method",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "v": {
+            "title": "Local planar, local, or other projection or grid description",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "w": {
+            "title": "Local planar or local georeference information",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Participant Or Performer Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd511.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Display constant controller",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "No display constant generated"
+          },
+          "1": {
+            "title": "Cast"
+          },
+          "2": {
+            "title": "Presenter (VM MU) [OBSOLETE]"
+          },
+          "3": {
+            "title": "Narrator (VM MU) [OBSOLETE]"
+          },
+          "\\": {
+            "title": "No information provided (VM MU) [OBSOLETE]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Participant or performer note",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

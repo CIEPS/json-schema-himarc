@@ -1,0 +1,76 @@
+{
+  "title": "Publications About Described Materials Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd581.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Display constant controller",
+        "type": "string",
+        "enum": [
+          "\\",
+          "8"
+        ],
+        "code": {
+          "8": {
+            "title": "No display constant generated"
+          },
+          "\\": {
+            "title": "Publications"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Publications about described materials note",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "z": {
+            "title": "International Standard Book Number",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

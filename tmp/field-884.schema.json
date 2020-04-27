@@ -1,0 +1,70 @@
+{
+  "title": "Description Conversion Information",
+  "url": "https://www.loc.gov/marc/bibliographic/bd884.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "Conversion process",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Conversion date",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "k": {
+            "title": "Identifier of source metadata",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "q": {
+            "title": "Conversion agency",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Uniform Resource Identifier",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

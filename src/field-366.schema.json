@@ -1,0 +1,110 @@
+{
+  "title": "Trade Availability Information",
+  "url": "https://www.loc.gov/marc/bibliographic/bd366.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source of availability status code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Publishers' compressed title identification",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Detailed date of publication",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Availability status code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "d": {
+            "title": "Expected next availability date",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Note",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "f": {
+            "title": "Publishers' discount category",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Date made out of print",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "j": {
+            "title": "ISO country code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "k": {
+            "title": "MARC country code",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "m": {
+            "title": "Identification of agency",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

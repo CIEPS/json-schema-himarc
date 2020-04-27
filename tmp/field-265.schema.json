@@ -1,0 +1,54 @@
+{
+  "title": "Source For Acquisition/subscription Address",
+  "url": "https://www.loc.gov/marc/bibliographic/bd265.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "subFields": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "6": {
+          "title": "Linkage",
+          "type": "string",
+          "isRepeatable": false,
+          "isObsolete": true
+        },
+        "a": {
+          "title": "Source for acquisition/subscription address",
+          "type": "string",
+          "isRepeatable": true,
+          "isObsolete": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

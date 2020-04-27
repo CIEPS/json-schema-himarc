@@ -1,0 +1,115 @@
+{
+  "title": "Added Entry--hierarchical Place Name",
+  "url": "https://www.loc.gov/marc/bibliographic/bd752.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source of heading or term",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "4": {
+            "title": "Relationship",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Country or larger entity",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "First-order political jurisdiction",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Intermediate political jurisdiction",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "City",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Relator term",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "f": {
+            "title": "City subsection",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "g": {
+            "title": "Other nonjurisdictional geographic region and feature",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "h": {
+            "title": "Extraterrestrial area",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

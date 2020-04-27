@@ -1,0 +1,87 @@
+{
+  "title": "Series Statement",
+  "url": "https://www.loc.gov/marc/bibliographic/bd490.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Specifies whether series is traced",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Series not traced"
+          },
+          "1": {
+            "title": "Series traced differently"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Series statement",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "l": {
+            "title": "Library of Congress call number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "v": {
+            "title": "Volume number/sequential designation ",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "x": {
+            "title": "International Standard Serial Number",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

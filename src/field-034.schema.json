@@ -1,0 +1,190 @@
+{
+  "title": "Coded Cartographic Mathematical Data",
+  "url": "https://www.loc.gov/marc/bibliographic/bd034.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Type of scale",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "3"
+        ],
+        "code": {
+          "0": {
+            "title": "Scale indeterminable/No scale recorded"
+          },
+          "1": {
+            "title": "Single scale"
+          },
+          "3": {
+            "title": "Range of scales"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Type of ring",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
+        "code": {
+          "0": {
+            "title": "Outer ring"
+          },
+          "1": {
+            "title": "Exclusion ring"
+          },
+          "\\": {
+            "title": "Not applicable"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "0": {
+            "title": "Authority record control number or standard number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "1": {
+            "title": "Real World Object URI",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "2": {
+            "title": "Source ",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Category of scale",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Constant ratio linear horizontal scale",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Constant ratio linear vertical scale",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "d": {
+            "title": "Coordinates--westernmost longitude",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "e": {
+            "title": "Coordinates--easternmost longitude",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "f": {
+            "title": "Coordinates--northernmost latitude",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "g": {
+            "title": "Coordinates--southernmost latitude",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "h": {
+            "title": "Angular scale",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "j": {
+            "title": "Declination--northern limit",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "k": {
+            "title": "Declination--southern limit",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "m": {
+            "title": "Right ascension--eastern limit",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "n": {
+            "title": "Right ascension--western limit",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "p": {
+            "title": "Equinox",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "r": {
+            "title": "Distance from earth ",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "s": {
+            "title": "G-ring latitude",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "t": {
+            "title": "G-ring longitude",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "x": {
+            "title": "Beginning date",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "y": {
+            "title": "Ending date",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "z": {
+            "title": "Name of extraterrestrial body ",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

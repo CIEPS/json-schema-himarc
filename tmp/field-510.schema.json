@@ -1,0 +1,103 @@
+{
+  "title": "Citation/references Note",
+  "url": "https://www.loc.gov/marc/bibliographic/bd510.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "isRepeatable": true,
+    "properties": {
+      "indicator1": {
+        "title": "Coverage/location in source",
+        "type": "string",
+        "enum": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "code": {
+          "0": {
+            "title": "Coverage unknown"
+          },
+          "1": {
+            "title": "Coverage complete"
+          },
+          "2": {
+            "title": "Coverage is selective"
+          },
+          "3": {
+            "title": "Location in source not given"
+          },
+          "4": {
+            "title": "Location in source given"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ],
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "3": {
+            "title": "Materials specified",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Name of source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Coverage of source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Location within source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "u": {
+            "title": "Uniform Resource Identifier",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "x": {
+            "title": "International Standard Serial Number",
+            "type": "string",
+            "isRepeatable": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
