@@ -51,66 +51,66 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Summary, etc. note",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Expansion of summary note",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Assigning agency",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "u": {
+              "title": "Uniform Resource Identifier",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Source of note information",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Summary, etc. note",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Expansion of summary note",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Assigning agency",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "u": {
-            "title": "Uniform Resource Identifier",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Source of note information",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

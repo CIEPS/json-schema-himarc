@@ -25,91 +25,91 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Type of recording",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Recording medium",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Playing speed",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Groove characteristic",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Track configuration",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "f": {
+              "title": "Tape configuration",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "g": {
+              "title": "Configuration of playback channels",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "h": {
+              "title": "Special playback characteristics",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Type of recording",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Recording medium",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Playing speed",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Groove characteristic",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Track configuration",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "f": {
-            "title": "Tape configuration",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "g": {
-            "title": "Configuration of playback channels",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "h": {
-            "title": "Special playback characteristics",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

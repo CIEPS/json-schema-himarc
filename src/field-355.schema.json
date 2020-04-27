@@ -51,76 +51,76 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Security classification",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Handling instructions",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "External dissemination information",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Downgrading or declassification event",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "e": {
+              "title": "Classification system",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "f": {
+              "title": "Country of origin code",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "g": {
+              "title": "Downgrading date",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "h": {
+              "title": "Declassification date",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "j": {
+              "title": "Authorization",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Security classification",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Handling instructions",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "External dissemination information",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Downgrading or declassification event",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "e": {
-            "title": "Classification system",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "f": {
-            "title": "Country of origin code",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "g": {
-            "title": "Downgrading date",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "h": {
-            "title": "Declassification date",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "j": {
-            "title": "Authorization",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

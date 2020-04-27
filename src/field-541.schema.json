@@ -35,86 +35,86 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "5": {
+              "title": "Institution to which field applies",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Source of acquisition",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Address",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Method of acquisition",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "d": {
+              "title": "Date of acquisition",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "e": {
+              "title": "Accession number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "f": {
+              "title": "Owner",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "h": {
+              "title": "Purchase price",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "n": {
+              "title": "Extent",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "o": {
+              "title": "Type of unit",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "5": {
-            "title": "Institution to which field applies",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Source of acquisition",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Address",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Method of acquisition",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "d": {
-            "title": "Date of acquisition",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "e": {
-            "title": "Accession number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "f": {
-            "title": "Owner",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "h": {
-            "title": "Purchase price",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "n": {
-            "title": "Extent",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "o": {
-            "title": "Type of unit",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

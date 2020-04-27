@@ -23,26 +23,26 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "LINKING LC control number",
+            "type": "string",
+            "isRepeatable": true,
+            "isObsolete": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "a": {
-          "title": "LINKING LC control number",
-          "type": "string",
-          "isRepeatable": true,
-          "isObsolete": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

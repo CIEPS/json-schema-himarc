@@ -23,35 +23,35 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "Primary G0 character set",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "Primary G1 character set",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "c": {
+            "title": "Alternate G0 or G1 character set",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "a": {
-          "title": "Primary G0 character set",
-          "type": "string",
-          "isRepeatable": false
-        },
-        "b": {
-          "title": "Primary G1 character set",
-          "type": "string",
-          "isRepeatable": false
-        },
-        "c": {
-          "title": "Alternate G0 or G1 character set",
-          "type": "string",
-          "isRepeatable": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

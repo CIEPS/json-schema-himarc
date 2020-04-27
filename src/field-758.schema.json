@@ -25,71 +25,71 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source of heading or term",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "5": {
+              "title": "Institution to which field applies",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Label",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "i": {
+              "title": "Relationship information",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source of heading or term",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "4": {
-            "title": "Relationship",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "5": {
-            "title": "Institution to which field applies",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Label",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "i": {
-            "title": "Relationship information",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

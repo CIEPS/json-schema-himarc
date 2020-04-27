@@ -31,46 +31,46 @@
             "title": "Code source specified in subfield $2"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Subject category code",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "x": {
+              "title": "Subject category code subdivision",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Subject category code",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "x": {
-            "title": "Subject category code subdivision",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

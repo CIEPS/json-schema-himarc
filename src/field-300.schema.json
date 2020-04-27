@@ -25,66 +25,66 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Extent",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Other physical details",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Dimensions",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Accompanying material",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "f": {
+              "title": "Type of unit",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "g": {
+              "title": "Size of unit",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Extent",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Other physical details",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Dimensions",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Accompanying material",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "f": {
-            "title": "Type of unit",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "g": {
-            "title": "Size of unit",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

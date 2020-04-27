@@ -29,38 +29,38 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "Different formats",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          },
+          "b": {
+            "title": "Content descriptors",
+            "type": "string",
+            "isRepeatable": true,
+            "isObsolete": true
+          },
+          "c": {
+            "title": "Additional animation techniques",
+            "type": "string",
+            "isRepeatable": true,
+            "isObsolete": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "a": {
-          "title": "Different formats",
-          "type": "string",
-          "isRepeatable": false,
-          "isObsolete": true
-        },
-        "b": {
-          "title": "Content descriptors",
-          "type": "string",
-          "isRepeatable": true,
-          "isObsolete": true
-        },
-        "c": {
-          "title": "Additional animation techniques",
-          "type": "string",
-          "isRepeatable": true,
-          "isObsolete": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

@@ -25,43 +25,43 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Holding institution",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Holdings (NR)",
+              "type": "string"
+            },
+            "d": {
+              "title": "Inclusive dates (NR)",
+              "type": "string"
+            },
+            "e": {
+              "title": "Retention statement (NR)",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Holding institution",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Holdings (NR)",
-            "type": "string"
-          },
-          "d": {
-            "title": "Inclusive dates (NR)",
-            "type": "string"
-          },
-          "e": {
-            "title": "Retention statement (NR)",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

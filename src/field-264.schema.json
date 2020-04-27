@@ -53,51 +53,51 @@
             "title": "Copyright notice date"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Place of production, publication, distribution, manufacture",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Name of producer, publisher, distributor, manufacturer",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Date of production, publication, distribution, manufacture, or copyright notice",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Place of production, publication, distribution, manufacture",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Name of producer, publisher, distributor, manufacturer",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Date of production, publication, distribution, manufacture, or copyright notice",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

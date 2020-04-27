@@ -49,56 +49,56 @@
             "title": "No information provided"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "5": {
+              "title": "Institution to which field applies",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Uncontrolled related/analytical title",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "h": {
+              "title": "Medium",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "n": {
+              "title": "Number of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "p": {
+              "title": "Name of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "5": {
-            "title": "Institution to which field applies",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Uncontrolled related/analytical title",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "h": {
-            "title": "Medium",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "n": {
-            "title": "Number of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "p": {
-            "title": "Name of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

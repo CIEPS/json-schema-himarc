@@ -31,41 +31,41 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Dates of publication and/or sequential designation",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "z": {
+              "title": "Source of information",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Dates of publication and/or sequential designation",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "z": {
-            "title": "Source of information",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

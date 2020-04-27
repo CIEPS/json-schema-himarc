@@ -25,41 +25,41 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Classification number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Item number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Copy information",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Classification number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Item number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Copy information",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

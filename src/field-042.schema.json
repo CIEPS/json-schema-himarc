@@ -23,25 +23,25 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "Authentication code",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "a": {
-          "title": "Authentication code",
-          "type": "string",
-          "isRepeatable": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

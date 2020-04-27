@@ -69,106 +69,106 @@
             "title": "Source specified in subfield $2"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source of heading or term",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Topical term or geographic name as entry element",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Topical term following geographic name as entry element",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Location of event",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "d": {
+              "title": "Active dates",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "e": {
+              "title": "Relator term",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "g": {
+              "title": "Miscellaneous information",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "v": {
+              "title": "Form subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "x": {
+              "title": "General subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "y": {
+              "title": "Chronological subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Geographic subdivision",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source of heading or term",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "4": {
-            "title": "Relationship",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Topical term or geographic name as entry element",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Topical term following geographic name as entry element",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Location of event",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "d": {
-            "title": "Active dates",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "e": {
-            "title": "Relator term",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "g": {
-            "title": "Miscellaneous information",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "v": {
-            "title": "Form subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "x": {
-            "title": "General subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "y": {
-            "title": "Chronological subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Geographic subdivision",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

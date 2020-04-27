@@ -45,60 +45,60 @@
             "title": "No information provided [OBSOLETE]"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Classification number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Item number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "d": {
+              "title": "Supplementary class number",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Classification number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Item number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "d": {
-            "title": "Supplementary class number",
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

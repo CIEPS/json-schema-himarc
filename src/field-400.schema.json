@@ -45,116 +45,116 @@
             "title": "Main entry represented by pronoun"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number ",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Personal name",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Numeration",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Titles and other words associated with a name",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Dates associated with a name",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "e": {
+              "title": "Relator term",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "f": {
+              "title": "Date of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "g": {
+              "title": "Miscellaneous information",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "k": {
+              "title": "Form subheading",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "l": {
+              "title": "Language of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "n": {
+              "title": "Number of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "p": {
+              "title": "Name of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "q": {
+              "title": "Fuller form of name",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "t": {
+              "title": "Title of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "u": {
+              "title": "Affiliation",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "v": {
+              "title": "Volume number/sequential designation ",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "x": {
+              "title": "International Standard Serial Number ",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "4": {
-            "title": "Relationship",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number ",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Personal name",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Numeration",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Titles and other words associated with a name",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Dates associated with a name",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "e": {
-            "title": "Relator term",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "f": {
-            "title": "Date of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "g": {
-            "title": "Miscellaneous information",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "k": {
-            "title": "Form subheading",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "l": {
-            "title": "Language of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "n": {
-            "title": "Number of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "p": {
-            "title": "Name of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "q": {
-            "title": "Fuller form of name",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "t": {
-            "title": "Title of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "u": {
-            "title": "Affiliation",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "v": {
-            "title": "Volume number/sequential designation ",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "x": {
-            "title": "International Standard Serial Number ",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

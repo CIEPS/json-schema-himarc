@@ -53,55 +53,55 @@
             "title": "No information provided"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Edition number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Classification number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "DDC number--abridged NST version",
+              "type": "string"
+            },
+            "m": {
+              "title": "Standard or optional designation",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "q": {
+              "title": "Assigning agency",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Edition number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Classification number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "DDC number--abridged NST version",
-            "type": "string"
-          },
-          "m": {
-            "title": "Standard or optional designation",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "q": {
-            "title": "Assigning agency",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

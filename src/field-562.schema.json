@@ -25,66 +25,66 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "5": {
+              "title": "Institution to which field applies",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Identifying markings",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Copy identification",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Version identification",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Presentation format",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Number of copies",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "5": {
-            "title": "Institution to which field applies",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Identifying markings",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Copy identification",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Version identification",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Presentation format",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Number of copies",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

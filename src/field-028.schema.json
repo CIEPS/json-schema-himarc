@@ -65,46 +65,46 @@
             "title": "No note, added entry"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Publisher or distributor number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Source",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "q": {
+              "title": "Qualifying information",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Publisher or distributor number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Source",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "q": {
-            "title": "Qualifying information",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

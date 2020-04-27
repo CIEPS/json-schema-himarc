@@ -37,45 +37,45 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "Time period code",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "b": {
+            "title": "Formatted 9999 B.C. through C.E. time period",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "c": {
+            "title": "Formatted pre-9999 B.C. time period",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "6": {
-          "title": "Linkage",
-          "type": "string",
-          "isRepeatable": false
-        },
-        "8": {
-          "title": "Field link and sequence number",
-          "type": "string",
-          "isRepeatable": true
-        },
-        "a": {
-          "title": "Time period code",
-          "type": "string",
-          "isRepeatable": true
-        },
-        "b": {
-          "title": "Formatted 9999 B.C. through C.E. time period",
-          "type": "string",
-          "isRepeatable": true
-        },
-        "c": {
-          "title": "Formatted pre-9999 B.C. time period",
-          "type": "string",
-          "isRepeatable": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

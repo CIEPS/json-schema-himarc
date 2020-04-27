@@ -39,61 +39,61 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Custodian",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Postal address",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Country",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Telecommunications address",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "g": {
+              "title": "Repository location code",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Custodian",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Postal address",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Country",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Telecommunications address",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "g": {
-            "title": "Repository location code",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

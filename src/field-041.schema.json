@@ -41,120 +41,120 @@
             "title": "MARC language code"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source of code",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Language code of text/sound track or separate title",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "Language code of summary or abstract",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "languages of available translation",
+              "type": "string"
+            },
+            "d": {
+              "title": "Language code of sung or spoken text",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Language code of librettos",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "f": {
+              "title": "Language code of table of contents",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "g": {
+              "title": "Language code of accompanying material other than librettos and transcripts",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "h": {
+              "title": "Language code of original",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "i": {
+              "title": "Language code of intertitles",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "j": {
+              "title": "Language code of subtitles",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "k": {
+              "title": "Language code of intermediate translations",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "m": {
+              "title": "Language code of original accompanying materials other than librettos",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "n": {
+              "title": "Language code of original libretto",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "p": {
+              "title": "Language code of captions",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "q": {
+              "title": "Language code of accessible audio",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "r": {
+              "title": "Language code of accessible visual language (non-textual)",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "t": {
+              "title": "Language code of accompanying transcripts for audiovisual materials",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source of code",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Language code of text/sound track or separate title",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "Language code of summary or abstract",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "languages of available translation",
-            "type": "string"
-          },
-          "d": {
-            "title": "Language code of sung or spoken text",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Language code of librettos",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "f": {
-            "title": "Language code of table of contents",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "g": {
-            "title": "Language code of accompanying material other than librettos and transcripts",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "h": {
-            "title": "Language code of original",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "i": {
-            "title": "Language code of intertitles",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "j": {
-            "title": "Language code of subtitles",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "k": {
-            "title": "Language code of intermediate translations",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "m": {
-            "title": "Language code of original accompanying materials other than librettos",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "n": {
-            "title": "Language code of original libretto",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "p": {
-            "title": "Language code of captions",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "q": {
-            "title": "Language code of accessible audio",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "r": {
-            "title": "Language code of accessible visual language (non-textual)",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "t": {
-            "title": "Language code of accompanying transcripts for audiovisual materials",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

@@ -25,31 +25,31 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source of data",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "a": {
+              "title": "Content of non-MARC field",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source of data",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "a": {
-            "title": "Content of non-MARC field",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

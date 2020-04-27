@@ -35,61 +35,61 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "International Standard Serial Number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "l": {
+              "title": "ISSN-L",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "m": {
+              "title": "Canceled ISSN-L",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "y": {
+              "title": "Incorrect ISSN",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Canceled ISSN",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "International Standard Serial Number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "l": {
-            "title": "ISSN-L",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "m": {
-            "title": "Canceled ISSN-L",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "y": {
-            "title": "Incorrect ISSN",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Canceled ISSN",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

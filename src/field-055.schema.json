@@ -73,56 +73,56 @@
             "title": "Other class number assigned by the contributing library"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source of call/class number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Classification number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Item number",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source of call/class number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Classification number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Item number",
-            "type": "string",
-            "isRepeatable": false
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

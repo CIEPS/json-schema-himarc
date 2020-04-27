@@ -35,46 +35,46 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source of data",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "a": {
+              "title": "Tag of the foreign MARC field",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Content of the foreign MARC field",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "a-z": {
+              "title": "Foreign MARC subfield",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "0-9": {
+              "title": "Foreign MARC subfield",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source of data",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "a": {
-            "title": "Tag of the foreign MARC field",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Content of the foreign MARC field",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "a-z": {
-            "title": "Foreign MARC subfield",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "0-9": {
-            "title": "Foreign MARC subfield",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

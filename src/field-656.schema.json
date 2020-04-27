@@ -25,81 +25,81 @@
             "title": "Source specified in subfield $2"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source of term",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Occupation",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "k": {
+              "title": "Form",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "v": {
+              "title": "Form subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "x": {
+              "title": "General subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "y": {
+              "title": "Chronological subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Geographic subdivision",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source of term",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Occupation",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "k": {
-            "title": "Form",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "v": {
-            "title": "Form subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "x": {
-            "title": "General subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "y": {
-            "title": "Chronological subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Geographic subdivision",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

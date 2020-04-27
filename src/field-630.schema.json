@@ -61,151 +61,151 @@
             "title": "Source specified in subfield $2"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "Authority record control number or standard number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "1": {
+              "title": "Real World Object URI",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Source of heading or term",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Uniform title",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "d": {
+              "title": "Date of treaty signing",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Relator term",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "f": {
+              "title": "Date of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "g": {
+              "title": "Miscellaneous information",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "h": {
+              "title": "Medium",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "k": {
+              "title": "Form subheading",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "l": {
+              "title": "Language of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "m": {
+              "title": "Medium of performance for music",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "n": {
+              "title": "Number of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "o": {
+              "title": "Arranged statement for music",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "p": {
+              "title": "Name of part/section of a work",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "r": {
+              "title": "Key for music",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "s": {
+              "title": "Version",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "t": {
+              "title": "Title of a work",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "v": {
+              "title": "Form subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "x": {
+              "title": "General subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "y": {
+              "title": "Chronological subdivision",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Geographic subdivision",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "0": {
-            "title": "Authority record control number or standard number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "1": {
-            "title": "Real World Object URI",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "2": {
-            "title": "Source of heading or term",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "4": {
-            "title": "Relationship",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Uniform title",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "d": {
-            "title": "Date of treaty signing",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Relator term",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "f": {
-            "title": "Date of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "g": {
-            "title": "Miscellaneous information",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "h": {
-            "title": "Medium",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "k": {
-            "title": "Form subheading",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "l": {
-            "title": "Language of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "m": {
-            "title": "Medium of performance for music",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "n": {
-            "title": "Number of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "o": {
-            "title": "Arranged statement for music",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "p": {
-            "title": "Name of part/section of a work",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "r": {
-            "title": "Key for music",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "s": {
-            "title": "Version",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "t": {
-            "title": "Title of a work",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "v": {
-            "title": "Form subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "x": {
-            "title": "General subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "y": {
-            "title": "Chronological subdivision",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Geographic subdivision",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

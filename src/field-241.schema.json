@@ -29,32 +29,32 @@
           "title": "9"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "title": "Romanized title",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          },
+          "h": {
+            "title": "Medium",
+            "type": "string",
+            "isRepeatable": false,
+            "isObsolete": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "a": {
-          "title": "Romanized title",
-          "type": "string",
-          "isRepeatable": false,
-          "isObsolete": true
-        },
-        "h": {
-          "title": "Medium",
-          "type": "string",
-          "isRepeatable": false,
-          "isObsolete": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

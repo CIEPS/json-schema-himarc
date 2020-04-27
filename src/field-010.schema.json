@@ -23,40 +23,40 @@
           "title": "Undefined"
         }
       }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "LC control number",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "b": {
+            "title": "NUCMC control number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "z": {
+            "title": "Canceled/invalid LC control number",
+            "type": "string",
+            "isRepeatable": true
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [
     "indicator1",
     "indicator2",
     "subFields"
-  ],
-  "subFields": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "8": {
-          "title": "Field link and sequence number",
-          "type": "string",
-          "isRepeatable": true
-        },
-        "a": {
-          "title": "LC control number",
-          "type": "string",
-          "isRepeatable": false
-        },
-        "b": {
-          "title": "NUCMC control number",
-          "type": "string",
-          "isRepeatable": true
-        },
-        "z": {
-          "title": "Canceled/invalid LC control number",
-          "type": "string",
-          "isRepeatable": true
-        }
-      },
-      "additionalProperties": false
-    }
-  }
+  ]
 }

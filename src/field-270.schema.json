@@ -45,126 +45,126 @@
             "title": "No type specified"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Address",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "b": {
+              "title": "City",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "State or province",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "d": {
+              "title": "Country",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "e": {
+              "title": "Postal code",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "f": {
+              "title": "Terms preceding attention name",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "g": {
+              "title": "Attention name",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "h": {
+              "title": "Attention position",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "i": {
+              "title": "Type of address",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "j": {
+              "title": "Specialized telephone number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "k": {
+              "title": "Telephone number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "l": {
+              "title": "Fax number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "m": {
+              "title": "Electronic mail address",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "n": {
+              "title": "TDD or TTY number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "p": {
+              "title": "Contact person",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "q": {
+              "title": "Title of contact person",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "r": {
+              "title": "Hours",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Public note",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "4": {
-            "title": "Relationship",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Address",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "b": {
-            "title": "City",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "State or province",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "d": {
-            "title": "Country",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "e": {
-            "title": "Postal code",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "f": {
-            "title": "Terms preceding attention name",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "g": {
-            "title": "Attention name",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "h": {
-            "title": "Attention position",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "i": {
-            "title": "Type of address",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "j": {
-            "title": "Specialized telephone number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "k": {
-            "title": "Telephone number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "l": {
-            "title": "Fax number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "m": {
-            "title": "Electronic mail address",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "n": {
-            "title": "TDD or TTY number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "p": {
-            "title": "Contact person",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "q": {
-            "title": "Title of contact person",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "r": {
-            "title": "Hours",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Public note",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

@@ -25,51 +25,51 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "International Standard Book Number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "c": {
+              "title": "Terms of availability",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "q": {
+              "title": "Qualifying information",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Canceled/invalid ISBN",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "International Standard Book Number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "c": {
-            "title": "Terms of availability",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "q": {
-            "title": "Qualifying information",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Canceled/invalid ISBN",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

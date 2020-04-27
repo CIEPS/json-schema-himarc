@@ -77,146 +77,146 @@
             "title": "No information provided"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "2": {
+              "title": "Source of classification or shelving scheme",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Sequence number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "a": {
+              "title": "Location",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Sublocation or collection",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Shelving location",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Former shelving location",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Address",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "f": {
+              "title": "Coded location qualifier",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "g": {
+              "title": "Non-coded location qualifier",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "h": {
+              "title": "Classification part",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "i": {
+              "title": "Item part",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "j": {
+              "title": "Shelving control number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "k": {
+              "title": "Call number prefix",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "l": {
+              "title": "Shelving form of title",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "m": {
+              "title": "Call number suffix",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "n": {
+              "title": "Country code",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "p": {
+              "title": "Piece designation",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "q": {
+              "title": "Piece physical condition",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "s": {
+              "title": "Copyright article-fee code",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "t": {
+              "title": "Copy number",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "u": {
+              "title": "Uniform Resource Identifier ",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "x": {
+              "title": "Nonpublic note",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "z": {
+              "title": "Public note",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "2": {
-            "title": "Source of classification or shelving scheme",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Sequence number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "a": {
-            "title": "Location",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Sublocation or collection",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Shelving location",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Former shelving location",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Address",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "f": {
-            "title": "Coded location qualifier",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "g": {
-            "title": "Non-coded location qualifier",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "h": {
-            "title": "Classification part",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "i": {
-            "title": "Item part",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "j": {
-            "title": "Shelving control number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "k": {
-            "title": "Call number prefix",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "l": {
-            "title": "Shelving form of title",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "m": {
-            "title": "Call number suffix",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "n": {
-            "title": "Country code",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "p": {
-            "title": "Piece designation",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "q": {
-            "title": "Piece physical condition",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "s": {
-            "title": "Copyright article-fee code",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "t": {
-            "title": "Copy number",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "u": {
-            "title": "Uniform Resource Identifier ",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "x": {
-            "title": "Nonpublic note",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "z": {
-            "title": "Public note",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }

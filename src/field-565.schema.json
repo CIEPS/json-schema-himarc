@@ -35,61 +35,61 @@
             "title": "Undefined"
           }
         }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "3": {
+              "title": "Materials specified",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Number of cases/variables",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "b": {
+              "title": "Name of variable",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "c": {
+              "title": "Unit of analysis",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "d": {
+              "title": "Universe of data",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "e": {
+              "title": "Filing scheme or code",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        }
       }
     },
     "required": [
       "indicator1",
       "indicator2",
       "subFields"
-    ],
-    "subFields": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "3": {
-            "title": "Materials specified",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "6": {
-            "title": "Linkage",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "8": {
-            "title": "Field link and sequence number",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "a": {
-            "title": "Number of cases/variables",
-            "type": "string",
-            "isRepeatable": false
-          },
-          "b": {
-            "title": "Name of variable",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "c": {
-            "title": "Unit of analysis",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "d": {
-            "title": "Universe of data",
-            "type": "string",
-            "isRepeatable": true
-          },
-          "e": {
-            "title": "Filing scheme or code",
-            "type": "string",
-            "isRepeatable": true
-          }
-        },
-        "additionalProperties": false
-      }
-    }
+    ]
   }
 }
