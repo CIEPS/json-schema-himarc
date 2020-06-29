@@ -14,7 +14,7 @@
         },
         "06": {
           "type": "string",
-          "title": "Type of date\/Publication status",
+          "title": "Type of date/Publication status",
           "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
           "enum": [
             "b",
