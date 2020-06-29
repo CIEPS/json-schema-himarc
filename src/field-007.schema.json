@@ -435,7 +435,7 @@
               }
             },
             "06": {
-              "title": "Production\/reproduction details",
+              "title": "Production/reproduction details",
               "type": "string",
               "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
               "enum": [
@@ -472,7 +472,7 @@
               }
             },
             "07": {
-              "title": "Positive\/negative aspect",
+              "title": "Positive/negative aspect",
               "type": "string",
               "url": "https://www.loc.gov/marc/bibliographic/bd007a.html",
               "enum": [
@@ -653,25 +653,25 @@
               ],
               "codes": {
                 "a": {
-                  "title": "3 1\/2 in."
+                  "title": "3 1/2 in."
                 },
                 "e": {
                   "title": "12 in."
                 },
                 "g": {
-                  "title": "4 3\/4 in. or 12 cm."
+                  "title": "4 3/4 in. or 12 cm."
                 },
                 "i": {
-                  "title": "1 1\/8 x 2 3\/8 in."
+                  "title": "1 1/8 x 2 3/8 in."
                 },
                 "j": {
-                  "title": "3 7\/8 x 2 1\/2 in."
+                  "title": "3 7/8 x 2 1/2 in."
                 },
                 "n": {
                   "title": "Not applicable"
                 },
                 "o": {
-                  "title": "5 1\/4 in."
+                  "title": "5 1/4 in."
                 },
                 "u": {
                   "title": "Unknown"
@@ -790,7 +790,7 @@
               }
             },
             "11": {
-              "title": "Antecedent\/source",
+              "title": "Antecedent/source",
               "type": "string",
               "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
               "enum": [

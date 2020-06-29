@@ -1,0 +1,162 @@
+{
+  "title": "Fixed-Length Data Elements-General Information",
+  "description": "Forty character positions (00-39) that provide coded information about the record as a whole and about special bibliographic aspects of the item being cataloged. These coded data elements are potentially useful for retrieval and data management purposes.",
+  "url": "https://www.loc.gov/marc/bibliographic/bd008.html",
+  "type": "object",
+  "properties": {
+    "positions": {
+      "type": "object",
+      "properties": {
+        "00-05": {
+          "type": "string",
+          "title": "Date entered on file",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+        },
+        "06": {
+          "type": "string",
+          "title": "Type of date/Publication status",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+          "enum": [
+            "b",
+            "c",
+            "d",
+            "e",
+            "i",
+            "k",
+            "m",
+            "n",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "b": {
+              "title": "No dates given; B.C. date involved"
+            },
+            "c": {
+              "title": "Continuing resource currently published"
+            },
+            "d": {
+              "title": "Continuing resource ceased publication"
+            },
+            "e": {
+              "title": "Detailed date"
+            },
+            "i": {
+              "title": "Inclusive dates of collection"
+            },
+            "k": {
+              "title": "Range of years of bulk of collection"
+            },
+            "m": {
+              "title": "Multiple dates"
+            },
+            "n": {
+              "title": "Dates unknown"
+            },
+            "p": {
+              "title": "Date of distribution/release/issue and production/recording session when different"
+            },
+            "q": {
+              "title": "Questionable date"
+            },
+            "r": {
+              "title": "Reprint/reissue date and original date"
+            },
+            "s": {
+              "title": "Single known date/probable date"
+            },
+            "t": {
+              "title": "Publication date and copyright date"
+            },
+            "u": {
+              "title": "Continuing resource status unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "07-10": {
+          "type": "string",
+          "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
+          "title": "Date 1",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+        },
+        "11-14": {
+          "type": "string",
+          "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
+          "title": "Date 2",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+        },
+        "15-17": {
+          "type": "string",
+          "pattern": "^([a-z ]{3}|vp |xx )$",
+          "title": "Place of publication, production, or execution",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+        },
+        "35-37": {
+          "type": "string",
+          "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
+          "title": "Language",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+        },
+        "38": {
+          "title": "Modified record",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+          "codes": {
+            " ": {
+              "title": "Not modified"
+            },
+            "d": {
+              "title": "Dashed-on information omitted"
+            },
+            "o": {
+              "title": "Completely romanized/printed cards romanized"
+            },
+            "r": {
+              "title": "Completely romanized/printed cards in script"
+            },
+            "s": {
+              "title": "Shortened"
+            },
+            "x": {
+              "title": "Missing characters"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "39": {
+          "title": "Cataloging source",
+          "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+          "codes": {
+            " ": {
+              "title": "National bibliographic agency"
+            },
+            "c": {
+              "title": "Cooperative cataloging program"
+            },
+            "d": {
+              "title": "Other"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "positions"
+  ]
+}
