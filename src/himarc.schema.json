@@ -621,6 +621,9 @@
         "007": {
           "$ref": "field-007.schema.json"
         },
+        "008": {
+          "$ref": "field-008.schema.json"
+        },
         "022": {
           "$ref": "field-022.schema.json"
         },
