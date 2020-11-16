@@ -2,19 +2,49 @@
   "title": "Fixed-Length Data Elements-General Information",
   "description": "Forty character positions (00-39) that provide coded information about the record as a whole and about special bibliographic aspects of the item being cataloged. These coded data elements are potentially useful for retrieval and data management purposes.",
   "url": "https://www.loc.gov/marc/bibliographic/bd008.html",
-  "allOf": [
+  "anyOf": [
     {
-      "oneOf": [
+      "allOf": [
         { "$ref": "#/definitions/Books" },
-        { "$ref": "#/definitions/Continuing Resources" },
-        { "$ref": "#/definitions/Music" },
-        { "$ref": "#/definitions/Maps" },
-        { "$ref": "#/definitions/Visual Materials" },
-        { "$ref": "#/definitions/Computer Files" },
-        { "$ref": "#/definitions/Mixed Materials" }
+        { "$ref": "#/definitions/All Materials" }
       ]
     },
-    { "$ref": "#/definitions/All Materials" }
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Continuing Resources" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Music" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Maps" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Visual Materials" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Computer Files" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/definitions/Mixed Materials" },
+        { "$ref": "#/definitions/All Materials" }
+      ]
+    }
   ],
   
   "required": [
@@ -167,8 +197,7 @@
                 }
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -702,8 +731,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -1402,8 +1430,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -2139,8 +2166,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -2655,8 +2681,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -2990,11 +3015,9 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
-      },
-      "positions": {}
+      }
     },
     "Computer Files": {
       "properties": {
@@ -3203,8 +3226,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     },
@@ -3273,8 +3295,7 @@
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
-          },
-          "additionalProperties": false
+          }
         }
       }
     }
