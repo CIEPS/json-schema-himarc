@@ -176,7 +176,7 @@ describe('json schema himarc', function () {
           },
           '008': {
             positions: {
-              18: 'w',
+              18: 'a',
               19: 'r',
               20: '|',
               21: 'p',
@@ -199,7 +199,7 @@ describe('json schema himarc', function () {
               '06': 'c',
               '07-10': '1869',
               '11-14': '9999',
-              '15-17': 'enk',
+              '15-17': 'enkore',
               '35-37': 'eng'
             }
           }
