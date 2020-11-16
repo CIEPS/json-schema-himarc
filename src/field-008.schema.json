@@ -149,6 +149,12 @@
               "title": "Place of publication, production, or execution",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             },
+            "35-37": {
+              "type": "string",
+              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
+              "title": "Language",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+            },
             "38": {
               "title": "Modified record",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
@@ -724,12 +730,6 @@
                   "title": "No attempt to code"
                 }
               }
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -1423,12 +1423,6 @@
                 "2",
                 "|"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -2159,12 +2153,6 @@
                 "z",
                 "|"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -2674,12 +2662,6 @@
                 "z",
                 "||"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -3008,12 +2990,6 @@
                 "---",
                 "|||"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -3219,12 +3195,6 @@
                 "z",
                 "|"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
@@ -3288,12 +3258,6 @@
                 "s",
                 "|"
               ]
-            },
-            "35-37": {
-              "type": "string",
-              "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
-              "title": "Language",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             }
           }
         }
