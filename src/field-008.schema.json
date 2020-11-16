@@ -2,21 +2,26 @@
   "title": "Fixed-Length Data Elements-General Information",
   "description": "Forty character positions (00-39) that provide coded information about the record as a whole and about special bibliographic aspects of the item being cataloged. These coded data elements are potentially useful for retrieval and data management purposes.",
   "url": "https://www.loc.gov/marc/bibliographic/bd008.html",
-  "type": "object",
-  "oneOf": [
-    { "$ref": "#/definitions/Books" },
-    { "$ref": "#/definitions/Continuing Resources" },
-    { "$ref": "#/definitions/Music" },
-    { "$ref": "#/definitions/Maps" },
-    { "$ref": "#/definitions/Visual Materials" },
-    { "$ref": "#/definitions/Computer Files" },
-    { "$ref": "#/definitions/Mixed Materials" }
+  "allOf": [
+    {
+      "oneOf": [
+        { "$ref": "#/definitions/Books" },
+        { "$ref": "#/definitions/Continuing Resources" },
+        { "$ref": "#/definitions/Music" },
+        { "$ref": "#/definitions/Maps" },
+        { "$ref": "#/definitions/Visual Materials" },
+        { "$ref": "#/definitions/Computer Files" },
+        { "$ref": "#/definitions/Mixed Materials" }
+      ]
+    },
+    { "$ref": "#/definitions/All Materials" }
   ],
+  
   "required": [
     "positions"
   ],
   "definitions": {
-    "Books": {
+    "All Materials": {
       "type": "object",
       "properties": {
         "positions": {
@@ -114,6 +119,65 @@
               "title": "Place of publication, production, or execution",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             },
+            "38": {
+              "title": "Modified record",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+              "codes": {
+                " ": {
+                  "title": "Not modified"
+                },
+                "d": {
+                  "title": "Dashed-on information omitted"
+                },
+                "o": {
+                  "title": "Completely romanized/printed cards romanized"
+                },
+                "r": {
+                  "title": "Completely romanized/printed cards in script"
+                },
+                "s": {
+                  "title": "Shortened"
+                },
+                "x": {
+                  "title": "Missing characters"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            },
+            "39": {
+              "title": "Cataloging source",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+              "codes": {
+                " ": {
+                  "title": "National bibliographic agency"
+                },
+                "c": {
+                  "title": "Cooperative cataloging program"
+                },
+                "d": {
+                  "title": "Other"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "Books": {
+      "type": "object",
+      "properties": {
+        "positions": {
+          "type": "object",
+          "properties": {
             "18-21": {
               "title": "Illustrations",
               "type": "string",
@@ -637,54 +701,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -697,98 +713,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
             "18": {
               "title": "Frequency",
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
@@ -1175,6 +1099,127 @@
                 "|"
               ]
             },
+            "25-27": {
+              "title": "Nature of contents",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "codes": {
+                "5": {
+                  "title": "Calendars"
+                },
+                "6": {
+                  "title": "Comics/graphic novels"
+                },
+                " ": {
+                  "title": "Not specified"
+                },
+                "a": {
+                  "title": "Abstracts/summaries"
+                },
+                "b": {
+                  "title": "Bibliographies"
+                },
+                "c": {
+                  "title": "Catalogs"
+                },
+                "d": {
+                  "title": "Dictionaries"
+                },
+                "e": {
+                  "title": "Encyclopedias"
+                },
+                "f": {
+                  "title": "Handbooks"
+                },
+                "g": {
+                  "title": "Legal articles"
+                },
+                "h": {
+                  "title": "Biography"
+                },
+                "i": {
+                  "title": "Indexes"
+                },
+                "k": {
+                  "title": "Discographies"
+                },
+                "l": {
+                  "title": "Legislation"
+                },
+                "m": {
+                  "title": "Theses"
+                },
+                "n": {
+                  "title": "Surveys of literature in a subject area"
+                },
+                "o": {
+                  "title": "Reviews"
+                },
+                "p": {
+                  "title": "Programmed texts"
+                },
+                "q": {
+                  "title": "Filmographies"
+                },
+                "r": {
+                  "title": "Directories"
+                },
+                "s": {
+                  "title": "Statistics"
+                },
+                "t": {
+                  "title": "Technical reports"
+                },
+                "u": {
+                  "title": "Standards/specifications"
+                },
+                "v": {
+                  "title": "Legal cases and case notes"
+                },
+                "w": {
+                  "title": "Law reports and digests"
+                },
+                "y": {
+                  "title": "Yearbooks"
+                },
+                "z": {
+                  "title": "Treaties"
+                },
+                "   ": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                "5",
+                "6",
+                " ",
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "k",
+                "l",
+                "m",
+                "n",
+                "o",
+                "p",
+                "q",
+                "r",
+                "s",
+                "t",
+                "u",
+                "v",
+                "w",
+                "y",
+                "z",
+                "   "
+              ]
+            },
             "28": {
               "title": "Government publication",
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
@@ -1351,180 +1396,11 @@
                 "|"
               ]
             },
-            "25-27": {
-              "title": "Nature of contents",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
-              "codes": {
-                "5": {
-                  "title": "Calendars"
-                },
-                "6": {
-                  "title": "Comics/graphic novels"
-                },
-                " ": {
-                  "title": "Not specified"
-                },
-                "a": {
-                  "title": "Abstracts/summaries"
-                },
-                "b": {
-                  "title": "Bibliographies"
-                },
-                "c": {
-                  "title": "Catalogs"
-                },
-                "d": {
-                  "title": "Dictionaries"
-                },
-                "e": {
-                  "title": "Encyclopedias"
-                },
-                "f": {
-                  "title": "Handbooks"
-                },
-                "g": {
-                  "title": "Legal articles"
-                },
-                "h": {
-                  "title": "Biography"
-                },
-                "i": {
-                  "title": "Indexes"
-                },
-                "k": {
-                  "title": "Discographies"
-                },
-                "l": {
-                  "title": "Legislation"
-                },
-                "m": {
-                  "title": "Theses"
-                },
-                "n": {
-                  "title": "Surveys of literature in a subject area"
-                },
-                "o": {
-                  "title": "Reviews"
-                },
-                "p": {
-                  "title": "Programmed texts"
-                },
-                "q": {
-                  "title": "Filmographies"
-                },
-                "r": {
-                  "title": "Directories"
-                },
-                "s": {
-                  "title": "Statistics"
-                },
-                "t": {
-                  "title": "Technical reports"
-                },
-                "u": {
-                  "title": "Standards/specifications"
-                },
-                "v": {
-                  "title": "Legal cases and case notes"
-                },
-                "w": {
-                  "title": "Law reports and digests"
-                },
-                "y": {
-                  "title": "Yearbooks"
-                },
-                "z": {
-                  "title": "Treaties"
-                },
-                "   ": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                "5",
-                "6",
-                " ",
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "f",
-                "g",
-                "h",
-                "i",
-                "k",
-                "l",
-                "m",
-                "n",
-                "o",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "v",
-                "w",
-                "y",
-                "z",
-                "   "
-              ]
-            },
             "35-37": {
               "type": "string",
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -1537,351 +1413,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "20": {
-              "title": "Format of music",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                "a": {
-                  "title": "Full score"
-                },
-                "b": {
-                  "title": "Miniature or study score"
-                },
-                "c": {
-                  "title": "Accompaniment reduced for keyboard"
-                },
-                "d": {
-                  "title": "Voice score with accompaniment omitted"
-                },
-                "e": {
-                  "title": "Condensed score or piano-conductor score"
-                },
-                "g": {
-                  "title": "Close score"
-                },
-                "h": {
-                  "title": "Chorus score"
-                },
-                "i": {
-                  "title": "Condensed score"
-                },
-                "j": {
-                  "title": "Performer-conductor part"
-                },
-                "k": {
-                  "title": "Vocal score"
-                },
-                "l": {
-                  "title": "Score"
-                },
-                "m": {
-                  "title": "Multiple score formats"
-                },
-                "n": {
-                  "title": "Not applicable"
-                },
-                "p": {
-                  "title": "Piano score"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "z": {
-                  "title": "Other"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "g",
-                "h",
-                "i",
-                "j",
-                "k",
-                "l",
-                "m",
-                "n",
-                "p",
-                "u",
-                "z",
-                "|"
-              ]
-            },
-            "21": {
-              "title": "Music parts",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                " ": {
-                  "title": "No parts in hand or not specified"
-                },
-                "d": {
-                  "title": "Instrumental and vocal parts"
-                },
-                "e": {
-                  "title": "Instrumental parts"
-                },
-                "f": {
-                  "title": "Vocal parts"
-                },
-                "n": {
-                  "title": "Not applicable"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "d",
-                "e",
-                "f",
-                "n",
-                "u",
-                "|"
-              ]
-            },
-            "22": {
-              "title": "Target audience",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                " ": {
-                  "title": "Unknown or unspecified"
-                },
-                "a": {
-                  "title": "Preschool"
-                },
-                "b": {
-                  "title": "Primary"
-                },
-                "c": {
-                  "title": "Pre-adolescent"
-                },
-                "d": {
-                  "title": "Adolescent"
-                },
-                "e": {
-                  "title": "Adult"
-                },
-                "f": {
-                  "title": "Specialized"
-                },
-                "g": {
-                  "title": "General"
-                },
-                "j": {
-                  "title": "Juvenile"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "f",
-                "g",
-                "j",
-                "|"
-              ]
-            },
-            "23": {
-              "title": "Form of item",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                " ": {
-                  "title": "None of the following"
-                },
-                "a": {
-                  "title": "Microfilm"
-                },
-                "b": {
-                  "title": "Microfiche"
-                },
-                "c": {
-                  "title": "Microopaque"
-                },
-                "d": {
-                  "title": "Large print"
-                },
-                "f": {
-                  "title": "Braille"
-                },
-                "o": {
-                  "title": "Online"
-                },
-                "q": {
-                  "title": "Direct electronic"
-                },
-                "r": {
-                  "title": "Regular print reproduction"
-                },
-                "s": {
-                  "title": "Electronic"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "b",
-                "c",
-                "d",
-                "f",
-                "o",
-                "q",
-                "r",
-                "s",
-                "|"
-              ]
-            },
-            "33": {
-              "title": "Transposition and arrangement",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                " ": {
-                  "title": "Not arrangement or transposition or not specified"
-                },
-                "a": {
-                  "title": "Transposition"
-                },
-                "b": {
-                  "title": "Arrangement"
-                },
-                "c": {
-                  "title": "Both transposed and arranged"
-                },
-                "n": {
-                  "title": "Not applicable"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "b",
-                "c",
-                "n",
-                "u",
-                "|"
-              ]
-            },
             "18-19": {
               "title": "Form of composition",
               "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
@@ -2183,6 +1714,222 @@
                 "||"
               ]
             },
+            "20": {
+              "title": "Format of music",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                "a": {
+                  "title": "Full score"
+                },
+                "b": {
+                  "title": "Miniature or study score"
+                },
+                "c": {
+                  "title": "Accompaniment reduced for keyboard"
+                },
+                "d": {
+                  "title": "Voice score with accompaniment omitted"
+                },
+                "e": {
+                  "title": "Condensed score or piano-conductor score"
+                },
+                "g": {
+                  "title": "Close score"
+                },
+                "h": {
+                  "title": "Chorus score"
+                },
+                "i": {
+                  "title": "Condensed score"
+                },
+                "j": {
+                  "title": "Performer-conductor part"
+                },
+                "k": {
+                  "title": "Vocal score"
+                },
+                "l": {
+                  "title": "Score"
+                },
+                "m": {
+                  "title": "Multiple score formats"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "p": {
+                  "title": "Piano score"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "g",
+                "h",
+                "i",
+                "j",
+                "k",
+                "l",
+                "m",
+                "n",
+                "p",
+                "u",
+                "z",
+                "|"
+              ]
+            },
+            "21": {
+              "title": "Music parts",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                " ": {
+                  "title": "No parts in hand or not specified"
+                },
+                "d": {
+                  "title": "Instrumental and vocal parts"
+                },
+                "e": {
+                  "title": "Instrumental parts"
+                },
+                "f": {
+                  "title": "Vocal parts"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "d",
+                "e",
+                "f",
+                "n",
+                "u",
+                "|"
+              ]
+            },
+            "22": {
+              "title": "Target audience",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                " ": {
+                  "title": "Unknown or unspecified"
+                },
+                "a": {
+                  "title": "Preschool"
+                },
+                "b": {
+                  "title": "Primary"
+                },
+                "c": {
+                  "title": "Pre-adolescent"
+                },
+                "d": {
+                  "title": "Adolescent"
+                },
+                "e": {
+                  "title": "Adult"
+                },
+                "f": {
+                  "title": "Specialized"
+                },
+                "g": {
+                  "title": "General"
+                },
+                "j": {
+                  "title": "Juvenile"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "j",
+                "|"
+              ]
+            },
+            "23": {
+              "title": "Form of item",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                " ": {
+                  "title": "None of the following"
+                },
+                "a": {
+                  "title": "Microfilm"
+                },
+                "b": {
+                  "title": "Microfiche"
+                },
+                "c": {
+                  "title": "Microopaque"
+                },
+                "d": {
+                  "title": "Large print"
+                },
+                "f": {
+                  "title": "Braille"
+                },
+                "o": {
+                  "title": "Online"
+                },
+                "q": {
+                  "title": "Direct electronic"
+                },
+                "r": {
+                  "title": "Regular print reproduction"
+                },
+                "s": {
+                  "title": "Electronic"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "b",
+                "c",
+                "d",
+                "f",
+                "o",
+                "q",
+                "r",
+                "s",
+                "|"
+              ]
+            },
             "24-29": {
               "title": "Accompanying matter",
               "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
@@ -2249,6 +1996,43 @@
                 "r",
                 "s",
                 "z",
+                "|"
+              ]
+            },
+            "33": {
+              "title": "Transposition and arrangement",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                " ": {
+                  "title": "Not arrangement or transposition or not specified"
+                },
+                "a": {
+                  "title": "Transposition"
+                },
+                "b": {
+                  "title": "Arrangement"
+                },
+                "c": {
+                  "title": "Both transposed and arranged"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "b",
+                "c",
+                "n",
+                "u",
                 "|"
               ]
             },
@@ -2354,54 +2138,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -2414,98 +2150,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
             "25": {
               "title": "Type of cartographic material",
               "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -3010,54 +2654,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -3070,98 +2666,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
             "22": {
               "title": "Target audience",
               "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
@@ -3485,54 +2989,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -3545,98 +3001,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
             "22": {
               "title": "Target audience",
               "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
@@ -3838,54 +3202,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
@@ -3898,98 +3214,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "00-05": {
-              "type": "string",
-              "title": "Date entered on file",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "06": {
-              "type": "string",
-              "title": "Type of date/Publication status",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "enum": [
-                "b",
-                "c",
-                "d",
-                "e",
-                "i",
-                "k",
-                "m",
-                "n",
-                "p",
-                "q",
-                "r",
-                "s",
-                "t",
-                "u",
-                "|"
-              ],
-              "codes": {
-                "b": {
-                  "title": "No dates given; B.C. date involved"
-                },
-                "c": {
-                  "title": "Continuing resource currently published"
-                },
-                "d": {
-                  "title": "Continuing resource ceased publication"
-                },
-                "e": {
-                  "title": "Detailed date"
-                },
-                "i": {
-                  "title": "Inclusive dates of collection"
-                },
-                "k": {
-                  "title": "Range of years of bulk of collection"
-                },
-                "m": {
-                  "title": "Multiple dates"
-                },
-                "n": {
-                  "title": "Dates unknown"
-                },
-                "p": {
-                  "title": "Date of distribution/release/issue and production/recording session when different"
-                },
-                "q": {
-                  "title": "Questionable date"
-                },
-                "r": {
-                  "title": "Reprint/reissue date and original date"
-                },
-                "s": {
-                  "title": "Single known date/probable date"
-                },
-                "t": {
-                  "title": "Publication date and copyright date"
-                },
-                "u": {
-                  "title": "Continuing resource status unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "07-10": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 1",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "11-14": {
-              "type": "string",
-              "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
-              "title": "Date 2",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "15-17": {
-              "type": "string",
-              "pattern": "^([a-z ]{3}|vp |xx )$",
-              "title": "Place of publication, production, or execution",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
             "23": {
               "title": "Form of item",
               "url": "https://www.loc.gov/marc/bibliographic/bd008x.html",
@@ -4048,54 +3272,6 @@
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
-            },
-            "38": {
-              "title": "Modified record",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "Not modified"
-                },
-                "d": {
-                  "title": "Dashed-on information omitted"
-                },
-                "o": {
-                  "title": "Completely romanized/printed cards romanized"
-                },
-                "r": {
-                  "title": "Completely romanized/printed cards in script"
-                },
-                "s": {
-                  "title": "Shortened"
-                },
-                "x": {
-                  "title": "Missing characters"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
-            },
-            "39": {
-              "title": "Cataloging source",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "codes": {
-                " ": {
-                  "title": "National bibliographic agency"
-                },
-                "c": {
-                  "title": "Cooperative cataloging program"
-                },
-                "d": {
-                  "title": "Other"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              }
             }
           },
           "additionalProperties": false
