@@ -27046,6 +27046,369 @@
                         "|"
                       ]
                     },
+                    "25": {
+                      "title": "Nature of contents (1)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "   ": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "   "
+                      ]
+                    },
+                    "26": {
+                      "title": "Nature of contents (2)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "   ": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "   "
+                      ]
+                    },
+                    "27": {
+                      "title": "Nature of contents (3)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "   ": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "   "
+                      ]
+                    },
                     "28": {
                       "title": "Government publication",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
@@ -27220,127 +27583,6 @@
                         "1",
                         "2",
                         "|"
-                      ]
-                    },
-                    "25-27": {
-                      "title": "Nature of contents",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
-                      "codes": {
-                        "5": {
-                          "title": "Calendars"
-                        },
-                        "6": {
-                          "title": "Comics/graphic novels"
-                        },
-                        " ": {
-                          "title": "Not specified"
-                        },
-                        "a": {
-                          "title": "Abstracts/summaries"
-                        },
-                        "b": {
-                          "title": "Bibliographies"
-                        },
-                        "c": {
-                          "title": "Catalogs"
-                        },
-                        "d": {
-                          "title": "Dictionaries"
-                        },
-                        "e": {
-                          "title": "Encyclopedias"
-                        },
-                        "f": {
-                          "title": "Handbooks"
-                        },
-                        "g": {
-                          "title": "Legal articles"
-                        },
-                        "h": {
-                          "title": "Biography"
-                        },
-                        "i": {
-                          "title": "Indexes"
-                        },
-                        "k": {
-                          "title": "Discographies"
-                        },
-                        "l": {
-                          "title": "Legislation"
-                        },
-                        "m": {
-                          "title": "Theses"
-                        },
-                        "n": {
-                          "title": "Surveys of literature in a subject area"
-                        },
-                        "o": {
-                          "title": "Reviews"
-                        },
-                        "p": {
-                          "title": "Programmed texts"
-                        },
-                        "q": {
-                          "title": "Filmographies"
-                        },
-                        "r": {
-                          "title": "Directories"
-                        },
-                        "s": {
-                          "title": "Statistics"
-                        },
-                        "t": {
-                          "title": "Technical reports"
-                        },
-                        "u": {
-                          "title": "Standards/specifications"
-                        },
-                        "v": {
-                          "title": "Legal cases and case notes"
-                        },
-                        "w": {
-                          "title": "Law reports and digests"
-                        },
-                        "y": {
-                          "title": "Yearbooks"
-                        },
-                        "z": {
-                          "title": "Treaties"
-                        },
-                        "   ": {
-                          "title": "No attempt to code"
-                        }
-                      },
-                      "type": "string",
-                      "enum": [
-                        "5",
-                        "6",
-                        " ",
-                        "a",
-                        "b",
-                        "c",
-                        "d",
-                        "e",
-                        "f",
-                        "g",
-                        "h",
-                        "i",
-                        "k",
-                        "l",
-                        "m",
-                        "n",
-                        "o",
-                        "p",
-                        "q",
-                        "r",
-                        "s",
-                        "t",
-                        "u",
-                        "v",
-                        "w",
-                        "y",
-                        "z",
-                        "   "
                       ]
                     }
                   }
