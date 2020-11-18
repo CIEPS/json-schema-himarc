@@ -1,6 +1,6 @@
 {
   "name": "json-schema-himarc",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "JSON Schema for himarc ",
   "private": true,
   "scripts": {
