@@ -1,5 +1,5 @@
 {
-  "title": "Physical Description Fixed Field-General Information",
+  "title": "Physical Description",
   "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
   "url": "http://www.loc.gov/marc/bibliographic/bd007.html",
   "type": "array",
@@ -11,6 +11,7 @@
         "properties": {
           "00": {
             "type": "string",
+            "title": "Category of material",
             "enum": [
               "a",
               "c",

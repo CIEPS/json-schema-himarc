@@ -1,5 +1,5 @@
 {
-  "title": "Fixed-Length Data Elements-General Information",
+  "title": "General Information",
   "description": "Forty character positions (00-39) that provide coded information about the record as a whole and about special bibliographic aspects of the item being cataloged. These coded data elements are potentially useful for retrieval and data management purposes.",
   "url": "https://www.loc.gov/marc/bibliographic/bd008.html",
   "anyOf": [
