@@ -3,6 +3,7 @@
   "version": "0.0.16",
   "description": "JSON Schema for himarc ",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "pretest": "npm run bundle",
     "test": "mocha",
