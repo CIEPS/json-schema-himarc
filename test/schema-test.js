@@ -5,10 +5,17 @@
 const { expect } = require('chai');
 const Ajv = require('ajv');
 const schema = require('../dist/himarc.schema.json');
+const schemaProxies = require('../main.js');
 const ajv = new Ajv({ allErrors: true });
 const validate = ajv.compile(schema);
 
 describe('json schema himarc', function () {
+  describe('es6 proxies', function () {
+    it('should access to nested data', function () {
+      expect(schemaProxies.fields['008'].definitions['All Materials'].positions.properties['06'].title).to.equal('Type of date/Publication status');
+    });
+  });
+
   describe('LDR', function () {
     it('should validate', function () {
       const data = {
