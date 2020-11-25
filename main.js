@@ -5,8 +5,13 @@ module.exports = buildJsonSchemaProxy(jsonSchema);
 function buildJsonSchemaProxy (obj) {
   return new Proxy(obj, {
     get (target, name) {
+      let value;
+      if (name in target) {
+        value = target[name];
+      } else if ('properties' in target && name in target.properties) {
+        value = target.properties[name];
+      }
       const isObject = obj => obj === Object(obj);
-      const value = (name in target) ? target[name] : target.properties[name];
       return isObject(value) ? buildJsonSchemaProxy(value) : value;
     }
   });
