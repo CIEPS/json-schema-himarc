@@ -9755,74 +9755,17 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "properties": {
-                    "3": {
-                      "title": "Materials specified",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "5": {
-                      "title": "Institution to which field applies",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
+                  "patternProperties": {
                     "6": {
                       "title": "Linkage",
                       "type": "string",
                       "isRepeatable": false
                     },
-                    "8": {
-                      "title": "Field link and sequence number",
-                      "type": "string",
-                      "isRepeatable": true
-                    },
-                    "a": {
-                      "title": "Source of acquisition",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "b": {
-                      "title": "Address",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "c": {
-                      "title": "Method of acquisition",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "d": {
-                      "title": "Date of acquisition",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "e": {
-                      "title": "Accession number",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "f": {
-                      "title": "Owner",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "h": {
-                      "title": "Purchase price",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "n": {
-                      "title": "Extent",
-                      "type": "string",
-                      "isRepeatable": true
-                    },
-                    "o": {
-                      "title": "Type of unit",
-                      "type": "string",
-                      "isRepeatable": true
+                    "[0-5]|[7-9]|[a-z]": {
+                      "title": "Same as associated field",
+                      "type": "string"
                     }
-                  },
-                  "additionalProperties": false
+                  }
                 }
               }
             },
@@ -20250,33 +20193,159 @@
             "properties": {
               "indicator1": {
                 "title": "Same as associated field (MUL)",
-                "type": "string",
-                "code": {}
+                "type": "string"
               },
               "indicator2": {
                 "title": "Same as associated field (MUL)",
-                "type": "string",
-                "code": {}
+                "type": "string"
               },
               "subFields": {
                 "type": "array",
                 "items": {
                   "type": "object",
                   "properties": {
+                    "0": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "1": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "2": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "3": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "4": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "5": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
                       "isRepeatable": false
                     },
-                    "a-z": {
+                    "7": {
                       "title": "Same as associated field",
                       "type": "string"
                     },
-                    "0-5": {
+                    "8": {
                       "title": "Same as associated field",
                       "type": "string"
                     },
-                    "7-9": {
+                    "9": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "a": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "b": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "c": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "d": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "e": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "f": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "g": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "h": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "i": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "j": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "k": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "l": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "m": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "n": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "o": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "p": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "q": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "r": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "s": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "t": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "u": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "v": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "w": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "x": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "y": {
+                      "title": "Same as associated field",
+                      "type": "string"
+                    },
+                    "z": {
                       "title": "Same as associated field",
                       "type": "string"
                     }
