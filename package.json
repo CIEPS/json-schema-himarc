@@ -5,9 +5,10 @@
   "private": true,
   "main": "main.js",
   "scripts": {
+    "bundle": "bin/bundle.js",
     "pretest": "npm run bundle",
-    "test": "mocha",
-    "bundle": "bin/bundle.js"
+    "version": "npm run bundle && git add .",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
