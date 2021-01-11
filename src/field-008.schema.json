@@ -58,7 +58,7 @@
           "type": "object",
           "properties": {
             "00-05": {
-              "type": "string",
+              "type": "integer",
               "title": "Date entered on file",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             },
@@ -637,6 +637,15 @@
                 }
               }
             },
+            "32": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "33": {
               "title": "Literary form",
               "type": "string",
@@ -856,6 +865,15 @@
                 "r",
                 "u",
                 "x",
+                "|"
+              ]
+            },
+            "20": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
                 "|"
               ]
             },
@@ -1245,7 +1263,7 @@
                 "w",
                 "y",
                 "z",
-                "   "
+                "|"
               ]
             },
             "26": {
@@ -1366,7 +1384,7 @@
                 "w",
                 "y",
                 "z",
-                "   "
+                "|"
               ]
             },
             "27": {
@@ -1487,7 +1505,7 @@
                 "w",
                 "y",
                 "z",
-                "   "
+                "|"
               ]
             },
             "28": {
@@ -1565,6 +1583,15 @@
               "enum": [
                 "0",
                 "1",
+                "|"
+              ]
+            },
+            "30-32": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
                 "|"
               ]
             },
@@ -2262,43 +2289,6 @@
                 "|"
               ]
             },
-            "33": {
-              "title": "Transposition and arrangement",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
-              "codes": {
-                " ": {
-                  "title": "Not arrangement or transposition or not specified"
-                },
-                "a": {
-                  "title": "Transposition"
-                },
-                "b": {
-                  "title": "Arrangement"
-                },
-                "c": {
-                  "title": "Both transposed and arranged"
-                },
-                "n": {
-                  "title": "Not applicable"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "b",
-                "c",
-                "n",
-                "u",
-                "|"
-              ]
-            },
             "30-31": {
               "title": "Literary text for sound recordings",
               "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
@@ -2395,6 +2385,61 @@
                 "z",
                 "|"
               ]
+            },
+            "32": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
+            "33": {
+              "title": "Transposition and arrangement",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+              "codes": {
+                " ": {
+                  "title": "Not arrangement or transposition or not specified"
+                },
+                "a": {
+                  "title": "Transposition"
+                },
+                "b": {
+                  "title": "Arrangement"
+                },
+                "c": {
+                  "title": "Both transposed and arranged"
+                },
+                "n": {
+                  "title": "Not applicable"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "b",
+                "c",
+                "n",
+                "u",
+                "|"
+              ]
+            },
+            "34": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
             }
           }
         }
@@ -2406,186 +2451,6 @@
         "positions": {
           "type": "object",
           "properties": {
-            "25": {
-              "title": "Type of cartographic material",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
-              "codes": {
-                "a": {
-                  "title": "Single map"
-                },
-                "b": {
-                  "title": "Map series"
-                },
-                "c": {
-                  "title": "Map serial"
-                },
-                "d": {
-                  "title": "Globe"
-                },
-                "e": {
-                  "title": "Atlas"
-                },
-                "f": {
-                  "title": "Separate supplement to another work"
-                },
-                "g": {
-                  "title": "Bound as part of another work"
-                },
-                "u": {
-                  "title": "Unknown"
-                },
-                "z": {
-                  "title": "Other"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "f",
-                "g",
-                "u",
-                "z",
-                "|"
-              ]
-            },
-            "28": {
-              "title": "Government publication",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
-              "codes": {
-                " ": {
-                  "title": "Not a government publication"
-                },
-                "a": {
-                  "title": "Autonomous or semi-autonomous component"
-                },
-                "c": {
-                  "title": "Multilocal"
-                },
-                "f": {
-                  "title": "Federal/national"
-                },
-                "i": {
-                  "title": "International intergovernmental"
-                },
-                "l": {
-                  "title": "Local"
-                },
-                "m": {
-                  "title": "Multistate"
-                },
-                "o": {
-                  "title": "Government publication-level undetermined"
-                },
-                "s": {
-                  "title": "State, provincial, territorial, dependent, etc."
-                },
-                "u": {
-                  "title": "Unknown if item is government publication"
-                },
-                "z": {
-                  "title": "Other"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "c",
-                "f",
-                "i",
-                "l",
-                "m",
-                "o",
-                "s",
-                "u",
-                "z",
-                "|"
-              ]
-            },
-            "29": {
-              "title": "Form of item",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
-              "codes": {
-                " ": {
-                  "title": "None of the following"
-                },
-                "a": {
-                  "title": "Microfilm"
-                },
-                "b": {
-                  "title": "Microfiche"
-                },
-                "c": {
-                  "title": "Microopaque"
-                },
-                "d": {
-                  "title": "Large print"
-                },
-                "f": {
-                  "title": "Braille"
-                },
-                "o": {
-                  "title": "Online"
-                },
-                "q": {
-                  "title": "Direct electronic"
-                },
-                "r": {
-                  "title": "Regular print reproduction"
-                },
-                "s": {
-                  "title": "Electronic"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                " ",
-                "a",
-                "b",
-                "c",
-                "d",
-                "f",
-                "o",
-                "q",
-                "r",
-                "s",
-                "|"
-              ]
-            },
-            "31": {
-              "title": "Index",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
-              "codes": {
-                "0": {
-                  "title": "No index"
-                },
-                "1": {
-                  "title": "Index present"
-                },
-                "|": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                "0",
-                "1",
-                "|"
-              ]
-            },
             "18-21": {
               "title": "Relief",
               "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -2852,6 +2717,222 @@
                 "||"
               ]
             },
+            "24": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
+            "25": {
+              "title": "Type of cartographic material",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+              "codes": {
+                "a": {
+                  "title": "Single map"
+                },
+                "b": {
+                  "title": "Map series"
+                },
+                "c": {
+                  "title": "Map serial"
+                },
+                "d": {
+                  "title": "Globe"
+                },
+                "e": {
+                  "title": "Atlas"
+                },
+                "f": {
+                  "title": "Separate supplement to another work"
+                },
+                "g": {
+                  "title": "Bound as part of another work"
+                },
+                "u": {
+                  "title": "Unknown"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "u",
+                "z",
+                "|"
+              ]
+            },
+            "26-27": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
+            "28": {
+              "title": "Government publication",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+              "codes": {
+                " ": {
+                  "title": "Not a government publication"
+                },
+                "a": {
+                  "title": "Autonomous or semi-autonomous component"
+                },
+                "c": {
+                  "title": "Multilocal"
+                },
+                "f": {
+                  "title": "Federal/national"
+                },
+                "i": {
+                  "title": "International intergovernmental"
+                },
+                "l": {
+                  "title": "Local"
+                },
+                "m": {
+                  "title": "Multistate"
+                },
+                "o": {
+                  "title": "Government publication-level undetermined"
+                },
+                "s": {
+                  "title": "State, provincial, territorial, dependent, etc."
+                },
+                "u": {
+                  "title": "Unknown if item is government publication"
+                },
+                "z": {
+                  "title": "Other"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "c",
+                "f",
+                "i",
+                "l",
+                "m",
+                "o",
+                "s",
+                "u",
+                "z",
+                "|"
+              ]
+            },
+            "29": {
+              "title": "Form of item",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+              "codes": {
+                " ": {
+                  "title": "None of the following"
+                },
+                "a": {
+                  "title": "Microfilm"
+                },
+                "b": {
+                  "title": "Microfiche"
+                },
+                "c": {
+                  "title": "Microopaque"
+                },
+                "d": {
+                  "title": "Large print"
+                },
+                "f": {
+                  "title": "Braille"
+                },
+                "o": {
+                  "title": "Online"
+                },
+                "q": {
+                  "title": "Direct electronic"
+                },
+                "r": {
+                  "title": "Regular print reproduction"
+                },
+                "s": {
+                  "title": "Electronic"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                " ",
+                "a",
+                "b",
+                "c",
+                "d",
+                "f",
+                "o",
+                "q",
+                "r",
+                "s",
+                "|"
+              ]
+            },
+            "30": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
+            "31": {
+              "title": "Index",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+              "codes": {
+                "0": {
+                  "title": "No index"
+                },
+                "1": {
+                  "title": "Index present"
+                },
+                "|": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                "0",
+                "1",
+                "|"
+              ]
+            },
+            "32": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "33-34": {
               "title": "Special format characteristics",
               "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -2915,6 +2996,44 @@
         "positions": {
           "type": "object",
           "properties": {
+            "18-20": {
+              "title": "Running time for motion pictures and videorecordings",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+              "codes": {
+                "000": {
+                  "title": "Running time exceeds three characters"
+                },
+                "001-999": {
+                  "title": "Running time"
+                },
+                "nnn": {
+                  "title": "Not applicable"
+                },
+                "---": {
+                  "title": "Unknown"
+                },
+                "|||": {
+                  "title": "No attempt to code"
+                }
+              },
+              "type": "string",
+              "enum": [
+                "000",
+                "001-999",
+                "nnn",
+                "---",
+                "|||"
+              ]
+            },
+            "21": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "22": {
               "title": "Target audience",
               "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
@@ -2961,6 +3080,15 @@
                 "f",
                 "g",
                 "j",
+                "|"
+              ]
+            },
+            "23-27": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
                 "|"
               ]
             },
@@ -3071,6 +3199,15 @@
                 "q",
                 "r",
                 "s",
+                "|"
+              ]
+            },
+            "30-32": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
                 "|"
               ]
             },
@@ -3203,35 +3340,6 @@
                 "z",
                 "|"
               ]
-            },
-            "18-20": {
-              "title": "Running time for motion pictures and videorecordings",
-              "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
-              "codes": {
-                "000": {
-                  "title": "Running time exceeds three characters"
-                },
-                "001-999": {
-                  "title": "Running time"
-                },
-                "nnn": {
-                  "title": "Not applicable"
-                },
-                "---": {
-                  "title": "Unknown"
-                },
-                "|||": {
-                  "title": "No attempt to code"
-                }
-              },
-              "type": "string",
-              "enum": [
-                "000",
-                "001-999",
-                "nnn",
-                "---",
-                "|||"
-              ]
             }
           }
         }
@@ -3242,6 +3350,15 @@
         "positions": {
           "type": "object",
           "properties": {
+            "18-21": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "22": {
               "title": "Target audience",
               "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
@@ -3316,6 +3433,15 @@
                 "|"
               ]
             },
+            "24-25": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "26": {
               "title": "Type of computer file",
               "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
@@ -3381,6 +3507,15 @@
                 "|"
               ]
             },
+            "27": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "28": {
               "title": "Government publication",
               "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
@@ -3437,6 +3572,15 @@
                 "z",
                 "|"
               ]
+            },
+            "29-34": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
             }
           }
         }
@@ -3448,6 +3592,15 @@
         "positions": {
           "type": "object",
           "properties": {
+            "18-22": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
+                "|"
+              ]
+            },
             "23": {
               "title": "Form of item",
               "url": "https://www.loc.gov/marc/bibliographic/bd008x.html",
@@ -3498,6 +3651,15 @@
                 "q",
                 "r",
                 "s",
+                "|"
+              ]
+            },
+            "24-34": {
+              "title": "Undefined",
+              "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+              "type": "string",
+              "enum": [
+                " ",
                 "|"
               ]
             }
