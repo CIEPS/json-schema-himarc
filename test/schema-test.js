@@ -202,6 +202,7 @@ describe('json schema himarc', function () {
       const ajv = new Ajv({ allErrors: true });
       const validate = ajv.compile(field022Schema);
       const valid = validate(data);
+      if (validate.errors) console.dir(validate.errors, { depth: 8 });
       expect(valid).to.be.true;
     });
 
