@@ -783,7 +783,8 @@
         "887": {
           "$ref": "field-887.schema.json"
         }
-      }
+      },
+      "required": ["008"]
     }
   },
   "required": [
