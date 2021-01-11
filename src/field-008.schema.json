@@ -58,7 +58,7 @@
           "type": "object",
           "properties": {
             "00-05": {
-              "type": "integer",
+              "type": "string",
               "title": "Date entered on file",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
             },

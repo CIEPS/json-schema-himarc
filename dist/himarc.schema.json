@@ -21178,6 +21178,21 @@
             "positions"
           ]
         },
+        "001": {
+          "title": "Control Number",
+          "url": "https://www.loc.gov/marc/bibliographic/bd001.html",
+          "type": "string"
+        },
+        "003": {
+          "title": "Control Number Identifier",
+          "url": "https://www.loc.gov/marc/bibliographic/bd003.html",
+          "type": "string"
+        },
+        "005": {
+          "title": "Date and Time of Latest Transaction",
+          "url": "https://www.loc.gov/marc/bibliographic/bd005.html",
+          "type": "string"
+        },
         "007": {
           "title": "Physical Description",
           "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
@@ -26422,6 +26437,15 @@
                         }
                       }
                     },
+                    "32": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "33": {
                       "title": "Literary form",
                       "type": "string",
@@ -26846,6 +26870,15 @@
                         "|"
                       ]
                     },
+                    "20": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "21": {
                       "title": "Type of continuing resource",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
@@ -27232,7 +27265,7 @@
                         "w",
                         "y",
                         "z",
-                        "   "
+                        "|"
                       ]
                     },
                     "26": {
@@ -27353,7 +27386,7 @@
                         "w",
                         "y",
                         "z",
-                        "   "
+                        "|"
                       ]
                     },
                     "27": {
@@ -27474,7 +27507,7 @@
                         "w",
                         "y",
                         "z",
-                        "   "
+                        "|"
                       ]
                     },
                     "28": {
@@ -27650,6 +27683,15 @@
                         "0",
                         "1",
                         "2",
+                        "|"
+                      ]
+                    },
+                    "30-32": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
                         "|"
                       ]
                     }
@@ -27879,6 +27921,15 @@
                         "|"
                       ]
                     },
+                    "32": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "33": {
                       "title": "Transposition and arrangement",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
@@ -27913,6 +27964,15 @@
                         "c",
                         "n",
                         "u",
+                        "|"
+                      ]
+                    },
+                    "34": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
                         "|"
                       ]
                     },
@@ -28393,6 +28453,15 @@
                 "positions": {
                   "type": "object",
                   "properties": {
+                    "24": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "25": {
                       "title": "Type of cartographic material",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -28552,6 +28621,15 @@
                         "|"
                       ]
                     },
+                    "30": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "31": {
                       "title": "Index",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -28570,6 +28648,15 @@
                       "enum": [
                         "0",
                         "1",
+                        "|"
+                      ]
+                    },
+                    "32": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
                         "|"
                       ]
                     },
@@ -28839,6 +28926,15 @@
                         "||"
                       ]
                     },
+                    "26-27": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "33-34": {
                       "title": "Special format characteristics",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
@@ -28902,6 +28998,15 @@
                 "positions": {
                   "type": "object",
                   "properties": {
+                    "21": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "22": {
                       "title": "Target audience",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
@@ -29219,6 +29324,24 @@
                         "---",
                         "|||"
                       ]
+                    },
+                    "23-27": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "30-32": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
                     }
                   }
                 }
@@ -29368,6 +29491,15 @@
                         "|"
                       ]
                     },
+                    "27": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
                     "28": {
                       "title": "Government publication",
                       "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
@@ -29422,6 +29554,33 @@
                         "s",
                         "u",
                         "z",
+                        "|"
+                      ]
+                    },
+                    "18-21": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "24-25": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "29-34": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
                         "|"
                       ]
                     }
@@ -29485,6 +29644,24 @@
                         "q",
                         "r",
                         "s",
+                        "|"
+                      ]
+                    },
+                    "18-22": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "24-34": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
                         "|"
                       ]
                     }
@@ -33812,7 +33989,10 @@
             ]
           }
         }
-      }
+      },
+      "required": [
+        "008"
+      ]
     }
   },
   "required": [
