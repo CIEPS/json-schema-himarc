@@ -9,6 +9,174 @@
       "description": "List of fields that can contain one or more data elements",
       "type": "object",
       "properties": {
+        "LDR": {
+          "$ref": "leader.schema.json"
+        },
+        "001": {
+          "$ref": "field-001.schema.json"
+        },
+        "003": {
+          "$ref": "field-003.schema.json"
+        },
+        "005": {
+          "$ref": "field-005.schema.json"
+        },
+        "007": {
+          "$ref": "field-007.schema.json"
+        },
+        "008": {
+          "$ref": "field-008.schema.json"
+        },
+        "022": {
+          "$ref": "field-022.schema.json"
+        },
+        "044": {
+          "$ref": "field-044.schema.json"
+        },
+        "010": {
+          "$ref": "field-010.schema.json"
+        },
+        "011": {
+          "$ref": "field-011.schema.json"
+        },
+        "013": {
+          "$ref": "field-013.schema.json"
+        },
+        "015": {
+          "$ref": "field-015.schema.json"
+        },
+        "016": {
+          "$ref": "field-016.schema.json"
+        },
+        "017": {
+          "$ref": "field-017.schema.json"
+        },
+        "018": {
+          "$ref": "field-018.schema.json"
+        },
+        "020": {
+          "$ref": "field-020.schema.json"
+        },
+        "024": {
+          "$ref": "field-024.schema.json"
+        },
+        "025": {
+          "$ref": "field-025.schema.json"
+        },
+        "026": {
+          "$ref": "field-026.schema.json"
+        },
+        "027": {
+          "$ref": "field-027.schema.json"
+        },
+        "028": {
+          "$ref": "field-028.schema.json"
+        },
+        "030": {
+          "$ref": "field-030.schema.json"
+        },
+        "031": {
+          "$ref": "field-031.schema.json"
+        },
+        "032": {
+          "$ref": "field-032.schema.json"
+        },
+        "033": {
+          "$ref": "field-033.schema.json"
+        },
+        "034": {
+          "$ref": "field-034.schema.json"
+        },
+        "035": {
+          "$ref": "field-035.schema.json"
+        },
+        "036": {
+          "$ref": "field-036.schema.json"
+        },
+        "037": {
+          "$ref": "field-037.schema.json"
+        },
+        "038": {
+          "$ref": "field-038.schema.json"
+        },
+        "040": {
+          "$ref": "field-040.schema.json"
+        },
+        "041": {
+          "$ref": "field-041.schema.json"
+        },
+        "042": {
+          "$ref": "field-042.schema.json"
+        },
+        "043": {
+          "$ref": "field-043.schema.json"
+        },
+        "045": {
+          "$ref": "field-045.schema.json"
+        },
+        "046": {
+          "$ref": "field-046.schema.json"
+        },
+        "047": {
+          "$ref": "field-047.schema.json"
+        },
+        "048": {
+          "$ref": "field-048.schema.json"
+        },
+        "050": {
+          "$ref": "field-050.schema.json"
+        },
+        "051": {
+          "$ref": "field-051.schema.json"
+        },
+        "052": {
+          "$ref": "field-052.schema.json"
+        },
+        "055": {
+          "$ref": "field-055.schema.json"
+        },
+        "060": {
+          "$ref": "field-060.schema.json"
+        },
+        "061": {
+          "$ref": "field-061.schema.json"
+        },
+        "066": {
+          "$ref": "field-066.schema.json"
+        },
+        "070": {
+          "$ref": "field-070.schema.json"
+        },
+        "071": {
+          "$ref": "field-071.schema.json"
+        },
+        "072": {
+          "$ref": "field-072.schema.json"
+        },
+        "074": {
+          "$ref": "field-074.schema.json"
+        },
+        "080": {
+          "$ref": "field-080.schema.json"
+        },
+        "082": {
+          "$ref": "field-082.schema.json"
+        },
+        "083": {
+          "$ref": "field-083.schema.json"
+        },
+        "084": {
+          "$ref": "field-084.schema.json"
+        },
+        "085": {
+          "$ref": "field-085.schema.json"
+        },
+        "086": {
+          "$ref": "field-086.schema.json"
+        },
+        "088": {
+          "$ref": "field-088.schema.json"
+        },
         "100": {
           "$ref": "field-100.schema.json"
         },
@@ -614,165 +782,6 @@
         },
         "887": {
           "$ref": "field-887.schema.json"
-        },
-        "LDR": {
-          "$ref": "leader.schema.json"
-        },
-        "007": {
-          "$ref": "field-007.schema.json"
-        },
-        "008": {
-          "$ref": "field-008.schema.json"
-        },
-        "022": {
-          "$ref": "field-022.schema.json"
-        },
-        "044": {
-          "$ref": "field-044.schema.json"
-        },
-        "010": {
-          "$ref": "field-010.schema.json"
-        },
-        "011": {
-          "$ref": "field-011.schema.json"
-        },
-        "013": {
-          "$ref": "field-013.schema.json"
-        },
-        "015": {
-          "$ref": "field-015.schema.json"
-        },
-        "016": {
-          "$ref": "field-016.schema.json"
-        },
-        "017": {
-          "$ref": "field-017.schema.json"
-        },
-        "018": {
-          "$ref": "field-018.schema.json"
-        },
-        "020": {
-          "$ref": "field-020.schema.json"
-        },
-        "024": {
-          "$ref": "field-024.schema.json"
-        },
-        "025": {
-          "$ref": "field-025.schema.json"
-        },
-        "026": {
-          "$ref": "field-026.schema.json"
-        },
-        "027": {
-          "$ref": "field-027.schema.json"
-        },
-        "028": {
-          "$ref": "field-028.schema.json"
-        },
-        "030": {
-          "$ref": "field-030.schema.json"
-        },
-        "031": {
-          "$ref": "field-031.schema.json"
-        },
-        "032": {
-          "$ref": "field-032.schema.json"
-        },
-        "033": {
-          "$ref": "field-033.schema.json"
-        },
-        "034": {
-          "$ref": "field-034.schema.json"
-        },
-        "035": {
-          "$ref": "field-035.schema.json"
-        },
-        "036": {
-          "$ref": "field-036.schema.json"
-        },
-        "037": {
-          "$ref": "field-037.schema.json"
-        },
-        "038": {
-          "$ref": "field-038.schema.json"
-        },
-        "040": {
-          "$ref": "field-040.schema.json"
-        },
-        "041": {
-          "$ref": "field-041.schema.json"
-        },
-        "042": {
-          "$ref": "field-042.schema.json"
-        },
-        "043": {
-          "$ref": "field-043.schema.json"
-        },
-        "045": {
-          "$ref": "field-045.schema.json"
-        },
-        "046": {
-          "$ref": "field-046.schema.json"
-        },
-        "047": {
-          "$ref": "field-047.schema.json"
-        },
-        "048": {
-          "$ref": "field-048.schema.json"
-        },
-        "050": {
-          "$ref": "field-050.schema.json"
-        },
-        "051": {
-          "$ref": "field-051.schema.json"
-        },
-        "052": {
-          "$ref": "field-052.schema.json"
-        },
-        "055": {
-          "$ref": "field-055.schema.json"
-        },
-        "060": {
-          "$ref": "field-060.schema.json"
-        },
-        "061": {
-          "$ref": "field-061.schema.json"
-        },
-        "066": {
-          "$ref": "field-066.schema.json"
-        },
-        "070": {
-          "$ref": "field-070.schema.json"
-        },
-        "071": {
-          "$ref": "field-071.schema.json"
-        },
-        "072": {
-          "$ref": "field-072.schema.json"
-        },
-        "074": {
-          "$ref": "field-074.schema.json"
-        },
-        "080": {
-          "$ref": "field-080.schema.json"
-        },
-        "082": {
-          "$ref": "field-082.schema.json"
-        },
-        "083": {
-          "$ref": "field-083.schema.json"
-        },
-        "084": {
-          "$ref": "field-084.schema.json"
-        },
-        "085": {
-          "$ref": "field-085.schema.json"
-        },
-        "086": {
-          "$ref": "field-086.schema.json"
-        },
-        "088": {
-          "$ref": "field-088.schema.json"
         }
       }
     }
