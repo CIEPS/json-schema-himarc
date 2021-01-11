@@ -784,7 +784,15 @@
           "$ref": "field-887.schema.json"
         }
       },
-      "required": ["008", "022", "044"]
+      "allOf": [
+        { "required": ["008", "022", "044"] },
+        {
+          "oneOf": [
+            { "required": ["080"] },
+            { "required": ["082"] }
+          ]
+        }
+      ]
     }
   },
   "required": [
