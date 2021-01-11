@@ -389,6 +389,18 @@ describe('json schema himarc', function () {
                 a: '539.120.222'
               }
             ]
+          }],
+          222: [{
+            indicator1: '\\',
+            indicator2: '0',
+            subFields: [
+              {
+                a: 'Nature'
+              },
+              {
+                b: '(London)'
+              }
+            ]
           }]
         }
       };
