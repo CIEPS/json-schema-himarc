@@ -29858,6 +29858,17 @@
                   }
                 },
                 "additionalProperties": false
+              },
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "c": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "c"
+                ]
               }
             }
           },
