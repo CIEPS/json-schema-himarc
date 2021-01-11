@@ -83,7 +83,31 @@
             }
           },
           "additionalProperties": false
-        }
+        },
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "string"
+                }
+              },
+              "required": ["2"]
+            }
+          },
+          {
+            "contains":{
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                }
+              },
+              "required": ["a"]
+            }
+          }
+        ]
       }
     },
     "required": [
