@@ -161,7 +161,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -308,7 +309,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -464,7 +466,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -607,7 +610,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -688,7 +692,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -696,7 +701,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "211": {
           "title": "Acronym Or Shortened Title",
@@ -751,7 +757,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -759,7 +766,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "212": {
           "title": "Variant Access Title",
@@ -814,7 +822,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -822,7 +831,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "214": {
           "title": "Augmented Title",
@@ -877,7 +887,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -885,7 +896,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "222": {
           "title": "Key Title",
@@ -945,7 +957,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -953,7 +966,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "240": {
           "title": "Uniform Title",
@@ -1092,7 +1106,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -1152,7 +1167,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -1255,7 +1271,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -1263,7 +1280,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "243": {
           "title": "Collective Uniform Title",
@@ -1387,7 +1405,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -1506,7 +1525,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -1665,7 +1685,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -1673,7 +1694,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "247": {
           "title": "Former Title",
@@ -1780,7 +1802,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -1788,7 +1811,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "250": {
           "title": "Edition Statement",
@@ -1850,7 +1874,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -1858,7 +1883,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "251": {
           "title": "Version Information",
@@ -1930,7 +1956,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -1938,7 +1965,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "254": {
           "title": "Musical Presentation Statement",
@@ -1988,7 +2016,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2077,7 +2106,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2085,7 +2115,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "256": {
           "title": "Computer File Characteristics",
@@ -2135,7 +2166,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2209,7 +2241,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2217,7 +2250,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "258": {
           "title": "Philatelic Issue Date",
@@ -2274,7 +2308,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2282,7 +2317,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "260": {
           "title": "Publication, Distribution, Etc. (imprint)",
@@ -2379,7 +2415,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2387,7 +2424,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "261": {
           "title": "Imprint Statement For Films (pre-aacr 1 Revised)",
@@ -2457,7 +2495,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2534,7 +2573,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2591,7 +2631,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2693,7 +2734,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2701,7 +2743,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "265": {
           "title": "Source For Acquisition/subscription Address",
@@ -2748,7 +2791,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -2917,7 +2961,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -2925,7 +2970,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "300": {
           "title": "Physical Description",
@@ -3007,7 +3053,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3015,7 +3062,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "306": {
           "title": "Playing Time",
@@ -3065,7 +3113,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -3135,7 +3184,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3143,7 +3193,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "310": {
           "title": "Current Publication Frequency",
@@ -3198,7 +3249,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -3262,7 +3314,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3270,7 +3323,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "336": {
           "title": "Content Type",
@@ -3347,7 +3401,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3355,7 +3410,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "337": {
           "title": "Media Type",
@@ -3432,7 +3488,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3440,7 +3497,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "338": {
           "title": "Carrier Type",
@@ -3517,7 +3575,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3525,7 +3584,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "340": {
           "title": "Physical Medium",
@@ -3662,7 +3722,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3670,7 +3731,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "341": {
           "title": "Accessibility Content",
@@ -3762,7 +3824,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3770,7 +3833,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "342": {
           "title": "Geospatial Reference Data",
@@ -3977,7 +4041,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -3985,7 +4050,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "343": {
           "title": "Planar Coordinate Data",
@@ -4077,7 +4143,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4085,7 +4152,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "344": {
           "title": "Sound Characteristics",
@@ -4192,7 +4260,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4200,7 +4269,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "345": {
           "title": "Projection Characteristics Of Moving Image",
@@ -4277,7 +4347,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4285,7 +4356,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "346": {
           "title": "Video Characteristics",
@@ -4362,7 +4434,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4370,7 +4443,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "347": {
           "title": "Digital File Characteristics",
@@ -4467,7 +4541,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4475,7 +4550,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "348": {
           "title": "Format Of Notated Music",
@@ -4552,7 +4628,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4560,7 +4637,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "351": {
           "title": "Organization And Arrangement Of Materials",
@@ -4627,7 +4705,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4635,7 +4714,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "352": {
           "title": "Digital Graphic Representation",
@@ -4727,7 +4807,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4735,7 +4816,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "355": {
           "title": "Security Classification Control",
@@ -4853,7 +4935,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4861,7 +4944,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "357": {
           "title": "Originator Dissemination Control",
@@ -4957,7 +5041,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -4965,7 +5050,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "363": {
           "title": "Normalized Date And Sequential Designation",
@@ -5117,7 +5203,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5125,7 +5212,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "365": {
           "title": "Trade Price",
@@ -5237,7 +5325,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5245,7 +5334,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "366": {
           "title": "Trade Availability Information",
@@ -5347,7 +5437,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5355,7 +5446,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "370": {
           "title": "Associated Place",
@@ -5467,7 +5559,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5475,7 +5568,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "377": {
           "title": "Associated Language",
@@ -5558,7 +5652,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5566,7 +5661,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "380": {
           "title": "Form Of Work",
@@ -5638,7 +5734,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5646,7 +5743,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "381": {
           "title": "Other Distinguishing Characteristics Of Work Or Expression",
@@ -5728,7 +5826,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5736,7 +5835,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "382": {
           "title": "Medium Of Performance",
@@ -5873,7 +5973,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5881,7 +5982,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "383": {
           "title": "Numeric Designation Of Musical Work",
@@ -5963,7 +6065,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -5971,7 +6074,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "384": {
           "title": "Key",
@@ -6038,7 +6142,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6046,7 +6151,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "385": {
           "title": "Audience Characteristics",
@@ -6133,7 +6239,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6141,7 +6248,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "386": {
           "title": "Creator/contributor Characteristics",
@@ -6238,7 +6346,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6246,7 +6355,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "388": {
           "title": "Time Period Of Creation",
@@ -6328,7 +6438,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6336,7 +6447,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "400": {
           "title": "Series Statement/added Entry--personal Name ",
@@ -6488,7 +6600,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6496,7 +6609,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "410": {
           "title": "Series Statement/added Entry--corporate Name",
@@ -6639,7 +6753,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6647,7 +6762,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "411": {
           "title": "Series Statement/added Entry--meeting Name",
@@ -6795,7 +6911,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6803,7 +6920,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "440": {
           "title": "Series Statement/added Entry--title",
@@ -6894,7 +7012,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6902,7 +7021,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "490": {
           "title": "Series Statement",
@@ -6980,7 +7100,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -6988,7 +7109,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "500": {
           "title": "General Note",
@@ -7062,7 +7184,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7070,7 +7193,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "501": {
           "title": "With Note",
@@ -7127,7 +7251,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7135,7 +7260,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "502": {
           "title": "Dissertation Note",
@@ -7212,7 +7338,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7220,7 +7347,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "504": {
           "title": "Bibliography, Etc. Note",
@@ -7277,7 +7405,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7285,7 +7414,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "505": {
           "title": "Formatted Contents Note",
@@ -7377,7 +7507,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7385,7 +7516,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "506": {
           "title": "Restrictions On Access Note",
@@ -7502,7 +7634,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7510,7 +7643,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "507": {
           "title": "Scale Note For Graphic Material",
@@ -7565,7 +7699,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -7624,7 +7759,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7632,7 +7768,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "510": {
           "title": "Citation/references Note",
@@ -7727,7 +7864,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7735,7 +7873,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "511": {
           "title": "Participant Or Performer Note",
@@ -7805,7 +7944,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7813,7 +7953,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "512": {
           "title": "Earlier Or Later Volumes Separately Cataloged Note (se)",
@@ -7862,7 +8003,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7870,7 +8012,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "513": {
           "title": "Type Of Report And Period Covered Note",
@@ -7927,7 +8070,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -7935,7 +8079,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "514": {
           "title": "Data Quality Note",
@@ -8050,7 +8195,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -8113,7 +8259,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8121,7 +8268,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "516": {
           "title": "Type Of Computer File Or Data Note",
@@ -8179,7 +8327,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8187,7 +8336,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "517": {
           "title": "Categories Of Films Note (archival) (vm)",
@@ -8246,7 +8396,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -8340,7 +8491,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8348,7 +8500,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "520": {
           "title": "Summary, Etc.",
@@ -8456,7 +8609,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8464,7 +8618,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "521": {
           "title": "Target Audience Note",
@@ -8552,7 +8707,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8560,7 +8716,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "522": {
           "title": "Geographic Coverage Note",
@@ -8618,7 +8775,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8626,7 +8784,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "524": {
           "title": "Preferred Citation Of Described Materials Note",
@@ -8694,7 +8853,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8702,7 +8862,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "525": {
           "title": "Supplement Note",
@@ -8758,7 +8919,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8766,7 +8928,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "526": {
           "title": "Study Program Information Note",
@@ -8859,7 +9022,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8867,7 +9031,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "527": {
           "title": "Censorship Note (vm)",
@@ -8916,7 +9081,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -8924,7 +9090,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "530": {
           "title": "Additional Physical Form Available Note",
@@ -9005,7 +9172,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9013,7 +9181,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "532": {
           "title": "Accessibility Note",
@@ -9079,7 +9248,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9087,7 +9257,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "533": {
           "title": "Reproduction Note",
@@ -9189,7 +9360,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9197,7 +9369,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "534": {
           "title": "Original Version Note",
@@ -9319,7 +9492,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9327,7 +9501,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "535": {
           "title": "Location Of Originals/duplicates Note",
@@ -9418,7 +9593,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9426,7 +9602,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "536": {
           "title": "Funding Information Note",
@@ -9513,7 +9690,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9521,7 +9699,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "538": {
           "title": "System Details Note",
@@ -9593,7 +9772,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9601,7 +9781,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "540": {
           "title": "Terms Governing Use And Reproduction Note",
@@ -9703,7 +9884,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9711,7 +9893,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "541": {
           "title": "Immediate Source Of Acquisition Note",
@@ -9766,7 +9949,8 @@
                       "type": "string"
                     }
                   }
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9774,7 +9958,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "542": {
           "title": "Information Relating To Copyright Status",
@@ -9820,7 +10005,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "543": {
           "title": "Solicitation Information Note (am)",
@@ -9869,7 +10055,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9877,7 +10064,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "544": {
           "title": "Location Of Other Archival Materials Note",
@@ -9969,7 +10157,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -9977,7 +10166,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "545": {
           "title": "Biographical Or Historical Data",
@@ -10049,7 +10239,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10057,7 +10248,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "546": {
           "title": "Language Note",
@@ -10123,7 +10315,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10131,7 +10324,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "547": {
           "title": "Former Title Complexity Note",
@@ -10187,7 +10381,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10195,7 +10390,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "550": {
           "title": "Issuing Body Note",
@@ -10251,7 +10447,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10259,7 +10456,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "552": {
           "title": "Entity And Attribute Information Note",
@@ -10396,7 +10594,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10404,7 +10603,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "555": {
           "title": "Cumulative Index/finding Aids Note",
@@ -10491,7 +10691,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10499,7 +10700,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "556": {
           "title": "Information About Documentation Note",
@@ -10562,7 +10764,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10570,7 +10773,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "561": {
           "title": "Ownership And Custodial History",
@@ -10652,7 +10856,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10660,7 +10865,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "562": {
           "title": "Copy And Version Identification Note",
@@ -10742,7 +10948,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10750,7 +10957,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "563": {
           "title": "Binding Information",
@@ -10817,7 +11025,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10825,7 +11034,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "565": {
           "title": "Case File Characteristics Note",
@@ -10912,7 +11122,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -10920,7 +11131,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "567": {
           "title": "Methodology Note",
@@ -10998,7 +11210,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11006,7 +11219,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "570": {
           "title": "Editor Note (se)",
@@ -11061,7 +11275,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11069,7 +11284,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "580": {
           "title": "Linking Entry Complexity Note",
@@ -11126,7 +11342,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11134,7 +11351,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "581": {
           "title": "Publications About Described Materials Note",
@@ -11202,7 +11420,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11210,7 +11429,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "583": {
           "title": "Action Note",
@@ -11362,7 +11582,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11370,7 +11591,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "584": {
           "title": "Accumulation And Frequency Of Use Note",
@@ -11437,7 +11659,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11445,7 +11668,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "585": {
           "title": "Exhibitions Note",
@@ -11507,7 +11731,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11515,7 +11740,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "586": {
           "title": "Awards Note",
@@ -11578,7 +11804,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11586,7 +11813,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "588": {
           "title": "Source Of Description Note",
@@ -11653,7 +11881,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11661,7 +11890,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "600": {
           "title": "Subject Added Entry--personal Name",
@@ -11897,7 +12127,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -11905,7 +12136,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "610": {
           "title": "Subject Added Entry--corporate Name",
@@ -12127,7 +12359,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12135,7 +12368,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "611": {
           "title": "Subject Added Entry--meeting Name",
@@ -12351,7 +12585,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12359,7 +12594,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "630": {
           "title": "Subject Added Entry--uniform Title",
@@ -12562,7 +12798,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12570,7 +12807,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "647": {
           "title": "Subject Added Entry--named Event",
@@ -12707,7 +12945,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12715,7 +12954,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "648": {
           "title": "Subject Added Entry--chronological Term",
@@ -12817,7 +13057,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12825,7 +13066,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "650": {
           "title": "Subject Added Entry--topical Term",
@@ -12991,7 +13233,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -12999,7 +13242,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "651": {
           "title": "Subject Added Entry--geographic Name",
@@ -13141,7 +13385,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13149,7 +13394,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "653": {
           "title": "Index Term--uncontrolled",
@@ -13245,7 +13491,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13253,7 +13500,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "654": {
           "title": "Subject Added Entry--faceted Topical Terms",
@@ -13374,7 +13622,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13382,7 +13631,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "655": {
           "title": "Index Term--genre/form",
@@ -13525,7 +13775,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13533,7 +13784,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "656": {
           "title": "Index Term--occupation",
@@ -13630,7 +13882,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13638,7 +13891,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "657": {
           "title": "Index Term--function",
@@ -13730,7 +13984,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13738,7 +13993,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "658": {
           "title": "Index Term--curriculum Objective",
@@ -13810,7 +14066,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13818,7 +14075,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "662": {
           "title": "Subject Added Entry--hierarchical Place Name",
@@ -13925,7 +14183,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -13933,7 +14192,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "688": {
           "title": "Subject Added Entry--type Of Entity Unspecified",
@@ -14026,7 +14286,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14034,7 +14295,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "700": {
           "title": "Added Entry--personal Name",
@@ -14253,7 +14515,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14261,7 +14524,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "710": {
           "title": "Added Entry--corporate Name",
@@ -14466,7 +14730,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14474,7 +14739,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "711": {
           "title": "Added Entry--meeting Name",
@@ -14673,7 +14939,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14681,7 +14948,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "720": {
           "title": "Added Entry--uncontrolled Name",
@@ -14753,7 +15021,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14761,7 +15030,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "730": {
           "title": "Added Entry--uniform Title",
@@ -14942,7 +15212,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -14950,7 +15221,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "740": {
           "title": "Added Entry--uncontrolled Related/analytical Title",
@@ -15046,7 +15318,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15054,7 +15327,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "751": {
           "title": "Added Entry--geographic Name",
@@ -15141,7 +15415,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15149,7 +15424,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "752": {
           "title": "Added Entry--hierarchical Place Name",
@@ -15256,7 +15532,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15264,7 +15541,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "753": {
           "title": "System Details Access To Computer Files",
@@ -15341,7 +15619,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15349,7 +15628,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "754": {
           "title": "Added Entry--taxonomic Identification",
@@ -15436,7 +15716,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15444,7 +15725,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "755": {
           "title": "Added Entry--physical Characteristics",
@@ -15529,7 +15811,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15537,7 +15820,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "758": {
           "title": "Resource Identifier",
@@ -15624,7 +15908,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15632,7 +15917,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "760": {
           "title": "Main Series Entry",
@@ -15780,7 +16066,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15788,7 +16075,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "762": {
           "title": "Subseries Entry",
@@ -15936,7 +16224,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -15944,7 +16233,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "765": {
           "title": "Original Language Entry",
@@ -16112,7 +16402,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -16120,7 +16411,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "767": {
           "title": "Translation Entry",
@@ -16288,7 +16580,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -16296,7 +16589,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "770": {
           "title": "Supplement/special Issue Entry",
@@ -16464,7 +16758,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -16472,7 +16767,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "772": {
           "title": "Supplement Parent Entry",
@@ -16644,7 +16940,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -16652,7 +16949,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "773": {
           "title": "Host Item Entry",
@@ -16826,7 +17124,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -16834,7 +17133,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "774": {
           "title": "Constituent Unit Entry",
@@ -16998,7 +17298,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17006,7 +17307,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "775": {
           "title": "Other Edition Entry",
@@ -17184,7 +17486,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17192,7 +17495,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "776": {
           "title": "Additional Physical Form Entry",
@@ -17360,7 +17664,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17368,7 +17673,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "777": {
           "title": "Issued With Entry",
@@ -17536,7 +17842,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17544,7 +17851,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "780": {
           "title": "Preceding Entry",
@@ -17736,7 +18044,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17744,7 +18053,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "785": {
           "title": "Succeeding Entry",
@@ -17940,7 +18250,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -17948,7 +18259,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "786": {
           "title": "Data Source Entry",
@@ -18127,7 +18439,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -18135,7 +18448,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "787": {
           "title": "Other Relationship Entry",
@@ -18299,7 +18613,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -18307,7 +18622,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "800": {
           "title": "Series Added Entry--personal Name",
@@ -18514,7 +18830,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -18522,7 +18839,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "810": {
           "title": "Series Added Entry--corporate Name",
@@ -18719,7 +19037,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -18727,7 +19046,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "811": {
           "title": "Series Added Entry--meeting Name",
@@ -18914,7 +19234,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -18922,7 +19243,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "830": {
           "title": "Series Added Entry--uniform Title",
@@ -19084,7 +19406,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19092,7 +19415,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "840": {
           "title": "Series Added Entry--title",
@@ -19147,7 +19471,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19155,7 +19480,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "841": {
           "title": "Holdings Coded Data Values",
@@ -19221,7 +19547,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "844": {
           "title": "Name Of Unit",
@@ -19266,7 +19593,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "850": {
           "title": "Holding Institution",
@@ -19325,7 +19653,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19333,7 +19662,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "851": {
           "title": "Location",
@@ -19424,7 +19754,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19432,7 +19763,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "852": {
           "title": "Location",
@@ -19646,7 +19978,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19654,7 +19987,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "853": {
           "title": "Captions And Pattern--basic Bibliographic Unit",
@@ -19678,7 +20012,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "854": {
           "title": "Captions And Pattern--supplementary Material",
@@ -19702,7 +20037,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "855": {
           "title": "Captions And Pattern--indexes",
@@ -19726,7 +20062,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "856": {
           "title": "Electronic Location And Access",
@@ -19957,7 +20294,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -19965,7 +20303,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "863": {
           "title": "Enumeration And Chronology--basic Bibliographic Unit",
@@ -19989,7 +20328,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "864": {
           "title": "Enumeration And Chronology--supplementary Material",
@@ -20013,7 +20353,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "865": {
           "title": "Enumeration And Chronology--indexes",
@@ -20037,7 +20378,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "866": {
           "title": "Textual Holdings--basic Bibliographic Unit",
@@ -20061,7 +20403,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "867": {
           "title": "Textual Holdings--supplementary Material",
@@ -20085,7 +20428,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "868": {
           "title": "Textual Holdings--indexes",
@@ -20109,7 +20453,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "876": {
           "title": "Item Information--basic Bibliographic Unit",
@@ -20133,7 +20478,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "877": {
           "title": "Item Information--supplementary Material",
@@ -20157,7 +20503,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "878": {
           "title": "Item Information--indexes",
@@ -20181,7 +20528,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "880": {
           "title": "Alternate Graphic Representation",
@@ -20351,7 +20699,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20359,7 +20708,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "882": {
           "title": "Replacement Record Information",
@@ -20419,7 +20769,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -20523,7 +20874,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20531,7 +20883,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "884": {
           "title": "Description Conversion Information",
@@ -20593,7 +20946,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20601,7 +20955,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "885": {
           "title": "Matching Information",
@@ -20693,7 +21048,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20701,7 +21057,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "886": {
           "title": "Foreign Marc Information Field",
@@ -20773,7 +21130,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20781,7 +21139,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "887": {
           "title": "Non-marc Information Field",
@@ -20828,7 +21187,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -20836,7 +21196,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "LDR": {
           "title": "Leader",
@@ -21198,6 +21559,7 @@
           "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
           "url": "http://www.loc.gov/marc/bibliographic/bd007.html",
           "type": "array",
+          "minItems": 1,
           "items": {
             "type": "object",
             "properties": {
@@ -29784,7 +30146,8 @@
                       ]
                     }
                   }
-                ]
+                ],
+                "minItems": 1
               }
             },
             "required": [
@@ -29792,7 +30155,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "044": {
           "title": "Country Of Publishing/producing Entity Code",
@@ -29869,7 +30233,8 @@
                 "required": [
                   "c"
                 ]
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -29906,6 +30271,7 @@
             },
             "subFields": {
               "type": "array",
+              "minItems": 1,
               "items": {
                 "type": "object",
                 "properties": {
@@ -29968,6 +30334,7 @@
             },
             "subFields": {
               "type": "array",
+              "minItems": 1,
               "items": {
                 "type": "object",
                 "properties": {
@@ -29992,6 +30359,7 @@
           "title": "Patent Control Information",
           "url": "https://www.loc.gov/marc/bibliographic/bd013.html",
           "type": "array",
+          "minItems": 1,
           "items": {
             "type": "object",
             "isRepeatable": true,
@@ -30018,6 +30386,7 @@
               },
               "subFields": {
                 "type": "array",
+                "minItems": 1,
                 "items": {
                   "type": "object",
                   "properties": {
@@ -30138,7 +30507,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30146,7 +30516,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "016": {
           "title": "National Bibliographic Agency Control Number",
@@ -30209,7 +30580,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30217,7 +30589,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "017": {
           "title": "Copyright Or Legal Deposit Number",
@@ -30304,7 +30677,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30312,7 +30686,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "018": {
           "title": "Copyright Article-fee Code",
@@ -30362,7 +30737,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -30436,7 +30812,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30444,7 +30821,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "024": {
           "title": "Other Standard Identifier",
@@ -30557,7 +30935,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30565,7 +30944,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "025": {
           "title": "Overseas Acquisition Number",
@@ -30612,7 +30992,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30620,7 +31001,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "026": {
           "title": "Fingerprint Identifier",
@@ -30702,7 +31084,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30710,7 +31093,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "027": {
           "title": "Standard Technical Report Number",
@@ -30772,7 +31156,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30780,7 +31165,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "028": {
           "title": "Publisher Number Or Distributor Number",
@@ -30882,7 +31268,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30890,7 +31277,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "030": {
           "title": "Coden Designation",
@@ -30947,7 +31335,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -30955,7 +31344,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "031": {
           "title": "Musical Incipits Information",
@@ -31092,7 +31482,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31100,7 +31491,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "032": {
           "title": "Postal Registration Number",
@@ -31157,7 +31549,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31165,7 +31558,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "033": {
           "title": "Date/time And Place Of An Event",
@@ -31280,7 +31674,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31288,7 +31683,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "034": {
           "title": "Coded Cartographic Mathematical Data",
@@ -31470,7 +31866,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31478,7 +31875,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "035": {
           "title": "System Control Number",
@@ -31535,7 +31933,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31543,7 +31942,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "036": {
           "title": "Original Study Number For Computer Data Files",
@@ -31598,7 +31998,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -31702,7 +32103,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -31710,7 +32112,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "038": {
           "title": "Record Content Licensor",
@@ -31760,7 +32163,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -31837,7 +32241,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -31996,7 +32401,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32004,7 +32410,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "042": {
           "title": "Authentication Code",
@@ -32044,7 +32451,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -32126,7 +32534,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -32207,7 +32616,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -32326,7 +32736,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32334,7 +32745,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "047": {
           "title": "Form Of Musical Composition Code",
@@ -32392,7 +32804,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32400,7 +32813,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "048": {
           "title": "Number Of Musical Instruments Or Voices Code",
@@ -32463,7 +32877,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32471,7 +32886,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "050": {
           "title": "Library Of Congress Call Number",
@@ -32567,7 +32983,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32575,7 +32992,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "051": {
           "title": "Library Of Congress Copy, Issue, Offprint Statement",
@@ -32632,7 +33050,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32640,7 +33059,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "052": {
           "title": "Geographic Classification",
@@ -32735,7 +33155,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32743,7 +33164,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "055": {
           "title": "Classification Numbers Assigned In Canada",
@@ -32863,7 +33285,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32871,7 +33294,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "060": {
           "title": "National Library Of Medicine Call Number",
@@ -32953,7 +33377,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -32961,7 +33386,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "061": {
           "title": "National Library Of Medicine Copy Statement",
@@ -33018,7 +33444,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33026,7 +33453,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "066": {
           "title": "Character Sets Present",
@@ -33076,7 +33504,8 @@
                   }
                 },
                 "additionalProperties": false
-              }
+              },
+              "minItems": 1
             }
           },
           "required": [
@@ -33155,7 +33584,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33163,7 +33593,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "071": {
           "title": "National Agricultural Library Copy Statement",
@@ -33220,7 +33651,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33228,7 +33660,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "072": {
           "title": "Subject Category Code",
@@ -33296,7 +33729,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33304,7 +33738,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "074": {
           "title": "Gpo Item Number",
@@ -33356,7 +33791,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33364,7 +33800,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "080": {
           "title": "Universal Decimal Classification Number",
@@ -33462,7 +33899,8 @@
                   "required": [
                     "a"
                   ]
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33470,7 +33908,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "082": {
           "title": "Dewey Decimal Classification Number",
@@ -33580,7 +34019,8 @@
                   "required": [
                     "a"
                   ]
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33588,7 +34028,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "083": {
           "title": "Additional Dewey Decimal Classification Number",
@@ -33680,7 +34121,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33688,7 +34130,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "084": {
           "title": "Other Classification Number",
@@ -33765,7 +34208,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33773,7 +34217,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "085": {
           "title": "Synthesized Classification Number Components",
@@ -33890,7 +34335,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33898,7 +34344,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "086": {
           "title": "Government Document Classification Number",
@@ -33975,7 +34422,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -33983,7 +34431,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         },
         "088": {
           "title": "Report Number",
@@ -34040,7 +34489,8 @@
                     }
                   },
                   "additionalProperties": false
-                }
+                },
+                "minItems": 1
               }
             },
             "required": [
@@ -34048,7 +34498,8 @@
               "indicator2",
               "subFields"
             ]
-          }
+          },
+          "minItems": 1
         }
       },
       "allOf": [
