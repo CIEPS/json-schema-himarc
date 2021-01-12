@@ -103,8 +103,11 @@
               "type": "string"
             }
           },
-          "required": ["a"]
-        }
+          "required": [
+            "a"
+          ]
+        },
+        "minItems": 1
       }
     },
     "required": [
@@ -112,5 +115,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "minItems": 1
 }

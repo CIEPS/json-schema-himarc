@@ -93,21 +93,26 @@
                   "type": "string"
                 }
               },
-              "required": ["2"]
+              "required": [
+                "2"
+              ]
             }
           },
           {
-            "contains":{
+            "contains": {
               "type": "object",
               "properties": {
                 "a": {
                   "type": "string"
                 }
               },
-              "required": ["a"]
+              "required": [
+                "a"
+              ]
             }
           }
-        ]
+        ],
+        "minItems": 1
       }
     },
     "required": [
@@ -115,5 +120,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "minItems": 1
 }

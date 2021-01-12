@@ -2,6 +2,7 @@
   "title": "Patent Control Information",
   "url": "https://www.loc.gov/marc/bibliographic/bd013.html",
   "type": "array",
+  "minItems": 1,
   "items": {
     "type": "object",
     "isRepeatable": true,
@@ -28,6 +29,7 @@
       },
       "subFields": {
         "type": "array",
+        "minItems": 1,
         "items": {
           "type": "object",
           "properties": {

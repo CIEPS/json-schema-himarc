@@ -19,6 +19,47 @@
         "items": {
           "type": "object",
           "properties": {
+            "0": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "1": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "2": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "3": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "4": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "5": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false
+            },
+            "7": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "8": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
+            "9": {
+              "title": "Same as associated field",
+              "type": "string"
+            },
             "a": {
               "title": "Same as associated field",
               "type": "string"
@@ -122,51 +163,11 @@
             "z": {
               "title": "Same as associated field",
               "type": "string"
-            },
-            "0": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "1": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "2": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "3": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "4": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "5": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "6": {
-              "title": "Linkage",
-              "type": "string",
-              "isRepeatable": false
-            },
-            "7": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "8": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "9": {
-              "title": "Same as associated field",
-              "type": "string"
             }
           },
           "additionalProperties": false
-        }
+        },
+        "minItems": 1
       }
     },
     "required": [
@@ -174,5 +175,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "minItems": 1
 }

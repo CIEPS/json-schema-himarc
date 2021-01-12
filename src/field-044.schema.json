@@ -70,8 +70,11 @@
             "type": "string"
           }
         },
-        "required": ["c"]
-      }
+        "required": [
+          "c"
+        ]
+      },
+      "minItems": 1
     }
   },
   "required": [

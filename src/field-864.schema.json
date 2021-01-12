@@ -20,5 +20,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "minItems": 1
 }

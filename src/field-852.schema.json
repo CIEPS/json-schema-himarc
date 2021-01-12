@@ -210,7 +210,8 @@
             }
           },
           "additionalProperties": false
-        }
+        },
+        "minItems": 1
       }
     },
     "required": [
@@ -218,5 +219,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "minItems": 1
 }
