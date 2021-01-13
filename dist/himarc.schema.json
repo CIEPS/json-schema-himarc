@@ -21516,6 +21516,7 @@
                   "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
                 }
               },
+              "additionalProperties": false,
               "required": [
                 "00-04",
                 "05",

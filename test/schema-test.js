@@ -39,10 +39,11 @@ describe('LDR schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.leader);
     const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate', function () {
+  it('shouldn\'t validate with addtionnal and missing properties', function () {
     const data = {
       positions: {
         100: '2',
@@ -65,6 +66,12 @@ describe('LDR schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.leader);
     const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+      expect(validate.errors.some(error => error.message === "should have required property '10'")).to.be.true;
+      expect(validate.errors.some(error => error.message === "should have required property '11'")).to.be.true;
+      expect(validate.errors.some(error => error.message === "should have required property '17'")).to.be.true;
+    }
     expect(valid).to.be.false;
   });
 });
@@ -80,10 +87,11 @@ describe('007 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_007);
     const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate', function () {
+  it('shouldn\'t validate with an unauthorized values', function () {
     const data = [{
       positions: {
         '00': 'x',
@@ -93,6 +101,9 @@ describe('007 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_007);
     const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should be equal to one of the allowed values')).to.be.true;
+    }
     expect(valid).to.be.false;
   });
 });
@@ -201,7 +212,7 @@ describe('022 schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate', function () {
+  it('shouldn\'t validate with a missing required property and addtional property', function () {
     const data = [{
       indicator1: '0',
       indicator2: '\\',
@@ -223,6 +234,11 @@ describe('022 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_022);
     const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+      expect(validate.errors.some(error => error.message === "should have required property 'a'")).to.be.true;
+      expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+    }
     expect(valid).to.be.false;
   });
 });
@@ -245,7 +261,7 @@ describe('044 schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate', function () {
+  it('shouldn\'t validate with a missing required property', function () {
     const data = {
       indicator1: '\\',
       indicator2: '\\',
@@ -258,6 +274,10 @@ describe('044 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_044);
     const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === "should have required property 'c'")).to.be.true;
+      expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+    }
     expect(valid).to.be.false;
   });
 });
@@ -279,10 +299,11 @@ describe('222 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate', function () {
+  it('shouldn\'t validate with an additional property', function () {
     const data = [{
       indicator1: '\\',
       indicator2: '0',
@@ -298,6 +319,9 @@ describe('222 schema', function () {
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+    }
     expect(valid).to.be.false;
   });
 });
