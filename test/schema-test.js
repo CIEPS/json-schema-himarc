@@ -370,6 +370,102 @@ describe('Varying Form of Title (246) schema', function () {
   });
 });
 
+describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
+  it('should validate', function () {
+    const data = [{
+      indicator1: '\\',
+      indicator2: '\\',
+      subFields: [
+        {
+          a: 'Paris'
+        },
+        {
+          b: 'My Publisher'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_260);
+    const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
+    expect(valid).to.be.true;
+  });
+
+  it('shouldn\'t validate with a missing required property and addtional property', function () {
+    const data = [{
+      indicator1: '\\',
+      indicator2: '\\',
+      subFields: [
+        {
+          a: 'Paris'
+        },
+        {
+          w: 'something'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_260);
+    const valid = validate(data);
+    if (validate.errors) {
+      if (validate.errors) {
+        expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+        expect(validate.errors.some(error => error.message === "should have required property 'b'")).to.be.true;
+        expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+      }
+    }
+    expect(valid).to.be.false;
+  });
+});
+
+describe('Production, Publication, Distribution, Manufacture, and Copyright Notice (264) schema', function () {
+  it('should validate', function () {
+    const data = [{
+      indicator1: '2',
+      indicator2: '0',
+      subFields: [
+        {
+          a: 'Paris'
+        },
+        {
+          b: 'My Publisher'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_264);
+    const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
+    expect(valid).to.be.true;
+  });
+
+  it('shouldn\'t validate with a missing required property and addtional property', function () {
+    const data = [{
+      indicator1: '2',
+      indicator2: '0',
+      subFields: [
+        {
+          a: 'Paris'
+        },
+        {
+          w: 'something'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_264);
+    const valid = validate(data);
+    if (validate.errors) {
+      if (validate.errors) {
+        expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+        expect(validate.errors.some(error => error.message === "should have required property 'b'")).to.be.true;
+        expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+      }
+    }
+    expect(valid).to.be.false;
+  });
+});
+
 describe('full schema', function () {
   it('should validate', function () {
     const data = {
@@ -479,6 +575,9 @@ describe('full schema', function () {
           subFields: [
             {
               a: 'Paris'
+            },
+            {
+              b: 'My Publisher'
             }
           ]
         }]
@@ -595,6 +694,9 @@ describe('full schema', function () {
           subFields: [
             {
               a: 'Paris'
+            },
+            {
+              b: 'My Publisher'
             }
           ]
         }]
@@ -701,6 +803,9 @@ describe('full schema', function () {
           subFields: [
             {
               a: 'Paris'
+            },
+            {
+              b: 'My Publisher'
             }
           ]
         }]
