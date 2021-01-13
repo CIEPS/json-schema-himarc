@@ -902,72 +902,79 @@
         "222": {
           "title": "Key Title",
           "url": "https://www.loc.gov/marc/bibliographic/bd222.html",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "isRepeatable": true,
-            "properties": {
-              "indicator1": {
-                "title": "Undefined",
-                "type": "string",
-                "const": "\\",
-                "code": {
-                  "\\": {
-                    "title": "Undefined"
-                  }
+          "type": "object",
+          "isRepeatable": true,
+          "properties": {
+            "indicator1": {
+              "title": "Undefined",
+              "type": "string",
+              "const": "\\",
+              "code": {
+                "\\": {
+                  "title": "Undefined"
                 }
-              },
-              "indicator2": {
-                "title": "Nonfiling characters",
-                "type": "string",
-                "pattern": "[0-9]",
-                "code": {
-                  "0": {
-                    "title": "No nonfiling characters"
-                  },
-                  "1-9": {
-                    "title": "Number of nonfiling characters "
-                  }
-                }
-              },
-              "subFields": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "6": {
-                      "title": "Linkage",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "8": {
-                      "title": "Field link and sequence number",
-                      "type": "string",
-                      "isRepeatable": true
-                    },
-                    "a": {
-                      "title": "Key title",
-                      "type": "string",
-                      "isRepeatable": false
-                    },
-                    "b": {
-                      "title": "Qualifying information",
-                      "type": "string",
-                      "isRepeatable": false
-                    }
-                  },
-                  "additionalProperties": false
-                },
-                "minItems": 1
               }
             },
-            "required": [
-              "indicator1",
-              "indicator2",
-              "subFields"
-            ]
+            "indicator2": {
+              "title": "Nonfiling characters",
+              "type": "string",
+              "pattern": "[0-9]",
+              "code": {
+                "0": {
+                  "title": "No nonfiling characters"
+                },
+                "1-9": {
+                  "title": "Number of nonfiling characters "
+                }
+              }
+            },
+            "subFields": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "6": {
+                    "title": "Linkage",
+                    "type": "string",
+                    "isRepeatable": false
+                  },
+                  "8": {
+                    "title": "Field link and sequence number",
+                    "type": "string",
+                    "isRepeatable": true
+                  },
+                  "a": {
+                    "title": "Key title",
+                    "type": "string",
+                    "isRepeatable": false
+                  },
+                  "b": {
+                    "title": "Qualifying information",
+                    "type": "string",
+                    "isRepeatable": false
+                  }
+                },
+                "additionalProperties": false
+              },
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "a"
+                ]
+              },
+              "minItems": 1
+            }
           },
-          "minItems": 1
+          "required": [
+            "indicator1",
+            "indicator2",
+            "subFields"
+          ]
         },
         "240": {
           "title": "Uniform Title",

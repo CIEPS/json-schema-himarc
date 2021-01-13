@@ -284,7 +284,7 @@ describe('044 schema', function () {
 
 describe('222 schema', function () {
   it('should validate', function () {
-    const data = [{
+    const data = {
       indicator1: '\\',
       indicator2: '0',
       subFields: [
@@ -295,7 +295,7 @@ describe('222 schema', function () {
           b: '(London)'
         }
       ]
-    }];
+    };
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
@@ -304,7 +304,7 @@ describe('222 schema', function () {
   });
 
   it('shouldn\'t validate with an additional property', function () {
-    const data = [{
+    const data = {
       indicator1: '\\',
       indicator2: '0',
       subFields: [
@@ -315,7 +315,7 @@ describe('222 schema', function () {
           x: '(London)'
         }
       ]
-    }];
+    };
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
@@ -408,7 +408,7 @@ describe('full schema', function () {
             }
           ]
         }],
-        222: [{
+        222: {
           indicator1: '\\',
           indicator2: '0',
           subFields: [
@@ -419,7 +419,7 @@ describe('full schema', function () {
               b: '(London)'
             }
           ]
-        }]
+        }
       }
     };
     const ajv = new Ajv({ allErrors: true });
@@ -506,7 +506,7 @@ describe('full schema', function () {
             }
           ]
         }],
-        222: [{
+        222: {
           indicator1: '\\',
           indicator2: '0',
           subFields: [
@@ -517,7 +517,7 @@ describe('full schema', function () {
               b: '(London)'
             }
           ]
-        }]
+        }
       }
     };
     const ajv = new Ajv({ allErrors: true });
@@ -594,7 +594,7 @@ describe('full schema', function () {
         }],
         '044': {},
         '080': [],
-        222: [{
+        222: {
           indicator1: '\\',
           indicator2: '0',
           subFields: [
@@ -605,7 +605,7 @@ describe('full schema', function () {
               b: '(London)'
             }
           ]
-        }]
+        }
       }
     };
     const ajv = new Ajv({ allErrors: true });
