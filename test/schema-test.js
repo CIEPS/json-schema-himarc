@@ -419,6 +419,15 @@ describe('full schema', function () {
               b: '(London)'
             }
           ]
+        },
+        245: {
+          indicator1: '1',
+          indicator2: '0',
+          subFields: [
+            {
+              a: 'Another Nature'
+            }
+          ]
         }
       }
     };
@@ -517,6 +526,15 @@ describe('full schema', function () {
               b: '(London)'
             }
           ]
+        },
+        245: {
+          indicator1: '1',
+          indicator2: '0',
+          subFields: [
+            {
+              a: 'Another Nature'
+            }
+          ]
         }
       }
     };
@@ -603,6 +621,15 @@ describe('full schema', function () {
             },
             {
               b: '(London)'
+            }
+          ]
+        },
+        245: {
+          indicator1: '1',
+          indicator2: '0',
+          subFields: [
+            {
+              a: 'Another Nature'
             }
           ]
         }

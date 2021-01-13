@@ -1533,6 +1533,17 @@
                 },
                 "additionalProperties": false
               },
+              "contains": {
+                "type": "object",
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "a"
+                ]
+              },
               "minItems": 1
             }
           },
@@ -34516,7 +34527,8 @@
             "008",
             "022",
             "044",
-            "222"
+            "222",
+            "245"
           ]
         },
         {
