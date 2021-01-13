@@ -15,7 +15,7 @@ describe('es6 proxies', function () {
   });
 });
 
-describe('LDR schema', function () {
+describe('Leader (LDR) schema', function () {
   it('should validate', function () {
     const data = {
       positions: {
@@ -76,7 +76,7 @@ describe('LDR schema', function () {
   });
 });
 
-describe('007 schema', function () {
+describe('Physical Description (007) schema', function () {
   it('should validate', function () {
     const data = [{
       positions: {
@@ -108,7 +108,7 @@ describe('007 schema', function () {
   });
 });
 
-describe('008 schema', function () {
+describe('Data Elements (008) schema', function () {
   it('should validate', function (done) {
     const data = {
       positions: {
@@ -185,7 +185,7 @@ describe('008 schema', function () {
   });
 });
 
-describe('022 schema', function () {
+describe('International Standard Serial Number (022) schema', function () {
   it('should validate', function () {
     const data = [{
       indicator1: '0',
@@ -243,7 +243,7 @@ describe('022 schema', function () {
   });
 });
 
-describe('044 schema', function () {
+describe('Country of Publishing/Producing Entity Code (044) schema', function () {
   it('should validate', function () {
     const data = {
       indicator1: '\\',
@@ -282,7 +282,7 @@ describe('044 schema', function () {
   });
 });
 
-describe('222 schema', function () {
+describe('Key Title (222) schema', function () {
   it('should validate', function () {
     const data = {
       indicator1: '\\',
@@ -318,6 +318,50 @@ describe('222 schema', function () {
     };
     const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
+    const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+    }
+    expect(valid).to.be.false;
+  });
+});
+
+describe('Varying Form of Title (246) schema', function () {
+  it('should validate', function () {
+    const data = [{
+      indicator1: '0',
+      indicator2: '0',
+      subFields: [
+        {
+          a: 'Variant title'
+        },
+        {
+          b: '(something)'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_246);
+    const valid = validate(data);
+    if (validate.errors) console.dir(validate.errors, { depth: 8 });
+    expect(valid).to.be.true;
+  });
+
+  it('shouldn\'t validate with an additional property', function () {
+    const data = [{
+      indicator1: '0',
+      indicator2: '0',
+      subFields: [
+        {
+          a: 'Variant title'
+        },
+        {
+          x: '(something)'
+        }
+      ]
+    }];
+    const ajv = new Ajv({ allErrors: true });
+    const validate = ajv.compile(schemaHelper.field_246);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
