@@ -472,7 +472,16 @@ describe('full schema', function () {
               a: 'Another Nature'
             }
           ]
-        }
+        },
+        260: [{
+          indicator1: '\\',
+          indicator2: '\\',
+          subFields: [
+            {
+              a: 'Paris'
+            }
+          ]
+        }]
       }
     };
     const ajv = new Ajv({ allErrors: true });
@@ -579,7 +588,16 @@ describe('full schema', function () {
               a: 'Another Nature'
             }
           ]
-        }
+        },
+        260: [{
+          indicator1: '\\',
+          indicator2: '\\',
+          subFields: [
+            {
+              a: 'Paris'
+            }
+          ]
+        }]
       }
     };
     const ajv = new Ajv({ allErrors: true });
@@ -676,7 +694,16 @@ describe('full schema', function () {
               a: 'Another Nature'
             }
           ]
-        }
+        },
+        260: [{
+          indicator1: '\\',
+          indicator2: '\\',
+          subFields: [
+            {
+              a: 'Paris'
+            }
+          ]
+        }]
       }
     };
     const ajv = new Ajv({ allErrors: true });

@@ -791,6 +791,12 @@
             { "required": ["080"] },
             { "required": ["082"] }
           ]
+        },
+        {
+          "oneOf": [
+            { "required": ["260"] },
+            { "required": ["264"] }
+          ]
         }
       ]
     }
