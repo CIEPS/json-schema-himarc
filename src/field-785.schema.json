@@ -193,6 +193,17 @@
           },
           "additionalProperties": false
         },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
+        },
         "minItems": 1
       }
     },
