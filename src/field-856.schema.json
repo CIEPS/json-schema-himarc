@@ -228,6 +228,17 @@
           },
           "additionalProperties": false
         },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "u": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "u"
+          ]
+        },
         "minItems": 1
       }
     },
