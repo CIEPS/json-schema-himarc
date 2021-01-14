@@ -43,7 +43,7 @@ describe('Leader (LDR) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with addtionnal and missing properties', function () {
+  it('shouldn\'t validate with additional and missing properties', function () {
     const data = {
       positions: {
         100: '2',
@@ -212,7 +212,7 @@ describe('International Standard Serial Number (022) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property and addtional property', function () {
+  it('shouldn\'t validate with a missing required property and additional property', function () {
     const data = [{
       indicator1: '0',
       indicator2: '\\',
@@ -391,7 +391,7 @@ describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property and addtional property', function () {
+  it('shouldn\'t validate with a missing required property and additional property', function () {
     const data = [{
       indicator1: '\\',
       indicator2: '\\',
@@ -439,7 +439,7 @@ describe('Production, Publication, Distribution, Manufacture, and Copyright Noti
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property and addtional property', function () {
+  it('shouldn\'t validate with a missing required property and additional property', function () {
     const data = [{
       indicator1: '2',
       indicator2: '0',
