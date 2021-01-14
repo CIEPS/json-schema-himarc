@@ -3,11 +3,16 @@
 'use strict';
 
 const { expect } = require('chai');
-const Ajv = require('ajv');
+const Ajv = require('ajv').default;
 const refParser = require('@apidevtools/json-schema-ref-parser');
 const schemaHelper = require('../src');
 const fullSchema = require('../dist/himarc.schema.json');
 const schemaProxies = require('../main.js');
+
+const ajv = new Ajv({
+  allErrors: true,
+  strict: false
+});
 
 describe('es6 proxies', function () {
   it('should access to nested data', function () {
@@ -36,7 +41,6 @@ describe('Leader (LDR) schema', function () {
         '12-16': '00541'
       }
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.leader);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -63,7 +67,6 @@ describe('Leader (LDR) schema', function () {
         '12-16': '00541'
       }
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.leader);
     const valid = validate(data);
     if (validate.errors) {
@@ -84,7 +87,6 @@ describe('Physical Description (007) schema', function () {
         '01': 'a'
       }
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_007);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -98,7 +100,6 @@ describe('Physical Description (007) schema', function () {
         '01': 'a'
       }
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_007);
     const valid = validate(data);
     if (validate.errors) {
@@ -139,7 +140,6 @@ describe('Data Elements (008) schema', function () {
     };
     refParser.dereference(schemaHelper.field_008, (error, schema) => {
       if (error) return done(error);
-      const ajv = new Ajv({ allErrors: true });
       const validate = ajv.compile(schema);
       const valid = validate(data);
       if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -178,7 +178,6 @@ describe('Data Elements (008) schema', function () {
     };
     refParser.dereference(schemaHelper.field_008, (error, schema) => {
       if (error) return done(error);
-      const ajv = new Ajv({ allErrors: true });
       const validate = ajv.compile(schema);
       const valid = validate(data);
       expect(valid).to.be.false;
@@ -207,7 +206,6 @@ describe('International Standard Serial Number (022) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_022);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -233,13 +231,12 @@ describe('International Standard Serial Number (022) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_022);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
       expect(validate.errors.some(error => error.message === "should have required property 'a'")).to.be.true;
-      expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+      expect(validate.errors.some(error => error.message === 'should contain at least 1 valid item(s)')).to.be.true;
     }
     expect(valid).to.be.false;
   });
@@ -256,7 +253,6 @@ describe('Country of Publishing/Producing Entity Code (044) schema', function ()
         }
       ]
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_044);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -273,12 +269,11 @@ describe('Country of Publishing/Producing Entity Code (044) schema', function ()
         }
       ]
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_044);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === "should have required property 'c'")).to.be.true;
-      expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+      expect(validate.errors.some(error => error.message === 'should contain at least 1 valid item(s)')).to.be.true;
     }
     expect(valid).to.be.false;
   });
@@ -298,7 +293,6 @@ describe('Key Title (222) schema', function () {
         }
       ]
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -318,7 +312,6 @@ describe('Key Title (222) schema', function () {
         }
       ]
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_222);
     const valid = validate(data);
     if (validate.errors) {
@@ -342,7 +335,6 @@ describe('Varying Form of Title (246) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_246);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -362,7 +354,6 @@ describe('Varying Form of Title (246) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_246);
     const valid = validate(data);
     if (validate.errors) {
@@ -386,7 +377,6 @@ describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_260);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -406,14 +396,13 @@ describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_260);
     const valid = validate(data);
     if (validate.errors) {
       if (validate.errors) {
         expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
         expect(validate.errors.some(error => error.message === "should have required property 'b'")).to.be.true;
-        expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+        expect(validate.errors.some(error => error.message === 'should contain at least 1 valid item(s)')).to.be.true;
       }
     }
     expect(valid).to.be.false;
@@ -434,7 +423,6 @@ describe('Production, Publication, Distribution, Manufacture, and Copyright Noti
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_264);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -454,14 +442,13 @@ describe('Production, Publication, Distribution, Manufacture, and Copyright Noti
         }
       ]
     }];
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(schemaHelper.field_264);
     const valid = validate(data);
     if (validate.errors) {
       if (validate.errors) {
         expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
         expect(validate.errors.some(error => error.message === "should have required property 'b'")).to.be.true;
-        expect(validate.errors.some(error => error.message === 'should contain a valid item')).to.be.true;
+        expect(validate.errors.some(error => error.message === 'should contain at least 1 valid item(s)')).to.be.true;
       }
     }
     expect(valid).to.be.false;
@@ -589,7 +576,6 @@ describe('full schema', function () {
         }]
       }
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(fullSchema);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -712,7 +698,6 @@ describe('full schema', function () {
         }]
       }
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(fullSchema);
     const valid = validate(data);
     if (validate.errors) {
@@ -825,7 +810,6 @@ describe('full schema', function () {
         }]
       }
     };
-    const ajv = new Ajv({ allErrors: true });
     const validate = ajv.compile(fullSchema);
     const valid = validate(data);
     if (validate.errors) {
