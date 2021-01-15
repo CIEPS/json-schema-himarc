@@ -4,7 +4,6 @@
   "type": "array",
   "items": {
     "type": "object",
-    "isRepeatable": true,
     "properties": {
       "indicator1": {
         "title": "Level of international interest",
@@ -121,5 +120,6 @@
       "subFields"
     ]
   },
-  "minItems": 1
+  "minItems": 1,
+  "isRepeatable": true
 }

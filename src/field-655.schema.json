@@ -4,7 +4,6 @@
   "type": "array",
   "items": {
     "type": "object",
-    "isRepeatable": true,
     "properties": {
       "indicator1": {
         "title": "Type of heading",
@@ -149,5 +148,6 @@
       "subFields"
     ]
   },
-  "minItems": 1
+  "minItems": 1,
+  "isRepeatable": true
 }

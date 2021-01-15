@@ -5,7 +5,6 @@
   "minItems": 1,
   "items": {
     "type": "object",
-    "isRepeatable": true,
     "properties": {
       "indicator1": {
         "title": "Undefined",
@@ -83,5 +82,6 @@
       "indicator2",
       "subFields"
     ]
-  }
+  },
+  "isRepeatable": true
 }

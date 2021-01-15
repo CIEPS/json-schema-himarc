@@ -507,6 +507,142 @@
     "c": {
       "type": "object",
       "properties": {
+        "10": {
+          "title": "Quality assurance targets",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+          "enum": [
+            "a",
+            "n",
+            "p",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Absent"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Present"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "11": {
+          "title": "Antecedent/source",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "m",
+            "n",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "File reproduced from original"
+            },
+            "b": {
+              "title": "File reproduced from microform"
+            },
+            "c": {
+              "title": "File reproduced from an electronic resource"
+            },
+            "d": {
+              "title": "File reproduced from an intermediate (not microform)"
+            },
+            "m": {
+              "title": "Mixed"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "12": {
+          "title": "Level of compression",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+          "enum": [
+            "a",
+            "b",
+            "d",
+            "m",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Uncompressed"
+            },
+            "b": {
+              "title": "Lossless"
+            },
+            "d": {
+              "title": "Lossy"
+            },
+            "m": {
+              "title": "Mixed"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "13": {
+          "title": "Reformatting quality",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
+          "enum": [
+            "a",
+            "n",
+            "p",
+            "r",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Access"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Preservation"
+            },
+            "r": {
+              "title": "Replacement"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
         "00": {
           "title": "Category of material",
           "type": "string",
@@ -753,142 +889,6 @@
             },
             "m": {
               "title": "Multiple file formats"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "10": {
-          "title": "Quality assurance targets",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
-          "enum": [
-            "a",
-            "n",
-            "p",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Absent"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Present"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "11": {
-          "title": "Antecedent/source",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "d",
-            "m",
-            "n",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "File reproduced from original"
-            },
-            "b": {
-              "title": "File reproduced from microform"
-            },
-            "c": {
-              "title": "File reproduced from an electronic resource"
-            },
-            "d": {
-              "title": "File reproduced from an intermediate (not microform)"
-            },
-            "m": {
-              "title": "Mixed"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "12": {
-          "title": "Level of compression",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
-          "enum": [
-            "a",
-            "b",
-            "d",
-            "m",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Uncompressed"
-            },
-            "b": {
-              "title": "Lossless"
-            },
-            "d": {
-              "title": "Lossy"
-            },
-            "m": {
-              "title": "Mixed"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "13": {
-          "title": "Reformatting quality",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007c.html",
-          "enum": [
-            "a",
-            "n",
-            "p",
-            "r",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Access"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Preservation"
-            },
-            "r": {
-              "title": "Replacement"
             },
             "u": {
               "title": "Unknown"
@@ -1386,7 +1386,7 @@
             "|": {
               "title": "No attempt to code"
             }
-           }
+          }
         },
         "03": {
           "title": "Color",
@@ -1707,6 +1707,137 @@
     "h": {
       "type": "object",
       "properties": {
+        "10": {
+          "title": "Emulsion on film",
+          "type": "string",
+          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "m",
+            "n",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Silver halide"
+            },
+            "b": {
+              "title": "Diazo"
+            },
+            "c": {
+              "title": "Vesicular"
+            },
+            "m": {
+              "title": "Mixed emulsion"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "11": {
+          "title": "Generation",
+          "type": "string",
+          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "m",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": " First generation (master)"
+            },
+            "b": {
+              "title": " Printing master"
+            },
+            "c": {
+              "title": " Service copy"
+            },
+            "m": {
+              "title": " Mixed generation"
+            },
+            "u": {
+              "title": " Unknown"
+            },
+            "|": {
+              "title": " No attempt to code"
+            }
+          }
+        },
+        "12": {
+          "title": "Base of film",
+          "type": "string",
+          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
+          "enum": [
+            "a",
+            "c",
+            "d",
+            "i",
+            "m",
+            "n",
+            "p",
+            "r",
+            "t",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Safety base, undetermined"
+            },
+            "c": {
+              "title": "Safety base, acetate undetermined"
+            },
+            "d": {
+              "title": "Safety base, diacetate"
+            },
+            "i": {
+              "title": "Nitrate base"
+            },
+            "m": {
+              "title": "Mixed base (nitrate and safety)"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Safety base, polyester"
+            },
+            "r": {
+              "title": "Safety base, mixed"
+            },
+            "t": {
+              "title": "Safety base, triacetate"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
         "00": {
           "title": "Category of material",
           "type": "string",
@@ -1773,7 +1904,7 @@
             "|": {
               "title": "No attempt to code"
             }
-           }
+          }
         },
         "03": {
           "title": "Color",
@@ -1928,137 +2059,6 @@
             },
             "m": {
               "title": "Mixed"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "10": {
-          "title": "Emulsion on film",
-          "type": "string",
-          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "m",
-            "n",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Silver halide"
-            },
-            "b": {
-              "title": "Diazo"
-            },
-            "c": {
-              "title": "Vesicular"
-            },
-            "m": {
-              "title": "Mixed emulsion"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "11": {
-          "title": "Generation",
-          "type": "string",
-          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "m",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title" :" First generation (master)"
-            },
-            "b": {
-              "title" :" Printing master"
-            },
-            "c": {
-              "title" :" Service copy"
-            },
-            "m": {
-              "title" :" Mixed generation"
-            },
-            "u": {
-              "title" :" Unknown"
-            },
-            "|": {
-              "title" :" No attempt to code"
-            }
-          }
-        },
-        "12": {
-          "title": "Base of film",
-          "type": "string",
-          "url": "http://www.loc.gov/marc/bibliographic/bd007h.html",
-          "enum": [
-            "a",
-            "c",
-            "d",
-            "i",
-            "m",
-            "n",
-            "p",
-            "r",
-            "t",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Safety base, undetermined"
-            },
-            "c": {
-              "title": "Safety base, acetate undetermined"
-            },
-            "d": {
-              "title": "Safety base, diacetate"
-            },
-            "i": {
-              "title": "Nitrate base"
-            },
-            "m": {
-              "title": "Mixed base (nitrate and safety)"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Safety base, polyester"
-            },
-            "r": {
-              "title": "Safety base, mixed"
-            },
-            "t": {
-              "title": "Safety base, triacetate"
             },
             "u": {
               "title": "Unknown"
@@ -2228,7 +2228,7 @@
           "enum": [
             "a",
             "b",
-            "c", 
+            "c",
             "d",
             "e",
             "f",
@@ -2328,28 +2328,28 @@
           "url": "https://www.loc.gov/marc/bibliographic/bd007k.html",
           "enum": [
             "#",
-            "a", 
+            "a",
             "b",
             "c",
-            "d", 
-            "e", 
-            "f", 
-            "g", 
-            "h", 
-            "i", 
-            "l", 
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "l",
             "m",
-            "n", 
-            "o", 
-            "p", 
-            "q", 
-            "r", 
-            "s", 
-            "t", 
-            "u", 
-            "v", 
-            "w", 
-            "z", 
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "z",
             "|"
           ],
           "codes": {
@@ -2432,6 +2432,361 @@
     "m": {
       "type": "object",
       "properties": {
+        "10": {
+          "title": "Positive/negative aspect",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "a",
+            "b",
+            "n",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Positive"
+            },
+            "b": {
+              "title": "Negative"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "11": {
+          "title": "Generation",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "d",
+            "e",
+            "o",
+            "r",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "d": {
+              "title": "Duplicate"
+            },
+            "e": {
+              "title": "Master"
+            },
+            "o": {
+              "title": "Original"
+            },
+            "r": {
+              "title": "Reference print/viewing copy"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "12": {
+          "title": "Base of film",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "a",
+            "c",
+            "d",
+            "i",
+            "m",
+            "n",
+            "p",
+            "r",
+            "t",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Safety base, undetermined"
+            },
+            "c": {
+              "title": "Safety base, acetate undetermined"
+            },
+            "d": {
+              "title": "Safety base, diacetate"
+            },
+            "i": {
+              "title": "Nitrate base"
+            },
+            "m": {
+              "title": "Mixed base (nitrate and safety)"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Safety base, polyester"
+            },
+            "r": {
+              "title": "Safety base, mixed"
+            },
+            "t": {
+              "title": "Safety base, triacetate"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "13": {
+          "title": "Refined categories of color",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "3 layer color"
+            },
+            "b": {
+              "title": "2 color, single strip"
+            },
+            "c": {
+              "title": "Undetermined 2 color"
+            },
+            "d": {
+              "title": "Undetermined 3 color"
+            },
+            "e": {
+              "title": "3 strip color"
+            },
+            "f": {
+              "title": "2 strip color"
+            },
+            "g": {
+              "title": "Red strip"
+            },
+            "h": {
+              "title": "Blue or green strip"
+            },
+            "i": {
+              "title": "Cyan strip"
+            },
+            "j": {
+              "title": "Magenta strip"
+            },
+            "k": {
+              "title": "Yellow strip"
+            },
+            "l": {
+              "title": "S E N 2"
+            },
+            "m": {
+              "title": "S E N 3"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Sepia tone"
+            },
+            "q": {
+              "title": "Other tone"
+            },
+            "r": {
+              "title": "Tint"
+            },
+            "s": {
+              "title": "Tinted and toned"
+            },
+            "t": {
+              "title": "Stencil color"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "v": {
+              "title": "Hand colored"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "14": {
+          "title": "Kind of color stock or print",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "n",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Imbibition dye transfer prints"
+            },
+            "b": {
+              "title": "Three-layer stock"
+            },
+            "c": {
+              "title": "Three layer stock, low fade"
+            },
+            "d": {
+              "title": "Duplitized stock"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "15": {
+          "title": "Deterioration stage",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "k",
+            "l",
+            "m",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "None apparent"
+            },
+            "b": {
+              "title": "Nitrate: suspicious odor"
+            },
+            "c": {
+              "title": "Nitrate: pungent odor"
+            },
+            "d": {
+              "title": "Nitrate: brownish, discoloration, fading, dusty"
+            },
+            "e": {
+              "title": "Nitrate: sticky"
+            },
+            "f": {
+              "title": "Nitrate: frothy, bubbles, blisters"
+            },
+            "g": {
+              "title": "Nitrate: congealed"
+            },
+            "h": {
+              "title": "Nitrate: powder"
+            },
+            "k": {
+              "title": "Non-nitrate: detectable deterioration"
+            },
+            "l": {
+              "title": "Non-nitrate: advanced deterioration"
+            },
+            "m": {
+              "title": "Non-nitrate: disaster"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "16": {
+          "title": "Completeness",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
+          "enum": [
+            "c",
+            "i",
+            "n",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "c": {
+              "title": "Complete"
+            },
+            "i": {
+              "title": "Incomplete"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
         "00": {
           "title": "Category of material",
           "type": "string",
@@ -2531,7 +2886,7 @@
             "c",
             "d",
             "e",
-            "f", 
+            "f",
             "u",
             "z",
             "|"
@@ -2600,20 +2955,19 @@
           "type": "string",
           "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
           "enum": [
-            "#", 
+            "#",
             "a",
             "b",
-            "c", 
+            "c",
             "d",
-            "e", 
-            "f", 
+            "e",
+            "f",
             "g",
             "h",
             "i",
             "u",
             "z",
             "|"
-
           ],
           "codes": {
             "#": {
@@ -2752,16 +3106,16 @@
           "type": "string",
           "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
           "enum": [
-           "a",
-           "b",
-           "c",
-           "d",
-           "e",
-           "f",
-           "g",
-           "n",
-           "z",
-           "|"
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "n",
+            "z",
+            "|"
           ],
           "codes": {
             "a": {
@@ -2790,361 +3144,6 @@
             },
             "z": {
               "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "10": {
-          "title": "Positive/negative aspect",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "a",
-            "b",
-            "n",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Positive"
-            },
-            "b": {
-              "title": "Negative"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "11": {
-          "title": "Generation",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "d",
-            "e",
-            "o",
-            "r",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "d": {
-              "title": "Duplicate"
-            },
-            "e": {
-              "title": "Master"
-            },
-            "o": {
-              "title": "Original"
-            },
-            "r": {
-              "title": "Reference print/viewing copy"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "12": {
-          "title": "Base of film",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "a",
-            "c",
-            "d",
-            "i", 
-            "m",
-            "n", 
-            "p", 
-            "r", 
-            "t", 
-            "u",
-            "z",
-            "|" 
-          ],
-          "codes": {
-            "a": {
-              "title": "Safety base, undetermined"
-            },
-            "c": {
-              "title": "Safety base, acetate undetermined"
-            },
-            "d": {
-              "title": "Safety base, diacetate"
-            },
-            "i": {
-              "title": "Nitrate base"
-            },
-            "m": {
-              "title": "Mixed base (nitrate and safety)"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Safety base, polyester"
-            },
-            "r": {
-              "title": "Safety base, mixed"
-            },
-            "t": {
-              "title": "Safety base, triacetate"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "13": {
-          "title": "Refined categories of color",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "f",
-            "g",
-            "h", 
-            "i",
-            "j",
-            "k",
-            "l",
-            "m",
-            "n",
-            "p",
-            "q",
-            "r",
-            "s", 
-            "t",
-            "u",
-            "v",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "3 layer color"
-            },
-            "b": {
-              "title": "2 color, single strip"
-            },
-            "c": {
-              "title": "Undetermined 2 color"
-            },
-            "d": {
-              "title": "Undetermined 3 color"
-            },
-            "e": {
-              "title": "3 strip color"
-            },
-            "f": {
-              "title": "2 strip color"
-            },
-            "g": {
-              "title": "Red strip"
-            },
-            "h": {
-              "title": "Blue or green strip"
-            },
-            "i": {
-              "title": "Cyan strip"
-            },
-            "j": {
-              "title": "Magenta strip"
-            },
-            "k": {
-              "title": "Yellow strip"
-            },
-            "l": {
-              "title": "S E N 2"
-            },
-            "m": {
-              "title": "S E N 3"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Sepia tone"
-            },
-            "q": {
-              "title": "Other tone"
-            },
-            "r": {
-              "title": "Tint"
-            },
-            "s": {
-              "title": "Tinted and toned"
-            },
-            "t": {
-              "title": "Stencil color"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "v": {
-              "title": "Hand colored"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "14": {
-          "title": "Kind of color stock or print",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "d",
-            "n",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Imbibition dye transfer prints"
-            },
-            "b": {
-              "title": "Three-layer stock"
-            },
-            "c": {
-              "title": "Three layer stock, low fade"
-            },
-            "d": {
-              "title": "Duplitized stock"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "15": {
-          "title": "Deterioration stage",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "d",
-            "e", 
-            "f",
-            "g",
-            "h",
-            "k",
-            "l",
-            "m",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "None apparent"
-            },
-            "b": {
-              "title": "Nitrate: suspicious odor"
-            },
-            "c": {
-              "title": "Nitrate: pungent odor"
-            },
-            "d": {
-              "title": "Nitrate: brownish, discoloration, fading, dusty"
-            },
-            "e": {
-              "title": "Nitrate: sticky"
-            },
-            "f": {
-              "title": "Nitrate: frothy, bubbles, blisters"
-            },
-            "g": {
-              "title": "Nitrate: congealed"
-            },
-            "h": {
-              "title": "Nitrate: powder"
-            },
-            "k": {
-              "title": "Non-nitrate: detectable deterioration"
-            },
-            "l": {
-              "title": "Non-nitrate: advanced deterioration"
-            },
-            "m": {
-              "title": "Non-nitrate: disaster"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "16": {
-          "title": "Completeness",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007m.html",
-          "enum": [
-            "c",
-            "i",
-            "n",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "c": {
-              "title": "Complete"
-            },
-            "i": {
-              "title": "Incomplete"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
             },
             "|": {
               "title": "No attempt to code"
@@ -3343,7 +3342,7 @@
             "9",
             "n",
             "u",
-            "|" 
+            "|"
           ],
           "codes": {
             "0": {
@@ -3404,7 +3403,7 @@
             "n",
             "u",
             "z",
-            "|" 
+            "|"
           ],
           "codes": {
             "a": {
@@ -3534,7 +3533,7 @@
             "dz",
             "ga",
             "gb",
-            "gc", 
+            "gc",
             "gd",
             "ge",
             "gf",
@@ -3700,6 +3699,198 @@
     "s": {
       "type": "object",
       "properties": {
+        "10": {
+          "title": "Kind of material",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "g",
+            "i",
+            "l",
+            "m",
+            "n",
+            "p",
+            "r",
+            "s",
+            "w",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Lacquer coating"
+            },
+            "b": {
+              "title": "Cellulose nitrate"
+            },
+            "c": {
+              "title": "Acetate tape with ferrous oxide"
+            },
+            "g": {
+              "title": "Glass with lacquer"
+            },
+            "i": {
+              "title": "Aluminum with lacquer"
+            },
+            "l": {
+              "title": "Metal"
+            },
+            "m": {
+              "title": "Plastic with metal"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "p": {
+              "title": "Plastic"
+            },
+            "r": {
+              "title": "Paper with lacquer or ferrous oxide"
+            },
+            "s": {
+              "title": "Shellac"
+            },
+            "w": {
+              "title": "Wax"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "11": {
+          "title": "Kind of cutting",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+          "enum": [
+            "h",
+            "l",
+            "n",
+            "u",
+            "|"
+          ],
+          "codes": {
+            "h": {
+              "title": "Hill-and-dale cutting"
+            },
+            "l": {
+              "title": "Lateral or combined cutting"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "12": {
+          "title": "Special playback characteristics",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+          "enum": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "n",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "NAB standard"
+            },
+            "b": {
+              "title": "CCIR standard"
+            },
+            "c": {
+              "title": "Dolby-B encoded"
+            },
+            "d": {
+              "title": "dbx encoded"
+            },
+            "e": {
+              "title": "Digital recording"
+            },
+            "f": {
+              "title": "Dolby-A encoded"
+            },
+            "g": {
+              "title": "Dolby-C encoded"
+            },
+            "h": {
+              "title": "CX encoded"
+            },
+            "n": {
+              "title": "Not applicable"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
+        "13": {
+          "title": "Capture and storage technique",
+          "type": "string",
+          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
+          "enum": [
+            "a",
+            "b",
+            "d",
+            "e",
+            "u",
+            "z",
+            "|"
+          ],
+          "codes": {
+            "a": {
+              "title": "Acoustical capture, direct storage"
+            },
+            "b": {
+              "title": "Direct storage, not acoustical"
+            },
+            "d": {
+              "title": "Digital storage"
+            },
+            "e": {
+              "title": "Analog electrical storage"
+            },
+            "u": {
+              "title": "Unknown"
+            },
+            "z": {
+              "title": "Other"
+            },
+            "|": {
+              "title": "No attempt to code"
+            }
+          }
+        },
         "00": {
           "title": "Category of material",
           "type": "string",
@@ -3778,7 +3969,7 @@
           "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
           "enum": [
             "a",
-            "b", 
+            "b",
             "c",
             "d",
             "e",
@@ -3937,7 +4128,7 @@
             "s",
             "u",
             "z",
-            "|" 
+            "|"
           ],
           "codes": {
             "a": {
@@ -4119,198 +4310,6 @@
             },
             "t": {
               "title": "Test pressing"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "10": {
-          "title": "Kind of material",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "g",
-            "i",
-            "l",
-            "m",
-            "n",
-            "p",
-            "r",
-            "s",
-            "w",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Lacquer coating"
-            },
-            "b": {
-              "title": "Cellulose nitrate"
-            },
-            "c": {
-              "title": "Acetate tape with ferrous oxide"
-            },
-            "g": {
-              "title": "Glass with lacquer"
-            },
-            "i": {
-              "title": "Aluminum with lacquer"
-            },
-            "l": {
-              "title": "Metal"
-            },
-            "m": {
-              "title": "Plastic with metal"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "p": {
-              "title": "Plastic"
-            },
-            "r": {
-              "title": "Paper with lacquer or ferrous oxide"
-            },
-            "s": {
-              "title": "Shellac"
-            },
-            "w": {
-              "title": "Wax"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "11": {
-          "title": "Kind of cutting",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
-          "enum": [
-            "h",
-            "l",
-            "n",
-            "u",
-            "|"
-          ],
-          "codes": {
-            "h": {
-              "title": "Hill-and-dale cutting"
-            },
-            "l": {
-              "title": "Lateral or combined cutting"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "12": {
-          "title": "Special playback characteristics",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
-          "enum": [
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "f",
-            "g",
-            "h",
-            "n",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "NAB standard"
-            },
-            "b": {
-              "title": "CCIR standard"
-            },
-            "c": {
-              "title": "Dolby-B encoded"
-            },
-            "d": {
-              "title": "dbx encoded"
-            },
-            "e": {
-              "title": "Digital recording"
-            },
-            "f": {
-              "title": "Dolby-A encoded"
-            },
-            "g": {
-              "title": "Dolby-C encoded"
-            },
-            "h": {
-              "title": "CX encoded"
-            },
-            "n": {
-              "title": "Not applicable"
-            },
-            "u": {
-              "title": "Unknown"
-            },
-            "z": {
-              "title": "Other"
-            },
-            "|": {
-              "title": "No attempt to code"
-            }
-          }
-        },
-        "13": {
-          "title": "Capture and storage technique",
-          "type": "string",
-          "url": "https://www.loc.gov/marc/bibliographic/bd007s.html",
-          "enum": [
-            "a",
-            "b",
-            "d",
-            "e",
-            "u",
-            "z",
-            "|"
-          ],
-          "codes": {
-            "a": {
-              "title": "Acoustical capture, direct storage"
-            },
-            "b": {
-              "title": "Direct storage, not acoustical"
-            },
-            "d": {
-              "title": "Digital storage"
-            },
-            "e": {
-              "title": "Analog electrical storage"
             },
             "u": {
               "title": "Unknown"
@@ -4605,7 +4604,7 @@
             "i",
             "u",
             "z",
-            "|" 
+            "|"
           ],
           "codes": {
             "#": {
@@ -4778,5 +4777,6 @@
         }
       }
     }
-  }
+  },
+  "isRepeatable": true
 }

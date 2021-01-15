@@ -4,7 +4,6 @@
   "type": "array",
   "items": {
     "type": "object",
-    "isRepeatable": true,
     "properties": {
       "indicator1": {
         "title": "Sequence of publishing statements",
@@ -131,5 +130,6 @@
       "subFields"
     ]
   },
-  "minItems": 1
+  "minItems": 1,
+  "isRepeatable": true
 }
