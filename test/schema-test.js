@@ -188,7 +188,7 @@ describe('Data Elements (008) schema', function () {
 
 describe('International Standard Serial Number (022) schema', function () {
   it('should validate', function () {
-    const data = [{
+    const data = {
       indicator1: '0',
       indicator2: '\\',
       subFields: [
@@ -205,7 +205,7 @@ describe('International Standard Serial Number (022) schema', function () {
           l: '0028-0836'
         }
       ]
-    }];
+    };
     const validate = ajv.compile(schemaHelper.field_022);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
@@ -213,7 +213,7 @@ describe('International Standard Serial Number (022) schema', function () {
   });
 
   it('shouldn\'t validate with a missing required property and additional property', function () {
-    const data = [{
+    const data = {
       indicator1: '0',
       indicator2: '\\',
       subFields: [
@@ -230,7 +230,7 @@ describe('International Standard Serial Number (022) schema', function () {
           l: '0028-0836'
         }
       ]
-    }];
+    };
     const validate = ajv.compile(schemaHelper.field_022);
     const valid = validate(data);
     if (validate.errors) {
@@ -505,7 +505,7 @@ describe('full schema', function () {
             39: ' '
           }
         },
-        '022': [{
+        '022': {
           indicator1: '0',
           indicator2: '\\',
           subFields: [
@@ -522,7 +522,7 @@ describe('full schema', function () {
               l: '0028-0836'
             }
           ]
-        }],
+        },
         '044': {
           indicator1: '\\',
           indicator2: '\\',
@@ -631,7 +631,7 @@ describe('full schema', function () {
             39: ' '
           }
         },
-        '022': [{
+        '022': {
           indicator1: '0',
           indicator2: '\\',
           subFields: [
@@ -648,7 +648,7 @@ describe('full schema', function () {
               l: '0028-0836'
             }
           ]
-        }],
+        },
         '044': {
           indicator1: '\\',
           indicator2: '\\',
@@ -755,7 +755,7 @@ describe('full schema', function () {
             39: ' '
           }
         },
-        '022': [{
+        '022': {
           indicator1: '0',
           indicator2: '\\',
           subFields: [
@@ -772,7 +772,7 @@ describe('full schema', function () {
               l: '0028-0836'
             }
           ]
-        }],
+        },
         '044': {},
         '080': [],
         222: {
