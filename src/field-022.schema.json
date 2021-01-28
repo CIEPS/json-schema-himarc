@@ -57,27 +57,47 @@
           "a": {
             "title": "International Standard Serial Number",
             "type": "string",
-            "isRepeatable": false
+            "isRepeatable": false,
+            "profilISSN": {
+              "register": "mandatory",
+              "work": "mandatory"
+            }
           },
           "l": {
             "title": "ISSN-L",
             "type": "string",
-            "isRepeatable": false
+            "isRepeatable": false,
+            "profilISSN": {
+              "register": "mandatory",
+              "work": "mandatory"
+            }
           },
           "m": {
             "title": "Canceled ISSN-L",
             "type": "string",
-            "isRepeatable": true
+            "isRepeatable": true,
+            "profilISSN": {
+              "register": "mandatory if applicable",
+              "work": "mandatory if applicable"
+            }
           },
           "y": {
             "title": "Incorrect ISSN",
             "type": "string",
-            "isRepeatable": true
+            "isRepeatable": true,
+            "profilISSN": {
+              "register": "optional",
+              "work": "mandatory if applicable"
+            }
           },
           "z": {
             "title": "Canceled ISSN",
             "type": "string",
-            "isRepeatable": true
+            "isRepeatable": true,
+            "profilISSN": {
+              "register": "mandatory",
+              "work": "mandatory"
+            }
           }
         },
         "additionalProperties": false
@@ -108,6 +128,19 @@
               "a"
             ]
           }
+        },
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "l": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "l"
+            ]
+          }
         }
       ],
       "minItems": 1
@@ -117,5 +150,9 @@
     "indicator1",
     "indicator2",
     "subFields"
-  ]
+  ],
+  "profilISSN": {
+    "register": "mandatory",
+    "work": "mandatory"
+  }
 }
