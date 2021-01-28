@@ -136,7 +136,7 @@
               "title": "Integrating resource"
             },
             "m": {
-              "title": "Monograph\/Item"
+              "title": "Monograph/Item"
             },
             "s": {
               "title": "Serial"
@@ -180,12 +180,14 @@
         "10": {
           "type": "string",
           "title": "Indicator count",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "const": "2"
         },
         "11": {
           "type": "string",
           "title": "Subfield code count",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "const": "2"
         },
         "12-16": {
           "type": "string",
@@ -296,6 +298,9 @@
             },
             "c": {
               "title": "Part with dependent title"
+            },
+            "|": {
+              "title": "No attempt to code"
             }
           }
         },
