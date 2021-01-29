@@ -49,15 +49,28 @@
             "a": {
               "title": "Dates of publication and/or sequential designation",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             },
             "z": {
               "title": "Source of information",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             }
           },
           "additionalProperties": false
+        },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
         },
         "minItems": 1
       }
@@ -69,5 +82,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

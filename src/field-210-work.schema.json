@@ -50,7 +50,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -60,12 +61,14 @@
             "a": {
               "title": "Abbreviated title",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "b": {
               "title": "Qualifying information",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
@@ -80,5 +83,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

@@ -1,55 +1,39 @@
 {
-  "title": "Dewey Decimal Classification Number",
-  "url": "https://www.loc.gov/marc/bibliographic/bd082.html",
+  "title": "Abbreviated Title",
+  "url": "https://www.loc.gov/marc/bibliographic/bd210.html",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "indicator1": {
-        "title": "Type of edition",
+        "title": "Title added entry",
         "type": "string",
         "enum": [
-          "\\",
           "0",
-          "1",
-          "2",
-          "7"
+          "1"
         ],
         "code": {
           "0": {
-            "title": "Full edition"
+            "title": "No added entry"
           },
           "1": {
-            "title": "Abridged edition"
-          },
-          "2": {
-            "title": "Abridged NST version (BK MU VM SE) [OBSOLETE]"
-          },
-          "7": {
-            "title": "Other edition specified in subfield $2"
-          },
-          "\\": {
-            "title": "No edition information recorded (BK CF MU VM SE) [OBSOLETE]"
+            "title": "Added entry"
           }
         }
       },
       "indicator2": {
-        "title": "Source of classification number",
+        "title": "Type",
         "type": "string",
         "enum": [
           "\\",
-          "0",
-          "4"
+          "0"
         ],
         "code": {
           "0": {
-            "title": "Assigned by LC"
-          },
-          "4": {
-            "title": "Assigned by agency other than LC"
+            "title": "Other abbreviated title"
           },
           "\\": {
-            "title": "No information provided"
+            "title": "Abbreviated key title"
           }
         }
       },
@@ -59,14 +43,15 @@
           "type": "object",
           "properties": {
             "2": {
-              "title": "Edition number",
+              "title": "Source",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true
             },
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -74,23 +59,16 @@
               "isRepeatable": true
             },
             "a": {
-              "title": "Classification number",
+              "title": "Abbreviated title",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             },
             "b": {
-              "title": "DDC number--abridged NST version",
-              "type": "string"
-            },
-            "m": {
-              "title": "Standard or optional designation",
+              "title": "Qualifying information",
               "type": "string",
-              "isRepeatable": false
-            },
-            "q": {
-              "title": "Assigning agency",
-              "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             }
           },
           "additionalProperties": false
@@ -116,5 +94,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

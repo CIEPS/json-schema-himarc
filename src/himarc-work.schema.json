@@ -1,0 +1,801 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://issn.org/record.schema.json",
+  "title": "MARC 21 Format for Bibliographic Data in ISSN+",
+  "description": "MARC 21 Format for Bibliographic Data in ISSN+",
+  "type": "object",
+  "properties": {
+    "fields": {
+      "description": "List of fields that can contain one or more data elements",
+      "type": "object",
+      "properties": {
+        "LDR": {
+          "$ref": "leader.schema.json"
+        },
+        "001": {
+          "$ref": "field-001.schema.json"
+        },
+        "003": {
+          "$ref": "field-003.schema.json"
+        },
+        "005": {
+          "$ref": "field-005.schema.json"
+        },
+        "007": {
+          "$ref": "field-007.schema.json"
+        },
+        "008": {
+          "$ref": "field-008.schema.json"
+        },
+        "022": {
+          "$ref": "field-022-work.schema.json"
+        },
+        "044": {
+          "$ref": "field-044.schema.json"
+        },
+        "010": {
+          "$ref": "field-010.schema.json"
+        },
+        "011": {
+          "$ref": "field-011.schema.json"
+        },
+        "013": {
+          "$ref": "field-013.schema.json"
+        },
+        "015": {
+          "$ref": "field-015.schema.json"
+        },
+        "016": {
+          "$ref": "field-016.schema.json"
+        },
+        "017": {
+          "$ref": "field-017.schema.json"
+        },
+        "018": {
+          "$ref": "field-018.schema.json"
+        },
+        "020": {
+          "$ref": "field-020.schema.json"
+        },
+        "024": {
+          "$ref": "field-024.schema.json"
+        },
+        "025": {
+          "$ref": "field-025.schema.json"
+        },
+        "026": {
+          "$ref": "field-026.schema.json"
+        },
+        "027": {
+          "$ref": "field-027.schema.json"
+        },
+        "028": {
+          "$ref": "field-028.schema.json"
+        },
+        "030": {
+          "$ref": "field-030.schema.json"
+        },
+        "031": {
+          "$ref": "field-031.schema.json"
+        },
+        "032": {
+          "$ref": "field-032.schema.json"
+        },
+        "033": {
+          "$ref": "field-033.schema.json"
+        },
+        "034": {
+          "$ref": "field-034.schema.json"
+        },
+        "035": {
+          "$ref": "field-035.schema.json"
+        },
+        "036": {
+          "$ref": "field-036.schema.json"
+        },
+        "037": {
+          "$ref": "field-037.schema.json"
+        },
+        "038": {
+          "$ref": "field-038.schema.json"
+        },
+        "040": {
+          "$ref": "field-040.schema.json"
+        },
+        "041": {
+          "$ref": "field-041.schema.json"
+        },
+        "042": {
+          "$ref": "field-042.schema.json"
+        },
+        "043": {
+          "$ref": "field-043.schema.json"
+        },
+        "045": {
+          "$ref": "field-045.schema.json"
+        },
+        "046": {
+          "$ref": "field-046.schema.json"
+        },
+        "047": {
+          "$ref": "field-047.schema.json"
+        },
+        "048": {
+          "$ref": "field-048.schema.json"
+        },
+        "050": {
+          "$ref": "field-050.schema.json"
+        },
+        "051": {
+          "$ref": "field-051.schema.json"
+        },
+        "052": {
+          "$ref": "field-052.schema.json"
+        },
+        "055": {
+          "$ref": "field-055.schema.json"
+        },
+        "060": {
+          "$ref": "field-060.schema.json"
+        },
+        "061": {
+          "$ref": "field-061.schema.json"
+        },
+        "066": {
+          "$ref": "field-066.schema.json"
+        },
+        "070": {
+          "$ref": "field-070.schema.json"
+        },
+        "071": {
+          "$ref": "field-071.schema.json"
+        },
+        "072": {
+          "$ref": "field-072.schema.json"
+        },
+        "074": {
+          "$ref": "field-074.schema.json"
+        },
+        "080": {
+          "$ref": "field-080-work.schema.json"
+        },
+        "082": {
+          "$ref": "field-082-work.schema.json"
+        },
+        "083": {
+          "$ref": "field-083.schema.json"
+        },
+        "084": {
+          "$ref": "field-084.schema.json"
+        },
+        "085": {
+          "$ref": "field-085.schema.json"
+        },
+        "086": {
+          "$ref": "field-086.schema.json"
+        },
+        "088": {
+          "$ref": "field-088.schema.json"
+        },
+        "100": {
+          "$ref": "field-100.schema.json"
+        },
+        "110": {
+          "$ref": "field-110.schema.json"
+        },
+        "111": {
+          "$ref": "field-111.schema.json"
+        },
+        "130": {
+          "$ref": "field-130.schema.json"
+        },
+        "210": {
+          "$ref": "field-210-work.schema.json"
+        },
+        "211": {
+          "$ref": "field-211.schema.json"
+        },
+        "212": {
+          "$ref": "field-212.schema.json"
+        },
+        "214": {
+          "$ref": "field-214.schema.json"
+        },
+        "222": {
+          "$ref": "field-222.schema.json"
+        },
+        "240": {
+          "$ref": "field-240.schema.json"
+        },
+        "241": {
+          "$ref": "field-241.schema.json"
+        },
+        "242": {
+          "$ref": "field-242.schema.json"
+        },
+        "243": {
+          "$ref": "field-243.schema.json"
+        },
+        "245": {
+          "$ref": "field-245.schema.json"
+        },
+        "246": {
+          "$ref": "field-246.schema.json"
+        },
+        "247": {
+          "$ref": "field-247.schema.json"
+        },
+        "250": {
+          "$ref": "field-250.schema.json"
+        },
+        "251": {
+          "$ref": "field-251.schema.json"
+        },
+        "254": {
+          "$ref": "field-254.schema.json"
+        },
+        "255": {
+          "$ref": "field-255.schema.json"
+        },
+        "256": {
+          "$ref": "field-256.schema.json"
+        },
+        "257": {
+          "$ref": "field-257.schema.json"
+        },
+        "258": {
+          "$ref": "field-258.schema.json"
+        },
+        "260": {
+          "$ref": "field-260.schema.json"
+        },
+        "261": {
+          "$ref": "field-261.schema.json"
+        },
+        "262": {
+          "$ref": "field-262.schema.json"
+        },
+        "263": {
+          "$ref": "field-263.schema.json"
+        },
+        "264": {
+          "$ref": "field-264.schema.json"
+        },
+        "265": {
+          "$ref": "field-265.schema.json"
+        },
+        "270": {
+          "$ref": "field-270.schema.json"
+        },
+        "300": {
+          "$ref": "field-300.schema.json"
+        },
+        "306": {
+          "$ref": "field-306.schema.json"
+        },
+        "307": {
+          "$ref": "field-307.schema.json"
+        },
+        "310": {
+          "$ref": "field-310.schema.json"
+        },
+        "321": {
+          "$ref": "field-321.schema.json"
+        },
+        "336": {
+          "$ref": "field-336.schema.json"
+        },
+        "337": {
+          "$ref": "field-337.schema.json"
+        },
+        "338": {
+          "$ref": "field-338.schema.json"
+        },
+        "340": {
+          "$ref": "field-340.schema.json"
+        },
+        "341": {
+          "$ref": "field-341.schema.json"
+        },
+        "342": {
+          "$ref": "field-342.schema.json"
+        },
+        "343": {
+          "$ref": "field-343.schema.json"
+        },
+        "344": {
+          "$ref": "field-344.schema.json"
+        },
+        "345": {
+          "$ref": "field-345.schema.json"
+        },
+        "346": {
+          "$ref": "field-346.schema.json"
+        },
+        "347": {
+          "$ref": "field-347.schema.json"
+        },
+        "348": {
+          "$ref": "field-348.schema.json"
+        },
+        "351": {
+          "$ref": "field-351.schema.json"
+        },
+        "352": {
+          "$ref": "field-352.schema.json"
+        },
+        "355": {
+          "$ref": "field-355.schema.json"
+        },
+        "357": {
+          "$ref": "field-357.schema.json"
+        },
+        "362": {
+          "$ref": "field-362.schema.json"
+        },
+        "363": {
+          "$ref": "field-363.schema.json"
+        },
+        "365": {
+          "$ref": "field-365.schema.json"
+        },
+        "366": {
+          "$ref": "field-366.schema.json"
+        },
+        "370": {
+          "$ref": "field-370.schema.json"
+        },
+        "377": {
+          "$ref": "field-377.schema.json"
+        },
+        "380": {
+          "$ref": "field-380.schema.json"
+        },
+        "381": {
+          "$ref": "field-381.schema.json"
+        },
+        "382": {
+          "$ref": "field-382.schema.json"
+        },
+        "383": {
+          "$ref": "field-383.schema.json"
+        },
+        "384": {
+          "$ref": "field-384.schema.json"
+        },
+        "385": {
+          "$ref": "field-385.schema.json"
+        },
+        "386": {
+          "$ref": "field-386.schema.json"
+        },
+        "388": {
+          "$ref": "field-388.schema.json"
+        },
+        "400": {
+          "$ref": "field-400.schema.json"
+        },
+        "410": {
+          "$ref": "field-410.schema.json"
+        },
+        "411": {
+          "$ref": "field-411.schema.json"
+        },
+        "440": {
+          "$ref": "field-440.schema.json"
+        },
+        "490": {
+          "$ref": "field-490.schema.json"
+        },
+        "500": {
+          "$ref": "field-500.schema.json"
+        },
+        "501": {
+          "$ref": "field-501.schema.json"
+        },
+        "502": {
+          "$ref": "field-502.schema.json"
+        },
+        "504": {
+          "$ref": "field-504.schema.json"
+        },
+        "505": {
+          "$ref": "field-505.schema.json"
+        },
+        "506": {
+          "$ref": "field-506.schema.json"
+        },
+        "507": {
+          "$ref": "field-507.schema.json"
+        },
+        "508": {
+          "$ref": "field-508.schema.json"
+        },
+        "510": {
+          "$ref": "field-510.schema.json"
+        },
+        "511": {
+          "$ref": "field-511.schema.json"
+        },
+        "512": {
+          "$ref": "field-512.schema.json"
+        },
+        "513": {
+          "$ref": "field-513.schema.json"
+        },
+        "514": {
+          "$ref": "field-514.schema.json"
+        },
+        "515": {
+          "$ref": "field-515.schema.json"
+        },
+        "516": {
+          "$ref": "field-516.schema.json"
+        },
+        "517": {
+          "$ref": "field-517.schema.json"
+        },
+        "518": {
+          "$ref": "field-518.schema.json"
+        },
+        "520": {
+          "$ref": "field-520.schema.json"
+        },
+        "521": {
+          "$ref": "field-521.schema.json"
+        },
+        "522": {
+          "$ref": "field-522.schema.json"
+        },
+        "524": {
+          "$ref": "field-524.schema.json"
+        },
+        "525": {
+          "$ref": "field-525.schema.json"
+        },
+        "526": {
+          "$ref": "field-526.schema.json"
+        },
+        "527": {
+          "$ref": "field-527.schema.json"
+        },
+        "530": {
+          "$ref": "field-530.schema.json"
+        },
+        "532": {
+          "$ref": "field-532.schema.json"
+        },
+        "533": {
+          "$ref": "field-533.schema.json"
+        },
+        "534": {
+          "$ref": "field-534.schema.json"
+        },
+        "535": {
+          "$ref": "field-535.schema.json"
+        },
+        "536": {
+          "$ref": "field-536.schema.json"
+        },
+        "538": {
+          "$ref": "field-538.schema.json"
+        },
+        "540": {
+          "$ref": "field-540.schema.json"
+        },
+        "541": {
+          "$ref": "field-541.schema.json"
+        },
+        "542": {
+          "$ref": "field-542.schema.json"
+        },
+        "543": {
+          "$ref": "field-543.schema.json"
+        },
+        "544": {
+          "$ref": "field-544.schema.json"
+        },
+        "545": {
+          "$ref": "field-545.schema.json"
+        },
+        "546": {
+          "$ref": "field-546.schema.json"
+        },
+        "547": {
+          "$ref": "field-547.schema.json"
+        },
+        "550": {
+          "$ref": "field-550.schema.json"
+        },
+        "552": {
+          "$ref": "field-552.schema.json"
+        },
+        "555": {
+          "$ref": "field-555.schema.json"
+        },
+        "556": {
+          "$ref": "field-556.schema.json"
+        },
+        "561": {
+          "$ref": "field-561.schema.json"
+        },
+        "562": {
+          "$ref": "field-562.schema.json"
+        },
+        "563": {
+          "$ref": "field-563.schema.json"
+        },
+        "565": {
+          "$ref": "field-565.schema.json"
+        },
+        "567": {
+          "$ref": "field-567.schema.json"
+        },
+        "570": {
+          "$ref": "field-570.schema.json"
+        },
+        "580": {
+          "$ref": "field-580.schema.json"
+        },
+        "581": {
+          "$ref": "field-581.schema.json"
+        },
+        "583": {
+          "$ref": "field-583.schema.json"
+        },
+        "584": {
+          "$ref": "field-584.schema.json"
+        },
+        "585": {
+          "$ref": "field-585.schema.json"
+        },
+        "586": {
+          "$ref": "field-586.schema.json"
+        },
+        "588": {
+          "$ref": "field-588.schema.json"
+        },
+        "600": {
+          "$ref": "field-600.schema.json"
+        },
+        "610": {
+          "$ref": "field-610.schema.json"
+        },
+        "611": {
+          "$ref": "field-611.schema.json"
+        },
+        "630": {
+          "$ref": "field-630.schema.json"
+        },
+        "647": {
+          "$ref": "field-647.schema.json"
+        },
+        "648": {
+          "$ref": "field-648.schema.json"
+        },
+        "650": {
+          "$ref": "field-650.schema.json"
+        },
+        "651": {
+          "$ref": "field-651.schema.json"
+        },
+        "653": {
+          "$ref": "field-653.schema.json"
+        },
+        "654": {
+          "$ref": "field-654.schema.json"
+        },
+        "655": {
+          "$ref": "field-655.schema.json"
+        },
+        "656": {
+          "$ref": "field-656.schema.json"
+        },
+        "657": {
+          "$ref": "field-657.schema.json"
+        },
+        "658": {
+          "$ref": "field-658.schema.json"
+        },
+        "662": {
+          "$ref": "field-662.schema.json"
+        },
+        "688": {
+          "$ref": "field-688.schema.json"
+        },
+        "700": {
+          "$ref": "field-700.schema.json"
+        },
+        "710": {
+          "$ref": "field-710.schema.json"
+        },
+        "711": {
+          "$ref": "field-711.schema.json"
+        },
+        "720": {
+          "$ref": "field-720.schema.json"
+        },
+        "730": {
+          "$ref": "field-730.schema.json"
+        },
+        "740": {
+          "$ref": "field-740.schema.json"
+        },
+        "751": {
+          "$ref": "field-751.schema.json"
+        },
+        "752": {
+          "$ref": "field-752.schema.json"
+        },
+        "753": {
+          "$ref": "field-753.schema.json"
+        },
+        "754": {
+          "$ref": "field-754.schema.json"
+        },
+        "755": {
+          "$ref": "field-755.schema.json"
+        },
+        "758": {
+          "$ref": "field-758.schema.json"
+        },
+        "760": {
+          "$ref": "field-760.schema.json"
+        },
+        "762": {
+          "$ref": "field-762.schema.json"
+        },
+        "765": {
+          "$ref": "field-765.schema.json"
+        },
+        "767": {
+          "$ref": "field-767.schema.json"
+        },
+        "770": {
+          "$ref": "field-770.schema.json"
+        },
+        "772": {
+          "$ref": "field-772.schema.json"
+        },
+        "773": {
+          "$ref": "field-773.schema.json"
+        },
+        "774": {
+          "$ref": "field-774.schema.json"
+        },
+        "775": {
+          "$ref": "field-775.schema.json"
+        },
+        "776": {
+          "$ref": "field-776.schema.json"
+        },
+        "777": {
+          "$ref": "field-777.schema.json"
+        },
+        "780": {
+          "$ref": "field-780.schema.json"
+        },
+        "785": {
+          "$ref": "field-785.schema.json"
+        },
+        "786": {
+          "$ref": "field-786.schema.json"
+        },
+        "787": {
+          "$ref": "field-787.schema.json"
+        },
+        "800": {
+          "$ref": "field-800.schema.json"
+        },
+        "810": {
+          "$ref": "field-810.schema.json"
+        },
+        "811": {
+          "$ref": "field-811.schema.json"
+        },
+        "830": {
+          "$ref": "field-830.schema.json"
+        },
+        "840": {
+          "$ref": "field-840.schema.json"
+        },
+        "841": {
+          "$ref": "field-841.schema.json"
+        },
+        "842": {
+          "$ref": "field-842.schema.json"
+        },
+        "843": {
+          "$ref": "field-843.schema.json"
+        },
+        "844": {
+          "$ref": "field-844.schema.json"
+        },
+        "845": {
+          "$ref": "field-845.schema.json"
+        },
+        "850": {
+          "$ref": "field-850.schema.json"
+        },
+        "851": {
+          "$ref": "field-851.schema.json"
+        },
+        "852": {
+          "$ref": "field-852.schema.json"
+        },
+        "853": {
+          "$ref": "field-853.schema.json"
+        },
+        "854": {
+          "$ref": "field-854.schema.json"
+        },
+        "855": {
+          "$ref": "field-855.schema.json"
+        },
+        "856": {
+          "$ref": "field-856.schema.json"
+        },
+        "863": {
+          "$ref": "field-863.schema.json"
+        },
+        "864": {
+          "$ref": "field-864.schema.json"
+        },
+        "865": {
+          "$ref": "field-865.schema.json"
+        },
+        "866": {
+          "$ref": "field-866.schema.json"
+        },
+        "867": {
+          "$ref": "field-867.schema.json"
+        },
+        "868": {
+          "$ref": "field-868.schema.json"
+        },
+        "876": {
+          "$ref": "field-876.schema.json"
+        },
+        "877": {
+          "$ref": "field-877.schema.json"
+        },
+        "878": {
+          "$ref": "field-878.schema.json"
+        },
+        "880": {
+          "$ref": "field-880.schema.json"
+        },
+        "882": {
+          "$ref": "field-882.schema.json"
+        },
+        "883": {
+          "$ref": "field-883.schema.json"
+        },
+        "884": {
+          "$ref": "field-884.schema.json"
+        },
+        "885": {
+          "$ref": "field-885.schema.json"
+        },
+        "886": {
+          "$ref": "field-886.schema.json"
+        },
+        "887": {
+          "$ref": "field-887.schema.json"
+        }
+      },
+      "allOf": [
+        { "required": ["008", "022", "044", "222", "245"] },
+        {
+          "oneOf": [
+            { "required": ["260"] },
+            { "required": ["264"] }
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "fields"
+  ]
+}

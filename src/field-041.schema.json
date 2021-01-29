@@ -64,12 +64,14 @@
             "a": {
               "title": "Language code of text/sound track or separate title",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory"
             },
             "b": {
               "title": "Language code of summary or abstract",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory if applicable"
             },
             "c": {
               "title": "languages of available translation",
@@ -148,6 +150,17 @@
           },
           "additionalProperties": false
         },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
+        },
         "minItems": 1
       }
     },
@@ -158,5 +171,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

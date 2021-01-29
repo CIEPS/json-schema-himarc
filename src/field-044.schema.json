@@ -58,7 +58,8 @@
             "title": "ISO country code",
             "type": "string",
             "isRepeatable": true,
-            "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$"
+            "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$",
+            "profilISSN": "mandatory"
           }
         },
         "additionalProperties": false
@@ -81,5 +82,6 @@
     "indicator1",
     "indicator2",
     "subFields"
-  ]
+  ],
+  "profilISSN": "mandatory"
 }

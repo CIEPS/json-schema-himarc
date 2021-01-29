@@ -43,7 +43,8 @@
             "2": {
               "title": "Source",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             },
             "3": {
               "title": "Materials specified",
@@ -63,16 +64,46 @@
             "a": {
               "title": "Media type term",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory"
             },
             "b": {
               "title": "Media type code",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
         },
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "a"
+              ]
+            }
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "2"
+              ]
+            }
+          }
+        ],
         "minItems": 1
       }
     },
@@ -83,5 +114,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

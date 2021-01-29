@@ -28,7 +28,7 @@
           "$ref": "field-008.schema.json"
         },
         "022": {
-          "$ref": "field-022.schema.json"
+          "$ref": "field--register.schema.json"
         },
         "044": {
           "$ref": "field-044.schema.json"
@@ -157,10 +157,10 @@
           "$ref": "field-074.schema.json"
         },
         "080": {
-          "$ref": "field-080.schema.json"
+          "$ref": "field-080-register.schema.json"
         },
         "082": {
-          "$ref": "field-082.schema.json"
+          "$ref": "field-082-register.schema.json"
         },
         "083": {
           "$ref": "field-083.schema.json"
@@ -190,7 +190,7 @@
           "$ref": "field-130.schema.json"
         },
         "210": {
-          "$ref": "field-210.schema.json"
+          "$ref": "field-210-register.schema.json"
         },
         "211": {
           "$ref": "field-211.schema.json"

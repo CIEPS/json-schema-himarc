@@ -58,10 +58,22 @@
             "a": {
               "title": "Source of description note",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             }
           },
           "additionalProperties": false
+        },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
         },
         "minItems": 1
       }
@@ -73,5 +85,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

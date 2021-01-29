@@ -1,17 +1,27 @@
 {
-  "title": "System Details Note",
-  "url": "https://www.loc.gov/marc/bibliographic/bd538.html",
+  "title": "Universal Decimal Classification Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd080.html",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "indicator1": {
-        "title": "Undefined",
+        "title": "Type of edition",
         "type": "string",
-        "const": "\\",
+        "enum": [
+          "\\",
+          "0",
+          "1"
+        ],
         "code": {
+          "0": {
+            "title": "Full"
+          },
+          "1": {
+            "title": "Abridged"
+          },
           "\\": {
-            "title": "Undefined"
+            "title": "No information provided"
           }
         }
       },
@@ -30,15 +40,21 @@
         "items": {
           "type": "object",
           "properties": {
-            "3": {
-              "title": "Materials specified ",
+            "0": {
+              "title": "Authority record control number or standard number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true
             },
-            "5": {
-              "title": "Institution to which field applies",
+            "1": {
+              "title": "Real World Object URI",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true
+            },
+            "2": {
+              "title": "Edition identifier",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -51,20 +67,21 @@
               "isRepeatable": true
             },
             "a": {
-              "title": "System details note",
+              "title": "Universal Decimal Classification number",
               "type": "string",
               "isRepeatable": false,
               "profilISSN": "mandatory"
             },
-            "i": {
-              "title": "Display text",
+            "b": {
+              "title": "Item number",
               "type": "string",
               "isRepeatable": false
             },
-            "u": {
-              "title": "Uniform Resource Identifier",
+            "x": {
+              "title": "Common auxiliary subdivision",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
@@ -90,6 +107,5 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true,
-  "profilISSN": "optional"
+  "isRepeatable": true
 }

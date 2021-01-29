@@ -48,17 +48,20 @@
             "a": {
               "title": "Type of date code",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "b": {
               "title": "Date 1 (B.C.E. date)",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "c": {
               "title": "Date 1 (C.E. date)",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "d": {
               "title": "Date 2 (B.C.E. date)",
@@ -118,5 +121,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

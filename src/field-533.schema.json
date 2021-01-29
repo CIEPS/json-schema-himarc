@@ -63,17 +63,20 @@
             "b": {
               "title": "Place of reproduction",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory if applicable"
             },
             "c": {
               "title": "Agency responsible for reproduction",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory if applicable"
             },
             "d": {
               "title": "Date of reproduction",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "e": {
               "title": "Physical description of reproduction",
@@ -88,7 +91,8 @@
             "m": {
               "title": "Dates and/or sequential designation of issues reproduced",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "optional"
             },
             "n": {
               "title": "Note about reproduction",
@@ -98,6 +102,34 @@
           },
           "additionalProperties": false
         },
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "b": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "b"
+              ]
+            }
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "c": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "c"
+              ]
+            }
+          }
+        ],
         "minItems": 1
       }
     },
@@ -108,5 +140,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

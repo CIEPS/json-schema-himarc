@@ -1,60 +1,52 @@
 {
-  "title": "Other Standard Identifier",
-  "url": "https://www.loc.gov/marc/bibliographic/bd024.html",
+  "title": "Dewey Decimal Classification Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd082.html",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "indicator1": {
-        "title": "Type of standard number or code",
-        "type": "string",
-        "enum": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "7",
-          "8"
-        ],
-        "code": {
-          "0": {
-            "title": "International Standard Recording Code (ISRC)"
-          },
-          "1": {
-            "title": "Universal Product Code (UPC)"
-          },
-          "2": {
-            "title": "International Standard Music Number (ISMN)"
-          },
-          "3": {
-            "title": "International Article Number (EAN)"
-          },
-          "4": {
-            "title": "Serial Item and Contribution Identifier (SICI)"
-          },
-          "7": {
-            "title": "Source specified in subfield $2"
-          },
-          "8": {
-            "title": "Unspecified type of standard number or code"
-          }
-        }
-      },
-      "indicator2": {
-        "title": "Difference indicator",
+        "title": "Type of edition",
         "type": "string",
         "enum": [
           "\\",
           "0",
-          "1"
+          "1",
+          "2",
+          "7"
         ],
         "code": {
           "0": {
-            "title": "No difference"
+            "title": "Full edition"
           },
           "1": {
-            "title": "Difference"
+            "title": "Abridged edition"
+          },
+          "2": {
+            "title": "Abridged NST version (BK MU VM SE) [OBSOLETE]"
+          },
+          "7": {
+            "title": "Other edition specified in subfield $2"
+          },
+          "\\": {
+            "title": "No edition information recorded (BK CF MU VM SE) [OBSOLETE]"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Source of classification number",
+        "type": "string",
+        "enum": [
+          "\\",
+          "0",
+          "4"
+        ],
+        "code": {
+          "0": {
+            "title": "Assigned by LC"
+          },
+          "4": {
+            "title": "Assigned by agency other than LC"
           },
           "\\": {
             "title": "No information provided"
@@ -67,7 +59,7 @@
           "type": "object",
           "properties": {
             "2": {
-              "title": "Source of number or code",
+              "title": "Edition number",
               "type": "string",
               "isRepeatable": false,
               "profilISSN": "optional"
@@ -83,33 +75,40 @@
               "isRepeatable": true
             },
             "a": {
-              "title": "Standard number or code",
+              "title": "Classification number",
               "type": "string",
-              "isRepeatable": false,
+              "isRepeatable": true,
               "profilISSN": "optional"
             },
-            "c": {
-              "title": "Terms of availability",
+            "b": {
+              "title": "DDC number--abridged NST version",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true,
+              "profilISSN": "optional"
             },
-            "d": {
-              "title": "Additional codes following the standard number or code",
+            "m": {
+              "title": "Standard or optional designation",
               "type": "string",
               "isRepeatable": false
             },
             "q": {
-              "title": "Qualifying information",
+              "title": "Assigning agency",
               "type": "string",
-              "isRepeatable": true
-            },
-            "z": {
-              "title": "Canceled/invalid standard number or code",
-              "type": "string",
-              "isRepeatable": true
+              "isRepeatable": false
             }
           },
           "additionalProperties": false
+        },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
         },
         "minItems": 1
       }

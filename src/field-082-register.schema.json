@@ -1,6 +1,6 @@
 {
-  "title": "Universal Decimal Classification Number",
-  "url": "https://www.loc.gov/marc/bibliographic/bd080.html",
+  "title": "Dewey Decimal Classification Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd082.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -11,27 +11,45 @@
         "enum": [
           "\\",
           "0",
-          "1"
+          "1",
+          "2",
+          "7"
         ],
         "code": {
           "0": {
-            "title": "Full"
+            "title": "Full edition"
           },
           "1": {
-            "title": "Abridged"
+            "title": "Abridged edition"
+          },
+          "2": {
+            "title": "Abridged NST version (BK MU VM SE) [OBSOLETE]"
+          },
+          "7": {
+            "title": "Other edition specified in subfield $2"
           },
           "\\": {
-            "title": "No information provided"
+            "title": "No edition information recorded (BK CF MU VM SE) [OBSOLETE]"
           }
         }
       },
       "indicator2": {
-        "title": "Undefined",
+        "title": "Source of classification number",
         "type": "string",
-        "const": "\\",
+        "enum": [
+          "\\",
+          "0",
+          "4"
+        ],
         "code": {
+          "0": {
+            "title": "Assigned by LC"
+          },
+          "4": {
+            "title": "Assigned by agency other than LC"
+          },
           "\\": {
-            "title": "Undefined"
+            "title": "No information provided"
           }
         }
       },
@@ -40,20 +58,11 @@
         "items": {
           "type": "object",
           "properties": {
-            "0": {
-              "title": "Authority record control number or standard number",
-              "type": "string",
-              "isRepeatable": true
-            },
-            "1": {
-              "title": "Real World Object URI",
-              "type": "string",
-              "isRepeatable": true
-            },
             "2": {
-              "title": "Edition identifier",
+              "title": "Edition number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -66,19 +75,26 @@
               "isRepeatable": true
             },
             "a": {
-              "title": "Universal Decimal Classification number",
+              "title": "Classification number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true,
+              "profilISSN": "mandatory"
             },
             "b": {
-              "title": "Item number",
+              "title": "DDC number--abridged NST version",
+              "type": "string",
+              "isRepeatable": true,
+              "profilISSN": "optional"
+            },
+            "m": {
+              "title": "Standard or optional designation",
               "type": "string",
               "isRepeatable": false
             },
-            "x": {
-              "title": "Common auxiliary subdivision",
+            "q": {
+              "title": "Assigning agency",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": false
             }
           },
           "additionalProperties": false

@@ -43,16 +43,46 @@
             "a": {
               "title": "Former publication frequency",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             },
             "b": {
               "title": "Dates of former publication frequency",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
             }
           },
           "additionalProperties": false
         },
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "a"
+              ]
+            }
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "b": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "b"
+              ]
+            }
+          }
+        ],
         "minItems": 1
       }
     },
@@ -63,5 +93,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

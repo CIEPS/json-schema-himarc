@@ -1,0 +1,143 @@
+{
+  "title": "International Standard Serial Number",
+  "url": "https://www.loc.gov/marc/bibliographic/bd022.html",
+  "type": "object",
+  "isRepeatable": false,
+  "properties": {
+    "indicator1": {
+      "title": "Level of international interest",
+      "type": "string",
+      "enum": [
+        "\\",
+        "0",
+        "1"
+      ],
+      "code": {
+        "0": {
+          "title": "Serial of international interest"
+        },
+        "1": {
+          "title": "Serial not of international interest"
+        },
+        "\\": {
+          "title": "No level specified"
+        }
+      }
+    },
+    "indicator2": {
+      "title": "Undefined",
+      "type": "string",
+      "const": "\\",
+      "code": {
+        "\\": {
+          "title": "Undefined"
+        }
+      }
+    },
+    "subFields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "2": {
+            "title": "Source",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "6": {
+            "title": "Linkage",
+            "type": "string",
+            "isRepeatable": false
+          },
+          "8": {
+            "title": "Field link and sequence number",
+            "type": "string",
+            "isRepeatable": true
+          },
+          "a": {
+            "title": "International Standard Serial Number",
+            "type": "string",
+            "isRepeatable": false,
+            "profilISSN": {
+              "register": "mandatory",
+              "work": "mandatory"
+            }
+          },
+          "l": {
+            "title": "ISSN-L",
+            "type": "string",
+            "isRepeatable": false,
+            "profilISSN": "mandatory"
+          },
+          "m": {
+            "title": "Canceled ISSN-L",
+            "type": "string",
+            "isRepeatable": true,
+            "profilISSN": "mandatory if applicable"
+          },
+          "y": {
+            "title": "Incorrect ISSN",
+            "type": "string",
+            "isRepeatable": true,
+            "profilISSN": "mandatory if applicable"
+          },
+          "z": {
+            "title": "Canceled ISSN",
+            "type": "string",
+            "isRepeatable": true,
+            "profilISSN": "mandatory"
+          }
+        },
+        "additionalProperties": false
+      },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "2": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "2"
+            ]
+          }
+        },
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "a": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "a"
+            ]
+          }
+        },
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "l": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "l"
+            ]
+          }
+        }
+      ],
+      "minItems": 1
+    }
+  },
+  "required": [
+    "indicator1",
+    "indicator2",
+    "subFields"
+  ],
+  "profilISSN": "mandatory"
+}

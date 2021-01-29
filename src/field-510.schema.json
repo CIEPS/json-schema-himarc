@@ -66,17 +66,20 @@
             "a": {
               "title": "Name of source",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "b": {
               "title": "Coverage of source",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "c": {
               "title": "Location within source",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "u": {
               "title": "Uniform Resource Identifier",
@@ -86,7 +89,8 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
@@ -101,5 +105,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }
