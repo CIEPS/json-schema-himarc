@@ -672,7 +672,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -682,12 +683,14 @@
                     "a": {
                       "title": "Abbreviated title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "Qualifying information",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
@@ -702,7 +705,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "211": {
           "title": "Acronym Or Shortened Title",
@@ -936,7 +940,8 @@
                   "6": {
                     "title": "Linkage",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "optional"
                   },
                   "8": {
                     "title": "Field link and sequence number",
@@ -946,12 +951,14 @@
                   "a": {
                     "title": "Key title",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "mandatory"
                   },
                   "b": {
                     "title": "Qualifying information",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "mandatory if applicable"
                   }
                 },
                 "additionalProperties": false
@@ -974,7 +981,8 @@
             "indicator1",
             "indicator2",
             "subFields"
-          ]
+          ],
+          "profilISSN": "mandatory"
         },
         "240": {
           "title": "Uniform Title",
@@ -1465,7 +1473,8 @@
                   "6": {
                     "title": "Linkage",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "optional"
                   },
                   "8": {
                     "title": "Field link and sequence number",
@@ -1475,7 +1484,8 @@
                   "a": {
                     "title": "Title",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "mandatory"
                   },
                   "b": {
                     "title": "Remainder of title",
@@ -1518,12 +1528,14 @@
                   "n": {
                     "title": "Number of part/section of a work",
                     "type": "string",
-                    "isRepeatable": true
+                    "isRepeatable": true,
+                    "profilISSN": "mandatory if applicable"
                   },
                   "p": {
                     "title": "Name of part/section of a work",
                     "type": "string",
-                    "isRepeatable": true
+                    "isRepeatable": true,
+                    "profilISSN": "mandatory if applicable"
                   },
                   "s": {
                     "title": "Version",
@@ -1551,7 +1563,8 @@
             "indicator1",
             "indicator2",
             "subFields"
-          ]
+          ],
+          "profilISSN": "mandatory"
         },
         "246": {
           "title": "Varying Form Of Title",
@@ -2394,12 +2407,14 @@
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -2409,17 +2424,20 @@
                     "a": {
                       "title": "Place of publication, distribution, etc.",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Name of publisher, distributor, etc.",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "c": {
                       "title": "Date of publication, distribution, etc.",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "d": {
                       "title": "Plate or publisher's number for music (Pre-AACR 2)",
@@ -2761,12 +2779,14 @@
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -2776,17 +2796,20 @@
                     "a": {
                       "title": "Place of production, publication, distribution, manufacture",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Name of producer, publisher, distributor, manufacturer",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "c": {
                       "title": "Date of production, publication, distribution, manufacture, or copyright notice",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory if applicable"
                     }
                   },
                   "additionalProperties": false
@@ -3389,16 +3412,46 @@
                     "a": {
                       "title": "Former publication frequency",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Dates of former publication frequency",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     }
                   },
                   "additionalProperties": false
                 },
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "a": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "a"
+                      ]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "b": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "b"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
@@ -3409,7 +3462,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "336": {
           "title": "Content Type",
@@ -3456,7 +3510,8 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "3": {
                       "title": "Materials specified",
@@ -3476,16 +3531,46 @@
                     "a": {
                       "title": "Content type term",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Content type code",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
                 },
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "a": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "a"
+                      ]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
@@ -3496,7 +3581,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "337": {
           "title": "Media Type",
@@ -3543,7 +3629,8 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "3": {
                       "title": "Materials specified",
@@ -3563,16 +3650,46 @@
                     "a": {
                       "title": "Media type term",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Media type code",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
                 },
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "a": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "a"
+                      ]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
@@ -3583,7 +3700,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "338": {
           "title": "Carrier Type",
@@ -3630,7 +3748,8 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "3": {
                       "title": "Materials specified",
@@ -3650,16 +3769,46 @@
                     "a": {
                       "title": "Carrier type term",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Carrier type code",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
                 },
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "a": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "a"
+                      ]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
@@ -3670,7 +3819,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "340": {
           "title": "Physical Medium",
@@ -5116,15 +5266,28 @@
                     "a": {
                       "title": "Dates of publication and/or sequential designation",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "z": {
                       "title": "Source of information",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     }
                   },
                   "additionalProperties": false
+                },
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a"
+                  ]
                 },
                 "minItems": 1
               }
@@ -5136,7 +5299,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "363": {
           "title": "Normalized Date And Sequential Designation",
@@ -7924,17 +8088,20 @@
                     "a": {
                       "title": "Name of source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "Coverage of source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "c": {
                       "title": "Location within source",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "u": {
                       "title": "Uniform Resource Identifier",
@@ -7944,7 +8111,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
@@ -7959,7 +8127,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "511": {
           "title": "Participant Or Performer Note",
@@ -9410,17 +9579,20 @@
                     "b": {
                       "title": "Place of reproduction",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "c": {
                       "title": "Agency responsible for reproduction",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "d": {
                       "title": "Date of reproduction",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "e": {
                       "title": "Physical description of reproduction",
@@ -9435,7 +9607,8 @@
                     "m": {
                       "title": "Dates and/or sequential designation of issues reproduced",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "n": {
                       "title": "Note about reproduction",
@@ -9445,6 +9618,34 @@
                   },
                   "additionalProperties": false
                 },
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "b": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "b"
+                      ]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "c": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "c"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
@@ -9455,7 +9656,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "534": {
           "title": "Original Version Note",
@@ -9842,7 +10044,8 @@
                     "a": {
                       "title": "System details note",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     },
                     "i": {
                       "title": "Display text",
@@ -9857,6 +10060,17 @@
                   },
                   "additionalProperties": false
                 },
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a"
+                  ]
+                },
                 "minItems": 1
               }
             },
@@ -9867,7 +10081,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "540": {
           "title": "Terms Governing Use And Reproduction Note",
@@ -11961,10 +12176,22 @@
                     "a": {
                       "title": "Source of description note",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory"
                     }
                   },
                   "additionalProperties": false
+                },
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a"
+                  ]
                 },
                 "minItems": 1
               }
@@ -11976,7 +12203,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "600": {
           "title": "Subject Added Entry--personal Name",
@@ -14675,7 +14903,8 @@
                     "0": {
                       "title": "Authority record control number or standard number",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "1": {
                       "title": "Real World Object URI",
@@ -14690,7 +14919,8 @@
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "4": {
                       "title": "Relationship",
@@ -14705,7 +14935,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -14715,12 +14946,14 @@
                     "a": {
                       "title": "Corporate name or jurisdiction name as entry element",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "Subordinate unit",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "c": {
                       "title": "Location of meeting",
@@ -14815,17 +15048,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -14836,7 +15058,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "711": {
           "title": "Added Entry--meeting Name",
@@ -14916,7 +15139,8 @@
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "4": {
                       "title": "Relationship",
@@ -14931,7 +15155,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -14941,11 +15166,8 @@
                     "a": {
                       "title": "Meeting name or jurisdiction name as entry element",
                       "type": "string",
-                      "isRepeatable": false
-                    },
-                    "b": {
-                      "title": "Number",
-                      "type": "string"
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "c": {
                       "title": "Location of meeting",
@@ -15035,17 +15257,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -15056,7 +15267,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "720": {
           "title": "Added Entry--uncontrolled Name",
@@ -15100,6 +15312,12 @@
                 "items": {
                   "type": "object",
                   "properties": {
+                    "0": {
+                      "title": "INSI",
+                      "type": "string",
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
+                    },
                     "4": {
                       "title": "Relationship",
                       "type": "string",
@@ -15108,7 +15326,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "8": {
                       "title": "Field link and sequence number",
@@ -15118,7 +15337,8 @@
                     "a": {
                       "title": "Name",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "e": {
                       "title": "Relator term",
@@ -15127,17 +15347,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -15149,7 +15358,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "730": {
           "title": "Added Entry--uniform Title",
@@ -16090,7 +16300,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -16164,7 +16375,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "w": {
                       "title": "Record control number",
@@ -16174,7 +16386,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -16205,7 +16418,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "762": {
           "title": "Subseries Entry",
@@ -21505,12 +21719,14 @@
                 "10": {
                   "type": "string",
                   "title": "Indicator count",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "const": "2"
                 },
                 "11": {
                   "type": "string",
                   "title": "Subfield code count",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "const": "2"
                 },
                 "17": {
                   "type": "string",
@@ -21616,6 +21832,9 @@
                     },
                     "c": {
                       "title": "Part with dependent title"
+                    },
+                    "|": {
+                      "title": "No attempt to code"
                     }
                   }
                 },
@@ -30479,27 +30698,35 @@
                   "a": {
                     "title": "International Standard Serial Number",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": {
+                      "register": "mandatory",
+                      "work": "mandatory"
+                    }
                   },
                   "l": {
                     "title": "ISSN-L",
                     "type": "string",
-                    "isRepeatable": false
+                    "isRepeatable": false,
+                    "profilISSN": "mandatory"
                   },
                   "m": {
                     "title": "Canceled ISSN-L",
                     "type": "string",
-                    "isRepeatable": true
+                    "isRepeatable": true,
+                    "profilISSN": "mandatory if applicable"
                   },
                   "y": {
                     "title": "Incorrect ISSN",
                     "type": "string",
-                    "isRepeatable": true
+                    "isRepeatable": true,
+                    "profilISSN": "mandatory if applicable"
                   },
                   "z": {
                     "title": "Canceled ISSN",
                     "type": "string",
-                    "isRepeatable": true
+                    "isRepeatable": true,
+                    "profilISSN": "mandatory"
                   }
                 },
                 "additionalProperties": false
@@ -30530,6 +30757,19 @@
                       "a"
                     ]
                   }
+                },
+                {
+                  "contains": {
+                    "type": "object",
+                    "properties": {
+                      "l": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "l"
+                    ]
+                  }
                 }
               ],
               "minItems": 1
@@ -30539,7 +30779,8 @@
             "indicator1",
             "indicator2",
             "subFields"
-          ]
+          ],
+          "profilISSN": "mandatory"
         },
         "044": {
           "title": "Country Of Publishing/producing Entity Code",
@@ -30601,7 +30842,8 @@
                     "title": "ISO country code",
                     "type": "string",
                     "isRepeatable": true,
-                    "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$"
+                    "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$",
+                    "profilISSN": "mandatory"
                   }
                 },
                 "additionalProperties": false
@@ -30624,7 +30866,8 @@
             "indicator1",
             "indicator2",
             "subFields"
-          ]
+          ],
+          "profilISSN": "mandatory"
         },
         "010": {
           "title": "Library Of Congress Control Number",
@@ -31278,7 +31521,8 @@
                     "2": {
                       "title": "Source of number or code",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
@@ -31293,7 +31537,8 @@
                     "a": {
                       "title": "Standard number or code",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "c": {
                       "title": "Terms of availability",
@@ -31328,7 +31573,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "025": {
           "title": "Overseas Acquisition Number",
@@ -31708,7 +31954,8 @@
                     "a": {
                       "title": "CODEN",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "z": {
                       "title": "Canceled/invalid CODEN",
@@ -31728,7 +31975,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "031": {
           "title": "Musical Incipits Information",
@@ -32700,12 +32948,14 @@
                     "a": {
                       "title": "Language code of text/sound track or separate title",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "b": {
                       "title": "Language code of summary or abstract",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "c": {
                       "title": "languages of available translation",
@@ -32784,6 +33034,17 @@
                   },
                   "additionalProperties": false
                 },
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "a": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "a"
+                  ]
+                },
                 "minItems": 1
               }
             },
@@ -32794,7 +33055,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "042": {
           "title": "Authentication Code",
@@ -33059,17 +33321,20 @@
                     "a": {
                       "title": "Type of date code",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "Date 1 (B.C.E. date)",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "c": {
                       "title": "Date 1 (C.E. date)",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "d": {
                       "title": "Date 2 (B.C.E. date)",
@@ -33129,7 +33394,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "047": {
           "title": "Form Of Musical Composition Code",
@@ -34241,7 +34507,8 @@
                     "2": {
                       "title": "Edition identifier",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
@@ -34256,7 +34523,8 @@
                     "a": {
                       "title": "Universal Decimal Classification number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "Item number",
@@ -34266,7 +34534,8 @@
                     "x": {
                       "title": "Common auxiliary subdivision",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
@@ -34292,7 +34561,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "082": {
           "title": "Dewey Decimal Classification Number",
@@ -34357,7 +34627,8 @@
                     "2": {
                       "title": "Edition number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
@@ -34372,11 +34643,14 @@
                     "a": {
                       "title": "Classification number",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "b": {
                       "title": "DDC number--abridged NST version",
-                      "type": "string"
+                      "type": "string",
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "m": {
                       "title": "Standard or optional designation",
@@ -34412,7 +34686,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "083": {
           "title": "Additional Dewey Decimal Classification Number",
@@ -34893,20 +35168,6 @@
             "044",
             "222",
             "245"
-          ]
-        },
-        {
-          "oneOf": [
-            {
-              "required": [
-                "080"
-              ]
-            },
-            {
-              "required": [
-                "082"
-              ]
-            }
           ]
         },
         {

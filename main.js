@@ -1,6 +1,10 @@
-const jsonSchema = require('./dist/himarc.schema.json');
+const register = require('./dist/himarc-register.schema.json');
+const work = require('./dist/himarc-work.schema.json');
 
-module.exports = buildJsonSchemaProxy(jsonSchema);
+module.exports = {
+  register: buildJsonSchemaProxy(register),
+  work: buildJsonSchemaProxy(work)
+};
 
 function buildJsonSchemaProxy (obj) {
   return new Proxy(obj, {

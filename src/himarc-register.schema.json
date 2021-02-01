@@ -28,7 +28,7 @@
           "$ref": "field-008.schema.json"
         },
         "022": {
-          "$ref": "field--register.schema.json"
+          "$ref": "field-022-register.schema.json"
         },
         "044": {
           "$ref": "field-044.schema.json"
