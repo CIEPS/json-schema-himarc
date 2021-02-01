@@ -607,13 +607,13 @@
           "$ref": "field-700.schema.json"
         },
         "710": {
-          "$ref": "field-710.schema.json"
+          "$ref": "field-710-work.schema.json"
         },
         "711": {
-          "$ref": "field-711.schema.json"
+          "$ref": "field-711-work.schema.json"
         },
         "720": {
-          "$ref": "field-720.schema.json"
+          "$ref": "field-720-work.schema.json"
         },
         "730": {
           "$ref": "field-730.schema.json"
@@ -640,7 +640,7 @@
           "$ref": "field-758.schema.json"
         },
         "760": {
-          "$ref": "field-760.schema.json"
+          "$ref": "field-760-work.schema.json"
         },
         "762": {
           "$ref": "field-762.schema.json"

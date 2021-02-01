@@ -1,12 +1,12 @@
 {
-  "title": "Added Entry--meeting Name",
-  "url": "https://www.loc.gov/marc/bibliographic/bd711.html",
+  "title": "Added Entry--corporate Name",
+  "url": "https://www.loc.gov/marc/bibliographic/bd710.html",
   "type": "array",
   "items": {
     "type": "object",
     "properties": {
       "indicator1": {
-        "title": "Type of meeting name entry element",
+        "title": "Type of corporate name entry element",
         "type": "string",
         "enum": [
           "0",
@@ -61,7 +61,8 @@
             "0": {
               "title": "Authority record control number or standard number",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "optional"
             },
             "1": {
               "title": "Real World Object URI",
@@ -76,7 +77,8 @@
             "3": {
               "title": "Materials specified",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "4": {
               "title": "Relationship",
@@ -91,7 +93,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -99,13 +102,16 @@
               "isRepeatable": true
             },
             "a": {
-              "title": "Meeting name or jurisdiction name as entry element",
+              "title": "Corporate name or jurisdiction name as entry element",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "b": {
-              "title": "Number",
-              "type": "string"
+              "title": "Subordinate unit",
+              "type": "string",
+              "isRepeatable": true,
+              "profilISSN": "optional"
             },
             "c": {
               "title": "Location of meeting",
@@ -118,7 +124,7 @@
               "isRepeatable": true
             },
             "e": {
-              "title": "Subordinate unit",
+              "title": "Relator term",
               "type": "string",
               "isRepeatable": true
             },
@@ -142,11 +148,6 @@
               "type": "string",
               "isRepeatable": true
             },
-            "j": {
-              "title": "Relator term",
-              "type": "string",
-              "isRepeatable": true
-            },
             "k": {
               "title": "Form subheading",
               "type": "string",
@@ -157,18 +158,28 @@
               "type": "string",
               "isRepeatable": false
             },
+            "m": {
+              "title": "Medium of performance for music",
+              "type": "string",
+              "isRepeatable": true
+            },
             "n": {
               "title": "Number of part/section/meeting",
               "type": "string",
               "isRepeatable": true
+            },
+            "o": {
+              "title": "Arranged statement for music",
+              "type": "string",
+              "isRepeatable": false
             },
             "p": {
               "title": "Name of part/section of a work",
               "type": "string",
               "isRepeatable": true
             },
-            "q": {
-              "title": "Name of meeting following jurisdiction name entry element",
+            "r": {
+              "title": "Key for music",
               "type": "string",
               "isRepeatable": false
             },
@@ -195,17 +206,6 @@
           },
           "additionalProperties": false
         },
-        "contains": {
-          "type": "object",
-          "properties": {
-            "a": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "a"
-          ]
-        },
         "minItems": 1
       }
     },
@@ -216,5 +216,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

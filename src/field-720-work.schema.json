@@ -40,6 +40,12 @@
         "items": {
           "type": "object",
           "properties": {
+            "0": {
+              "title": "INSI",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "optional"
+            },
             "4": {
               "title": "Relationship",
               "type": "string",
@@ -48,7 +54,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -58,7 +65,8 @@
             "a": {
               "title": "Name",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "e": {
               "title": "Relator term",
@@ -67,17 +75,6 @@
             }
           },
           "additionalProperties": false
-        },
-        "contains": {
-          "type": "object",
-          "properties": {
-            "a": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "a"
-          ]
         },
         "minItems": 1
       }
@@ -89,5 +86,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

@@ -1,0 +1,102 @@
+{
+  "title": "Added Entry--uncontrolled Name",
+  "url": "https://www.loc.gov/marc/bibliographic/bd720.html",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "indicator1": {
+        "title": "Type of name",
+        "type": "string",
+        "enum": [
+          "\\",
+          "1",
+          "2"
+        ],
+        "code": {
+          "1": {
+            "title": "Personal"
+          },
+          "2": {
+            "title": "Other"
+          },
+          "\\": {
+            "title": "Not specified"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "0": {
+              "title": "INSI",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "optional"
+            },
+            "4": {
+              "title": "Relationship",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "6": {
+              "title": "Linkage",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "optional"
+            },
+            "8": {
+              "title": "Field link and sequence number",
+              "type": "string",
+              "isRepeatable": true
+            },
+            "a": {
+              "title": "Name",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "mandatory"
+            },
+            "e": {
+              "title": "Relator term",
+              "type": "string",
+              "isRepeatable": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "contains": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "a"
+          ]
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ]
+  },
+  "minItems": 1,
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
+}
