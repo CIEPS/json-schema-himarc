@@ -4778,5 +4778,6 @@
       }
     }
   },
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory"
 }

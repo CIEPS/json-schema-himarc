@@ -1,5 +1,7 @@
 {
   "title": "Date and Time of Latest Transaction",
   "url": "https://www.loc.gov/marc/bibliographic/bd005.html",
-  "type": "string"
+  "type": "string",
+  "isRepeatable": false,
+  "profilISSN": "mandatory"
 }

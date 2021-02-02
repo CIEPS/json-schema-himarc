@@ -10247,7 +10247,8 @@
                       "title": "Same as associated field",
                       "type": "string"
                     }
-                  }
+                  },
+                  "additionalProperties": false
                 },
                 "minItems": 1
               }
@@ -20685,12 +20686,14 @@
                     "2": {
                       "title": "Access method",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "6": {
                       "title": "Linkage",
@@ -20785,7 +20788,8 @@
                     "q": {
                       "title": "Electronic format type",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     },
                     "r": {
                       "title": "Settings",
@@ -20805,7 +20809,8 @@
                     "u": {
                       "title": "Uniform Resource Identifier",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "mandatory"
                     },
                     "v": {
                       "title": "Hours access method available",
@@ -20820,7 +20825,8 @@
                     "x": {
                       "title": "Nonpublic note",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "y": {
                       "title": "Link text",
@@ -20830,7 +20836,8 @@
                     "z": {
                       "title": "Public note",
                       "type": "string",
-                      "isRepeatable": true
+                      "isRepeatable": true,
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
@@ -20856,7 +20863,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "863": {
           "title": "Enumeration And Chronology--basic Bibliographic Unit",
@@ -21102,151 +21110,17 @@
                 "type": "array",
                 "items": {
                   "type": "object",
-                  "properties": {
-                    "0": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "1": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "2": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "3": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "4": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "5": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
+                  "patternProperties": {
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
-                    "7": {
+                    "[0-5]|[7-9]|[a-z]": {
                       "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "8": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "9": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "a": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "b": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "c": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "d": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "e": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "f": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "g": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "h": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "i": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "j": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "k": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "l": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "m": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "n": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "o": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "p": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "q": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "r": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "s": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "t": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "u": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "v": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "w": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "x": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "y": {
-                      "title": "Same as associated field",
-                      "type": "string"
-                    },
-                    "z": {
-                      "title": "Same as associated field",
-                      "type": "string"
+                      "type": "string",
+                      "profilISSN": "optional"
                     }
                   },
                   "additionalProperties": false
@@ -21261,7 +21135,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "optional"
         },
         "882": {
           "title": "Replacement Record Information",
@@ -21764,13 +21639,15 @@
                   "type": "string",
                   "title": "Indicator count",
                   "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
-                  "const": "2"
+                  "const": "2",
+                  "profilISSN": "mandatory"
                 },
                 "11": {
                   "type": "string",
                   "title": "Subfield code count",
                   "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
-                  "const": "2"
+                  "const": "2",
+                  "profilISSN": "mandatory"
                 },
                 "17": {
                   "type": "string",
@@ -21819,7 +21696,8 @@
                     "z": {
                       "title": "Not applicable"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "18": {
                   "type": "string",
@@ -21852,7 +21730,8 @@
                     "u": {
                       "title": "Unknown"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "19": {
                   "type": "string",
@@ -21880,27 +21759,32 @@
                     "|": {
                       "title": "No attempt to code"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "20": {
                   "type": "string",
                   "title": "Length of the length-of-field portion",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "profilISSN": "mandatory"
                 },
                 "21": {
                   "type": "string",
                   "title": "Length of the starting-character-position portion",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "profilISSN": "mandatory"
                 },
                 "22": {
                   "type": "string",
                   "title": "Length of the implementation-defined portion",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "profilISSN": "mandatory"
                 },
                 "00-04": {
                   "type": "string",
                   "title": "Record length",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "profilISSN": "mandatory"
                 },
                 "05": {
                   "type": "string",
@@ -21929,7 +21813,8 @@
                     "p": {
                       "title": "Increase in encoding level from prepublication"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "06": {
                   "type": "string",
@@ -21994,7 +21879,8 @@
                     "t": {
                       "title": "Manuscript language material"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "07": {
                   "type": "string",
@@ -22031,7 +21917,8 @@
                     "s": {
                       "title": "Serial"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "08": {
                   "type": "string",
@@ -22048,7 +21935,8 @@
                     "a": {
                       "title": "Archival"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "09": {
                   "type": "string",
@@ -22065,12 +21953,14 @@
                     "a": {
                       "title": "UCS/Unicode"
                     }
-                  }
+                  },
+                  "profilISSN": "mandatory"
                 },
                 "12-16": {
                   "type": "string",
                   "title": "Base address of data",
-                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "profilISSN": "mandatory"
                 }
               },
               "additionalProperties": false,
@@ -22095,7 +21985,9 @@
           },
           "required": [
             "positions"
-          ]
+          ],
+          "isRepeatable": false,
+          "profilISSN": "mandatory"
         },
         "001": {
           "title": "Control Number",

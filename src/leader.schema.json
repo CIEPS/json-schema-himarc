@@ -10,7 +10,8 @@
         "00-04": {
           "type": "string",
           "title": "Record length",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "profilISSN": "mandatory"
         },
         "05": {
           "type": "string",
@@ -39,7 +40,8 @@
             "p": {
               "title": "Increase in encoding level from prepublication"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "06": {
           "type": "string",
@@ -104,7 +106,8 @@
             "t": {
               "title": "Manuscript language material"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "07": {
           "type": "string",
@@ -141,7 +144,8 @@
             "s": {
               "title": "Serial"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "08": {
           "type": "string",
@@ -158,7 +162,8 @@
             "a": {
               "title": "Archival"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "09": {
           "type": "string",
@@ -175,24 +180,28 @@
             "a": {
               "title": "UCS\/Unicode"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "10": {
           "type": "string",
           "title": "Indicator count",
           "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
-          "const": "2"
+          "const": "2",
+          "profilISSN": "mandatory"
         },
         "11": {
           "type": "string",
           "title": "Subfield code count",
           "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
-          "const": "2"
+          "const": "2",
+          "profilISSN": "mandatory"
         },
         "12-16": {
           "type": "string",
           "title": "Base address of data",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "profilISSN": "mandatory"
         },
         "17": {
           "type": "string",
@@ -241,7 +250,8 @@
             "z": {
               "title": "Not applicable"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "18": {
           "type": "string",
@@ -274,7 +284,8 @@
             "u": {
               "title": "Unknown"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "19": {
           "type": "string",
@@ -302,22 +313,26 @@
             "|": {
               "title": "No attempt to code"
             }
-          }
+          },
+          "profilISSN": "mandatory"
         },
         "20": {
           "type": "string",
           "title": "Length of the length-of-field portion",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "profilISSN": "mandatory"
         },
         "21": {
           "type": "string",
           "title": "Length of the starting-character-position portion",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "profilISSN": "mandatory"
         },
         "22": {
           "type": "string",
           "title": "Length of the implementation-defined portion",
-          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html"
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "profilISSN": "mandatory"
         }
       },
       "additionalProperties": false,
@@ -342,5 +357,7 @@
   },
   "required": [
     "positions"
-  ]
+  ],
+  "isRepeatable": false,
+  "profilISSN": "mandatory"
 }
