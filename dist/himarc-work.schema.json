@@ -21992,17 +21992,23 @@
         "001": {
           "title": "Control Number",
           "url": "https://www.loc.gov/marc/bibliographic/bd001.html",
-          "type": "string"
+          "type": "string",
+          "isRepeatable": false,
+          "profilISSN": "mandatory"
         },
         "003": {
           "title": "Control Number Identifier",
           "url": "https://www.loc.gov/marc/bibliographic/bd003.html",
-          "type": "string"
+          "type": "string",
+          "isRepeatable": false,
+          "profilISSN": "mandatory"
         },
         "005": {
           "title": "Date and Time of Latest Transaction",
           "url": "https://www.loc.gov/marc/bibliographic/bd005.html",
-          "type": "string"
+          "type": "string",
+          "isRepeatable": false,
+          "profilISSN": "mandatory"
         },
         "007": {
           "title": "Physical Description",
@@ -26784,7 +26790,8 @@
               }
             }
           },
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory"
         },
         "008": {
           "title": "General Information",
@@ -26897,7 +26904,8 @@
                         "|": {
                           "title": "No attempt to code"
                         }
-                      }
+                      },
+                      "profilISSN": "mandatory"
                     },
                     "39": {
                       "title": "Cataloging source",
@@ -26918,12 +26926,14 @@
                         "|": {
                           "title": "No attempt to code"
                         }
-                      }
+                      },
+                      "profilISSN": "mandatory"
                     },
                     "00-05": {
                       "type": "string",
                       "title": "Date entered on file",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+                      "profilISSN": "mandatory"
                     },
                     "06": {
                       "type": "string",
@@ -26992,31 +27002,36 @@
                         "|": {
                           "title": "No attempt to code"
                         }
-                      }
+                      },
+                      "profilISSN": "mandatory"
                     },
                     "07-10": {
                       "type": "string",
                       "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
                       "title": "Date 1",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+                      "profilISSN": "mandatory"
                     },
                     "11-14": {
                       "type": "string",
                       "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
                       "title": "Date 2",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+                      "profilISSN": "mandatory"
                     },
                     "15-17": {
                       "type": "string",
                       "pattern": "^([a-z ]{3}|vp |xx )$",
                       "title": "Place of publication, production, or execution",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+                      "profilISSN": "mandatory"
                     },
                     "35-37": {
                       "type": "string",
                       "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
                       "title": "Language",
-                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html"
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
+                      "profilISSN": "mandatory"
                     }
                   },
                   "required": [
@@ -30573,7 +30588,9 @@
                 }
               }
             }
-          }
+          },
+          "isRepeatable": false,
+          "profilISSN": "mandatory"
         },
         "022": {
           "title": "International Standard Serial Number",

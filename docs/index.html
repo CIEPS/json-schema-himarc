@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFILE OF ISSN - MARC 21</title>
+  <link rel="stylesheet" href="bulma.min.css">
+  <script src="handlebars-v4.7.6.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script id="app-template" type="text/x-handlebars-template">
+    <section class="section">
+      <div class="container">
+        <h1 class="title">PROFILE OF ISSN - MARC 21</h1>
+        {{#each datafields}}
+        <div class="card mb-3">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="tag is-primary is-medium mr-2">{{ this.tag }}</span>
+              {{ this.value.title }}
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="columns">
+                <div class="column">
+                  <table class="table is-narrow is-striped is-hoverable">
+                    <thead>
+                      <tr>
+                        <th>Indicator 1</th>
+                        <th>Title</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each this.value.properties.indicator1.code }}
+                      <tr>
+                        <td>{{@key}}</td>
+                        <td>{{ this.title }}</td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+                <div class="column">
+                  <table class="table is-narrow is-striped is-hoverable">
+                    <thead>
+                      <tr>
+                        <th>Indicator 2</th>
+                        <th>Title</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each this.value.properties.indicator2.code }}
+                      <tr>
+                        <td>{{@key}}</td>
+                        <td>{{ this.title }}</td>
+                      </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <table class="table is-narrow is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Subfield zone</th>
+                    <th>Title</th>
+                    <th>Mandatory field</th>
+                    <th>Is Repeatable ?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each this.value.properties.subFields.items.properties }}
+                  <tr>
+                    <td>${{@key}}</td>
+                    <td>{{ this.title }}</td>
+                    <td>{{ this.profilISSN }}</td>
+                    <td>
+                      <input type="checkbox" {{#if this.isRepeatable}}checked{{/if}}>
+                    </td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
