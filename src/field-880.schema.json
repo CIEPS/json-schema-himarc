@@ -17,151 +17,17 @@
         "type": "array",
         "items": {
           "type": "object",
-          "properties": {
-            "0": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "1": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "2": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "3": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "4": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "5": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
+          "patternProperties": {
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
-            "7": {
+            "[0-5]|[7-9]|[a-z]": {
               "title": "Same as associated field",
-              "type": "string"
-            },
-            "8": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "9": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "a": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "b": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "c": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "d": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "e": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "f": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "g": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "h": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "i": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "j": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "k": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "l": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "m": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "n": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "o": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "p": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "q": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "r": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "s": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "t": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "u": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "v": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "w": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "x": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "y": {
-              "title": "Same as associated field",
-              "type": "string"
-            },
-            "z": {
-              "title": "Same as associated field",
-              "type": "string"
+              "type": "string",
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
@@ -176,5 +42,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

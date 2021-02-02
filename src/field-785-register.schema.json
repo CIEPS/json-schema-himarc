@@ -1,6 +1,6 @@
 {
-  "title": "Subseries Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd762.html",
+  "title": "Succeeding Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd785.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -22,18 +22,46 @@
         }
       },
       "indicator2": {
-        "title": "Display constant controller",
+        "title": "Type of relationship",
         "type": "string",
         "enum": [
-          "\\",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
           "8"
         ],
         "code": {
-          "8": {
-            "title": "No display constant generated"
+          "0": {
+            "title": "Continued by"
           },
-          "\\": {
-            "title": "Has subseries"
+          "1": {
+            "title": "Continued in part by"
+          },
+          "2": {
+            "title": "Superseded by"
+          },
+          "3": {
+            "title": "Superseded in part by"
+          },
+          "4": {
+            "title": "Absorbed by"
+          },
+          "5": {
+            "title": "Absorbed in part by"
+          },
+          "6": {
+            "title": "Split into ... and ..."
+          },
+          "7": {
+            "title": "Merged with ... to form ..."
+          },
+          "8": {
+            "title": "Changed back to"
           }
         }
       },
@@ -50,7 +78,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -97,6 +126,11 @@
               "type": "string",
               "isRepeatable": true
             },
+            "k": {
+              "title": "Series data for related item",
+              "type": "string",
+              "isRepeatable": true
+            },
             "m": {
               "title": "Material-specific details",
               "type": "string",
@@ -116,6 +150,11 @@
               "title": "Parallel title (NR)",
               "type": "string"
             },
+            "r": {
+              "title": "Report number",
+              "type": "string",
+              "isRepeatable": true
+            },
             "s": {
               "title": "Uniform title",
               "type": "string",
@@ -123,6 +162,12 @@
             },
             "t": {
               "title": "Title",
+              "type": "string",
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
+            },
+            "u": {
+              "title": "Standa rd Technical Report Number",
               "type": "string",
               "isRepeatable": false
             },
@@ -134,12 +179,18 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
               "type": "string",
               "isRepeatable": false
+            },
+            "z": {
+              "title": "International Standard Book Number",
+              "type": "string",
+              "isRepeatable": true
             }
           },
           "additionalProperties": false
@@ -165,5 +216,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

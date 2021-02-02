@@ -1,6 +1,6 @@
 {
-  "title": "Supplement/special Issue Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd770.html",
+  "title": "Issued With Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd777.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -33,7 +33,7 @@
             "title": "No display constant generated"
           },
           "\\": {
-            "title": "Has supplement"
+            "title": "Issued with"
           }
         }
       },
@@ -50,7 +50,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -134,7 +135,8 @@
             "t": {
               "title": "Title",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "u": {
               "title": "Standard Technical Report Number",
@@ -149,7 +151,8 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
@@ -185,5 +188,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

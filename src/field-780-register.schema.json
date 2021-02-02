@@ -1,6 +1,6 @@
 {
-  "title": "Translation Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd767.html",
+  "title": "Preceding Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd780.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -22,18 +22,42 @@
         }
       },
       "indicator2": {
-        "title": "Display constant controller",
+        "title": "Type of relationship",
         "type": "string",
         "enum": [
-          "\\",
-          "8"
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
         ],
         "code": {
-          "8": {
-            "title": "No display constant generated"
+          "0": {
+            "title": "Continues"
           },
-          "\\": {
-            "title": "Translated as"
+          "1": {
+            "title": "Continues in part"
+          },
+          "2": {
+            "title": "Supersedes"
+          },
+          "3": {
+            "title": "Supersedes in part"
+          },
+          "4": {
+            "title": "Formed by the union of ... and ..."
+          },
+          "5": {
+            "title": "Absorbed"
+          },
+          "6": {
+            "title": "Absorbed in part"
+          },
+          "7": {
+            "title": "Separated from"
           }
         }
       },
@@ -50,7 +74,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -134,7 +159,8 @@
             "t": {
               "title": "Title",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "u": {
               "title": "Standard Technical Report Number",
@@ -149,7 +175,8 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
@@ -185,5 +212,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

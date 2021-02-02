@@ -643,19 +643,19 @@
           "$ref": "field-760-register.schema.json"
         },
         "762": {
-          "$ref": "field-762.schema.json"
+          "$ref": "field-762-register.schema.json"
         },
         "765": {
-          "$ref": "field-765.schema.json"
+          "$ref": "field-765-register.schema.json"
         },
         "767": {
-          "$ref": "field-767.schema.json"
+          "$ref": "field-767-register.schema.json"
         },
         "770": {
-          "$ref": "field-770.schema.json"
+          "$ref": "field-770-register.schema.json"
         },
         "772": {
-          "$ref": "field-772.schema.json"
+          "$ref": "field-772-register.schema.json"
         },
         "773": {
           "$ref": "field-773.schema.json"
@@ -664,25 +664,25 @@
           "$ref": "field-774.schema.json"
         },
         "775": {
-          "$ref": "field-775.schema.json"
+          "$ref": "field-775-register.schema.json"
         },
         "776": {
-          "$ref": "field-776.schema.json"
+          "$ref": "field-776-register.schema.json"
         },
         "777": {
-          "$ref": "field-777.schema.json"
+          "$ref": "field-777-register.schema.json"
         },
         "780": {
-          "$ref": "field-780.schema.json"
+          "$ref": "field-780-register.schema.json"
         },
         "785": {
-          "$ref": "field-785.schema.json"
+          "$ref": "field-785-register.schema.json"
         },
         "786": {
           "$ref": "field-786.schema.json"
         },
         "787": {
-          "$ref": "field-787.schema.json"
+          "$ref": "field-787-register.schema.json"
         },
         "800": {
           "$ref": "field-800.schema.json"

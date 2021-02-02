@@ -1,6 +1,6 @@
 {
-  "title": "Succeeding Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd785.html",
+  "title": "Additional Physical Form Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd776.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -22,46 +22,18 @@
         }
       },
       "indicator2": {
-        "title": "Type of relationship",
+        "title": "Display constant controller",
         "type": "string",
         "enum": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
+          "\\",
           "8"
         ],
         "code": {
-          "0": {
-            "title": "Continued by"
-          },
-          "1": {
-            "title": "Continued in part by"
-          },
-          "2": {
-            "title": "Superseded by"
-          },
-          "3": {
-            "title": "Superseded in part by"
-          },
-          "4": {
-            "title": "Absorbed by"
-          },
-          "5": {
-            "title": "Absorbed in part by"
-          },
-          "6": {
-            "title": "Split into ... and ..."
-          },
-          "7": {
-            "title": "Merged with ... to form ..."
-          },
           "8": {
-            "title": "Changed back to"
+            "title": "No display constant generated"
+          },
+          "\\": {
+            "title": "Available in another form"
           }
         }
       },
@@ -78,7 +50,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -162,10 +135,11 @@
             "t": {
               "title": "Title",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "u": {
-              "title": "Standa rd Technical Report Number",
+              "title": "Standard Technical Report Number",
               "type": "string",
               "isRepeatable": false
             },
@@ -177,7 +151,8 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
@@ -213,5 +188,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

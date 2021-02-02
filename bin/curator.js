@@ -33,11 +33,26 @@ const schema = require('../src');
 //   });
 
 // fix isRepeatable
+// Object.entries(schema)
+//   .filter(([key, value]) => value.type === 'array')
+//   .map(([key, value]) => {
+//     if ('isRepeatable' in value.items) delete value.items.isRepeatable;
+//     if ('isRepeatable' in value === false) value.isRepeatable = true;
+//     fs.writeFileSync(path.join(__dirname, `../src/${key.replace('_', '-')}.schema.json`), JSON.stringify(value, null, 2));
+//     return ([key, value]);
+//   });
+
+// Profil ISSN for 76X
 Object.entries(schema)
-  .filter(([key, value]) => value.type === 'array')
+  .filter(([key]) => ['760', '762', '765', '767', '770', '772', '775', '776', '777', '780', '785', '787'].includes(key.slice(6)))
   .map(([key, value]) => {
-    if ('isRepeatable' in value.items) delete value.items.isRepeatable;
-    if ('isRepeatable' in value === false) value.isRepeatable = true;
-    fs.writeFileSync(path.join(__dirname, `../src/${key.replace('_', '-')}.schema.json`), JSON.stringify(value, null, 2));
+    console.log(key);
+    value.profilISSN = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties.t.profilISSN = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties.x.profilISSN = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties['6'].profilISSN = 'optional';
+    fs.writeFileSync(path.join(__dirname, `../src/${key.replace(/_/g, '-')}-register.schema.json`), JSON.stringify(value, null, 2));
+    value.profilISSN = 'optional';
+    fs.writeFileSync(path.join(__dirname, `../src/${key.replace(/_/g, '-')}-work.schema.json`), JSON.stringify(value, null, 2));
     return ([key, value]);
   });

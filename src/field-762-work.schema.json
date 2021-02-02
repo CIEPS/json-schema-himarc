@@ -1,6 +1,6 @@
 {
-  "title": "Other Edition Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd775.html",
+  "title": "Subseries Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd762.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -33,7 +33,7 @@
             "title": "No display constant generated"
           },
           "\\": {
-            "title": "Other edition available"
+            "title": "Has subseries"
           }
         }
       },
@@ -50,7 +50,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -82,16 +83,6 @@
               "type": "string",
               "isRepeatable": false
             },
-            "e": {
-              "title": "Language code",
-              "type": "string",
-              "isRepeatable": false
-            },
-            "f": {
-              "title": "Country code",
-              "type": "string",
-              "isRepeatable": false
-            },
             "g": {
               "title": "Related parts",
               "type": "string",
@@ -104,11 +95,6 @@
             },
             "i": {
               "title": "Relationship information",
-              "type": "string",
-              "isRepeatable": true
-            },
-            "k": {
-              "title": "Series data for related item",
               "type": "string",
               "isRepeatable": true
             },
@@ -131,11 +117,6 @@
               "title": "Parallel title (NR)",
               "type": "string"
             },
-            "r": {
-              "title": "Report number",
-              "type": "string",
-              "isRepeatable": true
-            },
             "s": {
               "title": "Uniform title",
               "type": "string",
@@ -144,12 +125,8 @@
             "t": {
               "title": "Title",
               "type": "string",
-              "isRepeatable": false
-            },
-            "u": {
-              "title": "Standard Technical Report Number",
-              "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "w": {
               "title": "Record control number",
@@ -159,17 +136,13 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
               "type": "string",
               "isRepeatable": false
-            },
-            "z": {
-              "title": "International Standard Book Number",
-              "type": "string",
-              "isRepeatable": true
             }
           },
           "additionalProperties": false
@@ -195,5 +168,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "optional"
 }

@@ -16517,7 +16517,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -16591,7 +16592,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "w": {
                       "title": "Record control number",
@@ -16601,7 +16603,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -16632,7 +16635,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "765": {
           "title": "Original Language Entry",
@@ -16686,7 +16690,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -16770,7 +16775,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -16785,7 +16791,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -16821,7 +16828,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "767": {
           "title": "Translation Entry",
@@ -16875,7 +16883,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -16959,7 +16968,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -16974,7 +16984,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -17010,7 +17021,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "770": {
           "title": "Supplement/special Issue Entry",
@@ -17064,7 +17076,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -17148,7 +17161,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -17163,7 +17177,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -17199,7 +17214,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "772": {
           "title": "Supplement Parent Entry",
@@ -17257,7 +17273,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -17341,7 +17358,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -17356,7 +17374,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -17392,7 +17411,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "773": {
           "title": "Host Item Entry",
@@ -17826,7 +17846,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -17920,7 +17941,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -17935,7 +17957,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -17971,7 +17994,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "776": {
           "title": "Additional Physical Form Entry",
@@ -18025,7 +18049,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -18109,7 +18134,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -18124,7 +18150,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -18160,7 +18187,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "777": {
           "title": "Issued With Entry",
@@ -18214,7 +18242,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -18298,7 +18327,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -18313,7 +18343,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -18349,7 +18380,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "780": {
           "title": "Preceding Entry",
@@ -18427,7 +18459,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -18511,7 +18544,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -18526,7 +18560,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -18562,7 +18597,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "785": {
           "title": "Succeeding Entry",
@@ -18644,7 +18680,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -18728,7 +18765,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standa rd Technical Report Number",
@@ -18743,7 +18781,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -18779,7 +18818,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "786": {
           "title": "Data Source Entry",
@@ -19033,7 +19073,8 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "optional"
                     },
                     "7": {
                       "title": "Control subfield",
@@ -19113,7 +19154,8 @@
                     "t": {
                       "title": "Title",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "u": {
                       "title": "Standard Technical Report Number",
@@ -19128,7 +19170,8 @@
                     "x": {
                       "title": "International Standard Serial Number",
                       "type": "string",
-                      "isRepeatable": false
+                      "isRepeatable": false,
+                      "profilISSN": "mandatory if applicable"
                     },
                     "y": {
                       "title": "CODEN designation",
@@ -19164,7 +19207,8 @@
             ]
           },
           "minItems": 1,
-          "isRepeatable": true
+          "isRepeatable": true,
+          "profilISSN": "mandatory if applicable"
         },
         "800": {
           "title": "Series Added Entry--personal Name",

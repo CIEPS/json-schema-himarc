@@ -77,12 +77,14 @@
             "2": {
               "title": "Access method",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "3": {
               "title": "Materials specified",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -177,7 +179,8 @@
             "q": {
               "title": "Electronic format type",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": true,
+              "profilISSN": "optional"
             },
             "r": {
               "title": "Settings",
@@ -197,7 +200,8 @@
             "u": {
               "title": "Uniform Resource Identifier",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "mandatory"
             },
             "v": {
               "title": "Hours access method available",
@@ -212,7 +216,8 @@
             "x": {
               "title": "Nonpublic note",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "y": {
               "title": "Link text",
@@ -222,7 +227,8 @@
             "z": {
               "title": "Public note",
               "type": "string",
-              "isRepeatable": true
+              "isRepeatable": true,
+              "profilISSN": "optional"
             }
           },
           "additionalProperties": false
@@ -248,5 +254,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }

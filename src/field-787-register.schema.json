@@ -1,6 +1,6 @@
 {
-  "title": "Issued With Entry",
-  "url": "https://www.loc.gov/marc/bibliographic/bd777.html",
+  "title": "Other Relationship Entry",
+  "url": "https://www.loc.gov/marc/bibliographic/bd787.html",
   "type": "array",
   "items": {
     "type": "object",
@@ -33,7 +33,7 @@
             "title": "No display constant generated"
           },
           "\\": {
-            "title": "Issued with"
+            "title": "Related item"
           }
         }
       },
@@ -50,7 +50,8 @@
             "6": {
               "title": "Linkage",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -117,10 +118,6 @@
               "type": "string",
               "isRepeatable": true
             },
-            "q": {
-              "title": "Parallel title (NR)",
-              "type": "string"
-            },
             "r": {
               "title": "Report number",
               "type": "string",
@@ -134,7 +131,8 @@
             "t": {
               "title": "Title",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "u": {
               "title": "Standard Technical Report Number",
@@ -149,7 +147,8 @@
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
-              "isRepeatable": false
+              "isRepeatable": false,
+              "profilISSN": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
@@ -185,5 +184,6 @@
     ]
   },
   "minItems": 1,
-  "isRepeatable": true
+  "isRepeatable": true,
+  "profilISSN": "mandatory if applicable"
 }
