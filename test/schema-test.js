@@ -6,7 +6,7 @@ const { expect } = require('chai');
 const Ajv = require('ajv').default;
 const refParser = require('@apidevtools/json-schema-ref-parser');
 const schemaHelper = require('../src');
-const fullSchema = require('../dist/himarc.schema.json');
+const registerSchema = require('../dist/himarc-register.schema.json');
 const schemaProxies = require('../main.js');
 
 const ajv = new Ajv({
@@ -16,7 +16,7 @@ const ajv = new Ajv({
 
 describe('es6 proxies', function () {
   it('should access to nested data', function () {
-    expect(schemaProxies.fields['008'].definitions['All Materials'].positions.properties['06'].title).to.equal('Type of date/Publication status');
+    expect(schemaProxies.register.fields['008'].definitions['All Materials'].positions.properties['06'].title).to.equal('Type of date/Publication status');
   });
 });
 
@@ -206,7 +206,7 @@ describe('International Standard Serial Number (022) schema', function () {
         }
       ]
     };
-    const validate = ajv.compile(schemaHelper.field_022);
+    const validate = ajv.compile(schemaHelper.field_022_register);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
@@ -231,7 +231,7 @@ describe('International Standard Serial Number (022) schema', function () {
         }
       ]
     };
-    const validate = ajv.compile(schemaHelper.field_022);
+    const validate = ajv.compile(schemaHelper.field_022_register);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
@@ -576,7 +576,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(fullSchema);
+    const validate = ajv.compile(registerSchema);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
@@ -698,7 +698,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(fullSchema);
+    const validate = ajv.compile(registerSchema);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === 'should NOT have fewer than 1 items')).to.be.true;
@@ -810,7 +810,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(fullSchema);
+    const validate = ajv.compile(registerSchema);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === "should have required property 'indicator1'")).to.be.true;

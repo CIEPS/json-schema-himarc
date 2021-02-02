@@ -9,7 +9,7 @@ fs.readdirSync(__dirname)
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-12) === '.schema.json');
   })
   .forEach(file => {
-    const name = file.split('.')[0].replace('-', '_');
+    const name = file.split('.')[0].replace(/-/g, '_');
     schema[name] = require(path.join(__dirname, file));
   });
 
