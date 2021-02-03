@@ -2,9 +2,8 @@
   <div id="app">
     <section class="section">
       <div class="container">
-        <h1 class="title">
-          PROFILE OF ISSN - MARC 21 / JSON SCHEMA HIMARC (under construction)
-        </h1>
+        <h1 class="title">PROFILE OF ISSN - MARC 21 / JSON SCHEMA HIMARC</h1>
+        <h3 class="subtitle">(under construction)</h3>
 
         <div class="card mb-3">
           <header class="card-header">
