@@ -5,7 +5,7 @@
 const { expect } = require('chai');
 const Ajv = require('ajv').default;
 const refParser = require('@apidevtools/json-schema-ref-parser');
-const schemaHelper = require('../src');
+const schemaHelper = require('../src/schema');
 const registerSchema = require('../dist/himarc-register.schema.json');
 const schemaProxies = require('../main.js');
 

@@ -70,6 +70,8 @@ web_modules/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.*.local
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -113,5 +115,11 @@ web_modules/
 .yarn/build-state.yml
 .pnp.*
 
-# Visual Studio Code
+# Editor directories and files
+.idea
 .vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
