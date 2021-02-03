@@ -4,8 +4,16 @@
       <div class="container">
         <h1 class="title">PROFILE OF ISSN - MARC 21 / JSON SCHEMA HIMARC</h1>
         <h3 class="subtitle">(under construction)</h3>
-
-        <div class="card mb-3">
+        <b-field label="Jump to">
+          <b-input placeholder="Search tag field"
+            type="search"
+            icon="magnify"
+            @keyup.enter.native="scrollTo"
+            v-model="searchQuery"
+          >
+          </b-input>
+        </b-field>
+        <div id="LDR" class="card mb-3">
           <header class="card-header">
             <p class="card-header-title">
               <span class="tag is-primary is-medium mr-2">LDR</span>
@@ -66,7 +74,7 @@
           </div>
         </div>
 
-        <div class="card mb-3" v-for="controlfield in controlfields" :key="controlfield.tag">
+        <div :id="controlfield.tag" class="card mb-3" v-for="controlfield in controlfields" :key="controlfield.tag">
           <header class="card-header">
             <p class="card-header-title">
               <span class="tag is-primary is-medium mr-2">{{ controlfield.tag }}</span>
@@ -81,7 +89,7 @@
           </header>
         </div>
 
-        <div class="card mb-3">
+        <div id="007" class="card mb-3">
           <header class="card-header">
             <p class="card-header-title">
               <span class="tag is-primary is-medium mr-2">007</span>
@@ -144,7 +152,7 @@
           </div>
         </div>
 
-        <div class="card mb-3">
+        <div id="008" class="card mb-3">
           <header class="card-header">
             <p class="card-header-title">
               <span class="tag is-primary is-medium mr-2">008</span>
@@ -214,7 +222,7 @@
           </div>
         </div>
 
-        <div class="card mb-3" v-for="datafield in datafields" :key="datafield.tag">
+        <div :id="datafield.tag" class="card mb-3" v-for="datafield in datafields" :key="datafield.tag">
           <header class="card-header">
             <p class="card-header-title">
               <span class="tag is-primary is-medium mr-2">{{ datafield.tag }}</span>
@@ -303,14 +311,14 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import schemaRegister from "../../../dist/himarc-register.schema.json";
 
 export default {
   name: "App",
   data: function () {
     return {
-      isProfilISSN: true
+      isProfilISSN: true,
+      searchQuery: null
     };
   },
   computed: {
@@ -369,6 +377,10 @@ export default {
             if (b.length > 2) b = b.slice(0, 2);
             return a - b;
           });
+    },
+    scrollTo: function (hash) {
+      console.log(hash);
+      location.hash = "#" + hash.target.value;
     }
   }
 };
