@@ -895,7 +895,8 @@
                 "w",
                 "z",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory"
             },
             "19": {
               "title": "Regularity",
@@ -924,7 +925,8 @@
                 "u",
                 "x",
                 "|"
-              ]
+              ],
+              "profilISSN": "optional"
             },
             "20": {
               "title": "Undefined",
@@ -933,7 +935,8 @@
               "enum": [
                 " ",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory if applicable"
             },
             "21": {
               "title": "Type of continuing resource",
@@ -974,7 +977,8 @@
                 "p",
                 "w",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory"
             },
             "22": {
               "title": "Form of original item",
@@ -1027,7 +1031,8 @@
                 "q",
                 "s",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory if applicable"
             },
             "23": {
               "title": "Form of item",
@@ -1080,7 +1085,8 @@
                 "r",
                 "s",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory"
             },
             "24": {
               "title": "Nature of entire work",
@@ -1642,7 +1648,8 @@
                 "0",
                 "1",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory if applicable"
             },
             "30-32": {
               "title": "Undefined",
@@ -1724,7 +1731,8 @@
                 "u",
                 "z",
                 "|"
-              ]
+              ],
+              "profilISSN": "mandatory"
             },
             "34": {
               "title": "Entry convention",
