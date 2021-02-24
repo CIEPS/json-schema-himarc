@@ -2,3 +2,5 @@
 
 # json-schema-himarc
 JSON Schema for himarc
+
+https://cieps.github.io/json-schema-himarc/
