@@ -62,7 +62,7 @@
               "title": "Authority record control number or standard number",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "1": {
               "title": "Real World Object URI",
@@ -78,7 +78,7 @@
               "title": "Materials specified",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "4": {
               "title": "Relationship",
@@ -94,7 +94,7 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -105,13 +105,13 @@
               "title": "Corporate name or jurisdiction name as entry element",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "b": {
               "title": "Subordinate unit",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "c": {
               "title": "Location of meeting",
@@ -228,5 +228,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

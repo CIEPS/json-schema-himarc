@@ -44,13 +44,13 @@
               "title": "Former publication frequency",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Dates of former publication frequency",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             }
           },
           "additionalProperties": false
@@ -94,5 +94,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

@@ -70,7 +70,7 @@
               "title": "Source of number or code",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -86,7 +86,7 @@
               "title": "Standard number or code",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "c": {
               "title": "Terms of availability",
@@ -122,5 +122,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

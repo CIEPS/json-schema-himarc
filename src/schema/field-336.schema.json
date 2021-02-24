@@ -44,7 +44,7 @@
               "title": "Source",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "3": {
               "title": "Materials specified",
@@ -65,13 +65,13 @@
               "title": "Content type term",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Content type code",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             }
           },
           "additionalProperties": false
@@ -115,5 +115,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

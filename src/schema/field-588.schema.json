@@ -59,7 +59,7 @@
               "title": "Source of description note",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             }
           },
           "additionalProperties": false
@@ -86,5 +86,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

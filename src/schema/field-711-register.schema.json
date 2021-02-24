@@ -77,7 +77,7 @@
               "title": "Materials specified",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "4": {
               "title": "Relationship",
@@ -93,7 +93,7 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -104,7 +104,7 @@
               "title": "Meeting name or jurisdiction name as entry element",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "c": {
               "title": "Location of meeting",
@@ -216,5 +216,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

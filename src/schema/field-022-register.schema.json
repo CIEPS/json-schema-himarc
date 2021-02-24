@@ -58,31 +58,31 @@
             "title": "International Standard Serial Number",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           },
           "l": {
             "title": "ISSN-L",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           },
           "m": {
             "title": "Canceled ISSN-L",
             "type": "string",
             "isRepeatable": true,
-            "profilISSN": "mandatory if applicable"
+            "ISSNProfile": "mandatory if applicable"
           },
           "y": {
             "title": "Incorrect ISSN",
             "type": "string",
             "isRepeatable": true,
-            "profilISSN": "optional"
+            "ISSNProfile": "optional"
           },
           "z": {
             "title": "Canceled ISSN",
             "type": "string",
             "isRepeatable": true,
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           }
         },
         "additionalProperties": false
@@ -136,5 +136,5 @@
     "indicator2",
     "subFields"
   ],
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

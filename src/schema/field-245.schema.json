@@ -42,7 +42,7 @@
             "title": "Linkage",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "optional"
+            "ISSNProfile": "optional"
           },
           "8": {
             "title": "Field link and sequence number",
@@ -53,7 +53,7 @@
             "title": "Title",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           },
           "b": {
             "title": "Remainder of title",
@@ -97,13 +97,13 @@
             "title": "Number of part/section of a work",
             "type": "string",
             "isRepeatable": true,
-            "profilISSN": "mandatory if applicable"
+            "ISSNProfile": "mandatory if applicable"
           },
           "p": {
             "title": "Name of part/section of a work",
             "type": "string",
             "isRepeatable": true,
-            "profilISSN": "mandatory if applicable"
+            "ISSNProfile": "mandatory if applicable"
           },
           "s": {
             "title": "Version",
@@ -132,5 +132,5 @@
     "indicator2",
     "subFields"
   ],
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

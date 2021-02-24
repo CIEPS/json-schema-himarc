@@ -62,13 +62,13 @@
               "title": "Materials specified",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -79,19 +79,19 @@
               "title": "Place of production, publication, distribution, manufacture",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Name of producer, publisher, distributor, manufacturer",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "c": {
               "title": "Date of production, publication, distribution, manufacture, or copyright notice",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             }
           },
           "additionalProperties": false

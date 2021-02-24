@@ -54,7 +54,7 @@
               "title": "System details note",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "i": {
               "title": "Display text",
@@ -91,5 +91,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

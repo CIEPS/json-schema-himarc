@@ -65,13 +65,13 @@
               "title": "Language code of text/sound track or separate title",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Language code of summary or abstract",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "c": {
               "title": "languages of available translation",
@@ -172,5 +172,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

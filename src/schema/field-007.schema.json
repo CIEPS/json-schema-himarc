@@ -4779,5 +4779,5 @@
     }
   },
   "isRepeatable": true,
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

@@ -22,12 +22,12 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "[0-5]|[7-9]|[a-z]": {
               "title": "Same as associated field",
               "type": "string",
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             }
           },
           "additionalProperties": false
@@ -43,5 +43,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

@@ -36,7 +36,7 @@
             "title": "Linkage",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "optional"
+            "ISSNProfile": "optional"
           },
           "8": {
             "title": "Field link and sequence number",
@@ -47,13 +47,13 @@
             "title": "Key title",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           },
           "b": {
             "title": "Qualifying information",
             "type": "string",
             "isRepeatable": false,
-            "profilISSN": "mandatory if applicable"
+            "ISSNProfile": "mandatory if applicable"
           }
         },
         "additionalProperties": false
@@ -77,5 +77,5 @@
     "indicator2",
     "subFields"
   ],
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

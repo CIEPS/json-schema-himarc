@@ -51,7 +51,7 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "7": {
               "title": "Control subfield",
@@ -146,7 +146,7 @@
               "title": "Title",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "u": {
               "title": "Standard Technical Report Number",
@@ -162,7 +162,7 @@
               "title": "International Standard Serial Number",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
@@ -199,5 +199,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

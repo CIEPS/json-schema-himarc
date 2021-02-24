@@ -23,8 +23,8 @@
                 <span class="tag is-light mx-2">
                   {{ field.value.isRepeatable? 'repeatable' : 'non repeatable' }}
                 </span>
-                <span class="tag is-warning is-light mx-2" v-if="field.value.profilISSN">
-                  {{ field.value.profilISSN }}
+                <span class="tag is-warning is-light mx-2" v-if="field.value.ISSNProfile">
+                  {{ field.value.ISSNProfile }}
                 </span>
               </p>
             </header>
@@ -46,8 +46,8 @@
                       <td>{{ position }}</td>
                       <td class="has-text-left">{{ value.title }}</td>
                       <td class="has-text-centered">
-                        <span class="tag is-warning is-light mx-2" v-if="value.profilISSN">
-                          {{ value.profilISSN }}
+                        <span class="tag is-warning is-light mx-2" v-if="value.ISSNProfile">
+                          {{ value.ISSNProfile }}
                         </span>
                       </td>
                       <td>
@@ -84,8 +84,8 @@
                 <span class="tag is-light mx-2">
                   {{ field.value.isRepeatable? 'repeatable' : 'non repeatable' }}
                 </span>
-                <span class="tag is-warning is-light mx-2" v-if="field.value.profilISSN">
-                  {{ field.value.profilISSN }}
+                <span class="tag is-warning is-light mx-2" v-if="field.value.ISSNProfile">
+                  {{ field.value.ISSNProfile }}
                 </span>
               </p>
             </header>
@@ -99,8 +99,8 @@
                 <span class="tag is-light mx-2">
                   {{ field.value.isRepeatable? 'repeatable' : 'non repeatable' }}
                 </span>
-                <span class="tag is-warning is-light mx-2" v-if="field.value.profilISSN">
-                  {{ field.value.profilISSN }}
+                <span class="tag is-warning is-light mx-2" v-if="field.value.ISSNProfile">
+                  {{ field.value.ISSNProfile }}
                 </span>
               </p>
             </header>
@@ -124,8 +124,8 @@
                       <td class="has-text-right">{{ position }}</td>
                       <td class="has-text-left">{{ value.title }}</td>
                       <td>
-                        <span class="tag is-warning is-light mx-2" v-if="value.profilISSN">
-                          {{ value.profilISSN }}
+                        <span class="tag is-warning is-light mx-2" v-if="value.ISSNProfile">
+                          {{ value.ISSNProfile }}
                         </span>
                       </td>
                       <td>
@@ -162,8 +162,8 @@
                 <span class="tag is-light mx-2">
                   {{ field.value.isRepeatable? 'repeatable' : 'non repeatable' }}
                 </span>
-                <span class="tag is-warning is-light mx-2" v-if="field.value.profilISSN">
-                  {{ field.value.profilISSN }}
+                <span class="tag is-warning is-light mx-2" v-if="field.value.ISSNProfile">
+                  {{ field.value.ISSNProfile }}
                 </span>
               </p>
             </header>
@@ -194,8 +194,8 @@
                       <td class="has-text-right">{{ position }}</td>
                       <td class="has-text-left">{{ value.title }}</td>
                       <td class="has-text-centered">
-                        <span class="tag is-warning is-light mx-2" v-if="value.profilISSN">
-                          {{ value.profilISSN }}
+                        <span class="tag is-warning is-light mx-2" v-if="value.ISSNProfile">
+                          {{ value.ISSNProfile }}
                         </span>
                       </td>
                       <td>
@@ -232,8 +232,8 @@
                 <span class="tag is-light mx-2">
                   {{ field.value.isRepeatable? 'repeatable' : 'non repeatable' }}
                 </span>
-                <span class="tag is-warning is-light mx-2" v-if="field.value.profilISSN">
-                  {{ field.value.profilISSN }}
+                <span class="tag is-warning is-light mx-2" v-if="field.value.ISSNProfile">
+                  {{ field.value.ISSNProfile }}
                 </span>
               </p>
             </header>
@@ -294,8 +294,8 @@
                       <td class="has-text-right">${{ key }}</td>
                       <td>{{ value.title }}</td>
                       <td class="has-text-centered">
-                        <span class="tag is-warning is-light mx-2" v-if="value.profilISSN">
-                          {{ value.profilISSN }}
+                        <span class="tag is-warning is-light mx-2" v-if="value.ISSNProfile">
+                          {{ value.ISSNProfile }}
                         </span>
                       </td>
                       <td class="has-text-centered">

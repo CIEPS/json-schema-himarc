@@ -88,7 +88,7 @@
               "type": "string",
               "title": "Date entered on file",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "06": {
               "type": "string",
@@ -158,35 +158,35 @@
                   "title": "No attempt to code"
                 }
               },
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "07-10": {
               "type": "string",
               "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
               "title": "Date 1",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "11-14": {
               "type": "string",
               "pattern": "^([0-9u]{4}|(\\|\\|\\|\\|))$",
               "title": "Date 2",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "15-17": {
               "type": "string",
               "pattern": "^([a-z ]{3}|vp |xx )$",
               "title": "Place of publication, production, or execution",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "35-37": {
               "type": "string",
               "pattern": "^([a-z]{3}|zxx|mul|sgn|und)$",
               "title": "Language",
               "url": "https://www.loc.gov/marc/bibliographic/bd008a.html",
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "38": {
               "title": "Modified record",
@@ -214,7 +214,7 @@
                   "title": "No attempt to code"
                 }
               },
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "39": {
               "title": "Cataloging source",
@@ -236,7 +236,7 @@
                   "title": "No attempt to code"
                 }
               },
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             }
           },
           "required": [
@@ -896,7 +896,7 @@
                 "z",
                 "|"
               ],
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "19": {
               "title": "Regularity",
@@ -926,7 +926,7 @@
                 "x",
                 "|"
               ],
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "20": {
               "title": "Undefined",
@@ -936,7 +936,7 @@
                 " ",
                 "|"
               ],
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "21": {
               "title": "Type of continuing resource",
@@ -978,7 +978,7 @@
                 "w",
                 "|"
               ],
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "22": {
               "title": "Form of original item",
@@ -1032,7 +1032,7 @@
                 "s",
                 "|"
               ],
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "23": {
               "title": "Form of item",
@@ -1086,7 +1086,7 @@
                 "s",
                 "|"
               ],
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "24": {
               "title": "Nature of entire work",
@@ -1649,7 +1649,7 @@
                 "1",
                 "|"
               ],
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "30-32": {
               "title": "Undefined",
@@ -1732,7 +1732,7 @@
                 "z",
                 "|"
               ],
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "34": {
               "title": "Entry convention",
@@ -3803,5 +3803,5 @@
     }
   },
   "isRepeatable": false,
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

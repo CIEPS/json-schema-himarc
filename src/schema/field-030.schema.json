@@ -44,7 +44,7 @@
               "title": "CODEN",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "z": {
               "title": "Canceled/invalid CODEN",
@@ -65,5 +65,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

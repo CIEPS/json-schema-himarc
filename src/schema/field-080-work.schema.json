@@ -54,7 +54,7 @@
               "title": "Edition identifier",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -70,7 +70,7 @@
               "title": "Universal Decimal Classification number",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "b": {
               "title": "Item number",
@@ -81,7 +81,7 @@
               "title": "Common auxiliary subdivision",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             }
           },
           "additionalProperties": false
@@ -108,5 +108,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

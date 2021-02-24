@@ -7,8 +7,8 @@
         <span class="tag is-light mx-2">
           {{ leader.isRepeatable ? "repeatable" : "non repeatable" }}
         </span>
-        <span class="tag is-warning is-light mx-2" v-if="leader.profilISSN">
-          {{ leader.profilISSN }}
+        <span class="tag is-warning is-light mx-2" v-if="leader.ISSNProfile">
+          {{ leader.ISSNProfile }}
         </span>
       </p>
     </header>
@@ -30,9 +30,9 @@
               <td class="has-text-centered">
                 <span
                   class="tag is-warning is-light mx-2"
-                  v-if="value.profilISSN"
+                  v-if="value.ISSNProfile"
                 >
-                  {{ value.profilISSN }}
+                  {{ value.ISSNProfile }}
                 </span>
               </td>
               <td>

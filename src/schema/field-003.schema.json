@@ -3,5 +3,5 @@
   "url": "https://www.loc.gov/marc/bibliographic/bd003.html",
   "type": "string",
   "isRepeatable": false,
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }

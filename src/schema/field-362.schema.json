@@ -50,13 +50,13 @@
               "title": "Dates of publication and/or sequential designation",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "z": {
               "title": "Source of information",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             }
           },
           "additionalProperties": false
@@ -83,5 +83,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "optional"
+  "ISSNProfile": "optional"
 }

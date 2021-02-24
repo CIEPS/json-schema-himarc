@@ -62,7 +62,7 @@
               "title": "Edition number",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
@@ -78,13 +78,13 @@
               "title": "Classification number",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "DDC number--abridged NST version",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "m": {
               "title": "Standard or optional designation",

@@ -47,12 +47,12 @@ Object.entries(schema)
   .filter(([key]) => ['760', '762', '765', '767', '770', '772', '775', '776', '777', '780', '785', '787'].includes(key.slice(6)))
   .map(([key, value]) => {
     console.log(key);
-    value.profilISSN = 'mandatory if applicable';
-    value.items.properties.subFields.items.properties.t.profilISSN = 'mandatory if applicable';
-    value.items.properties.subFields.items.properties.x.profilISSN = 'mandatory if applicable';
-    value.items.properties.subFields.items.properties['6'].profilISSN = 'optional';
+    value.ISSNProfile = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties.t.ISSNProfile = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties.x.ISSNProfile = 'mandatory if applicable';
+    value.items.properties.subFields.items.properties['6'].ISSNProfile = 'optional';
     fs.writeFileSync(path.join(__dirname, `../src/${key.replace(/_/g, '-')}-register.schema.json`), JSON.stringify(value, null, 2));
-    value.profilISSN = 'optional';
+    value.ISSNProfile = 'optional';
     fs.writeFileSync(path.join(__dirname, `../src/${key.replace(/_/g, '-')}-work.schema.json`), JSON.stringify(value, null, 2));
     return ([key, value]);
   });

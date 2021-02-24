@@ -51,7 +51,7 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -62,13 +62,13 @@
               "title": "Abbreviated title",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory"
+              "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Qualifying information",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             }
           },
           "additionalProperties": false
@@ -95,5 +95,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

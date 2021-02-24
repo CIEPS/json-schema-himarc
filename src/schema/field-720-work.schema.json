@@ -44,7 +44,7 @@
               "title": "INSI",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "4": {
               "title": "Relationship",
@@ -55,7 +55,7 @@
               "title": "Linkage",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
@@ -66,7 +66,7 @@
               "title": "Name",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "e": {
               "title": "Relator term",
@@ -87,5 +87,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

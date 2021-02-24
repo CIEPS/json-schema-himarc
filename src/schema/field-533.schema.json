@@ -64,19 +64,19 @@
               "title": "Place of reproduction",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "c": {
               "title": "Agency responsible for reproduction",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "mandatory if applicable"
+              "ISSNProfile": "mandatory if applicable"
             },
             "d": {
               "title": "Date of reproduction",
               "type": "string",
               "isRepeatable": false,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "e": {
               "title": "Physical description of reproduction",
@@ -92,7 +92,7 @@
               "title": "Dates and/or sequential designation of issues reproduced",
               "type": "string",
               "isRepeatable": true,
-              "profilISSN": "optional"
+              "ISSNProfile": "optional"
             },
             "n": {
               "title": "Note about reproduction",
@@ -141,5 +141,5 @@
   },
   "minItems": 1,
   "isRepeatable": true,
-  "profilISSN": "mandatory if applicable"
+  "ISSNProfile": "mandatory if applicable"
 }

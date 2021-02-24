@@ -59,7 +59,7 @@
             "type": "string",
             "isRepeatable": true,
             "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$",
-            "profilISSN": "mandatory"
+            "ISSNProfile": "mandatory"
           }
         },
         "additionalProperties": false
@@ -83,5 +83,5 @@
     "indicator2",
     "subFields"
   ],
-  "profilISSN": "mandatory"
+  "ISSNProfile": "mandatory"
 }
