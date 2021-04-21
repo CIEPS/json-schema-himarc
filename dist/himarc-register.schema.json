@@ -8096,6 +8096,11 @@
                       "type": "string",
                       "isRepeatable": true
                     },
+                    "9": {
+                      "title": "ISSN Portal facet",
+                      "type": "string",
+                      "isRepeatable": false
+                    },
                     "a": {
                       "title": "Name of source",
                       "type": "string",
