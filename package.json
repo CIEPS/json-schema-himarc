@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/CIEPS/json-schema-himarc#readme",
   "devDependencies": {
-    "@apidevtools/json-schema-ref-parser": "^9.0.6",
-    "ajv": "^7.0.3",
-    "chai": "^4.2.0",
-    "mocha": "^8.2.1"
+    "@apidevtools/json-schema-ref-parser": "^9.0.7",
+    "ajv": "^7.2.4",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   }
 }
