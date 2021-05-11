@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "@mdi/font": "^5.9.55",
-    "buefy": "^0.9.4",
+    "buefy": "^0.9.7",
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-service": "^4.5.13",
     "vue-template-compiler": "^2.6.11"
   }
 }
