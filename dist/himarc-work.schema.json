@@ -907,7 +907,7 @@
           "title": "Key Title",
           "url": "https://www.loc.gov/marc/bibliographic/bd222.html",
           "type": "object",
-          "isRepeatable": true,
+          "isRepeatable": false,
           "properties": {
             "indicator1": {
               "title": "Undefined",
