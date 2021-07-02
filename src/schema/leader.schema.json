@@ -333,6 +333,12 @@
           "title": "Length of the implementation-defined portion",
           "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
           "ISSNProfile": "mandatory"
+        },
+        "23": {
+          "type": "string",
+          "title": "Undefined",
+          "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+          "ISSNProfile": "mandatory"
         }
       },
       "additionalProperties": false,
@@ -351,7 +357,8 @@
         "19",
         "20",
         "21",
-        "22"
+        "22",
+        "23"
       ]
     }
   },
