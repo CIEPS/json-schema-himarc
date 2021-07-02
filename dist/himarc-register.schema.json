@@ -21829,6 +21829,12 @@
                   "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
                   "ISSNProfile": "mandatory"
                 },
+                "23": {
+                  "type": "string",
+                  "title": "Undefined",
+                  "url": "https://www.loc.gov/marc/bibliographic/bdleader.html",
+                  "ISSNProfile": "mandatory"
+                },
                 "00-04": {
                   "type": "string",
                   "title": "Record length",
@@ -22028,7 +22034,8 @@
                 "19",
                 "20",
                 "21",
-                "22"
+                "22",
+                "23"
               ]
             }
           },
