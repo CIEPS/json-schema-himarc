@@ -30672,10 +30672,7 @@
                     "title": "International Standard Serial Number",
                     "type": "string",
                     "isRepeatable": false,
-                    "ISSNProfile": {
-                      "register": "mandatory",
-                      "work": "mandatory"
-                    }
+                    "ISSNProfile": "mandatory"
                   },
                   "l": {
                     "title": "ISSN-L",
