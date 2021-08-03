@@ -18172,17 +18172,34 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
+                "anyOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "t": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "t"
+                      ]
                     }
                   },
-                  "required": [
-                    "a"
-                  ]
-                },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "x": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "x"
+                      ]
+                    }
+                  }
+                ],
                 "minItems": 1
               }
             },
