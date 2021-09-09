@@ -7,8 +7,8 @@
     "build": "vue-cli-service build --dest ../../docs"
   },
   "dependencies": {
-    "@mdi/font": "^5.9.55",
-    "buefy": "^0.9.8",
+    "@mdi/font": "^6.1.95",
+    "buefy": "^0.9.10",
     "vue": "^2.6.14"
   },
   "devDependencies": {
