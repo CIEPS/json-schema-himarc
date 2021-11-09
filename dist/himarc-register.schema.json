@@ -30714,6 +30714,16 @@
               "items": {
                 "type": "object",
                 "properties": {
+                  "0": {
+                    "title": "Authority record control number or standard number",
+                    "type": "string",
+                    "isRepeatable": false
+                  },
+                  "1": {
+                    "title": "Real World Object URI",
+                    "type": "string",
+                    "isRepeatable": true
+                  },
                   "2": {
                     "title": "Source",
                     "type": "string",
@@ -30726,6 +30736,11 @@
                   },
                   "8": {
                     "title": "Field link and sequence number",
+                    "type": "string",
+                    "isRepeatable": true
+                  },
+                  "9": {
+                    "title": "local control subfield",
                     "type": "string",
                     "isRepeatable": true
                   },
