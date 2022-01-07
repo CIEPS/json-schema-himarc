@@ -1,0 +1,51 @@
+{
+  "title": "Internal note",
+  "url": "https://www.issn.org",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "indicator1": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "indicator2": {
+        "title": "Undefined",
+        "type": "string",
+        "const": "\\",
+        "code": {
+          "\\": {
+            "title": "Undefined"
+          }
+        }
+      },
+      "subFields": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "a": {
+              "title": "Internal note",
+              "type": "string",
+              "isRepeatable": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "indicator1",
+      "indicator2",
+      "subFields"
+    ]
+  },
+  "isRepeatable": true
+}
