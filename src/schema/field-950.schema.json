@@ -1,5 +1,6 @@
 {
   "title": "Internal note",
+  "url": "https://www.issn.org",
   "type": "array",
   "items": {
     "type": "object",
