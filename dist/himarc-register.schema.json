@@ -27867,6 +27867,15 @@
                         "d": {
                           "title": "Updating database"
                         },
+                        "g": {
+                          "title": "Magazine"
+                        },
+                        "h": {
+                          "title": "Blog"
+                        },
+                        "j": {
+                          "title": "Journal"
+                        },
                         "l": {
                           "title": "Updating loose-leaf"
                         },
@@ -27879,6 +27888,15 @@
                         "p": {
                           "title": "Periodical"
                         },
+                        "r": {
+                          "title": "Repository"
+                        },
+                        "s": {
+                          "title": "Newsletter"
+                        },
+                        "t": {
+                          "title": "Directory"
+                        },
                         "w": {
                           "title": "Updating Web site"
                         },
@@ -27890,10 +27908,16 @@
                       "enum": [
                         " ",
                         "d",
+                        "g",
+                        "h",
+                        "j",
                         "l",
                         "m",
                         "n",
                         "p",
+                        "r",
+                        "s",
+                        "t",
                         "w",
                         "|"
                       ],
