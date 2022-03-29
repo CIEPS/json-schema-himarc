@@ -30837,6 +30837,12 @@
                     "isRepeatable": true,
                     "ISSNProfile": "mandatory if applicable"
                   },
+                  "v": {
+                    "title": "Valid ISSN",
+                    "type": "string",
+                    "isRepeatable": false,
+                    "ISSNProfile": "mandatory if applicable"
+                  },
                   "y": {
                     "title": "Incorrect ISSN",
                     "type": "string",
