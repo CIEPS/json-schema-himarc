@@ -200,6 +200,9 @@ describe('International Standard Serial Number (022) schema', function () {
           z: '0302-2889'
         },
         {
+          v: '0302-2889'
+        },
+        {
           2: '_2'
         },
         {
