@@ -41,67 +41,78 @@
         "properties": {
           "0": {
             "title": "Authority record control number or standard number",
-            "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "1": {
             "title": "Real World Object URI",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "2": {
             "title": "Source",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "6": {
             "title": "Linkage",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "9": {
             "title": "local control subfield",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "International Standard Serial Number",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "ISSNProfile": "mandatory"
           },
           "l": {
             "title": "ISSN-L",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "ISSNProfile": "mandatory"
           },
           "m": {
             "title": "Canceled ISSN-L",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "ISSNProfile": "mandatory if applicable"
           },
           "v": {
             "title": "Valid ISSN",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "ISSNProfile": "mandatory if applicable"
           },
           "y": {
             "title": "Incorrect ISSN",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "ISSNProfile": "mandatory if applicable"
           },
           "z": {
             "title": "Canceled ISSN",
-            "type": "string",
+            "type": "string", 
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "ISSNProfile": "mandatory"
           }
