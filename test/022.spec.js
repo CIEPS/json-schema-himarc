@@ -14,53 +14,15 @@ const ajv = new Ajv({
 });
 
 describe('International Standard Serial Number (022) schema', function () {
-    const indicator1 = '0';
-    const indicator2 = '\\';
-    const requiredSubfields = [
-        {
-            a: '0028-0836'
-        },
-        {
-            2: '_2'
-        },
-        {
-            l: '0028-0836'
-        }
-    ];
-    const defaultData = {
-        indicator1: indicator1,
-        indicator2: indicator2,
-        subFields: requiredSubfields
-    }
 
-    it('must be valid when all required fields are set', function () {
-        const data = defaultData;
-        const validate = ajv.compile(schemaHelper.field_022_register);
-        const valid = validate(data);
-        if (validate.errors) console.dir(validate.errors, {
-            depth: 8
-        });
-        expect(valid).to.be.true;
-    });
+    let indicator1, indicator2, subfields, data;
 
-    it('must not allow a whitespace-only subfield value', function () {
-        let data = defaultData;
-        data.subFields.push({v: " "})
-        const validate = ajv.compile(schemaHelper.field_022_register);
-        const valid = validate(data);
-        expect(valid).to.be.false;
-        expect(validate.errors.some(error => error.message === 'should match pattern "^(?!\\s*$).+"')).to.be.true;
-    });
-
-    it('shouldn\'t validate with a missing required property and additional property', function () {
-        const data = {
-            indicator1: '0',
-            indicator2: '\\',
-            subFields: [{
-                x: '0028-0836'
-            },
+    beforeEach(() => {
+        indicator1 = '0';
+        indicator2 = '\\';
+        subfields = [
             {
-                z: '0302-2889'
+                a: '0028-0836'
             },
             {
                 2: '_2'
@@ -68,15 +30,46 @@ describe('International Standard Serial Number (022) schema', function () {
             {
                 l: '0028-0836'
             }
-            ]
-        };
+        ];
+        data = {
+            indicator1: indicator1,
+            indicator2: indicator2,
+            subFields: subfields
+        }
+    });
+    it('must be valid when all required fields are set', function () {
         const validate = ajv.compile(schemaHelper.field_022_register);
         const valid = validate(data);
-        if (validate.errors) {
-            expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
-            expect(validate.errors.some(error => error.message === "should have required property 'a'")).to.be.true;
-            expect(validate.errors.some(error => error.message === 'should contain at least 1 valid item(s)')).to.be.true;
-        }
+        if (validate.errors) console.dir(validate.errors, {
+            depth: 8
+        });
+        expect(valid).to.be.true;
+    });
+    it('must not allow a whitespace-only subfield value', function () {
+        data.subFields.push({ v: " " })
+        const validate = ajv.compile(schemaHelper.field_022_register);
+        const valid = validate(data);
         expect(valid).to.be.false;
+        expect(validate.errors[0].message).to.equal('should match pattern "^(?!\\s*$).+"');
+    });
+    it('must not allow a missing required property', function () {
+        data.subFields.pop()
+        const validate = ajv.compile(schemaHelper.field_022_register);
+        const valid = validate(data);
+        expect(valid).to.be.false;
+        expect(validate.errors[0].message).to.equal("should have required property 'l'");
+    });
+    it('must not allow an extra property', function () {
+        data.subFields.push({ x: "X" })
+        const validate = ajv.compile(schemaHelper.field_022_register);
+        const valid = validate(data);
+        expect(valid).to.be.false;
+        expect(validate.errors[0].message).to.equal("should NOT have additional properties");
+    });
+    it('test i', function () {
+        const validate = ajv.compile(schemaHelper.field_022_register.subFields);
+        const valid = validate(data.subFields);
+        expect(valid).to.be.false;
+        expect(validate.errors[0].message).to.equal("should NOT have additional properties");
     });
 });
