@@ -66,10 +66,4 @@ describe('International Standard Serial Number (022) schema', function () {
         expect(valid).to.be.false;
         expect(validate.errors[0].message).to.equal("should NOT have additional properties");
     });
-    it('test i', function () {
-        const validate = ajv.compile(schemaHelper.field_022_register.subFields);
-        const valid = validate(data.subFields);
-        expect(valid).to.be.false;
-        expect(validate.errors[0].message).to.equal("should NOT have additional properties");
-    });
 });
