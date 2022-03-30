@@ -33,21 +33,25 @@
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "LC control number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "b": {
             "title": "NUCMC control number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "z": {
             "title": "Canceled/invalid LC control number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

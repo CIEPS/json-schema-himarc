@@ -33,11 +33,13 @@
             "2": {
               "title": "Source of data",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "a": {
               "title": "Content of non-MARC field",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             }
           },

@@ -45,77 +45,92 @@
             "4": {
               "title": "Relationship",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "7": {
               "title": "Control subfield",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Main entry heading",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "b": {
               "title": "Edition",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "c": {
               "title": "Qualifying information",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "d": {
               "title": "Place, publisher, and date of publication",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "g": {
               "title": "Related parts",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "h": {
               "title": "Physical description",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "i": {
               "title": "Relationship information",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "k": {
               "title": "Series data for related item",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "m": {
               "title": "Material-specific details",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "n": {
               "title": "Note",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "o": {
               "title": "Other item identifier",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "q": {
@@ -125,76 +140,84 @@
             "r": {
               "title": "Report number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "s": {
               "title": "Uniform title",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "t": {
               "title": "Title",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "mandatory if applicable"
             },
             "u": {
               "title": "Standard Technical Report Number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "w": {
               "title": "Record control number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "x": {
               "title": "International Standard Serial Number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "mandatory if applicable"
             },
             "y": {
               "title": "CODEN designation",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "z": {
               "title": "International Standard Book Number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },
           "additionalProperties": false
         },
         "anyOf": [
-        {
-          "contains": {
-            "type": "object",
-            "properties": {
-              "t": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "t"
-            ]
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "t": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "t"
+              ]
+            }
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "x"
+              ]
+            }
           }
-        },
-        {
-          "contains": {
-            "type": "object",
-            "properties": {
-              "x": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "x"
-            ]
-          }
-        }
-      ],
+        ],
         "minItems": 1
       }
     },

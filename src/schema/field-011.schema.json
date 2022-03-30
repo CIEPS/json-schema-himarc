@@ -33,6 +33,7 @@
           "a": {
             "title": "LINKING LC control number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "isObsolete": true
           }

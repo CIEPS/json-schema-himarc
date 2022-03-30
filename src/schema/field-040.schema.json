@@ -32,36 +32,43 @@
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "Original cataloging agency",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "b": {
             "title": "Language of cataloging",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "c": {
             "title": "Transcribing agency",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "d": {
             "title": "Modifying agency",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "e": {
             "title": "Description conventions",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

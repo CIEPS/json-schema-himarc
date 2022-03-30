@@ -31043,21 +31043,25 @@
                   "8": {
                     "title": "Field link and sequence number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": true
                   },
                   "a": {
                     "title": "LC control number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": false
                   },
                   "b": {
                     "title": "NUCMC control number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": true
                   },
                   "z": {
                     "title": "Canceled/invalid LC control number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": true
                   }
                 },
@@ -31106,6 +31110,7 @@
                   "a": {
                     "title": "LINKING LC control number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": true,
                     "isObsolete": true
                   }
@@ -31157,41 +31162,49 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Country",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "c": {
                       "title": "Type of number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "d": {
                       "title": "Date",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "e": {
                       "title": "Status",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "f": {
                       "title": "Party to document",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31242,31 +31255,37 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "National bibliography number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "q": {
                       "title": "Qualifying information",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "z": {
                       "title": "Canceled/Invalid national bibliography number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31325,21 +31344,25 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Record control number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "z": {
                       "title": "Canceled or invalid record control number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31402,41 +31425,49 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Copyright or legal deposit number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "b": {
                       "title": "Assigning agency",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "d": {
                       "title": "Date",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "i": {
                       "title": "Display text",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "z": {
                       "title": "Canceled/invalid copyright or legal deposit number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31488,16 +31519,19 @@
                   "6": {
                     "title": "Linkage",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": false
                   },
                   "8": {
                     "title": "Field link and sequence number",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": true
                   },
                   "a": {
                     "title": "Copyright article-fee code",
                     "type": "string",
+                    "pattern": "^(?!\\s*$).+",
                     "isRepeatable": false
                   }
                 },
@@ -31547,31 +31581,37 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "International Standard Book Number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "c": {
                       "title": "Terms of availability",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "q": {
                       "title": "Qualifying information",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "z": {
                       "title": "Canceled/invalid ISBN",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31660,43 +31700,51 @@
                     "2": {
                       "title": "Source of number or code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false,
                       "ISSNProfile": "optional"
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Standard number or code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false,
                       "ISSNProfile": "optional"
                     },
                     "c": {
                       "title": "Terms of availability",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "d": {
                       "title": "Additional codes following the standard number or code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "q": {
                       "title": "Qualifying information",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "z": {
                       "title": "Canceled/invalid standard number or code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31750,11 +31798,13 @@
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Overseas acquisition number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -31807,46 +31857,55 @@
                     "2": {
                       "title": "Source",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "5": {
                       "title": "Institution to which field applies",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "First and second groups of characters",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Third and fourth groups of characters",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "c": {
                       "title": "Date",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "d": {
                       "title": "Number of volume or part",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "e": {
                       "title": "Unparsed fingerprint",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     }
                   },
@@ -31899,26 +31958,31 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Standard technical report number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "q": {
                       "title": "Qualifying information",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "z": {
                       "title": "Canceled/invalid number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -32011,26 +32075,31 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Publisher or distributor number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Source",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "q": {
                       "title": "Qualifying information",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -32083,22 +32152,26 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "CODEN",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false,
                       "ISSNProfile": "optional"
                     },
                     "z": {
                       "title": "Canceled/invalid CODEN",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -32152,101 +32225,121 @@
                     "2": {
                       "title": "System code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Number of work",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Number of movement",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "c": {
                       "title": "Number of excerpt",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "d": {
                       "title": "Caption or heading",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "e": {
                       "title": "Role ",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "g": {
                       "title": "Clef ",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "m": {
                       "title": "Voice/instrument",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "n": {
                       "title": "Key signature",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "o": {
                       "title": "Time signature",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "p": {
                       "title": "Musical notation",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "q": {
                       "title": "General note",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "r": {
                       "title": "Key or mode",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "s": {
                       "title": "Coded validity note",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "t": {
                       "title": "Text incipit",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "u": {
                       "title": "Uniform Resource Identifier",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "y": {
                       "title": "Link text",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "z": {
                       "title": "Public note",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -32299,21 +32392,25 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Postal registration number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Source (agency assigning number)",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     }
                   },
@@ -32394,51 +32491,61 @@
                     "0": {
                       "title": "Authority record control number or standard number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "1": {
                       "title": "Real World Object URI",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "2": {
                       "title": "Source of term",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Formatted date/time",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "b": {
                       "title": "Geographic classification area code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "c": {
                       "title": "Geographic classification subarea code",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "p": {
                       "title": "Place of event",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },
@@ -32511,126 +32618,151 @@
                     "0": {
                       "title": "Authority record control number or standard number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "1": {
                       "title": "Real World Object URI",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "2": {
                       "title": "Source ",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "3": {
                       "title": "Materials specified",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "Category of scale",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "b": {
                       "title": "Constant ratio linear horizontal scale",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "c": {
                       "title": "Constant ratio linear vertical scale",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "d": {
                       "title": "Coordinates--westernmost longitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "e": {
                       "title": "Coordinates--easternmost longitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "f": {
                       "title": "Coordinates--northernmost latitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "g": {
                       "title": "Coordinates--southernmost latitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "h": {
                       "title": "Angular scale",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "j": {
                       "title": "Declination--northern limit",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "k": {
                       "title": "Declination--southern limit",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "m": {
                       "title": "Right ascension--eastern limit",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "n": {
                       "title": "Right ascension--western limit",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "p": {
                       "title": "Equinox",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "r": {
                       "title": "Distance from earth ",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "s": {
                       "title": "G-ring latitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "t": {
                       "title": "G-ring longitude",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "x": {
                       "title": "Beginning date",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "y": {
                       "title": "Ending date",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "z": {
                       "title": "Name of extraterrestrial body ",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     }
                   },
@@ -32683,21 +32815,25 @@
                     "6": {
                       "title": "Linkage",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "8": {
                       "title": "Field link and sequence number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
                     "a": {
                       "title": "System control number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
                     },
                     "z": {
                       "title": "Canceled/invalid control number",
                       "type": "string",
+                      "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     }
                   },

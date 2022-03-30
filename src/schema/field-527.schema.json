@@ -33,12 +33,14 @@
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "a": {
               "title": "Censorship note",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             }

@@ -39,12 +39,14 @@
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "a": {
               "title": "Acronym or shortened title",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             }

@@ -32,31 +32,37 @@
           "2": {
             "title": "Source of local subentity code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "MARC country code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "b": {
             "title": "Local subentity code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "c": {
             "title": "ISO country code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "pattern": "^([a-zA-Z]{3}|[a-zA-Z]{2}|[0-9]{3})$",
             "ISSNProfile": "mandatory"

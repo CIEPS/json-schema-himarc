@@ -32,16 +32,19 @@
           "a": {
             "title": "Primary G0 character set",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "b": {
             "title": "Primary G1 character set",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "c": {
             "title": "Alternate G0 or G1 character set",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

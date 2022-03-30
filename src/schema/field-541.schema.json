@@ -43,6 +43,7 @@
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "[0-5]|[7-9]|[a-z]": {
