@@ -39,16 +39,19 @@
             "2": {
               "title": "Source of code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Form of musical composition code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },

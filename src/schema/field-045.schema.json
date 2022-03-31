@@ -46,26 +46,31 @@
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "Time period code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "b": {
             "title": "Formatted 9999 B.C. through C.E. time period",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "c": {
             "title": "Formatted pre-9999 B.C. time period",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

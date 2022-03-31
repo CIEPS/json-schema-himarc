@@ -35,41 +35,49 @@
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "b": {
               "title": "Country",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "c": {
               "title": "Type of number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "d": {
               "title": "Date",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "e": {
               "title": "Status",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "f": {
               "title": "Party to document",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },

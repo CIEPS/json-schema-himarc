@@ -53,126 +53,151 @@
             "0": {
               "title": "Authority record control number or standard number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "1": {
               "title": "Real World Object URI",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "2": {
               "title": "Source ",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Category of scale",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "b": {
               "title": "Constant ratio linear horizontal scale",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "c": {
               "title": "Constant ratio linear vertical scale",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "d": {
               "title": "Coordinates--westernmost longitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "e": {
               "title": "Coordinates--easternmost longitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "f": {
               "title": "Coordinates--northernmost latitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "g": {
               "title": "Coordinates--southernmost latitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "h": {
               "title": "Angular scale",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "j": {
               "title": "Declination--northern limit",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "k": {
               "title": "Declination--southern limit",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "m": {
               "title": "Right ascension--eastern limit",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "n": {
               "title": "Right ascension--western limit",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "p": {
               "title": "Equinox",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "r": {
               "title": "Distance from earth ",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "s": {
               "title": "G-ring latitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "t": {
               "title": "G-ring longitude",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "x": {
               "title": "Beginning date",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "y": {
               "title": "Ending date",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "z": {
               "title": "Name of extraterrestrial body ",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             }
           },

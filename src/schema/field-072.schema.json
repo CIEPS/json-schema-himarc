@@ -39,26 +39,31 @@
             "2": {
               "title": "Source",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Subject category code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "x": {
               "title": "Subject category code subdivision",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },

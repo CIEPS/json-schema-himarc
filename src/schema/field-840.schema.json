@@ -33,18 +33,21 @@
             "a": {
               "title": "Title",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "h": {
               "title": "Medium",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "v": {
               "title": "Volume/sequential designation",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             }

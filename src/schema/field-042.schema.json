@@ -32,6 +32,7 @@
           "a": {
             "title": "Authentication code",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

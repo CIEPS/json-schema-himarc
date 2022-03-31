@@ -43,56 +43,66 @@
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Place of publication, distribution, etc.",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Name of publisher, distributor, etc.",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory"
             },
             "c": {
               "title": "Date of publication, distribution, etc.",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory if applicable"
             },
             "d": {
               "title": "Plate or publisher's number for music (Pre-AACR 2)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "e": {
               "title": "Place of manufacture",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "f": {
               "title": "Manufacturer",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "g": {
               "title": "Date of manufacture",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },

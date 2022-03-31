@@ -39,26 +39,31 @@
             "2": {
               "title": "Source of schema used",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Preferred citation of described materials note",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             }
           },

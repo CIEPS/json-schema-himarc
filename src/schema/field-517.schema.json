@@ -38,18 +38,21 @@
           "a": {
             "title": "Different formats",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "isObsolete": true
           },
           "b": {
             "title": "Content descriptors",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "isObsolete": true
           },
           "c": {
             "title": "Additional animation techniques",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "isObsolete": true
           }

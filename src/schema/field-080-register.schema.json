@@ -43,43 +43,51 @@
             "0": {
               "title": "Authority record control number or standard number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "1": {
               "title": "Real World Object URI",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "2": {
               "title": "Edition identifier",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Universal Decimal Classification number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Item number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "x": {
               "title": "Common auxiliary subdivision",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "optional"
             }

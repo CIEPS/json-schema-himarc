@@ -33,79 +33,94 @@
             "2": {
               "title": "Source of date",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Type of date code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "b": {
               "title": "Date 1 (B.C.E. date)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "c": {
               "title": "Date 1 (C.E. date)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "d": {
               "title": "Date 2 (B.C.E. date)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "e": {
               "title": "Date 2 (C.E. date)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "j": {
               "title": "Date resource modified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "k": {
               "title": "Beginning or single date created",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "l": {
               "title": "Ending date created",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "m": {
               "title": "Beginning of date valid",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "o": {
               "title": "Single or starting date for aggregated content",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "p": {
               "title": "Ending date for aggregated content",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "n": {
               "title": "End of date valid",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             }
           },

@@ -57,36 +57,43 @@
             "5": {
               "title": "Institution to which field applies",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Uncontrolled related/analytical title",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "h": {
               "title": "Medium",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "n": {
               "title": "Number of part/section of a work",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "p": {
               "title": "Name of part/section of a work",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             }
           },

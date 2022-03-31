@@ -32,12 +32,14 @@
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "isObsolete": true
           },
           "a": {
             "title": "Source for acquisition/subscription address",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true,
             "isObsolete": true
           }

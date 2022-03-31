@@ -33,6 +33,7 @@
             "a": {
               "title": "Internal note",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             }
           },

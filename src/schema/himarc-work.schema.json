@@ -800,5 +800,11 @@
   },
   "required": [
     "fields"
-  ]
+  ],
+  "$defs": {
+    "subfield": { 
+      "type": "string", 
+      "pattern": "^(?!\\s*$).+"
+    }
+  }
 }

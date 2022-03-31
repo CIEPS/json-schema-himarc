@@ -38,12 +38,14 @@
           "a": {
             "title": "Romanized title",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "isObsolete": true
           },
           "h": {
             "title": "Medium",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false,
             "isObsolete": true
           }

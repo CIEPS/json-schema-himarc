@@ -32,36 +32,43 @@
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "Producing company",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "b": {
             "title": "Releasing company (primary distributor)",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "d": {
             "title": "Date of production, release, etc.",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "e": {
             "title": "Contractual producer",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "f": {
             "title": "Place of production, release, etc.",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           }
         },

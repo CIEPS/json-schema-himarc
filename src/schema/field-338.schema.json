@@ -33,43 +33,51 @@
             "0": {
               "title": "Authority record control number or standard number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "1": {
               "title": "Real World Object URI",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "2": {
               "title": "Source",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "mandatory"
             },
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Carrier type term",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Carrier type code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "optional"
             }

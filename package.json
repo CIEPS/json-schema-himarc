@@ -1,6 +1,6 @@
 {
   "name": "json-schema-himarc",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "JSON Schema for himarc ",
   "private": true,
   "main": "main.js",
@@ -8,7 +8,7 @@
     "bundle": "bin/bundle.js",
     "pretest": "npm run bundle",
     "version": "npm run bundle && git add .",
-    "test": "mocha"
+    "test": "mocha --parallel"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "@apidevtools/json-schema-ref-parser": "^9.0.9",
     "ajv": "^7.2.4",
     "chai": "^4.3.4",
-    "mocha": "^9.0.2"
+    "mocha": "^9.2.2"
   },
   "dependencies": {
     "bluebird": "^3.7.2",

@@ -61,35 +61,41 @@
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "ISSNProfile": "optional"
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true
             },
             "a": {
               "title": "Place of production, publication, distribution, manufacture",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory"
             },
             "b": {
               "title": "Name of producer, publisher, distributor, manufacturer",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory"
             },
             "c": {
               "title": "Date of production, publication, distribution, manufacture, or copyright notice",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "ISSNProfile": "mandatory if applicable"
             }

@@ -33,48 +33,56 @@
             "2": {
               "title": "Source of term",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "8": {
               "title": "Field link and sequence number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "isObsolete": true
             },
             "a": {
               "title": "Access term",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "x": {
               "title": "General subdivision",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "isObsolete": true
             },
             "y": {
               "title": "Chronological subdivision",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "isObsolete": true
             },
             "z": {
               "title": "Geographic subdivision",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
               "isObsolete": true
             }

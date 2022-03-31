@@ -33,54 +33,63 @@
             "3": {
               "title": "Materials specified",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "6": {
               "title": "Linkage",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "a": {
               "title": "Name (custodian or owner)",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "b": {
               "title": "Institutional division",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "c": {
               "title": "Street address",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "d": {
               "title": "Country",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "e": {
               "title": "Location of units",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "f": {
               "title": "Item number",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             },
             "g": {
               "title": "Repository location code",
               "type": "string",
+              "pattern": "^(?!\\s*$).+",
               "isRepeatable": false,
               "isObsolete": true
             }

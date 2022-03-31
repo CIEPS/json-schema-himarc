@@ -32,36 +32,43 @@
           "6": {
             "title": "Linkage",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "8": {
             "title": "Field link and sequence number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": true
           },
           "a": {
             "title": "Place of production, release, etc.",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "b": {
             "title": "Publisher or trade name",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "c": {
             "title": "Date of production, release, etc.",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "k": {
             "title": "Serial identification",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           },
           "l": {
             "title": "Matrix and/or take number",
             "type": "string",
+            "pattern": "^(?!\\s*$).+",
             "isRepeatable": false
           }
         },
