@@ -17,8 +17,11 @@
     "indicator2": {
       "title": "Nonfiling characters",
       "type": "string",
-      "pattern": "[0-9]",
+      "pattern": "[0-9]|\\",
       "code": {
+        "\\": {
+          "title": "Undefined"
+        },
         "0": {
           "title": "No nonfiling characters"
         },
