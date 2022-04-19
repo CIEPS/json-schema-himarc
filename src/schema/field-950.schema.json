@@ -37,6 +37,11 @@
               "isRepeatable": false
             }
           },
+          "patternProperties": {
+            "^[a-z0-9]$": {
+              "type": "string"
+            }
+          },
           "additionalProperties": false
         },
         "minItems": 1
