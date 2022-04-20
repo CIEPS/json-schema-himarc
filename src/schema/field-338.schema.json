@@ -72,7 +72,7 @@
               "type": "string",
               "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
-              "ISSNProfile": "mandatory"
+              "ISSNProfile": "optional"
             },
             "b": {
               "title": "Carrier type code",
@@ -85,19 +85,6 @@
           "additionalProperties": false
         },
         "allOf": [
-          {
-            "contains": {
-              "type": "object",
-              "properties": {
-                "a": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "a"
-              ]
-            }
-          },
           {
             "contains": {
               "type": "object",
