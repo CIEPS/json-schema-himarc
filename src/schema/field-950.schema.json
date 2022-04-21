@@ -8,7 +8,7 @@
       "indicator1": {
         "title": "Undefined",
         "type": "string",
-        "pattern": "[0-9]|\\",
+        "pattern": "[0-9]|\\\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -18,7 +18,7 @@
       "indicator2": {
         "title": "Undefined",
         "type": "string",
-        "pattern": "[0-9]|\\",
+        "pattern": "[0-9]|\\\\",
         "code": {
           "\\": {
             "title": "Undefined"
