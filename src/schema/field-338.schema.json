@@ -72,7 +72,7 @@
               "type": "string",
               "pattern": "^(?!\\s*$).+",
               "isRepeatable": true,
-              "ISSNProfile": "mandatory"
+              "ISSNProfile": "optional"
             },
             "b": {
               "title": "Carrier type code",
@@ -85,6 +85,21 @@
           "additionalProperties": false
         },
         "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "anyOf": [
           {
             "contains": {
               "type": "object",
@@ -102,12 +117,12 @@
             "contains": {
               "type": "object",
               "properties": {
-                "2": {
+                "b": {
                   "type": "string"
                 }
               },
               "required": [
-                "2"
+                "b"
               ]
             }
           }

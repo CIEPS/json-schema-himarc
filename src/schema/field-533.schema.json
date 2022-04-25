@@ -120,19 +120,6 @@
             "contains": {
               "type": "object",
               "properties": {
-                "b": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "b"
-              ]
-            }
-          },
-          {
-            "contains": {
-              "type": "object",
-              "properties": {
                 "c": {
                   "type": "string"
                 }

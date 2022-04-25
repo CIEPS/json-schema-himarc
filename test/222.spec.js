@@ -15,7 +15,7 @@ describe('Key Title (222) schema', function () {
   it('should validate', function () {
     const data = {
       indicator1: '\\',
-      indicator2: '0',
+      indicator2: '\\',
       subFields: [
         {
           a: 'Nature'

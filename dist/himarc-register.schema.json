@@ -1023,10 +1023,13 @@
             "indicator2": {
               "title": "Nonfiling characters",
               "type": "string",
-              "pattern": "[0-9]",
+              "pattern": "[0-9]|\\\\",
               "code": {
                 "0": {
                   "title": "No nonfiling characters"
+                },
+                "\\": {
+                  "title": "Undefined"
                 },
                 "1-9": {
                   "title": "Number of nonfiling characters "
@@ -1604,10 +1607,13 @@
             "indicator2": {
               "title": "Nonfiling characters",
               "type": "string",
-              "pattern": "[0-9]",
+              "pattern": "[0-9]|\\\\",
               "code": {
                 "0": {
                   "title": "No nonfiling characters"
+                },
+                "\\": {
+                  "title": "Undefined"
                 },
                 "1-9": {
                   "title": "Number of nonfiling characters "
@@ -3838,7 +3844,7 @@
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true,
-                      "ISSNProfile": "mandatory"
+                      "ISSNProfile": "optional"
                     },
                     "b": {
                       "title": "Content type code",
@@ -3851,6 +3857,21 @@
                   "additionalProperties": false
                 },
                 "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
+                "anyOf": [
                   {
                     "contains": {
                       "type": "object",
@@ -3868,12 +3889,12 @@
                     "contains": {
                       "type": "object",
                       "properties": {
-                        "2": {
+                        "b": {
                           "type": "string"
                         }
                       },
                       "required": [
-                        "2"
+                        "b"
                       ]
                     }
                   }
@@ -3965,7 +3986,7 @@
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true,
-                      "ISSNProfile": "mandatory"
+                      "ISSNProfile": "optional"
                     },
                     "b": {
                       "title": "Media type code",
@@ -3978,6 +3999,21 @@
                   "additionalProperties": false
                 },
                 "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
+                "anyOf": [
                   {
                     "contains": {
                       "type": "object",
@@ -3995,12 +4031,12 @@
                     "contains": {
                       "type": "object",
                       "properties": {
-                        "2": {
+                        "b": {
                           "type": "string"
                         }
                       },
                       "required": [
-                        "2"
+                        "b"
                       ]
                     }
                   }
@@ -4092,7 +4128,7 @@
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true,
-                      "ISSNProfile": "mandatory"
+                      "ISSNProfile": "optional"
                     },
                     "b": {
                       "title": "Carrier type code",
@@ -4105,6 +4141,21 @@
                   "additionalProperties": false
                 },
                 "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "2": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "2"
+                      ]
+                    }
+                  }
+                ],
+                "anyOf": [
                   {
                     "contains": {
                       "type": "object",
@@ -4122,12 +4173,12 @@
                     "contains": {
                       "type": "object",
                       "properties": {
-                        "2": {
+                        "b": {
                           "type": "string"
                         }
                       },
                       "required": [
-                        "2"
+                        "b"
                       ]
                     }
                   }
@@ -10474,19 +10525,6 @@
                   "additionalProperties": false
                 },
                 "allOf": [
-                  {
-                    "contains": {
-                      "type": "object",
-                      "properties": {
-                        "b": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "b"
-                      ]
-                    }
-                  },
                   {
                     "contains": {
                       "type": "object",
@@ -17945,17 +17983,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -18136,17 +18163,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -18353,17 +18369,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -18569,17 +18574,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -18784,17 +18778,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -19004,17 +18987,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -19226,17 +19198,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -19433,17 +19394,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -19660,17 +19610,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -20110,17 +20049,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -20349,17 +20277,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -20594,17 +20511,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -20821,17 +20727,6 @@
                   },
                   "additionalProperties": false
                 },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
-                },
                 "minItems": 1
               }
             },
@@ -21031,17 +20926,6 @@
                     }
                   },
                   "additionalProperties": false
-                },
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "a": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "a"
-                  ]
                 },
                 "minItems": 1
               }
@@ -23749,7 +23633,7 @@
               "indicator1": {
                 "title": "Undefined",
                 "type": "string",
-                "const": "\\",
+                "pattern": "[0-9]|\\\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23759,7 +23643,7 @@
               "indicator2": {
                 "title": "Undefined",
                 "type": "string",
-                "const": "\\",
+                "pattern": "[0-9]|\\\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23776,6 +23660,11 @@
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": false
+                    }
+                  },
+                  "patternProperties": {
+                    "^[a-z0-9]$": {
+                      "type": "string"
                     }
                   },
                   "additionalProperties": false
@@ -33405,6 +33294,12 @@
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
+                    },
+                    "9": {
+                      "title": "URI",
+                      "type": "string",
+                      "pattern": "^(https?|wss?|s?ftp)://",
+                      "isRepeatable": false
                     },
                     "a": {
                       "title": "Record control number",
