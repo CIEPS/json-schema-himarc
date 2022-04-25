@@ -33250,6 +33250,12 @@
                       "pattern": "^(?!\\s*$).+",
                       "isRepeatable": true
                     },
+                    "9": {
+                      "title": "URI",
+                      "type": "string",
+                      "pattern": "^(https?|wss?|s?ftp)://",
+                      "isRepeatable": false
+                    },
                     "a": {
                       "title": "Record control number",
                       "type": "string",
