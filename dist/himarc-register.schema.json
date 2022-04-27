@@ -1026,13 +1026,13 @@
               "pattern": "[0-9]|\\\\",
               "code": {
                 "0": {
-                  "title": "No nonfiling characters"
+                  "title": "No nonfiling characters [OBSOLETE]"
                 },
                 "\\": {
-                  "title": "Undefined"
+                  "title": "NSB / NSE characters"
                 },
                 "1-9": {
-                  "title": "Number of nonfiling characters "
+                  "title": "Number of nonfiling characters [OBSOLETE]"
                 }
               }
             },
@@ -1607,10 +1607,16 @@
             "indicator2": {
               "title": "Nonfiling characters",
               "type": "string",
-              "const": "\\",
+              "pattern": "[0-9]|\\\\",
               "code": {
+                "0": {
+                  "title": "No nonfiling characters [OBSOLETE]"
+                },
                 "\\": {
-                  "title": "Obsolete: use NSB / NSE / pipe character instead"
+                  "title": "NSB / NSE characters"
+                },
+                "1-9": {
+                  "title": "Number of nonfiling characters [OBSOLETE]"
                 }
               }
             },
