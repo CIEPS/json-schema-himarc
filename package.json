@@ -1,6 +1,6 @@
 {
   "name": "json-schema-himarc",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "JSON Schema for himarc ",
   "private": true,
   "main": "main.js",
@@ -8,7 +8,7 @@
     "bundle": "bin/bundle.js",
     "pretest": "npm run bundle",
     "version": "npm run bundle && git add .",
-    "test": "mocha --parallel"
+    "test": "mocha --parallel --timeout 10000"
   },
   "repository": {
     "type": "git",

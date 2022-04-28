@@ -4,14 +4,14 @@
 
 const { expect } = require('chai');
 const Ajv = require('ajv').default;
-const registerSchema = require('../dist/himarc-register.schema.json');
+const workSchema = require('../dist/himarc-work.schema.json');
 
 const ajv = new Ajv({
   allErrors: true,
   strict: false
 });
 
-describe('full schema', function () {
+describe('Work Schema', function () {
   it('should validate', function () {
     const data = {
       fields: {
@@ -100,7 +100,7 @@ describe('full schema', function () {
         }],
         222: {
           indicator1: '\\',
-          indicator2: '0',
+          indicator2: '\\',
           subFields: [
             {
               a: 'Nature'
@@ -112,7 +112,7 @@ describe('full schema', function () {
         },
         245: {
           indicator1: '1',
-          indicator2: '0',
+          indicator2: '\\',
           subFields: [
             {
               a: 'Another Nature'
@@ -133,7 +133,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(registerSchema);
+    const validate = ajv.compile(workSchema);
     const valid = validate(data);
     if (validate.errors) console.dir(validate.errors, { depth: 8 });
     expect(valid).to.be.true;
@@ -255,7 +255,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(registerSchema);
+    const validate = ajv.compile(workSchema);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === 'should NOT have fewer than 1 items')).to.be.true;
@@ -367,7 +367,7 @@ describe('full schema', function () {
         }]
       }
     };
-    const validate = ajv.compile(registerSchema);
+    const validate = ajv.compile(workSchema);
     const valid = validate(data);
     if (validate.errors) {
       expect(validate.errors.some(error => error.message === "should have required property 'indicator1'")).to.be.true;

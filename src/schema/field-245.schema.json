@@ -26,13 +26,13 @@
       "pattern": "[0-9]|\\\\",
       "code": {
         "\\": {
-          "title": "Undefined"
+          "title": "NSB / NSE characters"
         },
         "0": {
-          "title": "No nonfiling characters"
+          "title": "No nonfiling characters [OBSOLETE]"
         },
         "1-9": {
-          "title": "Number of nonfiling characters "
+          "title": "Number of nonfiling characters [OBSOLETE]"
         }
       }
     },
