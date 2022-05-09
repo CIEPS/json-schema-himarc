@@ -21,6 +21,9 @@
         "005": {
           "$ref": "field-005.schema.json"
         },
+        "006": {
+          "$ref": "field-006.schema.json"
+        },
         "007": {
           "$ref": "field-007.schema.json"
         },
