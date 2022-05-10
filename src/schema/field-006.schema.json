@@ -31,51 +31,51 @@
               "t"
             ],
             "codes": {
-                "a" : {
-                    "title": "Language material"
-                },
-                "c" : {
-                    "title": "Notated music"
-                },
-                "d" : {
-                    "title": "Manuscript notated music"
-                },
-                "e" : {
-                    "title": "Cartographic material"
-                },
-                "f" : {
-                    "title": "Manuscript cartographic material"
-                },
-                "g" : {
-                    "title": "Projected medium"
-                },
-                "i" : {
-                    "title": "Nonmusical sound recording"
-                },
-                "j" : {
-                    "title": "Musical sound recording"
-                },
-                "k" : {
-                    "title": "two dimensional nonprojectable graphic"
-                },
-                "m" : {
-                    "title": "Computer file/Electronic resource"
-                },
-                "o" : {
-                    "title": "Kit"
-                },
-                "p" : {
-                    "title": "Mixed material"
-                },
-                "r" : {
-                    "title": "three dimensional artifact or naturally occurring object"
-                },
-                "s" : {
-                    "title": "Serial/Integrating resource"
-                },
-                "t" : {
-                    "title": "Manuscript language material"
-                }
+              "a" : {
+                "title": "Language material"
+              },
+              "c" : {
+                "title": "Notated music"
+              },
+              "d" : {
+                "title": "Manuscript notated music"
+              },
+              "e" : {
+                "title": "Cartographic material"
+              },
+              "f" : {
+                "title": "Manuscript cartographic material"
+              },
+              "g" : {
+                "title": "Projected medium"
+              },
+              "i" : {
+                "title": "Nonmusical sound recording"
+              },
+              "j" : {
+                "title": "Musical sound recording"
+              },
+              "k" : {
+                "title": "two dimensional nonprojectable graphic"
+              },
+              "m" : {
+                "title": "Computer file/Electronic resource"
+              },
+              "o" : {
+                "title": "Kit"
+              },
+              "p" : {
+                "title": "Mixed material"
+              },
+              "r" : {
+                "title": "three dimensional artifact or naturally occurring object"
+              },
+              "s" : {
+                "title": "Serial/Integrating resource"
+              },
+              "t" : {
+                "title": "Manuscript language material"
+              }
             }
           }
         },
@@ -369,7 +369,7 @@
               ],
               "codes": {
                 " ": {
-                  "title": "Unknown or not specified"
+                  "title": "Unknown or unspecified"
                 },
                 "a": {
                   "title": "Preschool"
@@ -2915,8 +2915,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "  ",
+                "||"
               ]
             },
             "11": {
@@ -3236,8 +3236,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "     ",
+                "|||||"
               ]
             },
             "11": {
@@ -3514,8 +3514,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "    ",
+                "||||"
               ]
             },
             "05": {
@@ -3597,8 +3597,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "  ",
+                "||"
               ]
             },
             "09": {
@@ -3737,8 +3737,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "      ",
+                "||||||"
               ]
             }
           },
@@ -3766,8 +3766,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "     ",
+                "|||||"
               ]
             },
             "06": {
@@ -3828,8 +3828,8 @@
               "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
               "type": "string",
               "enum": [
-                " ",
-                "|"
+                "           ",
+                "|||||||||||"
               ]
             }
           },
