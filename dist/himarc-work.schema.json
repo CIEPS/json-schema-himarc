@@ -24027,6 +24027,3853 @@
           "isRepeatable": false,
           "ISSNProfile": "mandatory"
         },
+        "006": {
+          "title": "Fixed-Length Data Elements-Additional Material Characteristics",
+          "description": "Eighteen character positions (00-17) that provide for coding information about special aspects of the item being cataloged that cannot be coded in field 008 (Fixed-Length Data Elements). It is used in cases when an item has multiple characteristics (e.g., printed material with an accompanying cassette or a map that is issued serially).",
+          "url": "http://www.loc.gov/marc/bibliographic/bd006.html",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "positions": {
+                "type": "object",
+                "properties": {
+                  "00": {
+                    "type": "string",
+                    "title": "Form of material",
+                    "enum": [
+                      "a",
+                      "c",
+                      "d",
+                      "e",
+                      "f",
+                      "g",
+                      "i",
+                      "j",
+                      "k",
+                      "m",
+                      "o",
+                      "p",
+                      "r",
+                      "s",
+                      "t"
+                    ],
+                    "codes": {
+                      "a": {
+                        "title": "Language material"
+                      },
+                      "c": {
+                        "title": "Notated music"
+                      },
+                      "d": {
+                        "title": "Manuscript notated music"
+                      },
+                      "e": {
+                        "title": "Cartographic material"
+                      },
+                      "f": {
+                        "title": "Manuscript cartographic material"
+                      },
+                      "g": {
+                        "title": "Projected medium"
+                      },
+                      "i": {
+                        "title": "Nonmusical sound recording"
+                      },
+                      "j": {
+                        "title": "Musical sound recording"
+                      },
+                      "k": {
+                        "title": "two dimensional nonprojectable graphic"
+                      },
+                      "m": {
+                        "title": "Computer file/Electronic resource"
+                      },
+                      "o": {
+                        "title": "Kit"
+                      },
+                      "p": {
+                        "title": "Mixed material"
+                      },
+                      "r": {
+                        "title": "three dimensional artifact or naturally occurring object"
+                      },
+                      "s": {
+                        "title": "Serial/Integrating resource"
+                      },
+                      "t": {
+                        "title": "Manuscript language material"
+                      }
+                    }
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "a"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Books"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "c"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Music"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "d"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Music"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "e"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Maps"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "f"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Maps"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "g"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Visual%20Materials"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "i"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Music"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "j"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Music"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "k"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Visual%20Materials"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "m"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Computer%20Files"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "o"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Visual%20Materials"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "p"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Mixed%20Materials"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "r"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Visual%20Materials"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "s"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Continuing%20Resources"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "00": {
+                          "const": "t"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/properties/fields/properties/006/definitions/Books"
+                    }
+                  }
+                ]
+              }
+            },
+            "required": [
+              "positions"
+            ]
+          },
+          "definitions": {
+            "Books": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "11": {
+                      "title": "Government publication",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not a government publication"
+                        },
+                        "a": {
+                          "title": "Autonomous or semi-autonomous component"
+                        },
+                        "c": {
+                          "title": "Multilocal"
+                        },
+                        "f": {
+                          "title": "Federal/national"
+                        },
+                        "i": {
+                          "title": "International intergovernmental"
+                        },
+                        "l": {
+                          "title": "Local"
+                        },
+                        "m": {
+                          "title": "Multistate"
+                        },
+                        "o": {
+                          "title": "Government publication-level undetermined"
+                        },
+                        "s": {
+                          "title": "State, provincial, territorial, dependent, etc."
+                        },
+                        "u": {
+                          "title": "Unknown if item is government publication"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "enum": [
+                        " ",
+                        "a",
+                        "c",
+                        "f",
+                        "i",
+                        "l",
+                        "m",
+                        "o",
+                        "s",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "12": {
+                      "title": "Conference publication",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        "0",
+                        "1",
+                        "|"
+                      ],
+                      "codes": {
+                        "0": {
+                          "title": "Not a conference publication"
+                        },
+                        "1": {
+                          "title": "Conference publication"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "13": {
+                      "title": "Festschrift",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        "0",
+                        "1",
+                        "|"
+                      ],
+                      "codes": {
+                        "0": {
+                          "title": "Not a festschrift"
+                        },
+                        "1": {
+                          "title": "Festschrift"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "14": {
+                      "title": "Index",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        "0",
+                        "1",
+                        "|"
+                      ],
+                      "codes": {
+                        "0": {
+                          "title": "No index"
+                        },
+                        "1": {
+                          "title": "Index present"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "15": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "16": {
+                      "title": "Literary form",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        "0",
+                        "1",
+                        "d",
+                        "e",
+                        "f",
+                        "h",
+                        "i",
+                        "j",
+                        "m",
+                        "p",
+                        "s",
+                        "u",
+                        "|"
+                      ],
+                      "codes": {
+                        "0": {
+                          "title": "Not fiction (not further specified)"
+                        },
+                        "1": {
+                          "title": "Fiction (not further specified)"
+                        },
+                        "d": {
+                          "title": "Dramas"
+                        },
+                        "e": {
+                          "title": "Essays"
+                        },
+                        "f": {
+                          "title": "Novels"
+                        },
+                        "h": {
+                          "title": "Humor, satires, etc."
+                        },
+                        "i": {
+                          "title": "Letters"
+                        },
+                        "j": {
+                          "title": "Short stories"
+                        },
+                        "m": {
+                          "title": "Mixed forms"
+                        },
+                        "p": {
+                          "title": "Poetry"
+                        },
+                        "s": {
+                          "title": "Speeches"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "17": {
+                      "title": "Biography",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "|"
+                      ],
+                      "codes": {
+                        " ": {
+                          "title": "No biographical material"
+                        },
+                        "a": {
+                          "title": "Autobiography"
+                        },
+                        "b": {
+                          "title": "Individual biography"
+                        },
+                        "c": {
+                          "title": "Collective biography"
+                        },
+                        "d": {
+                          "title": "Contains biographical information"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "01-04": {
+                      "title": "Illustrations",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "k",
+                        "l",
+                        "m",
+                        "o",
+                        "p",
+                        "|"
+                      ],
+                      "codes": {
+                        " ": {
+                          "title": "No illustrations"
+                        },
+                        "a": {
+                          "title": "Illustrations"
+                        },
+                        "b": {
+                          "title": "Maps"
+                        },
+                        "c": {
+                          "title": "Portraits"
+                        },
+                        "d": {
+                          "title": "Charts"
+                        },
+                        "e": {
+                          "title": "Plans"
+                        },
+                        "f": {
+                          "title": "Plates"
+                        },
+                        "g": {
+                          "title": "Music"
+                        },
+                        "h": {
+                          "title": "Facsimiles"
+                        },
+                        "i": {
+                          "title": "Coats of arms"
+                        },
+                        "j": {
+                          "title": "Genealogical tables"
+                        },
+                        "k": {
+                          "title": "Forms"
+                        },
+                        "l": {
+                          "title": "Samples"
+                        },
+                        "m": {
+                          "title": "Phonodisc, phonowire, etc."
+                        },
+                        "o": {
+                          "title": "Photographs"
+                        },
+                        "p": {
+                          "title": "Illuminations"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "05": {
+                      "title": "Target audience",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "j",
+                        "|"
+                      ],
+                      "codes": {
+                        " ": {
+                          "title": "Unknown or unspecified"
+                        },
+                        "a": {
+                          "title": "Preschool"
+                        },
+                        "b": {
+                          "title": "Primary"
+                        },
+                        "c": {
+                          "title": "Pre-adolescent"
+                        },
+                        "d": {
+                          "title": "Adolescent"
+                        },
+                        "e": {
+                          "title": "Adult"
+                        },
+                        "f": {
+                          "title": "Specialized"
+                        },
+                        "g": {
+                          "title": "General"
+                        },
+                        "j": {
+                          "title": "Juvenile"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "06": {
+                      "title": "Form of item",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ],
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    },
+                    "07-10": {
+                      "title": "Nature of contents",
+                      "type": "string",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008b.html",
+                      "enum": [
+                        "2",
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "i",
+                        "j",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "|"
+                      ],
+                      "codes": {
+                        "2": {
+                          "title": "Offprints"
+                        },
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "No specified nature of contents"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "j": {
+                          "title": "Patent document"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "01-04",
+                    "05",
+                    "06",
+                    "07-10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17"
+                  ]
+                }
+              }
+            },
+            "Continuing Resources": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "10": {
+                      "title": "Nature of contents (3)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "11": {
+                      "title": "Government publication",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not a government publication"
+                        },
+                        "a": {
+                          "title": "Autonomous or semi-autonomous component"
+                        },
+                        "c": {
+                          "title": "Multilocal"
+                        },
+                        "f": {
+                          "title": "Federal/national"
+                        },
+                        "i": {
+                          "title": "International intergovernmental"
+                        },
+                        "l": {
+                          "title": "Local"
+                        },
+                        "m": {
+                          "title": "Multistate"
+                        },
+                        "o": {
+                          "title": "Government publication-level undetermined"
+                        },
+                        "s": {
+                          "title": "State, provincial, territorial, dependent, etc."
+                        },
+                        "u": {
+                          "title": "Unknown if item is government publication"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "c",
+                        "f",
+                        "i",
+                        "l",
+                        "m",
+                        "o",
+                        "s",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "12": {
+                      "title": "Conference publication",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "0": {
+                          "title": "Not a conference publication"
+                        },
+                        "1": {
+                          "title": "Conference publication"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "0",
+                        "1",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory if applicable"
+                    },
+                    "16": {
+                      "title": "Original alphabet or script of title",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "No alphabet or script given/No key title"
+                        },
+                        "a": {
+                          "title": "Basic Roman"
+                        },
+                        "b": {
+                          "title": "Extended Roman"
+                        },
+                        "c": {
+                          "title": "Cyrillic"
+                        },
+                        "d": {
+                          "title": "Japanese"
+                        },
+                        "e": {
+                          "title": "Chinese"
+                        },
+                        "f": {
+                          "title": "Arabic"
+                        },
+                        "g": {
+                          "title": "Greek"
+                        },
+                        "h": {
+                          "title": "Hebrew"
+                        },
+                        "i": {
+                          "title": "Thai"
+                        },
+                        "j": {
+                          "title": "Devanagari"
+                        },
+                        "k": {
+                          "title": "Korean"
+                        },
+                        "l": {
+                          "title": "Tamil"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "k",
+                        "l",
+                        "u",
+                        "z",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory"
+                    },
+                    "17": {
+                      "title": "Entry convention",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "0": {
+                          "title": "Successive entry"
+                        },
+                        "1": {
+                          "title": "Latest entry"
+                        },
+                        "2": {
+                          "title": "Integrated entry"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "|"
+                      ]
+                    },
+                    "01": {
+                      "title": "Frequency",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "No determinable frequency"
+                        },
+                        "a": {
+                          "title": "Annual"
+                        },
+                        "b": {
+                          "title": "Bimonthly"
+                        },
+                        "c": {
+                          "title": "Semiweekly"
+                        },
+                        "d": {
+                          "title": "Daily"
+                        },
+                        "e": {
+                          "title": "Biweekly"
+                        },
+                        "f": {
+                          "title": "Semiannual"
+                        },
+                        "g": {
+                          "title": "Biennial"
+                        },
+                        "h": {
+                          "title": "Triennial"
+                        },
+                        "i": {
+                          "title": "Three times a week"
+                        },
+                        "j": {
+                          "title": "Three times a month"
+                        },
+                        "k": {
+                          "title": "Continuously updated"
+                        },
+                        "m": {
+                          "title": "Monthly"
+                        },
+                        "q": {
+                          "title": "Quarterly"
+                        },
+                        "s": {
+                          "title": "Semimonthly"
+                        },
+                        "t": {
+                          "title": "Three times a year"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "w": {
+                          "title": "Weekly"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "k",
+                        "m",
+                        "q",
+                        "s",
+                        "t",
+                        "u",
+                        "w",
+                        "z",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory"
+                    },
+                    "02": {
+                      "title": "Regularity",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "n": {
+                          "title": "Normalized irregular"
+                        },
+                        "r": {
+                          "title": "Regular"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "x": {
+                          "title": "Completely irregular"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "n",
+                        "r",
+                        "u",
+                        "x",
+                        "|"
+                      ],
+                      "ISSNProfile": "optional"
+                    },
+                    "03": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory if applicable"
+                    },
+                    "04": {
+                      "title": "Type of continuing resource",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "d": {
+                          "title": "Updating database"
+                        },
+                        "g": {
+                          "title": "Magazine"
+                        },
+                        "h": {
+                          "title": "Blog"
+                        },
+                        "j": {
+                          "title": "Journal"
+                        },
+                        "l": {
+                          "title": "Updating loose-leaf"
+                        },
+                        "m": {
+                          "title": "Monographic series"
+                        },
+                        "n": {
+                          "title": "Newspaper"
+                        },
+                        "p": {
+                          "title": "Periodical"
+                        },
+                        "r": {
+                          "title": "Repository"
+                        },
+                        "s": {
+                          "title": "Newsletter"
+                        },
+                        "t": {
+                          "title": "Directory"
+                        },
+                        "w": {
+                          "title": "Updating Web site"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "d",
+                        "g",
+                        "h",
+                        "j",
+                        "l",
+                        "m",
+                        "n",
+                        "p",
+                        "r",
+                        "s",
+                        "t",
+                        "w",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory"
+                    },
+                    "05": {
+                      "title": "Form of original item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "e": {
+                          "title": "Newspaper format"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "o",
+                        "q",
+                        "s",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory if applicable"
+                    },
+                    "06": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ],
+                      "ISSNProfile": "mandatory"
+                    },
+                    "07": {
+                      "title": "Nature of entire work",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "08": {
+                      "title": "Nature of contents (1)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "09": {
+                      "title": "Nature of contents (2)",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "codes": {
+                        "5": {
+                          "title": "Calendars"
+                        },
+                        "6": {
+                          "title": "Comics/graphic novels"
+                        },
+                        " ": {
+                          "title": "Not specified"
+                        },
+                        "a": {
+                          "title": "Abstracts/summaries"
+                        },
+                        "b": {
+                          "title": "Bibliographies"
+                        },
+                        "c": {
+                          "title": "Catalogs"
+                        },
+                        "d": {
+                          "title": "Dictionaries"
+                        },
+                        "e": {
+                          "title": "Encyclopedias"
+                        },
+                        "f": {
+                          "title": "Handbooks"
+                        },
+                        "g": {
+                          "title": "Legal articles"
+                        },
+                        "h": {
+                          "title": "Biography"
+                        },
+                        "i": {
+                          "title": "Indexes"
+                        },
+                        "k": {
+                          "title": "Discographies"
+                        },
+                        "l": {
+                          "title": "Legislation"
+                        },
+                        "m": {
+                          "title": "Theses"
+                        },
+                        "n": {
+                          "title": "Surveys of literature in a subject area"
+                        },
+                        "o": {
+                          "title": "Reviews"
+                        },
+                        "p": {
+                          "title": "Programmed texts"
+                        },
+                        "q": {
+                          "title": "Filmographies"
+                        },
+                        "r": {
+                          "title": "Directories"
+                        },
+                        "s": {
+                          "title": "Statistics"
+                        },
+                        "t": {
+                          "title": "Technical reports"
+                        },
+                        "u": {
+                          "title": "Standards/specifications"
+                        },
+                        "v": {
+                          "title": "Legal cases and case notes"
+                        },
+                        "w": {
+                          "title": "Law reports and digests"
+                        },
+                        "y": {
+                          "title": "Yearbooks"
+                        },
+                        "z": {
+                          "title": "Treaties"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "5",
+                        "6",
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "u",
+                        "v",
+                        "w",
+                        "y",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "13-15": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "   ",
+                        "|||"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01",
+                    "02",
+                    "03",
+                    "04",
+                    "05",
+                    "06",
+                    "07",
+                    "08",
+                    "09",
+                    "10",
+                    "11",
+                    "12",
+                    "13-15",
+                    "16",
+                    "17"
+                  ]
+                }
+              }
+            },
+            "Music": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "15": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "16": {
+                      "title": "Transposition and arrangement",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not arrangement or transposition or not specified"
+                        },
+                        "a": {
+                          "title": "Transposition"
+                        },
+                        "b": {
+                          "title": "Arrangement"
+                        },
+                        "c": {
+                          "title": "Both transposed and arranged"
+                        },
+                        "n": {
+                          "title": "Not applicable"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "n",
+                        "u",
+                        "|"
+                      ]
+                    },
+                    "17": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "01-02": {
+                      "title": "Form of composition",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        "an": {
+                          "title": "Anthems"
+                        },
+                        "bd": {
+                          "title": "Ballads"
+                        },
+                        "bg": {
+                          "title": "Bluegrass music"
+                        },
+                        "bl": {
+                          "title": "Blues"
+                        },
+                        "bt": {
+                          "title": "Ballets"
+                        },
+                        "ca": {
+                          "title": "Chaconnes"
+                        },
+                        "cb": {
+                          "title": "Chants, Other religions"
+                        },
+                        "cc": {
+                          "title": "Chant, Christian"
+                        },
+                        "cg": {
+                          "title": "Concerti grossi"
+                        },
+                        "ch": {
+                          "title": "Chorales"
+                        },
+                        "cl": {
+                          "title": "Chorale preludes"
+                        },
+                        "cn": {
+                          "title": "Canons and rounds"
+                        },
+                        "co": {
+                          "title": "Concertos"
+                        },
+                        "cp": {
+                          "title": "Chansons, polyphonic"
+                        },
+                        "cr": {
+                          "title": "Carols"
+                        },
+                        "cs": {
+                          "title": "Chance compositions"
+                        },
+                        "ct": {
+                          "title": "Cantatas"
+                        },
+                        "cy": {
+                          "title": "Country music"
+                        },
+                        "cz": {
+                          "title": "Canzonas"
+                        },
+                        "df": {
+                          "title": "Dance forms"
+                        },
+                        "dv": {
+                          "title": "Divertimentos, serenades, cassations, divertissements, and notturni"
+                        },
+                        "fg": {
+                          "title": "Fugues"
+                        },
+                        "fl": {
+                          "title": "Flamenco"
+                        },
+                        "fm": {
+                          "title": "Folk music"
+                        },
+                        "ft": {
+                          "title": "Fantasias"
+                        },
+                        "gm": {
+                          "title": "Gospel music"
+                        },
+                        "hy": {
+                          "title": "Hymns"
+                        },
+                        "jz": {
+                          "title": "Jazz"
+                        },
+                        "mc": {
+                          "title": "Musical revues and comedies"
+                        },
+                        "md": {
+                          "title": "Madrigals"
+                        },
+                        "mi": {
+                          "title": "Minuets"
+                        },
+                        "mo": {
+                          "title": "Motets"
+                        },
+                        "mp": {
+                          "title": "Motion picture music"
+                        },
+                        "mr": {
+                          "title": "Marches"
+                        },
+                        "ms": {
+                          "title": "Masses"
+                        },
+                        "mu": {
+                          "title": "Multiple forms"
+                        },
+                        "mz": {
+                          "title": "Mazurkas"
+                        },
+                        "nc": {
+                          "title": "Nocturnes"
+                        },
+                        "nn": {
+                          "title": "Not applicable"
+                        },
+                        "op": {
+                          "title": "Operas"
+                        },
+                        "or": {
+                          "title": "Oratorios"
+                        },
+                        "ov": {
+                          "title": "Overtures"
+                        },
+                        "pg": {
+                          "title": "Program music"
+                        },
+                        "pm": {
+                          "title": "Passion music"
+                        },
+                        "po": {
+                          "title": "Polonaises"
+                        },
+                        "pp": {
+                          "title": "Popular music"
+                        },
+                        "pr": {
+                          "title": "Preludes"
+                        },
+                        "ps": {
+                          "title": "Passacaglias"
+                        },
+                        "pt": {
+                          "title": "Part-songs"
+                        },
+                        "pv": {
+                          "title": "Pavans"
+                        },
+                        "rc": {
+                          "title": "Rock music"
+                        },
+                        "rd": {
+                          "title": "Rondos"
+                        },
+                        "rg": {
+                          "title": "Ragtime music"
+                        },
+                        "ri": {
+                          "title": "Ricercars"
+                        },
+                        "rp": {
+                          "title": "Rhapsodies"
+                        },
+                        "rq": {
+                          "title": "Requiems"
+                        },
+                        "sd": {
+                          "title": "Square dance music"
+                        },
+                        "sg": {
+                          "title": "Songs"
+                        },
+                        "sn": {
+                          "title": "Sonatas"
+                        },
+                        "sp": {
+                          "title": "Symphonic poems"
+                        },
+                        "st": {
+                          "title": "Studies and exercises"
+                        },
+                        "su": {
+                          "title": "Suites"
+                        },
+                        "sy": {
+                          "title": "Symphonies"
+                        },
+                        "tc": {
+                          "title": "Toccatas"
+                        },
+                        "tl": {
+                          "title": "Teatro lirico"
+                        },
+                        "ts": {
+                          "title": "Trio-sonatas"
+                        },
+                        "uu": {
+                          "title": "Unknown"
+                        },
+                        "vi": {
+                          "title": "Villancicos"
+                        },
+                        "vr": {
+                          "title": "Variations"
+                        },
+                        "wz": {
+                          "title": "Waltzes"
+                        },
+                        "za": {
+                          "title": "Zarzuelas"
+                        },
+                        "zz": {
+                          "title": "Other"
+                        },
+                        "||": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "an",
+                        "bd",
+                        "bg",
+                        "bl",
+                        "bt",
+                        "ca",
+                        "cb",
+                        "cc",
+                        "cg",
+                        "ch",
+                        "cl",
+                        "cn",
+                        "co",
+                        "cp",
+                        "cr",
+                        "cs",
+                        "ct",
+                        "cy",
+                        "cz",
+                        "df",
+                        "dv",
+                        "fg",
+                        "fl",
+                        "fm",
+                        "ft",
+                        "gm",
+                        "hy",
+                        "jz",
+                        "mc",
+                        "md",
+                        "mi",
+                        "mo",
+                        "mp",
+                        "mr",
+                        "ms",
+                        "mu",
+                        "mz",
+                        "nc",
+                        "nn",
+                        "op",
+                        "or",
+                        "ov",
+                        "pg",
+                        "pm",
+                        "po",
+                        "pp",
+                        "pr",
+                        "ps",
+                        "pt",
+                        "pv",
+                        "rc",
+                        "rd",
+                        "rg",
+                        "ri",
+                        "rp",
+                        "rq",
+                        "sd",
+                        "sg",
+                        "sn",
+                        "sp",
+                        "st",
+                        "su",
+                        "sy",
+                        "tc",
+                        "tl",
+                        "ts",
+                        "uu",
+                        "vi",
+                        "vr",
+                        "wz",
+                        "za",
+                        "zz",
+                        "||"
+                      ]
+                    },
+                    "03": {
+                      "title": "Format of music",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        "a": {
+                          "title": "Full score"
+                        },
+                        "b": {
+                          "title": "Miniature or study score"
+                        },
+                        "c": {
+                          "title": "Accompaniment reduced for keyboard"
+                        },
+                        "d": {
+                          "title": "Voice score with accompaniment omitted"
+                        },
+                        "e": {
+                          "title": "Condensed score or piano-conductor score"
+                        },
+                        "g": {
+                          "title": "Close score"
+                        },
+                        "h": {
+                          "title": "Chorus score"
+                        },
+                        "i": {
+                          "title": "Condensed score"
+                        },
+                        "j": {
+                          "title": "Performer-conductor part"
+                        },
+                        "k": {
+                          "title": "Vocal score"
+                        },
+                        "l": {
+                          "title": "Score"
+                        },
+                        "m": {
+                          "title": "Multiple score formats"
+                        },
+                        "n": {
+                          "title": "Not applicable"
+                        },
+                        "p": {
+                          "title": "Piano score"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "p",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "04": {
+                      "title": "Music parts",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "No parts in hand or not specified"
+                        },
+                        "d": {
+                          "title": "Instrumental and vocal parts"
+                        },
+                        "e": {
+                          "title": "Instrumental parts"
+                        },
+                        "f": {
+                          "title": "Vocal parts"
+                        },
+                        "n": {
+                          "title": "Not applicable"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "d",
+                        "e",
+                        "f",
+                        "n",
+                        "u",
+                        "|"
+                      ]
+                    },
+                    "05": {
+                      "title": "Target audience",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "Unknown or unspecified"
+                        },
+                        "a": {
+                          "title": "Preschool"
+                        },
+                        "b": {
+                          "title": "Primary"
+                        },
+                        "c": {
+                          "title": "Pre-adolescent"
+                        },
+                        "d": {
+                          "title": "Adolescent"
+                        },
+                        "e": {
+                          "title": "Adult"
+                        },
+                        "f": {
+                          "title": "Specialized"
+                        },
+                        "g": {
+                          "title": "General"
+                        },
+                        "j": {
+                          "title": "Juvenile"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "j",
+                        "|"
+                      ]
+                    },
+                    "06": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ]
+                    },
+                    "07-12": {
+                      "title": "Accompanying matter",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "No accompanying matter"
+                        },
+                        "a": {
+                          "title": "Discography"
+                        },
+                        "b": {
+                          "title": "Bibliography"
+                        },
+                        "c": {
+                          "title": "Thematic index"
+                        },
+                        "d": {
+                          "title": "Libretto or text"
+                        },
+                        "e": {
+                          "title": "Biography of composer or author"
+                        },
+                        "f": {
+                          "title": "Biography of performer or history of ensemble"
+                        },
+                        "g": {
+                          "title": "Technical and/or historical information on instruments"
+                        },
+                        "h": {
+                          "title": "Technical information on music"
+                        },
+                        "i": {
+                          "title": "Historical information"
+                        },
+                        "k": {
+                          "title": "Ethnological information"
+                        },
+                        "r": {
+                          "title": "Instructional materials"
+                        },
+                        "s": {
+                          "title": "Music"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "k",
+                        "r",
+                        "s",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "13-14": {
+                      "title": "Literary text for sound recordings",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008m.html",
+                      "codes": {
+                        " ": {
+                          "title": "Item is a music sound recording"
+                        },
+                        "a": {
+                          "title": "Autobiography"
+                        },
+                        "b": {
+                          "title": "Biography"
+                        },
+                        "c": {
+                          "title": "Conference proceedings"
+                        },
+                        "d": {
+                          "title": "Drama"
+                        },
+                        "e": {
+                          "title": "Essays"
+                        },
+                        "f": {
+                          "title": "Fiction"
+                        },
+                        "g": {
+                          "title": "Reporting"
+                        },
+                        "h": {
+                          "title": "History"
+                        },
+                        "i": {
+                          "title": "Instruction"
+                        },
+                        "j": {
+                          "title": "Language instruction"
+                        },
+                        "k": {
+                          "title": "Comedy"
+                        },
+                        "l": {
+                          "title": "Lectures, speeches"
+                        },
+                        "m": {
+                          "title": "Memoirs"
+                        },
+                        "n": {
+                          "title": "Not applicable"
+                        },
+                        "o": {
+                          "title": "Folktales"
+                        },
+                        "p": {
+                          "title": "Poetry"
+                        },
+                        "r": {
+                          "title": "Rehearsals"
+                        },
+                        "s": {
+                          "title": "Sounds"
+                        },
+                        "t": {
+                          "title": "Interviews"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "r",
+                        "s",
+                        "t",
+                        "z",
+                        "|"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01-02",
+                    "03",
+                    "04",
+                    "05",
+                    "06",
+                    "07-12",
+                    "13-14",
+                    "15",
+                    "16",
+                    "17"
+                  ]
+                }
+              }
+            },
+            "Maps": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "11": {
+                      "title": "Government publication",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not a government publication"
+                        },
+                        "a": {
+                          "title": "Autonomous or semi-autonomous component"
+                        },
+                        "c": {
+                          "title": "Multilocal"
+                        },
+                        "f": {
+                          "title": "Federal/national"
+                        },
+                        "i": {
+                          "title": "International intergovernmental"
+                        },
+                        "l": {
+                          "title": "Local"
+                        },
+                        "m": {
+                          "title": "Multistate"
+                        },
+                        "o": {
+                          "title": "Government publication-level undetermined"
+                        },
+                        "s": {
+                          "title": "State, provincial, territorial, dependent, etc."
+                        },
+                        "u": {
+                          "title": "Unknown if item is government publication"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "c",
+                        "f",
+                        "i",
+                        "l",
+                        "m",
+                        "o",
+                        "s",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "12": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ]
+                    },
+                    "13": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "14": {
+                      "title": "Index",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        "0": {
+                          "title": "No index"
+                        },
+                        "1": {
+                          "title": "Index present"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "0",
+                        "1",
+                        "|"
+                      ]
+                    },
+                    "15": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "01-04": {
+                      "title": "Relief",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        " ": {
+                          "title": "No relief shown"
+                        },
+                        "a": {
+                          "title": "Contours"
+                        },
+                        "b": {
+                          "title": "Shading"
+                        },
+                        "c": {
+                          "title": "Gradient and bathymetric tints"
+                        },
+                        "d": {
+                          "title": "Hachures"
+                        },
+                        "e": {
+                          "title": "Bathymetry/soundings"
+                        },
+                        "f": {
+                          "title": "Form lines"
+                        },
+                        "g": {
+                          "title": "Spot heights"
+                        },
+                        "i": {
+                          "title": "Pictorially"
+                        },
+                        "j": {
+                          "title": "Land forms"
+                        },
+                        "k": {
+                          "title": "Bathymetry/isolines"
+                        },
+                        "m": {
+                          "title": "Rock drawings"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "i",
+                        "j",
+                        "k",
+                        "m",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "05-06": {
+                      "title": "Projection",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        "  ": {
+                          "title": "Projection not specified"
+                        },
+                        "aa": {
+                          "title": "Aitoff"
+                        },
+                        "ab": {
+                          "title": "Gnomic"
+                        },
+                        "ac": {
+                          "title": "Lambert's azimuthal equal area"
+                        },
+                        "ad": {
+                          "title": "Orthographic"
+                        },
+                        "ae": {
+                          "title": "Azimuthal equidistant"
+                        },
+                        "af": {
+                          "title": "Stereographic"
+                        },
+                        "ag": {
+                          "title": "General vertical near-sided"
+                        },
+                        "am": {
+                          "title": "Modified stereographic for Alaska"
+                        },
+                        "an": {
+                          "title": "Chamberlin trimetric"
+                        },
+                        "ap": {
+                          "title": "Polar stereographic"
+                        },
+                        "au": {
+                          "title": "Azimuthal, specific type unknown"
+                        },
+                        "az": {
+                          "title": "Azimuthal, other"
+                        },
+                        "ba": {
+                          "title": "Gall"
+                        },
+                        "bb": {
+                          "title": "Goode's homolographic"
+                        },
+                        "bc": {
+                          "title": "Lambert's cylindrical equal area"
+                        },
+                        "bd": {
+                          "title": "Mercator"
+                        },
+                        "be": {
+                          "title": "Miller"
+                        },
+                        "bf": {
+                          "title": "Mollweide"
+                        },
+                        "bg": {
+                          "title": "Sinusoidal"
+                        },
+                        "bh": {
+                          "title": "Transverse Mercator"
+                        },
+                        "bi": {
+                          "title": "Gauss-Kruger"
+                        },
+                        "bj": {
+                          "title": "Equirectangular"
+                        },
+                        "bk": {
+                          "title": "Krovak"
+                        },
+                        "bl": {
+                          "title": "Cassini-Soldner"
+                        },
+                        "bo": {
+                          "title": "Oblique Mercator"
+                        },
+                        "br": {
+                          "title": "Robinson"
+                        },
+                        "bs": {
+                          "title": "Space oblique Mercator"
+                        },
+                        "bu": {
+                          "title": "Cylindrical, specific type unknown"
+                        },
+                        "bz": {
+                          "title": "Cylindrical, other"
+                        },
+                        "ca": {
+                          "title": "Albers equal area"
+                        },
+                        "cb": {
+                          "title": "Bonne"
+                        },
+                        "cc": {
+                          "title": "Lambert's conformal conic"
+                        },
+                        "ce": {
+                          "title": "Equidistant conic"
+                        },
+                        "cp": {
+                          "title": "Polyconic"
+                        },
+                        "cu": {
+                          "title": "Conic, specific type unknown"
+                        },
+                        "cz": {
+                          "title": "Conic, other"
+                        },
+                        "da": {
+                          "title": "Armadillo"
+                        },
+                        "db": {
+                          "title": "Butterfly"
+                        },
+                        "dc": {
+                          "title": "Eckert"
+                        },
+                        "dd": {
+                          "title": "Goode's homolosine"
+                        },
+                        "de": {
+                          "title": "Miller's bipolar oblique conformal conic"
+                        },
+                        "df": {
+                          "title": "Van Der Grinten"
+                        },
+                        "dg": {
+                          "title": "Dimaxion"
+                        },
+                        "dh": {
+                          "title": "Cordiform"
+                        },
+                        "dl": {
+                          "title": "Lambert conformal"
+                        },
+                        "zz": {
+                          "title": "Other"
+                        },
+                        "||": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "  ",
+                        "aa",
+                        "ab",
+                        "ac",
+                        "ad",
+                        "ae",
+                        "af",
+                        "ag",
+                        "am",
+                        "an",
+                        "ap",
+                        "au",
+                        "az",
+                        "ba",
+                        "bb",
+                        "bc",
+                        "bd",
+                        "be",
+                        "bf",
+                        "bg",
+                        "bh",
+                        "bi",
+                        "bj",
+                        "bk",
+                        "bl",
+                        "bo",
+                        "br",
+                        "bs",
+                        "bu",
+                        "bz",
+                        "ca",
+                        "cb",
+                        "cc",
+                        "ce",
+                        "cp",
+                        "cu",
+                        "cz",
+                        "da",
+                        "db",
+                        "dc",
+                        "dd",
+                        "de",
+                        "df",
+                        "dg",
+                        "dh",
+                        "dl",
+                        "zz",
+                        "||"
+                      ]
+                    },
+                    "07": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "08": {
+                      "title": "Type of cartographic material",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        "a": {
+                          "title": "Single map"
+                        },
+                        "b": {
+                          "title": "Map series"
+                        },
+                        "c": {
+                          "title": "Map serial"
+                        },
+                        "d": {
+                          "title": "Globe"
+                        },
+                        "e": {
+                          "title": "Atlas"
+                        },
+                        "f": {
+                          "title": "Separate supplement to another work"
+                        },
+                        "g": {
+                          "title": "Bound as part of another work"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "09-10": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "  ",
+                        "||"
+                      ]
+                    },
+                    "16-17": {
+                      "title": "Special format characteristics",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008p.html",
+                      "codes": {
+                        " ": {
+                          "title": "No specified special format characteristics"
+                        },
+                        "e": {
+                          "title": "Manuscript"
+                        },
+                        "j": {
+                          "title": "Picture card, post card"
+                        },
+                        "k": {
+                          "title": "Calendar"
+                        },
+                        "l": {
+                          "title": "Puzzle"
+                        },
+                        "n": {
+                          "title": "Game"
+                        },
+                        "o": {
+                          "title": "Wall map"
+                        },
+                        "p": {
+                          "title": "Playing cards"
+                        },
+                        "r": {
+                          "title": "Loose-leaf"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "||": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "e",
+                        "j",
+                        "k",
+                        "l",
+                        "n",
+                        "o",
+                        "p",
+                        "r",
+                        "z",
+                        "||"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01-04",
+                    "05-06",
+                    "07",
+                    "08",
+                    "09-10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16-17"
+                  ]
+                }
+              }
+            },
+            "Visual Materials": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "11": {
+                      "title": "Government publication",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not a government publication"
+                        },
+                        "a": {
+                          "title": "Autonomous or semi-autonomous component"
+                        },
+                        "c": {
+                          "title": "Multilocal"
+                        },
+                        "f": {
+                          "title": "Federal/national"
+                        },
+                        "i": {
+                          "title": "International intergovernmental"
+                        },
+                        "l": {
+                          "title": "Local"
+                        },
+                        "m": {
+                          "title": "Multistate"
+                        },
+                        "o": {
+                          "title": "Government publication-level undetermined"
+                        },
+                        "s": {
+                          "title": "State, provincial, territorial, dependent, etc."
+                        },
+                        "u": {
+                          "title": "Unknown if item is government publication"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "c",
+                        "f",
+                        "i",
+                        "l",
+                        "m",
+                        "o",
+                        "s",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "12": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ]
+                    },
+                    "16": {
+                      "title": "Type of visual material",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        "a": {
+                          "title": "Art original"
+                        },
+                        "b": {
+                          "title": "Kit"
+                        },
+                        "c": {
+                          "title": "Art reproduction"
+                        },
+                        "d": {
+                          "title": "Diorama"
+                        },
+                        "f": {
+                          "title": "Filmstrip"
+                        },
+                        "g": {
+                          "title": "Game"
+                        },
+                        "i": {
+                          "title": "Picture"
+                        },
+                        "k": {
+                          "title": "Graphic"
+                        },
+                        "l": {
+                          "title": "Technical drawing"
+                        },
+                        "m": {
+                          "title": "Motion picture"
+                        },
+                        "n": {
+                          "title": "Chart"
+                        },
+                        "o": {
+                          "title": "Flash card"
+                        },
+                        "p": {
+                          "title": "Microscope slide"
+                        },
+                        "q": {
+                          "title": "Model"
+                        },
+                        "r": {
+                          "title": "Realia"
+                        },
+                        "s": {
+                          "title": "Slide"
+                        },
+                        "t": {
+                          "title": "Transparency"
+                        },
+                        "v": {
+                          "title": "Videorecording"
+                        },
+                        "w": {
+                          "title": "Toy"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "g",
+                        "i",
+                        "k",
+                        "l",
+                        "m",
+                        "n",
+                        "o",
+                        "p",
+                        "q",
+                        "r",
+                        "s",
+                        "t",
+                        "v",
+                        "w",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "17": {
+                      "title": "Technique",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        "a": {
+                          "title": "Animation"
+                        },
+                        "c": {
+                          "title": "Animation and live action"
+                        },
+                        "l": {
+                          "title": "Live action"
+                        },
+                        "n": {
+                          "title": "Not applicable"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "a",
+                        "c",
+                        "l",
+                        "n",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "01-03": {
+                      "title": "Running time for motion pictures and videorecordings",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        "000": {
+                          "title": "Running time exceeds three characters"
+                        },
+                        "001-999": {
+                          "title": "Running time"
+                        },
+                        "nnn": {
+                          "title": "Not applicable"
+                        },
+                        "---": {
+                          "title": "Unknown"
+                        },
+                        "|||": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "000",
+                        "001-999",
+                        "nnn",
+                        "---",
+                        "|||"
+                      ]
+                    },
+                    "04": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "05": {
+                      "title": "Target audience",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008v.html",
+                      "codes": {
+                        " ": {
+                          "title": "Unknown or not specified"
+                        },
+                        "a": {
+                          "title": "Preschool"
+                        },
+                        "b": {
+                          "title": "Primary"
+                        },
+                        "c": {
+                          "title": "Pre-adolescent"
+                        },
+                        "d": {
+                          "title": "Adolescent"
+                        },
+                        "e": {
+                          "title": "Adult"
+                        },
+                        "f": {
+                          "title": "Specialized"
+                        },
+                        "g": {
+                          "title": "General"
+                        },
+                        "j": {
+                          "title": "Juvenile"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "j",
+                        "|"
+                      ]
+                    },
+                    "06-10": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "     ",
+                        "|||||"
+                      ]
+                    },
+                    "13-15": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "   ",
+                        "|||"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01-03",
+                    "04",
+                    "05",
+                    "06-10",
+                    "11",
+                    "12",
+                    "13-15",
+                    "16",
+                    "17"
+                  ]
+                }
+              }
+            },
+            "Computer Files": {
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "10": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "|"
+                      ]
+                    },
+                    "11": {
+                      "title": "Government publication",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
+                      "codes": {
+                        " ": {
+                          "title": "Not a government publication"
+                        },
+                        "a": {
+                          "title": "Autonomous or semi-autonomous component"
+                        },
+                        "c": {
+                          "title": "Multilocal"
+                        },
+                        "f": {
+                          "title": "Federal/national"
+                        },
+                        "i": {
+                          "title": "International intergovernmental"
+                        },
+                        "l": {
+                          "title": "Local"
+                        },
+                        "m": {
+                          "title": "Multistate"
+                        },
+                        "o": {
+                          "title": "Government publication-level undetermined"
+                        },
+                        "s": {
+                          "title": "State, provincial, territorial, dependent, etc."
+                        },
+                        "u": {
+                          "title": "Unknown if item is government publication"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "c",
+                        "f",
+                        "i",
+                        "l",
+                        "m",
+                        "o",
+                        "s",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "01-04": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "    ",
+                        "||||"
+                      ]
+                    },
+                    "05": {
+                      "title": "Target audience",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
+                      "codes": {
+                        " ": {
+                          "title": "Unknown or not specified"
+                        },
+                        "a": {
+                          "title": "Preschool"
+                        },
+                        "b": {
+                          "title": "Primary"
+                        },
+                        "c": {
+                          "title": "Pre-adolescent"
+                        },
+                        "d": {
+                          "title": "Adolescent"
+                        },
+                        "e": {
+                          "title": "Adult"
+                        },
+                        "f": {
+                          "title": "Specialized"
+                        },
+                        "g": {
+                          "title": "General"
+                        },
+                        "j": {
+                          "title": "Juvenile"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "j",
+                        "|"
+                      ]
+                    },
+                    "06": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
+                      "codes": {
+                        " ": {
+                          "title": "Unknown or not specified"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "o",
+                        "q",
+                        "|"
+                      ]
+                    },
+                    "07-08": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "  ",
+                        "||"
+                      ]
+                    },
+                    "09": {
+                      "title": "Type of computer file",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008c.html",
+                      "codes": {
+                        "a": {
+                          "title": "Numeric data"
+                        },
+                        "b": {
+                          "title": "Computer program"
+                        },
+                        "c": {
+                          "title": "Representational"
+                        },
+                        "d": {
+                          "title": "Document"
+                        },
+                        "e": {
+                          "title": "Bibliographic data"
+                        },
+                        "f": {
+                          "title": "Font"
+                        },
+                        "g": {
+                          "title": "Game"
+                        },
+                        "h": {
+                          "title": "Sound"
+                        },
+                        "i": {
+                          "title": "Interactive multimedia"
+                        },
+                        "j": {
+                          "title": "Online system or service"
+                        },
+                        "m": {
+                          "title": "Combination"
+                        },
+                        "u": {
+                          "title": "Unknown"
+                        },
+                        "z": {
+                          "title": "Other"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "e",
+                        "f",
+                        "g",
+                        "h",
+                        "i",
+                        "j",
+                        "m",
+                        "u",
+                        "z",
+                        "|"
+                      ]
+                    },
+                    "12-17": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "      ",
+                        "||||||"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01-04",
+                    "05",
+                    "06",
+                    "07-08",
+                    "09",
+                    "10",
+                    "11",
+                    "12-17"
+                  ]
+                }
+              }
+            },
+            "Mixed Materials": {
+              "type": "object",
+              "properties": {
+                "positions": {
+                  "type": "object",
+                  "properties": {
+                    "01-05": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "     ",
+                        "|||||"
+                      ]
+                    },
+                    "06": {
+                      "title": "Form of item",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008x.html",
+                      "codes": {
+                        " ": {
+                          "title": "None of the following"
+                        },
+                        "a": {
+                          "title": "Microfilm"
+                        },
+                        "b": {
+                          "title": "Microfiche"
+                        },
+                        "c": {
+                          "title": "Microopaque"
+                        },
+                        "d": {
+                          "title": "Large print"
+                        },
+                        "f": {
+                          "title": "Braille"
+                        },
+                        "o": {
+                          "title": "Online"
+                        },
+                        "q": {
+                          "title": "Direct electronic"
+                        },
+                        "r": {
+                          "title": "Regular print reproduction"
+                        },
+                        "s": {
+                          "title": "Electronic"
+                        },
+                        "|": {
+                          "title": "No attempt to code"
+                        }
+                      },
+                      "type": "string",
+                      "enum": [
+                        " ",
+                        "a",
+                        "b",
+                        "c",
+                        "d",
+                        "f",
+                        "o",
+                        "q",
+                        "r",
+                        "s",
+                        "|"
+                      ]
+                    },
+                    "07-17": {
+                      "title": "Undefined",
+                      "url": "https://www.loc.gov/marc/bibliographic/bd008s.html",
+                      "type": "string",
+                      "enum": [
+                        "           ",
+                        "|||||||||||"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "01-05",
+                    "06",
+                    "07-17"
+                  ]
+                }
+              }
+            }
+          },
+          "isRepeatable": true,
+          "ISSNProfile": "optional"
+        },
         "007": {
           "title": "Physical Description",
           "description": "Special information about the physical characteristics in a coded form. The information may represent the whole item or parts of an item such as accompanying material.",
