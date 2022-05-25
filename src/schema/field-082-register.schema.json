@@ -15,6 +15,7 @@
           "2",
           "7"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Full edition"
@@ -41,6 +42,7 @@
           "0",
           "4"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Assigned by LC"

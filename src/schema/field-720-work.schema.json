@@ -13,6 +13,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "0",
         "code": {
           "1": {
             "title": "Personal"
@@ -29,6 +30,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"

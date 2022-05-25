@@ -12,6 +12,7 @@
           "\\",
           "0"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Faceted"
@@ -34,6 +35,7 @@
           "6",
           "7"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Library of Congress Subject Headings"

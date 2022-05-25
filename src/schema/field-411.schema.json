@@ -13,6 +13,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Inverted name"
@@ -32,6 +33,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Main entry not represented by pronoun"

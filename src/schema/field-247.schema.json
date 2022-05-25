@@ -12,6 +12,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "No added entry"
@@ -28,6 +29,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Display note"

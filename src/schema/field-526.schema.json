@@ -12,6 +12,7 @@
           "0",
           "8"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Reading program"
@@ -25,6 +26,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"

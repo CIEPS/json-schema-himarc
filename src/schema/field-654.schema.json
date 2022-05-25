@@ -14,6 +14,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "No level specified"
@@ -33,6 +34,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"

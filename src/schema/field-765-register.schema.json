@@ -12,6 +12,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "0",
         "code": {
           "0": {
             "title": "Display note"
@@ -28,6 +29,7 @@
           "\\",
           "8"
         ],
+        "defaultValue": "\\",
         "code": {
           "8": {
             "title": "No display constant generated"

@@ -12,6 +12,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "No title added entry"
@@ -25,6 +26,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"

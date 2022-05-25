@@ -12,6 +12,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "0",
         "code": {
           "0": {
             "title": "Display note"
@@ -29,6 +30,7 @@
           "0",
           "8"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Parent"

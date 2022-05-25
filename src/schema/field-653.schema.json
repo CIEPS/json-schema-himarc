@@ -14,6 +14,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "No level specified"
@@ -42,6 +43,7 @@
           "5",
           "6"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Topical term"

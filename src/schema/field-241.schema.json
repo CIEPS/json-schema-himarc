@@ -11,6 +11,7 @@
         "0",
         "1"
       ],
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "No title added entry"
@@ -24,6 +25,7 @@
       "title": "Nonfiling characters",
       "type": "string",
       "const": "0",
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "9"

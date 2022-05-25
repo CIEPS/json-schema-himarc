@@ -13,6 +13,7 @@
         "1",
         "2"
       ],
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "Single date/time"
@@ -32,6 +33,7 @@
       "title": "Undefined",
       "type": "string",
       "const": "\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "Undefined"

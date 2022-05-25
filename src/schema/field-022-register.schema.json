@@ -12,6 +12,7 @@
         "0",
         "1"
       ],
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "Serial of international interest"
@@ -28,6 +29,7 @@
       "title": "Nonfiling characters",
       "type": "string",
       "const": "\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "Obsolete: use NSB / NSE / pipe character instead"

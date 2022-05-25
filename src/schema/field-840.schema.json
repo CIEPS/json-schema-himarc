@@ -9,6 +9,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -19,6 +20,7 @@
         "title": "Nonfiling characters",
         "type": "string",
         "const": "0",
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "9"

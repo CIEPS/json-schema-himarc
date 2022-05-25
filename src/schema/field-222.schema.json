@@ -8,6 +8,7 @@
       "title": "Undefined",
       "type": "string",
       "const": "\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "Undefined"
@@ -18,6 +19,7 @@
       "title": "Nonfiling characters",
       "type": "string",
       "pattern": "[0-9]|\\\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "NSB / NSE characters"

@@ -13,6 +13,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Superintendent of Documents Classification System"
@@ -28,6 +29,7 @@
       "indicator2": {
         "title": "Government jurisdiction (BK MP MU VM SE) [OBSOLETE]",
         "type": "string",
+        "defaultValue": "\\",
         "code": {}
       },
       "subFields": {

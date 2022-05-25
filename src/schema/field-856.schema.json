@@ -17,6 +17,7 @@
           "4",
           "7"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Email"
@@ -51,6 +52,7 @@
           "2",
           "8"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Resource"

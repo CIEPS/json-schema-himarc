@@ -9,6 +9,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "0",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -19,6 +20,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
