@@ -31,6 +31,9 @@
       "minItems": 1,
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "a": {
             "title": "LINKING LC control number",

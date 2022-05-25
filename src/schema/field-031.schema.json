@@ -31,6 +31,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "2": {
               "title": "System code",

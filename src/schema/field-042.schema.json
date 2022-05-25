@@ -30,6 +30,12 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "a": {
             "title": "Authentication code",

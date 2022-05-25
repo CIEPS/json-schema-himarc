@@ -41,6 +41,10 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "t",
+            "x"
+          ],
           "properties": {
             "0": {
               "title": "INSI",

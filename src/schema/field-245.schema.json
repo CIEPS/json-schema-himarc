@@ -42,6 +42,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "6": {
             "title": "Linkage",

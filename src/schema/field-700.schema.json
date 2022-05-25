@@ -63,6 +63,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",

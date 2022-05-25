@@ -75,6 +75,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "u"
+          ],
           "properties": {
             "2": {
               "title": "Access method",

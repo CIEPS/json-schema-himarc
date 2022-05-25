@@ -47,6 +47,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "4": {
               "title": "Relationship",

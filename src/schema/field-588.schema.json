@@ -41,6 +41,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "5": {
               "title": "Institution to which field applies",

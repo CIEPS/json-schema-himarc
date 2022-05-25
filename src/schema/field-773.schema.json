@@ -43,6 +43,10 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "t",
+            "x"
+          ],
           "properties": {
             "3": {
               "title": "Materials specified",

@@ -30,6 +30,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "a": {
             "title": "Primary G0 character set",

@@ -36,6 +36,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "a": {
             "title": "Different formats",

@@ -59,6 +59,10 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a",
+            "2"
+          ],
           "properties": {
             "2": {
               "title": "Edition number",
