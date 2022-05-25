@@ -64,7 +64,8 @@
         "items": {
           "type": "object",
           "defaultProperties": [
-            "a"
+            "t",
+            "x"
           ],
           "properties": {
             "0": {
