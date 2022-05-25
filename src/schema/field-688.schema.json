@@ -9,6 +9,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -22,6 +23,7 @@
           "\\",
           "7"
         ],
+        "defaultValue": "\\",
         "code": {
           "7": {
             "title": "Source specified in subfield $2"
@@ -35,6 +37,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",

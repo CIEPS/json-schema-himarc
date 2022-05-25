@@ -11,6 +11,7 @@
         "0",
         "1"
       ],
+      "defaultValue": "1",
       "code": {
         "0": {
           "title": "No added entry"
@@ -24,6 +25,7 @@
       "title": "Nonfiling characters",
       "type": "string",
       "pattern": "[0-9]|\\\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "NSB / NSE characters"
@@ -40,6 +42,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "6": {
             "title": "Linkage",

@@ -13,6 +13,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Work held by LAC"
@@ -40,6 +41,7 @@
           "8",
           "9"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "LC"
@@ -77,6 +79,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",

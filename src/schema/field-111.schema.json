@@ -12,6 +12,7 @@
         "1",
         "2"
       ],
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "Inverted name"
@@ -28,6 +29,7 @@
       "title": "Undefined",
       "type": "string",
       "const": "\\",
+      "defaultValue": "\\",
       "code": {
         "\\": {
           "title": "Undefined"
@@ -38,6 +40,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "0": {
             "title": "Authority record control number or standard number",

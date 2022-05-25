@@ -13,6 +13,7 @@
         "2",
         "3"
       ],
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "Not printed or displayed"
@@ -32,6 +33,7 @@
       "title": "Nonfiling characters",
       "type": "string",
       "const": "0",
+      "defaultValue": "\\",
       "code": {
         "0": {
           "title": "9"
@@ -42,6 +44,9 @@
       "type": "array",
       "items": {
         "type": "object",
+        "defaultProperties": [
+          "a"
+        ],
         "properties": {
           "6": {
             "title": "Linkage",

@@ -17,6 +17,7 @@
           "4",
           "7"
         ],
+        "defaultValue": "4",
         "code": {
           "0": {
             "title": "Email"
@@ -51,6 +52,7 @@
           "2",
           "8"
         ],
+        "defaultValue": "0",
         "code": {
           "0": {
             "title": "Resource"
@@ -73,6 +75,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "u"
+          ],
           "properties": {
             "2": {
               "title": "Access method",

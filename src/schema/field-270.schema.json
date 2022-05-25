@@ -13,6 +13,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "\\",
         "code": {
           "1": {
             "title": "Primary"
@@ -33,6 +34,7 @@
           "0",
           "7"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Mailing"
@@ -49,6 +51,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "4": {
               "title": "Relationship",

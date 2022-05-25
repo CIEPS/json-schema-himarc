@@ -24,6 +24,7 @@
                 "2",
                 "3"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Forename"
@@ -43,6 +44,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -53,6 +55,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -206,6 +211,7 @@
                 "1",
                 "2"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Inverted name"
@@ -222,6 +228,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -232,6 +239,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -373,6 +383,7 @@
                 "1",
                 "2"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Inverted name"
@@ -389,6 +400,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -399,6 +411,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -549,6 +564,7 @@
                 "0",
                 "\\"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "9"
@@ -562,6 +578,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -572,6 +589,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -713,6 +733,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "1",
                 "code": {
                   "0": {
                     "title": "No added entry"
@@ -729,6 +750,7 @@
                   "\\",
                   "0"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Other abbreviated title"
@@ -742,6 +764,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "b"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -806,6 +832,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No title added entry"
@@ -819,6 +846,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -829,6 +857,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -873,6 +904,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No title added entry"
@@ -886,6 +918,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -896,6 +929,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -940,6 +976,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No title added entry"
@@ -953,6 +990,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -963,6 +1001,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -1003,6 +1044,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -1013,6 +1055,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "pattern": "[0-9]|\\\\",
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "No nonfiling characters [OBSOLETE]"
@@ -1029,6 +1072,10 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a",
+                  "b"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -1096,6 +1143,7 @@
                 "2",
                 "3"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Not printed or displayed"
@@ -1115,6 +1163,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "const": "0",
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "9"
@@ -1125,6 +1174,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -1259,6 +1311,7 @@
                 "0",
                 "1"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "No title added entry"
@@ -1272,6 +1325,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "const": "0",
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "9"
@@ -1282,6 +1336,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "a": {
                     "title": "Romanized title",
@@ -1323,6 +1380,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No added entry"
@@ -1336,6 +1394,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -1346,6 +1405,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -1439,6 +1501,7 @@
                 "2",
                 "3"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Not printed or displayed"
@@ -1458,6 +1521,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "const": "0",
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "9"
@@ -1468,6 +1532,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -1584,6 +1651,7 @@
                 "0",
                 "1"
               ],
+              "defaultValue": "1",
               "code": {
                 "0": {
                   "title": "No added entry"
@@ -1597,6 +1665,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "pattern": "[0-9]|\\\\",
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "No nonfiling characters [OBSOLETE]"
@@ -1613,6 +1682,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -1738,6 +1810,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "3",
                 "code": {
                   "0": {
                     "title": "Note, no added entry"
@@ -1768,6 +1841,7 @@
                   "7",
                   "8"
                 ],
+                "defaultValue": "3",
                 "code": {
                   "0": {
                     "title": "Portion of title"
@@ -1805,6 +1879,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "5": {
                       "title": "Institution to which field applies",
@@ -1920,6 +1997,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No added entry"
@@ -1936,6 +2014,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -1949,6 +2028,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -2044,6 +2126,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2054,6 +2137,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2064,6 +2148,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -2121,6 +2208,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2131,6 +2219,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2141,6 +2230,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -2209,6 +2301,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2219,6 +2312,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2229,6 +2323,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -2271,6 +2368,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2281,6 +2379,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2291,6 +2390,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -2371,6 +2473,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2381,6 +2484,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2391,6 +2495,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -2433,6 +2540,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2443,6 +2551,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2453,6 +2562,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -2516,6 +2628,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2526,6 +2639,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2536,6 +2650,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -2591,6 +2708,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "2": {
                     "title": "Intervening publisher"
@@ -2607,6 +2725,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -2617,6 +2736,11 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "b",
+                    "c"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -2736,6 +2860,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2746,6 +2871,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2756,6 +2882,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -2821,6 +2950,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2831,6 +2961,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2841,6 +2972,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -2906,6 +3040,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2916,6 +3051,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -2926,6 +3062,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -2972,6 +3111,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "2": {
                     "title": "Intervening"
@@ -2994,6 +3134,7 @@
                   "3",
                   "4"
                 ],
+                "defaultValue": "1",
                 "code": {
                   "0": {
                     "title": "Production"
@@ -3016,6 +3157,11 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "b",
+                    "c"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -3111,6 +3257,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3121,6 +3268,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3131,6 +3279,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -3173,6 +3324,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "1": {
                     "title": "Primary"
@@ -3193,6 +3345,7 @@
                   "0",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Mailing"
@@ -3209,6 +3362,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -3362,6 +3518,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3372,6 +3529,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3382,6 +3540,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -3462,6 +3623,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3472,6 +3634,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3482,6 +3645,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -3527,6 +3693,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -3540,6 +3707,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3550,6 +3718,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -3600,6 +3771,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3610,6 +3782,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -3620,6 +3793,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -3668,6 +3844,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3678,6 +3855,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3688,6 +3866,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -3770,6 +3951,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3780,6 +3962,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3790,6 +3973,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "2"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -3912,6 +4099,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3922,6 +4110,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -3932,6 +4121,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "2"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -4054,6 +4247,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4064,6 +4258,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4074,6 +4269,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "2"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -4196,6 +4395,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4206,6 +4406,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4216,6 +4417,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -4367,6 +4571,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Adaptive features to access primary content"
@@ -4383,6 +4588,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4393,6 +4599,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -4477,6 +4686,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Horizontal coordinate system"
@@ -4500,6 +4710,7 @@
                   "7",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Geographic"
@@ -4534,6 +4745,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Reference method used",
@@ -4717,6 +4931,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4727,6 +4942,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4737,6 +4953,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -4830,6 +5049,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4840,6 +5060,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4850,6 +5071,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -4961,6 +5185,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4971,6 +5196,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -4981,6 +5207,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -5056,6 +5285,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5066,6 +5296,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5076,6 +5307,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -5151,6 +5385,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5161,6 +5396,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5171,6 +5407,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -5270,6 +5509,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5280,6 +5520,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5290,6 +5531,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -5365,6 +5609,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5375,6 +5620,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5385,6 +5631,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -5448,6 +5697,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5458,6 +5708,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5468,6 +5719,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -5569,6 +5823,7 @@
                   "5",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Document"
@@ -5597,6 +5852,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5607,6 +5863,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -5699,6 +5958,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -5709,6 +5969,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -5736,6 +5997,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Formatted style"
@@ -5749,6 +6011,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -5759,6 +6022,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -5828,6 +6094,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Starting information"
@@ -5848,6 +6115,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Closed"
@@ -5864,6 +6132,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -6005,6 +6276,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6015,6 +6287,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6025,6 +6298,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of price type code",
@@ -6142,6 +6418,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6152,6 +6429,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6162,6 +6440,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of availability status code",
@@ -6267,6 +6548,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6277,6 +6559,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6287,6 +6570,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -6404,6 +6690,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6417,6 +6704,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -6430,6 +6718,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -6505,6 +6796,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6515,6 +6807,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6525,6 +6818,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -6594,6 +6890,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6604,6 +6901,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6614,6 +6912,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -6699,6 +7000,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Medium of performance"
@@ -6719,6 +7021,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Not intended for access"
@@ -6735,6 +7038,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -6858,6 +7164,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6868,6 +7175,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6878,6 +7186,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -6963,6 +7274,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Original key"
@@ -6979,6 +7291,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -6989,6 +7302,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -7040,6 +7356,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7050,6 +7367,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7060,6 +7378,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -7147,6 +7468,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7157,6 +7479,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7167,6 +7490,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -7270,6 +7596,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "1": {
                     "title": "Creation of work"
@@ -7286,6 +7613,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7296,6 +7624,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -7370,6 +7701,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Forename"
@@ -7392,6 +7724,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Main entry not represented by pronoun"
@@ -7405,6 +7738,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -7550,6 +7886,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -7569,6 +7906,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Main entry not represented by pronoun"
@@ -7582,6 +7920,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -7721,6 +8062,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -7740,6 +8082,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Main entry not represented by pronoun"
@@ -7753,6 +8096,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -7894,6 +8240,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -7904,6 +8251,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -7914,6 +8262,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number",
@@ -8007,6 +8358,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Series not traced"
@@ -8020,6 +8372,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8030,6 +8383,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -8099,6 +8455,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8109,6 +8466,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8119,6 +8477,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -8188,6 +8549,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8198,6 +8560,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8208,6 +8571,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "5": {
                       "title": "Institution to which field applies",
@@ -8259,6 +8625,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8269,6 +8636,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8279,6 +8647,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -8354,6 +8725,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8364,6 +8736,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8374,6 +8747,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -8430,6 +8806,7 @@
                   "2",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Contents"
@@ -8452,6 +8829,7 @@
                   "\\",
                   "0"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Enhanced"
@@ -8465,6 +8843,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -8538,6 +8919,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No restrictions"
@@ -8554,6 +8936,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8564,6 +8947,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of term",
@@ -8674,6 +9060,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -8684,6 +9071,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -8694,6 +9082,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -8742,6 +9133,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8752,6 +9144,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8762,6 +9155,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -8813,6 +9209,7 @@
                   "3",
                   "4"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Coverage unknown"
@@ -8835,6 +9232,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8845,6 +9243,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -8937,6 +9338,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No display constant generated"
@@ -8959,6 +9361,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -8969,6 +9372,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9014,6 +9420,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9024,6 +9431,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9034,6 +9442,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9075,6 +9486,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9085,6 +9497,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9095,6 +9508,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9145,6 +9561,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -9155,6 +9572,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -9165,6 +9583,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -9285,6 +9706,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9295,6 +9717,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9305,6 +9728,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9357,6 +9783,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -9370,6 +9797,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9380,6 +9808,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9427,6 +9858,7 @@
                 "0",
                 "1"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Nonfiction"
@@ -9440,6 +9872,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -9450,6 +9883,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "a": {
                     "title": "Different formats",
@@ -9495,6 +9931,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9505,6 +9942,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9515,6 +9953,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -9610,6 +10051,7 @@
                   "4",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Subject"
@@ -9638,6 +10080,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9648,6 +10091,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -9737,6 +10183,7 @@
                   "4",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Reading grade level"
@@ -9765,6 +10212,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9775,6 +10223,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -9835,6 +10286,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -9848,6 +10300,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9858,6 +10311,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -9906,6 +10362,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -9919,6 +10376,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9929,6 +10387,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of schema used",
@@ -9986,6 +10447,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -9996,6 +10458,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10006,6 +10469,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -10058,6 +10524,7 @@
                   "0",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Reading program"
@@ -10071,6 +10538,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10081,6 +10549,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "5": {
                       "title": "Institution to which field applies",
@@ -10168,6 +10639,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10178,6 +10650,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10188,6 +10661,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -10229,6 +10705,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10239,6 +10716,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10249,6 +10727,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -10333,6 +10814,7 @@
                   "2",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Accessibility technical details"
@@ -10352,6 +10834,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10362,6 +10845,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -10407,6 +10893,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10417,6 +10904,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10427,6 +10915,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -10552,6 +11043,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10562,6 +11054,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10572,6 +11065,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -10706,6 +11202,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Repository (AM) [OBSOLETE]"
@@ -10725,6 +11222,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10735,6 +11233,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -10810,6 +11311,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10820,6 +11322,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10830,6 +11333,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -10917,6 +11423,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10927,6 +11434,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -10937,6 +11445,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified ",
@@ -11019,6 +11530,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11029,6 +11541,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11039,6 +11552,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of term",
@@ -11148,6 +11664,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Private"
@@ -11164,6 +11681,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11174,6 +11692,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "patternProperties": {
                     "6": {
                       "title": "Linkage",
@@ -11215,6 +11736,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Private"
@@ -11231,6 +11753,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11258,6 +11781,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11268,6 +11792,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11278,6 +11803,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -11323,6 +11851,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Associated materials"
@@ -11339,6 +11868,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11349,6 +11879,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -11434,6 +11967,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Biographical sketch"
@@ -11450,6 +11984,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11460,6 +11995,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -11517,6 +12055,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11527,6 +12066,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11537,6 +12077,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -11598,6 +12141,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11608,6 +12152,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11618,6 +12163,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -11667,6 +12215,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11677,6 +12226,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11687,6 +12237,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -11736,6 +12289,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11746,6 +12300,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11756,6 +12311,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -11907,6 +12465,7 @@
                   "0",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Finding aids"
@@ -11923,6 +12482,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -11933,6 +12493,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12011,6 +12574,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -12024,6 +12588,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12034,6 +12599,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -12089,6 +12657,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Private"
@@ -12105,6 +12674,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12115,6 +12685,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12184,6 +12757,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12194,6 +12768,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12204,6 +12779,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12285,6 +12863,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12295,6 +12874,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12305,6 +12885,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12372,6 +12955,7 @@
                   "0",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Case file characteristics"
@@ -12388,6 +12972,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12398,6 +12983,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12476,6 +13064,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -12489,6 +13078,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12499,6 +13089,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -12568,6 +13161,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12578,6 +13172,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12588,6 +13183,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -12636,6 +13234,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12646,6 +13245,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12656,6 +13256,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -12710,6 +13313,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -12723,6 +13327,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12733,6 +13338,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -12794,6 +13402,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Private"
@@ -12810,6 +13419,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12820,6 +13430,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of term",
@@ -12973,6 +13586,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12983,6 +13597,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -12993,6 +13608,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -13056,6 +13674,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -13066,6 +13685,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -13076,6 +13696,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -13136,6 +13759,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -13149,6 +13773,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -13159,6 +13784,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -13214,6 +13842,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Source of description"
@@ -13230,6 +13859,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -13240,6 +13870,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "5": {
                       "title": "Institution to which field applies",
@@ -13309,6 +13942,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Forename"
@@ -13337,6 +13971,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -13368,6 +14003,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -13585,6 +14223,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -13610,6 +14249,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -13641,6 +14281,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -13846,6 +14489,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -13871,6 +14515,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -13902,6 +14547,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14098,6 +14746,7 @@
                   "0",
                   "\\"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -14120,6 +14769,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -14151,6 +14801,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14334,6 +14987,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -14353,6 +15007,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -14384,6 +15039,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14495,6 +15153,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -14509,6 +15168,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Date or time period covered or depicted [OBSOLETE]"
@@ -14525,6 +15185,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14623,6 +15286,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No level specified"
@@ -14651,6 +15315,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "4",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -14682,6 +15347,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14811,6 +15479,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -14830,6 +15499,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -14861,6 +15531,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -14983,6 +15656,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No level specified"
@@ -15011,6 +15685,7 @@
                   "5",
                   "6"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Topical term"
@@ -15042,6 +15717,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -15092,6 +15770,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No level specified"
@@ -15111,6 +15790,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15121,6 +15801,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15235,6 +15918,7 @@
                   "\\",
                   "0"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Faceted"
@@ -15257,6 +15941,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress Subject Headings"
@@ -15288,6 +15973,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15399,6 +16087,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15409,6 +16098,7 @@
                 "title": "Source of term",
                 "type": "string",
                 "const": "7",
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -15419,6 +16109,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15518,6 +16211,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15528,6 +16222,7 @@
                 "title": "Source of term",
                 "type": "string",
                 "const": "7",
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -15538,6 +16233,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15631,6 +16329,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15641,6 +16340,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15651,6 +16351,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of term or code",
@@ -15720,6 +16423,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15730,6 +16434,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15740,6 +16445,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15851,6 +16559,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -15864,6 +16573,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -15877,6 +16587,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -15969,6 +16682,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Forename"
@@ -15994,6 +16708,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
@@ -16016,6 +16731,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -16227,6 +16946,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -16249,6 +16969,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
@@ -16271,6 +16992,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -16476,6 +17201,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -16498,6 +17224,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
@@ -16520,6 +17247,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -16711,6 +17442,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "1": {
                     "title": "Personal"
@@ -16727,6 +17459,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -16737,6 +17470,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "INSI",
@@ -16807,6 +17544,7 @@
                   "0",
                   "\\"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "9"
@@ -16826,6 +17564,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
@@ -16848,6 +17587,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17022,6 +17765,7 @@
                   "0",
                   "\\"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "9"
@@ -17041,6 +17785,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Alternative entry (BK AM CF MP MU) [OBSOLETE]"
@@ -17063,6 +17808,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "5": {
                       "title": "Institution to which field applies",
@@ -17132,6 +17881,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17142,6 +17892,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17152,6 +17903,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17239,6 +17994,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17249,6 +18005,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17259,6 +18016,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17370,6 +18131,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17380,6 +18142,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17390,6 +18153,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17465,6 +18232,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17475,6 +18243,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17485,6 +18254,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17572,6 +18345,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17582,6 +18356,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17592,6 +18367,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of term",
@@ -17675,6 +18454,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "0",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17685,6 +18465,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -17695,6 +18476,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -17785,6 +18570,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -17801,6 +18587,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -17814,6 +18601,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -17966,6 +18757,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -17982,6 +18774,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -17995,6 +18788,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -18147,6 +18944,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -18163,6 +18961,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -18176,6 +18975,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -18352,6 +19155,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -18368,6 +19172,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -18381,6 +19186,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -18557,6 +19366,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -18573,6 +19383,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -18586,6 +19397,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -18762,6 +19577,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -18779,6 +19595,7 @@
                   "0",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Parent"
@@ -18795,6 +19612,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -18971,6 +19792,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -18987,6 +19809,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -19000,6 +19823,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -19180,6 +20007,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -19196,6 +20024,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -19209,6 +20038,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -19377,6 +20210,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -19393,6 +20227,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -19406,6 +20241,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -19594,6 +20433,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -19610,6 +20450,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -19623,6 +20464,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -19827,6 +20672,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -19843,6 +20689,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -19856,6 +20703,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -20032,6 +20883,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -20054,6 +20906,7 @@
                   "6",
                   "7"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Continues"
@@ -20085,6 +20938,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -20261,6 +21118,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -20284,6 +21142,7 @@
                   "7",
                   "8"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Continued by"
@@ -20318,6 +21177,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -20494,6 +21357,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -20510,6 +21374,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -20523,6 +21388,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -20709,6 +21578,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Display note"
@@ -20725,6 +21595,7 @@
                   "\\",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "8": {
                     "title": "No display constant generated"
@@ -20738,6 +21609,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "t",
+                    "x"
+                  ],
                   "properties": {
                     "4": {
                       "title": "Relationship",
@@ -20911,6 +21786,7 @@
                   "1",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Forename"
@@ -20927,6 +21803,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -20937,6 +21814,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -21160,6 +22040,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -21176,6 +22057,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -21186,6 +22068,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -21397,6 +22282,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Inverted name"
@@ -21413,6 +22299,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -21423,6 +22310,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -21618,6 +22508,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -21628,6 +22519,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -21638,6 +22530,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -21815,6 +22710,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -21825,6 +22721,7 @@
                 "title": "Nonfiling characters",
                 "type": "string",
                 "const": "0",
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "9"
@@ -21835,6 +22732,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "a": {
                       "title": "Title",
@@ -21996,6 +22896,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -22006,6 +22907,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -22016,6 +22918,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -22067,6 +22972,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -22077,6 +22983,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -22087,6 +22994,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -22188,6 +23098,7 @@
                   "7",
                   "8"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Library of Congress classification"
@@ -22230,6 +23141,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Not enumeration"
@@ -22249,6 +23161,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of classification or shelving scheme",
@@ -22509,6 +23424,7 @@
                   "4",
                   "7"
                 ],
+                "defaultValue": "4",
                 "code": {
                   "0": {
                     "title": "Email"
@@ -22543,6 +23459,7 @@
                   "2",
                   "8"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Resource"
@@ -22565,6 +23482,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "u"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Access method",
@@ -23023,6 +23943,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "patternProperties": {
                     "6": {
                       "title": "Linkage",
@@ -23063,6 +23986,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -23073,6 +23997,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -23083,6 +24008,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -23141,6 +24069,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Fully machine"
@@ -23157,6 +24086,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23167,6 +24097,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -23254,6 +24187,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23264,6 +24198,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23274,6 +24209,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "a": {
                       "title": "Conversion process",
@@ -23331,6 +24269,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23341,6 +24280,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23351,6 +24291,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -23448,6 +24391,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Leader"
@@ -23464,6 +24408,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23474,6 +24419,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of data",
@@ -23531,6 +24479,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23541,6 +24490,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23551,6 +24501,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of data",
@@ -23590,6 +24543,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "pattern": "[0-9]|\\\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23600,6 +24554,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "pattern": "[0-9]|\\\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -23610,6 +24565,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "a": {
                       "title": "Internal note",
@@ -36502,6 +37460,7 @@
                 "0",
                 "1"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Serial of international interest"
@@ -36518,6 +37477,7 @@
               "title": "Nonfiling characters",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Obsolete: use NSB / NSE / pipe character instead"
@@ -36528,6 +37488,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -36670,6 +37633,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36680,6 +37644,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36690,6 +37655,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "2": {
                     "title": "Source of local subentity code",
@@ -36762,6 +37730,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36772,6 +37741,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36783,6 +37753,9 @@
               "minItems": 1,
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "8": {
                     "title": "Field link and sequence number",
@@ -36829,6 +37802,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36839,6 +37813,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -36850,6 +37825,9 @@
               "minItems": 1,
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "a": {
                     "title": "LINKING LC control number",
@@ -36881,6 +37859,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -36891,6 +37870,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -36902,6 +37882,9 @@
                 "minItems": 1,
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -36975,6 +37958,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -36985,6 +37969,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -36995,6 +37980,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -37061,6 +38049,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Agency identified in subfield $2"
@@ -37074,6 +38063,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37084,6 +38074,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -37145,6 +38138,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "United States [OBSOLETE]"
@@ -37161,6 +38155,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37171,6 +38166,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -37245,6 +38243,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -37255,6 +38254,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -37265,6 +38265,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -37307,6 +38310,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37317,6 +38321,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37327,6 +38332,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -37398,6 +38406,7 @@
                   "7",
                   "8"
                 ],
+                "defaultValue": "8",
                 "code": {
                   "0": {
                     "title": "International Standard Recording Code (ISRC)"
@@ -37430,6 +38439,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No difference"
@@ -37446,6 +38456,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of number or code",
@@ -37524,6 +38537,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37534,6 +38548,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37544,6 +38559,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -37583,6 +38601,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37593,6 +38612,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37603,6 +38623,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -37684,6 +38707,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37694,6 +38718,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37704,6 +38729,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -37769,6 +38797,7 @@
                   "5",
                   "6"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Issue number"
@@ -37802,6 +38831,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "No note, no added entry"
@@ -37821,6 +38851,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -37878,6 +38911,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37888,6 +38922,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37898,6 +38933,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -37951,6 +38989,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37961,6 +39000,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -37971,6 +39011,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "System code",
@@ -38118,6 +39161,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -38128,6 +39172,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -38138,6 +39183,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -38194,6 +39242,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Single date"
@@ -38218,6 +39267,7 @@
                   "1",
                   "2"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Capture"
@@ -38237,6 +39287,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -38328,6 +39381,7 @@
                   "1",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Scale indeterminable/No scale recorded"
@@ -38348,6 +39402,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Outer ring"
@@ -38364,6 +39419,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -38541,6 +39599,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -38551,6 +39610,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -38561,6 +39621,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",
@@ -38611,6 +39674,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38621,6 +39685,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38631,6 +39696,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -38683,6 +39751,7 @@
                   "2",
                   "3"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "2": {
                     "title": "Intervening"
@@ -38699,6 +39768,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -38709,6 +39779,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "3": {
                       "title": "Materials specified",
@@ -38795,6 +39868,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38805,6 +39879,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38815,6 +39890,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -38856,6 +39934,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38866,6 +39945,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -38876,6 +39956,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -38946,6 +40029,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Item not a translation/does not include a translation"
@@ -38965,6 +40049,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -38978,6 +40063,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of code",
@@ -39136,6 +40224,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -39146,6 +40235,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -39156,6 +40246,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "a": {
                     "title": "Authentication code",
@@ -39185,6 +40278,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -39195,6 +40289,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -39205,6 +40300,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "0": {
                     "title": "Authority record control number or standard number",
@@ -39281,6 +40379,7 @@
                 "1",
                 "2"
               ],
+              "defaultValue": "\\",
               "code": {
                 "0": {
                   "title": "Single date/time"
@@ -39300,6 +40399,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -39310,6 +40410,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "6": {
                     "title": "Linkage",
@@ -39364,6 +40467,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39374,6 +40478,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39384,6 +40489,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of date",
@@ -39505,6 +40613,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39518,6 +40627,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -39531,6 +40641,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of code",
@@ -39576,6 +40689,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39589,6 +40703,7 @@
                   "\\",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "7": {
                     "title": "Source specified in subfield $2"
@@ -39602,6 +40717,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source of code",
@@ -39657,6 +40775,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Item is in LC"
@@ -39677,6 +40796,7 @@
                   "0",
                   "4"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Assigned by LC"
@@ -39693,6 +40813,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -39766,6 +40889,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39776,6 +40900,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39786,6 +40911,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -39842,6 +40970,7 @@
                   "1",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "U.S. Dept. of Defense Classification [OBSOLETE]"
@@ -39861,6 +40990,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -39871,6 +41001,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -39954,6 +41087,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Work held by LAC"
@@ -39981,6 +41115,7 @@
                   "8",
                   "9"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "LC"
@@ -40018,6 +41153,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -40091,6 +41229,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Item is in NLM"
@@ -40111,6 +41250,7 @@
                   "0",
                   "4"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Assigned by NLM"
@@ -40127,6 +41267,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -40184,6 +41327,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40194,6 +41338,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40204,6 +41349,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -40254,6 +41402,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -40264,6 +41413,7 @@
               "title": "Undefined",
               "type": "string",
               "const": "\\",
+              "defaultValue": "\\",
               "code": {
                 "\\": {
                   "title": "Undefined"
@@ -40274,6 +41424,9 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "defaultProperties": [
+                  "a"
+                ],
                 "properties": {
                   "a": {
                     "title": "Primary G0 character set",
@@ -40320,6 +41473,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Item is in NAL"
@@ -40336,6 +41490,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40346,6 +41501,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -40403,6 +41561,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40413,6 +41572,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40423,6 +41583,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -40474,6 +41637,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40487,6 +41651,7 @@
                   "0",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "NAL subject category code list"
@@ -40500,6 +41665,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Source",
@@ -40557,6 +41725,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40567,6 +41736,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40577,6 +41747,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "8": {
                       "title": "Field link and sequence number",
@@ -40626,6 +41799,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "0",
                 "code": {
                   "0": {
                     "title": "Full"
@@ -40642,6 +41816,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40652,6 +41827,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "2"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -40748,6 +41927,7 @@
                   "2",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Full edition"
@@ -40774,6 +41954,7 @@
                   "0",
                   "4"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Assigned by LC"
@@ -40790,6 +41971,10 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a",
+                    "2"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Edition number",
@@ -40878,6 +42063,7 @@
                   "1",
                   "7"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Full edition"
@@ -40894,6 +42080,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40904,6 +42091,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "2": {
                       "title": "Edition number",
@@ -40985,6 +42175,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -40995,6 +42186,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -41005,6 +42197,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -41080,6 +42275,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -41090,6 +42286,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -41100,6 +42297,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -41227,6 +42427,7 @@
                   "0",
                   "1"
                 ],
+                "defaultValue": "\\",
                 "code": {
                   "0": {
                     "title": "Superintendent of Documents Classification System"
@@ -41242,12 +42443,16 @@
               "indicator2": {
                 "title": "Government jurisdiction (BK MP MU VM SE) [OBSOLETE]",
                 "type": "string",
+                "defaultValue": "\\",
                 "code": {}
               },
               "subFields": {
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "0": {
                       "title": "Authority record control number or standard number",
@@ -41317,6 +42522,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -41327,6 +42533,7 @@
                 "title": "Undefined",
                 "type": "string",
                 "const": "\\",
+                "defaultValue": "\\",
                 "code": {
                   "\\": {
                     "title": "Undefined"
@@ -41337,6 +42544,9 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "defaultProperties": [
+                    "a"
+                  ],
                   "properties": {
                     "6": {
                       "title": "Linkage",

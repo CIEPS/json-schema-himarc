@@ -17,6 +17,7 @@
           "5",
           "8"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Document"
@@ -45,6 +46,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -55,6 +57,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "6": {
               "title": "Linkage",

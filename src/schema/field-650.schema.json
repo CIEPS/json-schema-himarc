@@ -14,6 +14,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "No level specified"
@@ -42,6 +43,7 @@
           "6",
           "7"
         ],
+        "defaultValue": "4",
         "code": {
           "0": {
             "title": "Library of Congress Subject Headings"
@@ -73,6 +75,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",

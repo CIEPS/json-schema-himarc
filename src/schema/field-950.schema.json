@@ -9,6 +9,7 @@
         "title": "Undefined",
         "type": "string",
         "pattern": "[0-9]|\\\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -19,6 +20,7 @@
         "title": "Undefined",
         "type": "string",
         "pattern": "[0-9]|\\\\",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
@@ -29,6 +31,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "a": {
               "title": "Internal note",

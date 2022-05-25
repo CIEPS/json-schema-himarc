@@ -13,6 +13,7 @@
           "1",
           "2"
         ],
+        "defaultValue": "0",
         "code": {
           "0": {
             "title": "Inverted name"
@@ -35,6 +36,7 @@
           "2",
           "3"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Alternative entry (BK CF MP MU SE MX) [OBSOLETE]"
@@ -57,6 +59,10 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "t",
+            "x"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",

@@ -13,6 +13,7 @@
           "0",
           "1"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Item is in NLM"
@@ -33,6 +34,7 @@
           "0",
           "4"
         ],
+        "defaultValue": "\\",
         "code": {
           "0": {
             "title": "Assigned by NLM"
@@ -49,6 +51,9 @@
         "type": "array",
         "items": {
           "type": "object",
+          "defaultProperties": [
+            "a"
+          ],
           "properties": {
             "0": {
               "title": "Authority record control number or standard number",
