@@ -9,7 +9,7 @@
         "title": "Undefined",
         "type": "string",
         "const": "\\",
-        "defaultValue": "0",
+        "defaultValue": "\\",
         "code": {
           "\\": {
             "title": "Undefined"
