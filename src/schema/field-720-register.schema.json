@@ -13,7 +13,7 @@
           "1",
           "2"
         ],
-        "defaultValue": "0",
+        "defaultValue": "\\",
         "code": {
           "1": {
             "title": "Personal"
