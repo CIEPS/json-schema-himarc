@@ -60,7 +60,7 @@
         "items": {
           "type": "object",
           "defaultProperties": [
-            "a",
+            "a"
           ],
           "properties": {
             "0": {
