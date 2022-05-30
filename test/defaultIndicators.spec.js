@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-expressions */
 'use strict';
 
-const { expect } = require('chai');
+const { expect, should } = require('chai');
 const schemaHelper = require('../src/schema');
 
 function indicatorDefaultValue(field, ind) {
@@ -12,6 +12,13 @@ function indicatorDefaultValue(field, ind) {
     } else {
         return schema.properties[`indicator${ind}`].defaultValue
     }
+}
+
+function regularCases() {
+    let specialTags = indicators1.map(case_ => case_[0]).concat(indicators2.map(case_ => case_[0]));
+    specialTags = wipCases.concat(specialTags)
+    const allTags = Object.getOwnPropertyNames(schemaHelper).filter(tag => tag.startsWith("field_") && tag > "field_009").map(tag => tag.replace("field_", ""))
+    return allTags.filter(tag => !specialTags.includes(tag));
 }
 
 const indicators1 = [
@@ -78,15 +85,40 @@ const indicators2 = [
     ["856", "0"],
 ];
 
+// These fields are not properly defined in the schema yet
+const wipCases = [
+    "841", "842", "843", "844", "845", "853", "854", "855", "863", "864", "865", "866", "867", "868", "876", "877", "878", "880"
+]
+
 describe('Default indicators values', () => {
     indicators1.forEach(([field, expected]) => {
-        it(`Field ${field} indicator 1`, function () {
+        it(`Special field ${field} indicator 1 is ${expected}`, function () {
             expect(indicatorDefaultValue(field, 1)).to.equal(expected);
         });
     })
     indicators2.forEach(([field, expected]) => {
-        it(`Field ${field} indicator 2`, function () {
+        it(`Special field ${field} indicator 2 is ${expected}`, function () {
             expect(indicatorDefaultValue(field, 2)).to.equal(expected);
+        });
+    })
+    regularCases().forEach((field) => {
+        it(`Regular field ${field} indicator 1 is empty`, function () {
+            expect(indicatorDefaultValue(field, 1)).to.equal("\\");
+        });
+    })
+    regularCases().forEach((field) => {
+        it(`Regular field ${field} indicator 2 is empty`, function () {
+            expect(indicatorDefaultValue(field, 2)).to.equal("\\");
+        });
+    })
+    wipCases.forEach((field) => {
+        it(`WIP field ${field} indicator 1 is undefined`, function () {
+            expect(indicatorDefaultValue(field, 1)).to.be.undefined;
+        });
+    })
+    wipCases.forEach((field) => {
+        it(`WIP field ${field} indicator 2 is undefined`, function () {
+            expect(indicatorDefaultValue(field, 2)).to.be.undefined;
         });
     })
 });

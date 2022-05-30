@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-expressions */
 'use strict';
 
-const { expect } = require('chai');
+const { expect, assert } = require('chai');
 const schemaHelper = require('../src/schema');
 
 function defaultSubfields(field) {
@@ -14,8 +14,14 @@ function defaultSubfields(field) {
     }
 }
 
+function regularCases() {
+    const specialTags = wipCases.concat(specialCases.map(case_ => case_[0]));
+    const allTags = Object.getOwnPropertyNames(schemaHelper).filter(tag => tag.startsWith("field_") && tag > "field_009").map(tag => tag.replace("field_", ""))
+    return allTags.filter(tag => !specialTags.includes(tag));
+}
 
-const subFields = [
+
+const specialCases = [
     ["080_work", ["a", "2"]],
     ["080_register", ["a", "2"]],
     ["082_work", ["a", "2"]],
@@ -58,11 +64,26 @@ const subFields = [
     ["856", ["u"]],
 ];
 
+// These fields are not properly defined in the schema yet
+const wipCases = [
+    "357", "542", "841", "842", "843", "844", "845", "853", "854", "855", "863", "864", "865", "866", "867", "868", "876", "877", "878"
+]
+
 
 describe('Default subfields', () => {
-    subFields.forEach(([field, expected]) => {
-        it(`Field ${field} default subfields`, function () {
+    specialCases.forEach(([field, expected]) => {
+        it(`Special field ${field} default subfields are ${expected}`, () => {
             expect(defaultSubfields(field)).to.eql(expected);
+        });
+    });
+    regularCases().forEach((field) => {
+        it(`Regular field ${field} default subfield is a`, () => {
+            expect(defaultSubfields(field)).to.eql(["a"]);
+        });
+    });
+    wipCases.forEach((field) => {
+        it(`WIP field ${field} raises an error`, () => {
+            assert.throws(() => defaultSubfields(field), TypeError);
         });
     });
 });
