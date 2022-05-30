@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-expressions */
 'use strict';
 
-const { expect } = require('chai');
+const { expect, assert } = require('chai');
 const schemaHelper = require('../src/schema');
 
 function defaultSubfields(field) {
@@ -14,8 +14,14 @@ function defaultSubfields(field) {
     }
 }
 
+function regularCases() {
+    const specialTags = wipCases.concat(specialCases.map(case_ => case_[0]));
+    const allTags = Object.getOwnPropertyNames(schemaHelper).filter(tag => tag.startsWith("field_") && tag > "field_009").map(tag => tag.replace("field_", ""))
+    return allTags.filter(tag => !specialTags.includes(tag));
+}
 
-const subFields = [
+
+const specialCases = [
     ["080_work", ["a", "2"]],
     ["080_register", ["a", "2"]],
     ["082_work", ["a", "2"]],
@@ -28,21 +34,6 @@ const subFields = [
     ["336", ["a", "2"]],
     ["337", ["a", "2"]],
     ["338", ["a", "2"]],
-    ["700", ["t", "x"]],
-    ["710_register", ["t", "x"]],
-    ["710_work", ["t", "x"]],
-    ["711_register", ["t", "x"]],
-    ["711_work", ["t", "x"]],
-    ["720_register", ["t", "x"]],
-    ["720_work", ["t", "x"]],
-    ["730", ["t", "x"]],
-    ["740", ["t", "x"]],
-    ["751", ["t", "x"]],
-    ["752", ["t", "x"]],
-    ["753", ["t", "x"]],
-    ["754", ["t", "x"]],
-    ["755", ["t", "x"]],
-    ["758", ["t", "x"]],
     ["760_register", ["t", "x"]],
     ["760_work", ["t", "x"]],
     ["762_register", ["t", "x"]],
@@ -73,11 +64,26 @@ const subFields = [
     ["856", ["u"]],
 ];
 
+// These fields are not properly defined in the schema yet
+const wipCases = [
+    "357", "542", "841", "842", "843", "844", "845", "853", "854", "855", "863", "864", "865", "866", "867", "868", "876", "877", "878"
+]
+
 
 describe('Default subfields', () => {
-    subFields.forEach(([field, expected]) => {
-        it(`Field ${field} default subfields`, function () {
+    specialCases.forEach(([field, expected]) => {
+        it(`Special field ${field} default subfields are ${expected}`, () => {
             expect(defaultSubfields(field)).to.eql(expected);
+        });
+    });
+    regularCases().forEach((field) => {
+        it(`Regular field ${field} default subfield is a`, () => {
+            expect(defaultSubfields(field)).to.eql(["a"]);
+        });
+    });
+    wipCases.forEach((field) => {
+        it(`WIP field ${field} raises an error`, () => {
+            assert.throws(() => defaultSubfields(field), TypeError);
         });
     });
 });
