@@ -793,13 +793,13 @@
       "allOf": [
         { "required": ["008", "022", "044", "222", "245"] },
         {
-          "oneOf": [
+          "anyOf": [
             { "required": ["080"] },
             { "required": ["082"] }
           ]
         },
         {
-          "oneOf": [
+          "anyOf": [
             { "required": ["260"] },
             { "required": ["264"] }
           ]
