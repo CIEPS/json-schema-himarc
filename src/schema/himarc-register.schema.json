@@ -790,18 +790,43 @@
           "$ref": "field-950.schema.json"
         }
       },
+      "additionalProperties": false,
       "allOf": [
-        { "required": ["008", "022", "044", "222", "245"] },
         {
-          "anyOf": [
-            { "required": ["080"] },
-            { "required": ["082"] }
+          "required": [
+            "008",
+            "022",
+            "044",
+            "222",
+            "245"
           ]
         },
         {
           "anyOf": [
-            { "required": ["260"] },
-            { "required": ["264"] }
+            {
+              "required": [
+                "080"
+              ]
+            },
+            {
+              "required": [
+                "082"
+              ]
+            }
+          ]
+        },
+        {
+          "anyOf": [
+            {
+              "required": [
+                "260"
+              ]
+            },
+            {
+              "required": [
+                "264"
+              ]
+            }
           ]
         }
       ]
