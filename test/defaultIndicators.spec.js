@@ -84,32 +84,32 @@ const wipCases = [
 
 describe('Default indicators values', () => {
     indicators1.forEach(([field, expected]) => {
-        it(`Special field ${field} indicator 1 is ${expected}`, function () {
+        it(`Special field ${field} indicator 1 is ${expected}`, () => {
             expect(indicatorDefaultValue(field, 1)).to.equal(expected);
         });
     })
     indicators2.forEach(([field, expected]) => {
-        it(`Special field ${field} indicator 2 is ${expected}`, function () {
+        it(`Special field ${field} indicator 2 is ${expected}`, () => {
             expect(indicatorDefaultValue(field, 2)).to.equal(expected);
         });
     })
     regularCases().forEach((field) => {
-        it(`Regular field ${field} indicator 1 is empty`, function () {
+        it(`Regular field ${field} indicator 1 is empty`, () => {
             expect(indicatorDefaultValue(field, 1)).to.equal("\\");
         });
     })
     regularCases().forEach((field) => {
-        it(`Regular field ${field} indicator 2 is empty`, function () {
+        it(`Regular field ${field} indicator 2 is empty`, () => {
             expect(indicatorDefaultValue(field, 2)).to.equal("\\");
         });
     })
     wipCases.forEach((field) => {
-        it(`WIP field ${field} indicator 1 is undefined`, function () {
+        it(`WIP field ${field} indicator 1 is undefined`, () => {
             expect(indicatorDefaultValue(field, 1)).to.be.undefined;
         });
     })
     wipCases.forEach((field) => {
-        it(`WIP field ${field} indicator 2 is undefined`, function () {
+        it(`WIP field ${field} indicator 2 is undefined`, () => {
             expect(indicatorDefaultValue(field, 2)).to.be.undefined;
         });
     })

@@ -11,8 +11,8 @@ const ajv = new Ajv({
 });
 
 
-describe('Title Statement (245) schema', function () {
-    it('should validate', function () {
+describe('Title Statement (245) schema', () => {
+    it('should validate', () => {
         const data = {
             indicator1: '0',
             indicator2: '\\',
@@ -31,7 +31,7 @@ describe('Title Statement (245) schema', function () {
         expect(valid).to.be.true;
     });
 
-    it('shouldn\'t validate with an additional property', function () {
+    it('shouldn\'t validate with an additional property', () => {
         const data = {
             indicator1: '0',
             indicator2: '\\',

@@ -11,8 +11,8 @@ const ajv = new Ajv({
 });
 
 
-describe('Production, Publication, Distribution, Manufacture, and Copyright Notice (264) schema', function () {
-  it('should validate', function () {
+describe('Production, Publication, Distribution, Manufacture, and Copyright Notice (264) schema', () => {
+  it('should validate', () => {
     const data = [{
       indicator1: '2',
       indicator2: '0',
@@ -31,7 +31,7 @@ describe('Production, Publication, Distribution, Manufacture, and Copyright Noti
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property and additional property', function () {
+  it('shouldn\'t validate with a missing required property and additional property', () => {
     const data = [{
       indicator1: '2',
       indicator2: '0',

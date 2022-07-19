@@ -11,8 +11,8 @@ const ajv = new Ajv({
   strict: false
 });
 
-describe('Work Schema', function () {
-  it('should validate', function () {
+describe('Work Schema', () => {
+  it('should validate', () => {
     const data = {
       fields: {
         LDR: {
@@ -139,7 +139,7 @@ describe('Work Schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with an empty subfield', function () {
+  it('shouldn\'t validate with an empty subfield', () => {
     const data = {
       fields: {
         LDR: {
@@ -263,7 +263,7 @@ describe('Work Schema', function () {
     expect(valid).to.be.false;
   });
 
-  it('shouldn\'t validate whith an empty tag', function () {
+  it('shouldn\'t validate with an empty tag', () => {
     const data = {
       fields: {
         LDR: {
