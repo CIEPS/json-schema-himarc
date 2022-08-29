@@ -11,8 +11,8 @@ const ajv = new Ajv({
   strict: false
 });
 
-describe('Physical Description (007) schema', function () {
-  it('should validate', function () {
+describe('Physical Description (007) schema', () => {
+  it('should validate', () => {
     const data = [{
       positions: {
         '00': 't',
@@ -25,7 +25,7 @@ describe('Physical Description (007) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with an unauthorized values', function () {
+  it('shouldn\'t validate with an unauthorized values', () => {
     const data = [{
       positions: {
         '00': 'x',

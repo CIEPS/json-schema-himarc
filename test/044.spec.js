@@ -11,8 +11,8 @@ const ajv = new Ajv({
 });
 
 
-describe('Country of Publishing/Producing Entity Code (044) schema', function () {
-  it('should validate', function () {
+describe('Country of Publishing/Producing Entity Code (044) schema', () => {
+  it('should validate', () => {
     const data = {
       indicator1: '\\',
       indicator2: '\\',
@@ -28,7 +28,7 @@ describe('Country of Publishing/Producing Entity Code (044) schema', function ()
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property', function () {
+  it('shouldn\'t validate with a missing required property', () => {
     const data = {
       indicator1: '\\',
       indicator2: '\\',

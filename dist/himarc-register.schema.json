@@ -42619,6 +42619,7 @@
           "isRepeatable": true
         }
       },
+      "additionalProperties": false,
       "allOf": [
         {
           "required": [

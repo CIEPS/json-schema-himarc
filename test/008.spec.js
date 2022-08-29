@@ -13,7 +13,7 @@ const ajv = new Ajv({
 });
 
 
-describe('Data Elements (008) schema', function () {
+describe('Data Elements (008) schema', () => {
   it('should validate', function (done) {
     const data = {
       positions: {

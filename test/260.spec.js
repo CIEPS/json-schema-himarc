@@ -11,8 +11,8 @@ const ajv = new Ajv({
 });
 
 
-describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
-  it('should validate', function () {
+describe('Publication, Distribution, etc. (Imprint) (260) schema', () => {
+  it('should validate', () => {
     const data = [{
       indicator1: '\\',
       indicator2: '\\',
@@ -31,7 +31,7 @@ describe('Publication, Distribution, etc. (Imprint) (260) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with a missing required property and additional property', function () {
+  it('shouldn\'t validate with a missing required property and additional property', () => {
     const data = [{
       indicator1: '\\',
       indicator2: '\\',

@@ -11,8 +11,8 @@ const ajv = new Ajv({
   strict: false
 });
 
-describe('Leader (LDR) schema', function () {
-  it('should validate', function () {
+describe('Leader (LDR) schema', () => {
+  it('should validate', () => {
     const data = {
       positions: {
         10: '2',
@@ -39,7 +39,7 @@ describe('Leader (LDR) schema', function () {
     expect(valid).to.be.true;
   });
 
-  it('shouldn\'t validate with additional and missing properties', function () {
+  it('shouldn\'t validate with additional and missing properties', () => {
     const data = {
       positions: {
         100: '2',
