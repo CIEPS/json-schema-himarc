@@ -3904,8 +3904,7 @@
                       "title": "Dates of former publication frequency",
                       "type": "string",
                       "pattern": "^(?!\\s*$).+",
-                      "isRepeatable": false,
-                      "ISSNProfile": "mandatory"
+                      "isRepeatable": false
                     }
                   },
                   "additionalProperties": false
@@ -3921,19 +3920,6 @@
                       },
                       "required": [
                         "a"
-                      ]
-                    }
-                  },
-                  {
-                    "contains": {
-                      "type": "object",
-                      "properties": {
-                        "b": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "b"
                       ]
                     }
                   }
