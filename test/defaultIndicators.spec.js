@@ -69,6 +69,7 @@ const indicators1 = [
 const indicators2 = [
     ["246", "3"],
     ["264", "1"],
+    ["648", "0"],
     ["650", "4"],
     ["780_register", "0"],
     ["780_work", "0"],
