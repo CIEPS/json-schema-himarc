@@ -18,48 +18,28 @@ describe('Subject Added Entry-Chronological Term (648) schema', () => {
     validate = ajv.compile(schemaHelper.field_648)
   });
 
-  it('should validate (4 is a valid indicator2)', () => {
-    const data = [{
-      indicator1: '\\',
-      indicator2: '4',
-      subFields: [
-        {
-          a: '1900-1999'
-        }
-      ]
-    }];
-    const valid = validate(data);
-    if (validate.errors) console.dir(validate.errors, { depth: 8 });
-    expect(valid).to.be.true;
-  });
-
-  it('should validate (2 is a mandatory if indicator2 equals 7)', () => {
-    const data = [{
-      indicator1: '\\',
-      indicator2: '7',
-      subFields: [
-        {
-          a: '1900-1999',
-          2: 'fast'
-        }
-      ]
-    }];
-    const valid = validate(data);
-    if (validate.errors) console.dir(validate.errors, { depth: 8 });
-    expect(valid).to.be.true;
-  });
-
-  it('should not validate (2 is a mandatory if indicator2 equals 7)', () => {
-    const data = [{
-      indicator1: '\\',
-      indicator2: '7',
-      subFields: [
-        {
-          a: '1900-1999'
-        }
-      ]
-    }];
-    const valid = validate(data);
-    expect(valid).to.be.false;
+  [
+    { ind1: "\\", ind2: "0", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "1", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "2", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "3", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "4", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "5", subfieldA: '1900-1999'},
+    { ind1: "\\", ind2: "7", subfieldA: '1900-1999'},
+  ].forEach((params) => {
+    it(`should validate (${params.ind2} is a valid indicator2)`, () => {
+      const data = [{
+        indicator1: params.ind1,
+        indicator2: params.ind2,
+        subFields: [
+          {
+            a: params.subfieldA
+          }
+        ]
+      }];
+      const valid = validate(data);
+      if (validate.errors) console.dir(validate.errors, { depth: 8 });
+      expect(valid).to.be.true;
+    });
   });
 });

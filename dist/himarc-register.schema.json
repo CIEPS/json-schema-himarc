@@ -15275,25 +15275,6 @@
                   },
                   "additionalProperties": false
                 },
-                "anyOf": [
-                  {
-                    "not": {
-                      "properties": {
-                        "indicator2": {
-                          "const": "7"
-                        }
-                      },
-                      "required": [
-                        "2"
-                      ]
-                    }
-                  },
-                  {
-                    "required": [
-                      "2"
-                    ]
-                  }
-                ],
                 "minItems": 1
               }
             },
