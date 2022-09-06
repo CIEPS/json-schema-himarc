@@ -17,23 +17,43 @@
         }
       },
       "indicator2": {
-        "title": "Type of date or time period [OBSOLETE]",
+        "title": "Thesaurus",
         "type": "string",
         "enum": [
-          "\\",
           "0",
-          "1"
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
         ],
-        "defaultValue": "\\",
+        "defaultValue": "0",
         "code": {
           "0": {
-            "title": "Date or time period covered or depicted [OBSOLETE]"
+            "title": "Library of Congress Subject Headings"
           },
           "1": {
-            "title": "Date or time period of creation or origin [OBSOLETE]"
+            "title": "LC subject headings for children's literature"
           },
-          "\\": {
-            "title": "No information provided [OBSOLETE]"
+          "2": {
+            "title": "Medical Subject Headings"
+          },
+          "3": {
+            "title": "National Agricultural Library subject authority file"
+          },
+          "4": {
+            "title": "Source not specified"
+          },
+          "5": {
+            "title": "Canadian Subject Headings"
+          },
+          "6": {
+            "title": "Répertoire de vedettes-matière"
+          },
+          "7": {
+            "title": "Source specified in subfield $2"
           }
         }
       },
