@@ -42582,7 +42582,7 @@
           "isRepeatable": true
         }
       },
-      "additionalProperties": false,
+      "additionalProperties": true,
       "allOf": [
         {
           "required": [
