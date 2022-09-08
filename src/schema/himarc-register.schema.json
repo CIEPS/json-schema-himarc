@@ -790,7 +790,7 @@
           "$ref": "field-950.schema.json"
         }
       },
-      "additionalProperties": false,
+      "additionalProperties": true,
       "allOf": [
         {
           "required": [
