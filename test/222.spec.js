@@ -51,4 +51,25 @@ describe('Key Title (222) schema', () => {
     }
     expect(valid).to.be.false;
   });
+
+  it('shouldn\'t validate with repeated subfield a', () => {
+    const data = {
+      indicator1: '\\',
+      indicator2: '0',
+      subFields: [
+        {
+          a: 'Nature'
+        },
+        {
+          a: 'The Times'
+        },
+      ]
+    };
+    const validate = ajv.compile(schemaHelper.field_222);
+    const valid = validate(data);
+    if (validate.errors) {
+      expect(validate.errors.some(error => error.message === 'should NOT have additional properties')).to.be.true;
+    }
+    expect(valid).to.be.false;
+  })
 });

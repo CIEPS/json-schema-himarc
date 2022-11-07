@@ -79,6 +79,23 @@
         },
         "additionalProperties": false
       },
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "6": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "6"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        }
+      ],
       "minItems": 1
     }
   },
