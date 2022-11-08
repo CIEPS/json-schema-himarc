@@ -87,7 +87,9 @@
             "required": [
               "c"
             ]
-          }
+          },
+          "maxContains": 1,
+          "minContains": 1
         },
         {
           "contains": {

@@ -3,10 +3,10 @@
 'use strict';
 
 const { expect } = require('chai');
-const Ajv = require('ajv').default;
+const Ajv2019 = require('ajv/dist/2019');
 const schemaHelper = require('../src/schema');
 
-const ajv = new Ajv({
+const ajv = new Ajv2019({
   allErrors: true,
   strict: false
 });
@@ -35,7 +35,7 @@ describe('Physical Description (007) schema', () => {
     const validate = ajv.compile(schemaHelper.field_007);
     const valid = validate(data);
     if (validate.errors) {
-      expect(validate.errors.some(error => error.message === 'should be equal to one of the allowed values')).to.be.true;
+      expect(validate.errors.some(error => error.message === 'must be equal to one of the allowed values')).to.be.true;
     }
     expect(valid).to.be.false;
   });
