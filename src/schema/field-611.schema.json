@@ -60,7 +60,7 @@
             "title": "Canadian Subject Headings"
           },
           "6": {
-            "title": "Répertoire de vedettes"
+            "title": "R\u00e9pertoire de vedettes"
           },
           "7": {
             "title": "Source specified in subfield $2"
@@ -244,7 +244,159 @@
           },
           "additionalProperties": false
         },
-        "minItems": 1
+        "minItems": 1,
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "2"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "3": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "3"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "6": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "6"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "a"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "f": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "f"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "h": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "h"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "l": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "l"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "q": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "q"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "t": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "t"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "u": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "u"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          }
+        ]
       }
     },
     "required": [

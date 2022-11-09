@@ -208,7 +208,264 @@
           },
           "additionalProperties": false
         },
-        "minItems": 1
+        "minItems": 1,
+        "allOf": [
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "2": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "2"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "3": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "3"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "6": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "6"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "a"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "d": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "d"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "e": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "e"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "f": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "f"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "g": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "g"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "j": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "j"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "k": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "k"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "m": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "m"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "n": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "n"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "p": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "p"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "r": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "r"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "x"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "y": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "y"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "z": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "z"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          }
+        ]
       }
     },
     "required": [
