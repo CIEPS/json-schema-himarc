@@ -1,7 +1,5 @@
-[![Build Status](https://travis-ci.org/CIEPS/json-schema-himarc.svg?branch=master)](https://travis-ci.org/CIEPS/json-schema-himarc)
-
 # json-schema-himarc
 
-JSON Schema for himarc
+This repo has been archived, it is now hosted here : 
 
-https://cieps.github.io/json-schema-himarc/
+https://gitlab.com/cieps-open-source/json-schema-himarc
