@@ -159,6 +159,128 @@
         },
         "additionalProperties": false
       },
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "2": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "2"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "6": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "6"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "a": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "a"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "f": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "f"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "h": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "h"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "l": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "l"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "o": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "o"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "r": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "r"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        }
+      ],
       "minItems": 1
     }
   },

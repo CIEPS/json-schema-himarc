@@ -133,17 +133,128 @@
         },
         "additionalProperties": false
       },
-      "contains": {
-        "type": "object",
-        "properties": {
-          "a": {
-            "type": "string"
-          }
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "6": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "6"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
         },
-        "required": [
-          "a"
-        ]
-      },
+        {
+          "contains": {
+            "properties": {
+              "a": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "a"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "b": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "b"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "c": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "c"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "f": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "f"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "g": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "g"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "h": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "h"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        },
+        {
+          "contains": {
+            "properties": {
+              "s": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "s"
+            ],
+            "type": "object"
+          },
+          "maxContains": 1,
+          "minContains": 0
+        }
+      ],
       "minItems": 1
     }
   },

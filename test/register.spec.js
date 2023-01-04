@@ -3,10 +3,10 @@
 'use strict';
 
 const { expect } = require('chai');
-const Ajv = require('ajv').default;
+const Ajv2019 = require('ajv/dist/2019');
 const registerSchema = require('../dist/himarc-register.schema.json');
 
-const ajv = new Ajv({
+const ajv = new Ajv2019({
     allErrors: true,
     strict: false
 });
@@ -258,7 +258,7 @@ describe('Register Schema', () => {
         const validate = ajv.compile(registerSchema);
         const valid = validate(data);
         if (validate.errors) {
-            expect(validate.errors.some(error => error.message === 'should NOT have fewer than 1 items')).to.be.true;
+            expect(validate.errors.some(error => error.message === 'must NOT have fewer than 1 items')).to.be.true;
         }
         expect(valid).to.be.false;
     });
@@ -370,10 +370,10 @@ describe('Register Schema', () => {
         const validate = ajv.compile(registerSchema);
         const valid = validate(data);
         if (validate.errors) {
-            expect(validate.errors.some(error => error.message === "should have required property 'indicator1'")).to.be.true;
-            expect(validate.errors.some(error => error.message === "should have required property 'indicator2'")).to.be.true;
-            expect(validate.errors.some(error => error.message === "should have required property 'subFields'")).to.be.true;
-            expect(validate.errors.some(error => error.message === 'should NOT have fewer than 1 items')).to.be.true;
+            expect(validate.errors.some(error => error.message === "must have required property 'indicator1'")).to.be.true;
+            expect(validate.errors.some(error => error.message === "must have required property 'indicator2'")).to.be.true;
+            expect(validate.errors.some(error => error.message === "must have required property 'subFields'")).to.be.true;
+            expect(validate.errors.some(error => error.message === 'must NOT have fewer than 1 items')).to.be.true;
         }
         expect(valid).to.be.false;
     });

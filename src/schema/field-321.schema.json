@@ -68,6 +68,21 @@
             "contains": {
               "type": "object",
               "properties": {
+                "6": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "6"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
                 "a": {
                   "type": "string"
                 }
@@ -75,7 +90,24 @@
               "required": [
                 "a"
               ]
-            }
+            },
+            "maxContains": 1,
+            "minContains": 1
+          },
+          {
+            "contains": {
+              "type": "object",
+              "properties": {
+                "b": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "b"
+              ]
+            },
+            "maxContains": 1,
+            "minContains": 0
           }
         ],
         "minItems": 1

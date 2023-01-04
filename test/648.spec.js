@@ -3,9 +3,9 @@
 'use strict';
 
 const { expect } = require('chai');
-const Ajv = require('ajv').default;
+const Ajv2019 = require('ajv/dist/2019');
 const schemaHelper = require('../src/schema');
-const ajv = new Ajv({
+const ajv = new Ajv2019({
     allErrors: true,
     strict: false
 });
